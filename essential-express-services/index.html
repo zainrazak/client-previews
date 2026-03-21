@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Essential Express Services — Stockton &amp; Lathrop, CA</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy:      '#1B2A4A',
+            'navy-dk': '#111D33',
+            'navy-md': '#243660',
+            gold:      '#C9A227',
+            'gold-lt': '#E0B93A',
+            cream:     '#F7F5EF',
+          },
+          fontFamily: {
+            serif: ['"DM Serif Display"', 'Georgia', 'serif'],
+            sans:  ['"DM Sans"', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* ── Base ───────────────────────────────────── */
+    html { scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', system-ui, sans-serif; }
+    h1,h2,h3,h4 { font-family: 'DM Serif Display', Georgia, serif; }
+
+    /* ── Hero overlay ───────────────────────────── */
+    .hero-bg {
+      background-image:
+        linear-gradient(135deg,
+          rgba(17,29,51,0.95) 0%,
+          rgba(27,42,74,0.88) 55%,
+          rgba(201,162,39,0.18) 100%),
+        url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* ── Animations ─────────────────────────────── */
+    @keyframes riseUp {
+      from { opacity:0; transform:translateY(28px); }
+      to   { opacity:1; transform:translateY(0);    }
+    }
+    .rise { animation: riseUp .7s ease both; }
+    .rise-1 { animation-delay:.10s; }
+    .rise-2 { animation-delay:.22s; }
+    .rise-3 { animation-delay:.36s; }
+    .rise-4 { animation-delay:.50s; }
+
+    /* ── Gold accent underline ──────────────────── */
+    .gold-rule::after {
+      content:'';
+      display:block;
+      width:52px; height:3px;
+      background:#C9A227;
+      border-radius:2px;
+      margin-top:14px;
+    }
+    .gold-rule.center::after { margin-inline:auto; }
+
+    /* ── Service card lift ──────────────────────── */
+    .card {
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 24px 48px rgba(27,42,74,.13);
+    }
+
+    /* ── Pricing row divider ────────────────────── */
+    .p-row { border-bottom:1px solid #e8e3d8; }
+    .p-row:last-child { border-bottom:none; }
+
+    /* ── Gallery hover ──────────────────────────── */
+    .gal-item img { transition: transform .45s ease; }
+    .gal-item:hover img { transform: scale(1.07); }
+    .gal-cap {
+      background:linear-gradient(to top, rgba(27,42,74,.75), transparent);
+      opacity:0; transition: opacity .3s ease;
+    }
+    .gal-item:hover .gal-cap { opacity:1; }
+
+    /* ── Diagonal section divider ───────────────── */
+    .clip-diag {
+      clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
+      padding-bottom:80px;
+    }
+
+    /* ── Mobile menu ────────────────────────────── */
+    #mob-menu { max-height:0; overflow:hidden; transition:max-height .35s ease; }
+    #mob-menu.open { max-height:340px; }
+
+    /* ── Noise texture overlay ──────────────────── */
+    .noise::before {
+      content:'';
+      position:absolute; inset:0; pointer-events:none;
+      background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+      background-size:256px;
+      mix-blend-mode:overlay;
+    }
+  </style>
+</head>
+
+<body class="bg-cream text-navy antialiased">
+
+<!-- ════════════════════════════════════════════
+     NAV
+════════════════════════════════════════════ -->
+<nav class="sticky top-0 z-50 bg-navy shadow-lg">
+  <div class="max-w-6xl mx-auto px-5 py-3 flex items-center justify-between gap-4">
+
+    <!-- Logo -->
+    <a href="#" class="flex items-center gap-3 shrink-0">
+      <svg viewBox="0 0 44 44" fill="none" class="w-9 h-9">
+        <!-- stylised three-finger hand mark -->
+        <path d="M12 36 L17 10 M17 10 L22 24 M22 24 L27 10 M27 10 L32 36"
+              stroke="#C9A227" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M8 36 L22 4 L36 36" stroke="white" stroke-width="1"
+              stroke-linecap="round" stroke-linejoin="round" opacity=".18"/>
+      </svg>
+      <div class="leading-tight">
+        <div class="text-white font-bold text-sm tracking-widest uppercase">Essential Express</div>
+        <div class="text-gold text-[10px] font-semibold tracking-[.2em] uppercase">Services</div>
+      </div>
+    </a>
+
+    <!-- Desktop links -->
+    <div class="hidden md:flex items-center gap-7 text-sm font-medium">
+      <a href="#services" class="text-gray-300 hover:text-gold transition-colors">Services</a>
+      <a href="#pricing"  class="text-gray-300 hover:text-gold transition-colors">Pricing</a>
+      <a href="#work"     class="text-gray-300 hover:text-gold transition-colors">Our Work</a>
+      <a href="#about"    class="text-gray-300 hover:text-gold transition-colors">About</a>
+      <a href="tel:2095550000"
+         class="ml-2 bg-gold text-navy font-bold px-5 py-2 rounded-full hover:bg-gold-lt transition-colors whitespace-nowrap">
+        <i class="fas fa-phone text-xs mr-1.5"></i>(209) 555-XXXX
+      </a>
+    </div>
+
+    <!-- Hamburger -->
+    <button id="ham-btn" aria-label="Menu"
+            onclick="document.getElementById('mob-menu').classList.toggle('open')"
+            class="md:hidden text-white text-xl p-1">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mob-menu" class="md:hidden bg-navy-dk border-t border-white/10">
+    <div class="px-5 py-5 flex flex-col gap-4 text-sm font-medium">
+      <a href="#services" class="text-gray-300 hover:text-gold" onclick="document.getElementById('mob-menu').classList.remove('open')">Services</a>
+      <a href="#pricing"  class="text-gray-300 hover:text-gold" onclick="document.getElementById('mob-menu').classList.remove('open')">Pricing</a>
+      <a href="#work"     class="text-gray-300 hover:text-gold" onclick="document.getElementById('mob-menu').classList.remove('open')">Our Work</a>
+      <a href="#about"    class="text-gray-300 hover:text-gold" onclick="document.getElementById('mob-menu').classList.remove('open')">About</a>
+      <a href="tel:2095550000" class="bg-gold text-navy font-bold text-center py-3 rounded-full">
+        <i class="fas fa-phone mr-2"></i>Call Now
+      </a>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ════════════════════════════════════════════
+     HERO
+════════════════════════════════════════════ -->
+<section class="hero-bg relative min-h-screen flex items-center overflow-hidden clip-diag">
+
+  <!-- Left gold accent stripe -->
+  <div class="absolute left-0 top-0 bottom-0 w-1 bg-gold hidden lg:block"></div>
+
+  <div class="relative z-10 max-w-6xl mx-auto px-6 py-28">
+    <div class="max-w-2xl">
+
+      <!-- Location pill -->
+      <div class="rise mb-6">
+        <span class="inline-flex items-center gap-2 border border-gold/40 bg-gold/10
+                     text-gold text-xs font-bold uppercase tracking-widest
+                     px-4 py-2 rounded-full">
+          <i class="fas fa-map-pin text-[10px]"></i>
+          Stockton · Lathrop · Central Valley
+        </span>
+      </div>
+
+      <h1 class="rise rise-1 text-5xl sm:text-6xl lg:text-7xl text-white leading-[1.08] mb-6">
+        Honest Help.<br/>
+        <em class="text-gold not-italic">Fair Prices.</em><br/>
+        Done Right.
+      </h1>
+
+      <p class="rise rise-2 text-gray-300 text-lg sm:text-xl leading-relaxed mb-9 max-w-lg">
+        Yard work, move-in cleaning, and moving assistance — from one reliable person in the Central Valley. No upsells. No surprises. Prices explained before we ever start.
+      </p>
+
+      <div class="rise rise-3 flex flex-col sm:flex-row gap-4 mb-12">
+        <a href="tel:2095550000"
+           class="bg-gold text-navy font-bold px-8 py-4 rounded-full text-lg
+                  hover:bg-gold-lt transition-all text-center shadow-xl shadow-gold/25">
+          <i class="fas fa-phone mr-2"></i>Get a Free Quote
+        </a>
+        <a href="#services"
+           class="border-2 border-white/35 text-white font-semibold px-8 py-4
+                  rounded-full text-lg hover:border-gold hover:text-gold
+                  transition-all text-center">
+          See All Services
+        </a>
+      </div>
+
+      <!-- Trust badges -->
+      <div class="rise rise-4 flex flex-wrap gap-x-6 gap-y-3">
+        <span class="flex items-center gap-2 text-gray-300 text-sm">
+          <i class="fas fa-check-circle text-gold text-xs"></i>Transparent Pricing
+        </span>
+        <span class="flex items-center gap-2 text-gray-300 text-sm">
+          <i class="fas fa-check-circle text-gold text-xs"></i>Zero Upsells
+        </span>
+        <span class="flex items-center gap-2 text-gray-300 text-sm">
+          <i class="fas fa-check-circle text-gold text-xs"></i>Senior-Friendly Rates
+        </span>
+        <span class="flex items-center gap-2 text-gray-300 text-sm">
+          <i class="fas fa-check-circle text-gold text-xs"></i>One Reliable Person
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll cue -->
+  <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center
+              gap-1.5 text-white/30 text-[10px] uppercase tracking-widest animate-bounce">
+    <span>Scroll</span>
+    <i class="fas fa-chevron-down"></i>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════
+     SERVICES
+════════════════════════════════════════════ -->
+<section id="services" class="py-24 bg-cream">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <div class="text-center mb-16">
+      <p class="text-gold font-bold text-xs uppercase tracking-widest mb-3">What We Do</p>
+      <h2 class="text-4xl sm:text-5xl text-navy gold-rule center">
+        Three Services,<br/>One Reliable Person
+      </h2>
+      <p class="text-gray-500 mt-6 max-w-lg mx-auto leading-relaxed">
+        You don't need a big crew to get great results. Essential Express handles your home's biggest headaches with care, honesty, and prices that respect your budget.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- ── Yard ── -->
+      <div class="card bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm flex flex-col">
+        <div class="relative h-52 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=700&q=80"
+               alt="Yard & lawn care" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-navy/25"></div>
+          <span class="absolute top-4 left-4 bg-gold text-navy text-[11px] font-bold
+                       uppercase tracking-wider px-3 py-1 rounded-full">Yard Help</span>
+        </div>
+        <div class="p-7 flex flex-col flex-1">
+          <div class="w-11 h-11 bg-gold/10 rounded-xl flex items-center justify-center mb-4">
+            <i class="fas fa-leaf text-gold text-lg"></i>
+          </div>
+          <h3 class="text-2xl text-navy mb-3 leading-snug">Yard Help for Seniors &amp; Busy Families</h3>
+          <p class="text-gray-500 text-sm leading-relaxed mb-5">
+            You don't need a big landscaping crew — just one reliable person. Lawn &amp; edging, leaf cleanup, trash can wash, filter changes, and more.
+          </p>
+          <div class="border-l-4 border-gold pl-4 mb-5">
+            <p class="text-navy font-bold text-sm">Starting from $60</p>
+            <p class="text-gray-400 text-xs mt-0.5">Prices explained before we start</p>
+          </div>
+          <a href="#pricing"
+             class="mt-auto block text-center bg-navy text-white font-semibold
+                    py-3 rounded-xl hover:bg-navy-md transition-colors text-sm">
+            See Yard Pricing →
+          </a>
+        </div>
+      </div>
+
+      <!-- ── Cleaning ── -->
+      <div class="card bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm flex flex-col">
+        <div class="relative h-52 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=700&q=80"
+               alt="Deep cleaning" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-navy/25"></div>
+          <span class="absolute top-4 left-4 bg-gold text-navy text-[11px] font-bold
+                       uppercase tracking-wider px-3 py-1 rounded-full">Cleaning</span>
+        </div>
+        <div class="p-7 flex flex-col flex-1">
+          <div class="w-11 h-11 bg-gold/10 rounded-xl flex items-center justify-center mb-4">
+            <i class="fas fa-broom text-gold text-lg"></i>
+          </div>
+          <h3 class="text-2xl text-navy mb-3 leading-snug">Move-In / Move-Out Deep Clean</h3>
+          <p class="text-gray-500 text-sm leading-relaxed mb-5">
+            Kitchen, bathrooms, appliances, windows, blinds, baseboards, floors, vents, and filter change — everything. Great for renters getting their deposit back.
+          </p>
+          <div class="border-l-4 border-gold pl-4 mb-5">
+            <p class="text-navy font-bold text-sm">Starting from $220</p>
+            <p class="text-gray-400 text-xs mt-0.5">Stockton to Lathrop · No upsells</p>
+          </div>
+          <a href="#pricing"
+             class="mt-auto block text-center bg-navy text-white font-semibold
+                    py-3 rounded-xl hover:bg-navy-md transition-colors text-sm">
+            See Cleaning Pricing →
+          </a>
+        </div>
+      </div>
+
+      <!-- ── Moving ── -->
+      <div class="card bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm flex flex-col">
+        <div class="relative h-52 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=700&q=80"
+               alt="Moving assistance" class="w-full h-full object-cover" />
+          <div class="absolute inset-0 bg-navy/25"></div>
+          <span class="absolute top-4 left-4 bg-gold text-navy text-[11px] font-bold
+                       uppercase tracking-wider px-3 py-1 rounded-full">Moving</span>
+        </div>
+        <div class="p-7 flex flex-col flex-1">
+          <div class="w-11 h-11 bg-gold/10 rounded-xl flex items-center justify-center mb-4">
+            <i class="fas fa-truck-moving text-gold text-lg"></i>
+          </div>
+          <h3 class="text-2xl text-navy mb-3 leading-snug">Moving Help Without the High Prices</h3>
+          <p class="text-gray-500 text-sm leading-relaxed mb-5">
+            We load &amp; unload YOUR truck or trailer. Perfect for apartments, seniors, and small moves. No big crew needed — just dependable muscle.
+          </p>
+          <div class="border-l-4 border-gold pl-4 mb-5">
+            <p class="text-navy font-bold text-sm">$85 / room · Whole home $240+</p>
+            <p class="text-gray-400 text-xs mt-0.5">Pickups &amp; drop-offs: $60 + gas</p>
+          </div>
+          <a href="#pricing"
+             class="mt-auto block text-center bg-navy text-white font-semibold
+                    py-3 rounded-xl hover:bg-navy-md transition-colors text-sm">
+            See Moving Pricing →
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════
+     WHY US / ABOUT
+════════════════════════════════════════════ -->
+<section id="about" class="relative py-24 bg-navy noise overflow-hidden">
+  <!-- top gold gradient line -->
+  <div class="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-gold/50 to-transparent"></div>
+
+  <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+
+    <!-- Text -->
+    <div>
+      <p class="text-gold font-bold text-xs uppercase tracking-widest mb-3">Why Essential Express</p>
+      <h2 class="text-4xl sm:text-5xl text-white leading-tight gold-rule mb-8">
+        A Community Service Built on Honesty
+      </h2>
+      <p class="text-gray-400 leading-relaxed mb-10">
+        Essential Express was founded with one simple belief: people deserve access to honest, capable help without being overpriced. We're a small independent service serving the Central Valley — Stockton to Lathrop — with integrity and transparency. No corporate overhead. No surprise invoices. Just solid work at fair prices.
+      </p>
+
+      <div class="space-y-7">
+        <div class="flex gap-5">
+          <div class="w-12 h-12 shrink-0 bg-gold/10 border border-gold/20 rounded-xl
+                      flex items-center justify-center">
+            <i class="fas fa-hand-holding-heart text-gold"></i>
+          </div>
+          <div>
+            <h4 class="text-white font-bold mb-1">Respect for Fixed Incomes</h4>
+            <p class="text-gray-500 text-sm leading-relaxed">
+              Not everyone has an unlimited budget — we know that. Our pricing is clear, fair, and always explained before we start a single thing.
+            </p>
+          </div>
+        </div>
+        <div class="flex gap-5">
+          <div class="w-12 h-12 shrink-0 bg-gold/10 border border-gold/20 rounded-xl
+                      flex items-center justify-center">
+            <i class="fas fa-shield-halved text-gold"></i>
+          </div>
+          <div>
+            <h4 class="text-white font-bold mb-1">No Upsells. Period.</h4>
+            <p class="text-gray-500 text-sm leading-relaxed">
+              What we quote is what you pay. You'll never open the door to a surprise invoice or a tacked-on "fee" you didn't agree to.
+            </p>
+          </div>
+        </div>
+        <div class="flex gap-5">
+          <div class="w-12 h-12 shrink-0 bg-gold/10 border border-gold/20 rounded-xl
+                      flex items-center justify-center">
+            <i class="fas fa-map-pin text-gold"></i>
+          </div>
+          <div>
+            <h4 class="text-white font-bold mb-1">Proudly Local, Central Valley</h4>
+            <p class="text-gray-500 text-sm leading-relaxed">
+              Based right here — Stockton to Lathrop. This is our community. We treat your home the way we'd treat our own.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Image collage -->
+    <div class="grid grid-cols-2 gap-4">
+      <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=80"
+           alt="Yard work" class="rounded-2xl w-full h-52 object-cover col-span-2" />
+      <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&q=80"
+           alt="Clean kitchen" class="rounded-2xl w-full h-40 object-cover" />
+      <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=400&q=80"
+           alt="Moving help" class="rounded-2xl w-full h-40 object-cover" />
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════
+     PRICING
+════════════════════════════════════════════ -->
+<section id="pricing" class="py-24 bg-cream">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <div class="text-center mb-16">
+      <p class="text-gold font-bold text-xs uppercase tracking-widest mb-3">Transparent Rates</p>
+      <h2 class="text-4xl sm:text-5xl text-navy gold-rule center">Real Prices. No Guessing.</h2>
+      <p class="text-gray-500 mt-6 max-w-lg mx-auto">
+        Every number below is what you actually pay. We explain costs before we start — always.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
+
+      <!-- Yard -->
+      <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+        <div class="flex items-center gap-3 mb-7">
+          <div class="w-10 h-10 bg-gold/10 rounded-xl flex items-center justify-center">
+            <i class="fas fa-leaf text-gold"></i>
+          </div>
+          <h3 class="text-2xl text-navy">Yard Services</h3>
+        </div>
+        <div>
+          <div class="p-row py-3.5 flex justify-between">
+            <span class="text-gray-600 text-sm">Lawn &amp; Edging</span>
+            <span class="font-bold text-navy text-sm">from $70</span>
+          </div>
+          <div class="p-row py-3.5 flex justify-between">
+            <span class="text-gray-600 text-sm">Leaf Cleanup</span>
+            <span class="font-bold text-navy text-sm">from $60</span>
+          </div>
+          <div class="p-row py-3.5 flex justify-between">
+            <span class="text-gray-600 text-sm">Trash Can Wash</span>
+            <span class="font-bold text-navy text-sm">$25</span>
+          </div>
+          <div class="p-row py-3.5 flex justify-between">
+            <span class="text-gray-600 text-sm">Filter Change</span>
+            <span class="font-bold text-navy text-sm">$20</span>
+          </div>
+          <div class="py-3.5 flex justify-between">
+            <span class="text-gray-600 text-sm">Light Home Help</span>
+            <span class="font-bold text-navy text-sm">Available</span>
+          </div>
+        </div>
+        <div class="mt-5 bg-gold/10 rounded-xl p-4">
+          <p class="text-navy text-xs font-medium leading-relaxed">
+            💚 Senior &amp; fixed-income rates respected. Prices always explained before we start.
+          </p>
+        </div>
+      </div>
+
+      <!-- Cleaning — featured -->
+      <div class="bg-navy rounded-2xl p-8 shadow-xl relative overflow-hidden">
+        <div class="absolute top-0 right-0 bg-gold text-navy text-[10px] font-black
+                    uppercase tracking-widest px-4 py-1.5 rounded-bl-xl rounded-tr-2xl">
+          Most Popular
+        </div>
+        <div class="flex items-center gap-3 mb-7">
+          <div class="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center">
+            <i class="fas fa-broom text-gold"></i>
+          </div>
+          <h3 class="text-2xl text-white">"Ready to Rent" Deep Clean</h3>
+        </div>
+        <div>
+          <div class="p-row py-3.5 flex justify-between border-white/10">
+            <span class="text-gray-400 text-sm">Studio</span>
+            <span class="font-bold text-gold text-sm">$220 – $280</span>
+          </div>
+          <div class="p-row py-3.5 flex justify-between border-white/10">
+            <span class="text-gray-400 text-sm">1 Bedroom</span>
+            <span class="font-bold text-gold text-sm">$260 – $340</span>
+          </div>
+          <div class="p-row py-3.5 flex justify-between border-white/10">
+            <span class="text-gray-400 text-sm">2 Bedroom</span>
+            <span class="font-bold text-gold text-sm">$320 – $420</span>
+          </div>
+          <div class="py-3.5 flex justify-between">
+            <span class="text-gray-400 text-sm">3 Bedroom</span>
+            <span class="font-bold text-gold text-sm">$380 – $520</span>
+          </div>
+        </div>
+        <div class="mt-5 bg-white/5 border border-white/10 rounded-xl p-4">
+          <p class="text-gray-300 text-xs leading-relaxed">
+            Includes: bathrooms, kitchen, appliances, windows, blinds, baseboards, floors, vents &amp; filter change.
+          </p>
+        </div>
+        <a href="tel:2095550000"
+           class="mt-6 block text-center bg-gold text-navy font-bold py-3.5 rounded-xl
+                  hover:bg-gold-lt transition-colors text-sm">
+          Book a Cleaning →
+        </a>
+      </div>
+
+      <!-- Moving -->
+      <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+        <div class="flex items-center gap-3 mb-7">
+          <div class="w-10 h-10 bg-gold/10 rounded-xl flex items-center justify-center">
+            <i class="fas fa-truck-moving text-gold"></i>
+          </div>
+          <h3 class="text-2xl text-navy">Moving Help</h3>
+        </div>
+        <div>
+          <div class="p-row py-3.5 flex justify-between">
+            <span class="text-gray-600 text-sm">Per Room (ground floor)</span>
+            <span class="font-bold text-navy text-sm">$85</span>
+          </div>
+          <div class="p-row py-3.5 flex justify-between">
+            <span class="text-gray-600 text-sm">Per Room (with stairs)</span>
+            <span class="font-bold text-navy text-sm">$105</span>
+          </div>
+          <div class="p-row py-3.5 flex justify-between">
+            <span class="text-gray-600 text-sm">Whole Home</span>
+            <span class="font-bold text-navy text-sm">$240 – $560</span>
+          </div>
+          <div class="py-3.5 flex justify-between">
+            <span class="text-gray-600 text-sm">Pickups / Drop-offs</span>
+            <span class="font-bold text-navy text-sm">$60 + gas</span>
+          </div>
+        </div>
+        <div class="mt-5 bg-gold/10 rounded-xl p-4">
+          <p class="text-navy text-xs font-medium leading-relaxed">
+            👉 We load &amp; unload YOUR truck or trailer. Truck not included unless separately negotiated. Perfect for apartments, seniors &amp; small moves.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════
+     GALLERY
+════════════════════════════════════════════ -->
+<section id="work" class="py-24 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <div class="text-center mb-16">
+      <p class="text-gold font-bold text-xs uppercase tracking-widest mb-3">Recent Work</p>
+      <h2 class="text-4xl sm:text-5xl text-navy gold-rule center">Real Jobs. Real Results.</h2>
+      <p class="text-gray-500 mt-6 max-w-lg mx-auto">
+        From overgrown yards to spotless move-outs — here's the kind of work we deliver right here in Stockton and Lathrop.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
+
+      <div class="gal-item relative rounded-2xl overflow-hidden aspect-square cursor-pointer">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80"
+             alt="Lawn cleanup" class="w-full h-full object-cover" />
+        <div class="gal-cap absolute inset-0 flex items-end p-5">
+          <span class="text-white font-semibold text-sm bg-navy/70 px-3 py-1.5 rounded-full">Lawn Cleanup</span>
+        </div>
+      </div>
+
+      <div class="gal-item relative rounded-2xl overflow-hidden aspect-square cursor-pointer">
+        <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=600&q=80"
+             alt="Kitchen deep clean" class="w-full h-full object-cover" />
+        <div class="gal-cap absolute inset-0 flex items-end p-5">
+          <span class="text-white font-semibold text-sm bg-navy/70 px-3 py-1.5 rounded-full">Move-Out Clean</span>
+        </div>
+      </div>
+
+      <div class="gal-item relative rounded-2xl overflow-hidden aspect-square cursor-pointer">
+        <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&q=80"
+             alt="Garden care" class="w-full h-full object-cover" />
+        <div class="gal-cap absolute inset-0 flex items-end p-5">
+          <span class="text-white font-semibold text-sm bg-navy/70 px-3 py-1.5 rounded-full">Garden Care</span>
+        </div>
+      </div>
+
+      <div class="gal-item relative rounded-2xl overflow-hidden aspect-square cursor-pointer">
+        <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=600&q=80"
+             alt="Moving boxes" class="w-full h-full object-cover" />
+        <div class="gal-cap absolute inset-0 flex items-end p-5">
+          <span class="text-white font-semibold text-sm bg-navy/70 px-3 py-1.5 rounded-full">Moving Help</span>
+        </div>
+      </div>
+
+      <div class="gal-item relative rounded-2xl overflow-hidden aspect-square cursor-pointer">
+        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80"
+             alt="Clean kitchen after" class="w-full h-full object-cover" />
+        <div class="gal-cap absolute inset-0 flex items-end p-5">
+          <span class="text-white font-semibold text-sm bg-navy/70 px-3 py-1.5 rounded-full">Kitchen Detail</span>
+        </div>
+      </div>
+
+      <div class="gal-item relative rounded-2xl overflow-hidden aspect-square cursor-pointer">
+        <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&q=80"
+             alt="Bathroom clean" class="w-full h-full object-cover" />
+        <div class="gal-cap absolute inset-0 flex items-end p-5">
+          <span class="text-white font-semibold text-sm bg-navy/70 px-3 py-1.5 rounded-full">Bathroom Clean</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════
+     TESTIMONIALS
+════════════════════════════════════════════ -->
+<section class="py-20 bg-cream">
+  <div class="max-w-5xl mx-auto px-6">
+    <div class="text-center mb-14">
+      <p class="text-gold font-bold text-xs uppercase tracking-widest mb-3">Community Feedback</p>
+      <h2 class="text-4xl sm:text-5xl text-navy gold-rule center">What Central Valley Neighbors Say</h2>
+    </div>
+
+    <div class="grid sm:grid-cols-3 gap-6">
+
+      <div class="bg-white rounded-2xl p-7 border border-gray-100 shadow-sm">
+        <div class="flex text-gold text-xs gap-0.5 mb-4">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="text-gray-600 text-sm leading-relaxed italic mb-5">
+          "My yard was a mess after being away for two months. One call and it looked brand new the next day. Honest pricing — exactly what he quoted."
+        </p>
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 bg-navy rounded-full flex items-center justify-center text-gold font-bold text-sm">MR</div>
+          <div>
+            <p class="text-navy font-bold text-sm">Maria R.</p>
+            <p class="text-gray-400 text-xs">Stockton, CA</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-navy rounded-2xl p-7 shadow-lg">
+        <div class="flex text-gold text-xs gap-0.5 mb-4">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="text-gray-300 text-sm leading-relaxed italic mb-5">
+          "Got my full security deposit back because of the move-out clean. Spotless — every appliance, every corner. Absolutely worth every penny."
+        </p>
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 bg-gold rounded-full flex items-center justify-center text-navy font-bold text-sm">DT</div>
+          <div>
+            <p class="text-white font-bold text-sm">David T.</p>
+            <p class="text-gray-500 text-xs">Lathrop, CA</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl p-7 border border-gray-100 shadow-sm">
+        <div class="flex text-gold text-xs gap-0.5 mb-4">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p class="text-gray-600 text-sm leading-relaxed italic mb-5">
+          "As a senior on a fixed income, I was worried about costs. He explained everything up front, didn't add a single thing I didn't agree to. Incredible service."
+        </p>
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 bg-navy rounded-full flex items-center justify-center text-gold font-bold text-sm">BW</div>
+          <div>
+            <p class="text-navy font-bold text-sm">Barbara W.</p>
+            <p class="text-gray-400 text-xs">Stockton, CA</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════
+     CTA BAND
+════════════════════════════════════════════ -->
+<section class="relative py-24 bg-gold overflow-hidden">
+  <!-- Diagonal hatch texture -->
+  <div class="absolute inset-0 opacity-[.06]"
+       style="background-image:repeating-linear-gradient(45deg,#1B2A4A 0,#1B2A4A 1px,transparent 0,transparent 50%);background-size:18px 18px;"></div>
+
+  <div class="relative z-10 max-w-3xl mx-auto px-6 text-center">
+    <h2 class="text-4xl sm:text-5xl text-navy mb-4">Ready to Get It Done?</h2>
+    <p class="text-navy/65 text-lg mb-10 max-w-xl mx-auto">
+      Call or text for a free quote. We'll give you an honest price — no pressure, no surprises, no upsells.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="tel:2095550000"
+         class="bg-navy text-white font-bold px-10 py-4 rounded-full text-lg
+                hover:bg-navy-md transition-colors shadow-lg">
+        <i class="fas fa-phone mr-2"></i>(209) 555-XXXX
+      </a>
+      <a href="sms:2095550000"
+         class="border-2 border-navy text-navy font-bold px-10 py-4 rounded-full text-lg
+                hover:bg-navy hover:text-white transition-colors">
+        <i class="fas fa-comment-sms mr-2"></i>Send a Text
+      </a>
+    </div>
+    <p class="mt-8 text-navy/45 text-sm">
+      Serving Stockton · Lathrop · Central Valley &nbsp;·&nbsp; Mon – Sat, 8am – 6pm
+    </p>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════ -->
+<footer class="bg-navy-dk py-14">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 mb-10">
+
+      <!-- Brand -->
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <svg viewBox="0 0 44 44" fill="none" class="w-8 h-8">
+            <path d="M12 36 L17 10 M17 10 L22 24 M22 24 L27 10 M27 10 L32 36"
+                  stroke="#C9A227" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div>
+            <div class="text-white font-bold text-sm uppercase tracking-widest">Essential Express</div>
+            <div class="text-gold text-[10px] tracking-[.2em] uppercase">Services</div>
+          </div>
+        </div>
+        <p class="text-gray-500 text-sm leading-relaxed">
+          A community-based service dedicated to honest, capable help at fair prices. Serving the Central Valley with integrity and transparency.
+        </p>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <h4 class="text-gold font-bold text-xs uppercase tracking-widest mb-4">Services</h4>
+        <ul class="space-y-2.5 text-gray-400 text-sm">
+          <li><a href="#services" class="hover:text-gold transition-colors">Yard Help &amp; Lawn Care</a></li>
+          <li><a href="#services" class="hover:text-gold transition-colors">Move-In / Move-Out Cleaning</a></li>
+          <li><a href="#services" class="hover:text-gold transition-colors">Moving Assistance</a></li>
+          <li><a href="#services" class="hover:text-gold transition-colors">Light Home Help</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h4 class="text-gold font-bold text-xs uppercase tracking-widest mb-4">Contact</h4>
+        <ul class="space-y-3 text-gray-400 text-sm">
+          <li class="flex items-center gap-3">
+            <i class="fas fa-phone text-gold w-4 text-xs"></i>
+            <a href="tel:2095550000" class="hover:text-gold transition-colors">(209) 555-XXXX</a>
+          </li>
+          <li class="flex items-center gap-3">
+            <i class="fas fa-map-pin text-gold w-4 text-xs"></i>
+            <span>Stockton to Lathrop, CA</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <i class="fas fa-clock text-gold w-4 text-xs"></i>
+            <span>Mon – Sat: 8am – 6pm</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="border-t border-white/10 pt-7 flex flex-col sm:flex-row
+                justify-between items-center gap-3 text-gray-600 text-xs">
+      <p>© 2025 Essential Express Services. All rights reserved.</p>
+      <p>Serving the Central Valley with integrity and transparency.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
