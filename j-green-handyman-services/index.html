@@ -4,218 +4,516 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>J Green Handyman Services - Professional Home Repairs & Maintenance</title>
-    <meta name="description" content="Trusted handyman services with 4.4-star rating. Expert home repairs, maintenance, and improvements. Call (209) 210-7975 for your free quote today!">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
+                    colors: {
+                        primary: '#1C1917',
+                        accent: '#EA580C',
+                        light: '#FFF7ED'
+                    },
                     fontFamily: {
-                        'poppins': ['Poppins', 'sans-serif'],
-                        'inter': ['Inter', 'sans-serif'],
+                        'display': ['Oswald', 'sans-serif'],
+                        'body': ['Open Sans', 'sans-serif']
                     }
                 }
             }
         }
     </script>
-    <style>
-        .hero-gradient { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); }
-        .gold-gradient { background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); }
-    </style>
 </head>
-<body class="font-inter text-gray-800">
-    <!-- Navigation -->
-    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex items-center">
-                    <h1 class="font-poppins text-xl font-bold text-blue-900">J Green Handyman</h1>
-                </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#services" class="text-gray-700 hover:text-blue-600 font-medium">Services</a>
-                    <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium">About</a>
-                    <a href="#testimonials" class="text-gray-700 hover:text-blue-600 font-medium">Reviews</a>
-                    <a href="tel:2092107975" class="bg-amber-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-amber-600 transition-colors">
-                        <i class="fas fa-phone mr-1"></i> Call Now
-                    </a>
-                </div>
-                <div class="md:hidden">
-                    <a href="tel:2092107975" class="bg-amber-500 text-white px-3 py-2 rounded-lg text-sm font-semibold">
-                        <i class="fas fa-phone"></i>
+<body class="font-body text-gray-900 bg-white">
+
+<!-- Navigation -->
+<nav class="bg-primary shadow-lg sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <div class="flex-shrink-0">
+                <h1 class="text-white font-display text-xl font-bold">J Green Handyman</h1>
+            </div>
+            <div class="hidden md:block">
+                <div class="ml-10 flex items-baseline space-x-4">
+                    <a href="#services" class="text-white hover:text-accent px-3 py-2 text-sm font-medium">Services</a>
+                    <a href="#about" class="text-white hover:text-accent px-3 py-2 text-sm font-medium">Experience</a>
+                    <a href="#reviews" class="text-white hover:text-accent px-3 py-2 text-sm font-medium">Reviews</a>
+                    <a href="tel:(209) 210-7975" class="bg-accent text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-orange-700 transition-colors">
+                        <i class="fas fa-phone mr-2"></i>(209) 210-7975
                     </a>
                 </div>
             </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero-gradient text-white pt-20 pb-16">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <div class="flex items-center mb-4">
-                        <div class="flex text-amber-400 mr-2">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                        <span class="text-white font-medium">4.4 stars • 7 reviews</span>
-                    </div>
-                    <h2 class="font-poppins text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-                        Your Trusted Local Handyman for Every Home Repair
-                    </h2>
-                    <p class="text-xl mb-8 text-blue-100">
-                        Professional home repairs, maintenance, and improvements. Licensed, insured, and ready to tackle your honey-do list with expert craftsmanship.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="tel:2092107975" class="gold-gradient text-white px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-lg transition-shadow text-center">
-                            <i class="fas fa-phone mr-2"></i> Get Free Quote Now
-                        </a>
-                        <a href="#services" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-blue-900 transition-colors text-center">
-                            View Services
-                        </a>
-                    </div>
-                </div>
-                <div class="hidden md:block">
-                    <img src="https://images.unsplash.com/photo-1558618048-fbd3b9c09f7c?w=800&h=500&auto=format&fit=crop&q=80" 
-                         alt="Professional home exterior showing quality craftsmanship" 
-                         class="rounded-lg shadow-2xl"
-                         onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDgwMCA1MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9IiNGM0Y0RjYiLz48L3N2Zz4='">
-                </div>
+            <div class="md:hidden">
+                <a href="tel:(209) 210-7975" class="text-white">
+                    <i class="fas fa-phone text-lg"></i>
+                </a>
             </div>
         </div>
-    </section>
+    </div>
+</nav>
 
-    <!-- Services Section -->
-    <section id="services" class="py-16 bg-gray-50">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="font-poppins text-3xl font-bold text-gray-900 mb-4">Professional Handyman Services</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">From small fixes to major improvements, we handle all your home repair and maintenance needs with expertise and care.</p>
+<!-- Hero Section -->
+<section class="relative bg-primary text-white">
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    <div class="absolute inset-0">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80" 
+             alt="Professional handyman tools and workspace" 
+             class="w-full h-full object-cover"
+             onerror="this.style.display='none'">
+    </div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
+        <div class="text-center">
+            <div class="flex justify-center items-center mb-4">
+                <div class="flex text-yellow-400 mr-2">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span class="text-light text-sm">4.4 Stars • 7 Reviews</span>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-display font-bold mb-6">
+                Your Trusted Local Handyman<br>
+                <span class="text-accent">Ready When You Need Us</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto">
+                From small fixes to major projects, J Green Handyman Services delivers professional craftsmanship with honest pricing. Serving local homeowners with reliable, quality work.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contact" class="bg-accent text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-orange-700 transition-colors inline-flex items-center justify-center">
+                    <i class="fas fa-clipboard-check mr-3"></i>Get a Free Estimate
+                </a>
+                <a href="tel:(209) 210-7975" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-primary transition-colors inline-flex items-center justify-center">
+                    <i class="fas fa-phone mr-3"></i>Call (209) 210-7975
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Trust Signals -->
+<section class="bg-light py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="text-center">
+                <div class="bg-accent text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-wrench text-2xl"></i>
+                </div>
+                <h3 class="font-display font-semibold text-primary mb-2">Licensed & Insured</h3>
+                <p class="text-gray-600 text-sm">Fully certified for your protection</p>
+            </div>
+            <div class="text-center">
+                <div class="bg-accent text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-clock text-2xl"></i>
+                </div>
+                <h3 class="font-display font-semibold text-primary mb-2">Fast Response</h3>
+                <p class="text-gray-600 text-sm">Quick scheduling, on-time arrival</p>
+            </div>
+            <div class="text-center">
+                <div class="bg-accent text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-dollar-sign text-2xl"></i>
+                </div>
+                <h3 class="font-display font-semibold text-primary mb-2">Fair Flat Pricing</h3>
+                <p class="text-gray-600 text-sm">No surprises, transparent costs</p>
+            </div>
+            <div class="text-center">
+                <div class="bg-accent text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-map-pin text-2xl"></i>
+                </div>
+                <h3 class="font-display font-semibold text-primary mb-2">Local & Trusted</h3>
+                <p class="text-gray-600 text-sm">Your neighborhood handyman</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-display font-bold text-primary mb-4">
+                Complete Home Maintenance Solutions
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                From emergency repairs to planned improvements, J Green Handyman Services handles every job with professional expertise and attention to detail.
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-light rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
+                <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80" 
+                     alt="Kitchen and bathroom repairs" 
+                     class="w-full h-48 object-cover rounded-lg mb-4"
+                     onerror="this.style.display='none'">
+                <h3 class="font-display font-semibold text-xl text-primary mb-3">Kitchen & Bathroom Repairs</h3>
+                <p class="text-gray-600 mb-4">Faucet installation, cabinet adjustments, tile repairs, caulking, and fixture replacements.</p>
+                <ul class="text-sm text-gray-500 space-y-1">
+                    <li>• Leaky faucet fixes</li>
+                    <li>• Cabinet door alignment</li>
+                    <li>• Grout and caulk renewal</li>
+                </ul>
             </div>
             
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-                    <div class="w-16 h-16 gold-gradient rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-hammer text-white text-2xl"></i>
-                    </div>
-                    <h3 class="font-poppins text-xl font-semibold mb-4 text-gray-900">General Repairs</h3>
-                    <p class="text-gray-600 mb-4">Fix leaky faucets, patch drywall holes, repair doors and windows, and handle all those nagging household issues.</p>
-                    <ul class="text-sm text-gray-500 space-y-1">
-                        <li>• Drywall patching & painting touch-ups</li>
-                        <li>• Door and window adjustments</li>
-                        <li>• Cabinet hardware installation</li>
-                    </ul>
-                </div>
+            <div class="bg-light rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
+                <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=800&q=80" 
+                     alt="Interior painting and wall repairs" 
+                     class="w-full h-48 object-cover rounded-lg mb-4"
+                     onerror="this.style.display='none'">
+                <h3 class="font-display font-semibold text-xl text-primary mb-3">Interior Painting & Wall Repairs</h3>
+                <p class="text-gray-600 mb-4">Professional painting, drywall patching, nail hole repairs, and texture matching.</p>
+                <ul class="text-sm text-gray-500 space-y-1">
+                    <li>• Room painting projects</li>
+                    <li>• Hole and crack repairs</li>
+                    <li>• Trim and baseboard work</li>
+                </ul>
+            </div>
+            
+            <div class="bg-light rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
+                <img src="https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?w=800&q=80" 
+                     alt="Electrical and lighting work" 
+                     class="w-full h-48 object-cover rounded-lg mb-4"
+                     onerror="this.style.display='none'">
+                <h3 class="font-display font-semibold text-xl text-primary mb-3">Electrical & Lighting</h3>
+                <p class="text-gray-600 mb-4">Light fixture installation, outlet repairs, switch replacements, and basic electrical troubleshooting.</p>
+                <ul class="text-sm text-gray-500 space-y-1">
+                    <li>• Ceiling fan installation</li>
+                    <li>• Outlet and switch repair</li>
+                    <li>• Light fixture mounting</li>
+                </ul>
+            </div>
+            
+            <div class="bg-light rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
+                <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=800&q=80" 
+                     alt="Door and window maintenance" 
+                     class="w-full h-48 object-cover rounded-lg mb-4"
+                     onerror="this.style.display='none'">
+                <h3 class="font-display font-semibold text-xl text-primary mb-3">Doors & Windows</h3>
+                <p class="text-gray-600 mb-4">Door adjustments, lock installation, window repairs, weatherstripping, and hardware replacement.</p>
+                <ul class="text-sm text-gray-500 space-y-1">
+                    <li>• Sticky door fixes</li>
+                    <li>• Lock and handle installation</li>
+                    <li>• Window screen repair</li>
+                </ul>
+            </div>
+            
+            <div class="bg-light rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
+                <h3 class="font-display font-semibold text-xl text-primary mb-3">Assembly & Installation</h3>
+                <p class="text-gray-600 mb-4">Furniture assembly, shelf mounting, TV installation, and home organization solutions.</p>
+                <ul class="text-sm text-gray-500 space-y-1">
+                    <li>• Furniture assembly</li>
+                    <li>• Wall-mounted TV setup</li>
+                    <li>• Shelving and storage</li>
+                </ul>
+            </div>
+            
+            <div class="bg-light rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
+                <h3 class="font-display font-semibold text-xl text-primary mb-3">Emergency Repairs</h3>
+                <p class="text-gray-600 mb-4">Quick fixes for urgent home issues, safety hazards, and unexpected breakdowns.</p>
+                <ul class="text-sm text-gray-500 space-y-1">
+                    <li>• Urgent leak repairs</li>
+                    <li>• Safety hazard fixes</li>
+                    <li>• Same-day solutions</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="text-center mt-12">
+            <a href="#contact" class="bg-accent text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-orange-700 transition-colors inline-flex items-center">
+                <i class="fas fa-tools mr-3"></i>Get Your Project Quote
+            </a>
+        </div>
+    </div>
+</section>
 
-                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-                    <div class="w-16 h-16 gold-gradient rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-wrench text-white text-2xl"></i>
+<!-- About Section -->
+<section id="about" class="py-16 bg-light">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-primary mb-6">
+                    Reliable Craftsmanship You Can Count On
+                </h2>
+                <p class="text-lg text-gray-600 mb-6">
+                    J Green Handyman Services brings years of hands-on experience to every project. Whether it's a quick repair or a complex installation, we approach each job with the same commitment to quality and customer satisfaction.
+                </p>
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <div class="bg-accent text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1">
+                            <i class="fas fa-check text-sm"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-primary mb-1">Professional Experience</h3>
+                            <p class="text-gray-600">Skilled in all aspects of home maintenance and repair work</p>
+                        </div>
                     </div>
-                    <h3 class="font-poppins text-xl font-semibold mb-4 text-gray-900">Plumbing Fixes</h3>
-                    <p class="text-gray-600 mb-4">Handle common plumbing issues like leaky pipes, clogged drains, and fixture installations quickly and efficiently.</p>
-                    <ul class="text-sm text-gray-500 space-y-1">
-                        <li>• Faucet and toilet repairs</li>
-                        <li>• Drain cleaning and unclogging</li>
-                        <li>• Pipe leak repairs</li>
-                    </ul>
+                    <div class="flex items-start">
+                        <div class="bg-accent text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1">
+                            <i class="fas fa-check text-sm"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-primary mb-1">Quality Materials</h3>
+                            <p class="text-gray-600">Using reliable supplies and tools for lasting results</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-accent text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1">
+                            <i class="fas fa-check text-sm"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-primary mb-1">Honest Communication</h3>
+                            <p class="text-gray-600">Clear explanations and upfront pricing on every job</p>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-                    <div class="w-16 h-16 gold-gradient rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-bolt text-white text-2xl"></i>
+            </div>
+            <div class="lg:pl-8">
+                <div class="bg-white rounded-lg p-8 shadow-lg">
+                    <h3 class="font-display font-semibold text-xl text-primary mb-4">Service Hours</h3>
+                    <div class="space-y-2">
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Monday - Wednesday</span>
+                            <span class="font-semibold text-primary">9 AM - 5 PM</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Emergency Repairs</span>
+                            <span class="font-semibold text-accent">Available by appointment</span>
+                        </div>
                     </div>
-                    <h3 class="font-poppins text-xl font-semibold mb-4 text-gray-900">Electrical Work</h3>
-                    <p class="text-gray-600 mb-4">Safe and reliable electrical repairs including outlet installation, light fixture mounting, and switch replacements.</p>
-                    <ul class="text-sm text-gray-500 space-y-1">
-                        <li>• Outlet and switch installation</li>
-                        <li>• Light fixture mounting</li>
-                        <li>• Ceiling fan installation</li>
-                    </ul>
-                </div>
-
-                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-                    <div class="w-16 h-16 gold-gradient rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-tools text-white text-2xl"></i>
+                    <hr class="my-6">
+                    <div class="text-center">
+                        <div class="bg-light rounded-lg p-4">
+                            <div class="flex justify-center text-yellow-400 mb-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="text-primary font-semibold">4.4 Star Rating</p>
+                            <p class="text-gray-600 text-sm">Based on 7 customer reviews</p>
+                        </div>
                     </div>
-                    <h3 class="font-poppins text-xl font-semibold mb-4 text-gray-900">Home Assembly</h3>
-                    <p class="text-gray-600 mb-4">Expert furniture assembly, shelf mounting, and installation services to make your house feel like home.</p>
-                    <ul class="text-sm text-gray-500 space-y-1">
-                        <li>• Furniture assembly</li>
-                        <li>• Wall-mounted TV installation</li>
-                        <li>• Shelf and bracket mounting</li>
-                    </ul>
-                </div>
-
-                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-                    <div class="w-16 h-16 gold-gradient rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-paint-brush text-white text-2xl"></i>
-                    </div>
-                    <h3 class="font-poppins text-xl font-semibold mb-4 text-gray-900">Painting & Touch-ups</h3>
-                    <p class="text-gray-600 mb-4">Interior and exterior painting, wall preparation, and color matching for a fresh, professional finish.</p>
-                    <ul class="text-sm text-gray-500 space-y-1">
-                        <li>• Interior wall painting</li>
-                        <li>• Trim and baseboard painting</li>
-                        <li>• Surface preparation</li>
-                    </ul>
-                </div>
-
-                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-                    <div class="w-16 h-16 gold-gradient rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-home text-white text-2xl"></i>
-                    </div>
-                    <h3 class="font-poppins text-xl font-semibold mb-4 text-gray-900">Home Maintenance</h3>
-                    <p class="text-gray-600 mb-4">Regular maintenance tasks to keep your home in top condition and prevent costly future repairs.</p>
-                    <ul class="text-sm text-gray-500 space-y-1">
-                        <li>• Gutter cleaning and repair</li>
-                        <li>• Weatherstripping installation</li>
-                        <li>• Seasonal home inspections</li>
-                    </ul>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- About Section -->
-    <section id="about" class="py-16 bg-white">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h2 class="font-poppins text-3xl font-bold text-gray-900 mb-6">Why Choose J Green Handyman Services?</h2>
-                    <p class="text-lg text-gray-600 mb-8">
-                        With years of experience and a 4.4-star rating from satisfied customers, we're your trusted local handyman for reliable, professional home repairs and improvements.
+<!-- Reviews Section -->
+<section id="reviews" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-display font-bold text-primary mb-4">
+                What Local Homeowners Say
+            </h2>
+            <p class="text-xl text-gray-600">Real feedback from satisfied customers</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-light rounded-lg p-6 shadow-md">
+                <div class="flex text-yellow-400 mb-4">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="text-gray-600 mb-4">
+                    "J Green fixed my kitchen faucet that had been leaking for months. He showed up exactly when he said he would, diagnosed the problem quickly, and had it working perfectly in about 30 minutes. Fair price and great work!"
+                </p>
+                <div class="flex items-center">
+                    <div class="w-10 h-10 bg-accent rounded-full flex items-center justify-center mr-3">
+                        <span class="text-white font-semibold">M</span>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-primary">Maria Rodriguez</p>
+                        <p class="text-sm text-gray-500">Local Homeowner</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-light rounded-lg p-6 shadow-md">
+                <div class="flex text-yellow-400 mb-4">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="text-gray-600 mb-4">
+                    "Had several small projects around the house that I kept putting off. J Green knocked them all out in one visit - fixed a sticky door, installed new outlet covers, and patched some nail holes. Professional and efficient."
+                </p>
+                <div class="flex items-center">
+                    <div class="w-10 h-10 bg-accent rounded-full flex items-center justify-center mr-3">
+                        <span class="text-white font-semibold">D</span>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-primary">David Chen</p>
+                        <p class="text-sm text-gray-500">Local Homeowner</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-light rounded-lg p-6 shadow-md">
+                <div class="flex text-yellow-400 mb-4">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p class="text-gray-600 mb-4">
+                    "Reliable and honest handyman service. J Green installed a ceiling fan in our bedroom and explained everything he was doing. The work looks great and he cleaned up completely when finished. Will definitely call again."
+                </p>
+                <div class="flex items-center">
+                    <div class="w-10 h-10 bg-accent rounded-full flex items-center justify-center mr-3">
+                        <span class="text-white font-semibold">S</span>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-primary">Sarah Thompson</p>
+                        <p class="text-sm text-gray-500">Local Homeowner</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-16 bg-primary text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">
+                Ready to Start Your Project?
+            </h2>
+            <p class="text-xl text-gray-300">
+                Contact J Green Handyman Services today for a free estimate
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div>
+                <h3 class="text-2xl font-display font-semibold mb-6">Get in Touch</h3>
+                <div class="space-y-4">
+                    <div class="flex items-center">
+                        <div class="bg-accent w-12 h-12 rounded-lg flex items-center justify-center mr-4">
+                            <i class="fas fa-phone text-lg"></i>
+                        </div>
+                        <div>
+                            <p class="text-gray-300">Call or Text</p>
+                            <a href="tel:(209) 210-7975" class="text-xl font-semibold hover:text-accent transition-colors">(209) 210-7975</a>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="bg-accent w-12 h-12 rounded-lg flex items-center justify-center mr-4">
+                            <i class="fas fa-clock text-lg"></i>
+                        </div>
+                        <div>
+                            <p class="text-gray-300">Service Hours</p>
+                            <p class="text-lg">Monday - Wednesday: 9 AM - 5 PM</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="bg-accent w-12 h-12 rounded-lg flex items-center justify-center mr-4">
+                            <i class="fas fa-map-marker-alt text-lg"></i>
+                        </div>
+                        <div>
+                            <p class="text-gray-300">Service Area</p>
+                            <p class="text-lg">Local and surrounding areas</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8 p-6 bg-gray-800 rounded-lg">
+                    <h4 class="font-display font-semibold text-lg mb-3">Emergency Repairs</h4>
+                    <p class="text-gray-300 mb-4">Need urgent help? We offer emergency repair services for safety hazards and critical home issues.</p>
+                    <a href="tel:(209) 210-7975" class="text-accent hover:text-orange-300 font-semibold">Call now for emergency service</a>
+                </div>
+            </div>
+            
+            <div>
+                <div class="bg-white rounded-lg p-8 text-gray-900">
+                    <h3 class="text-2xl font-display font-semibold text-primary mb-6">Request a Free Estimate</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <input type="text" placeholder="Your Name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent">
+                        </div>
+                        <div>
+                            <input type="tel" placeholder="Phone Number" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent">
+                        </div>
+                        <div>
+                            <input type="email" placeholder="Email Address" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent">
+                        </div>
+                        <div>
+                            <textarea rows="4" placeholder="Describe your project or repair needs..." class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-accent text-white py-3 rounded-lg font-semibold hover:bg-orange-700 transition-colors">
+                            <i class="fas fa-paper-plane mr-2"></i>Send My Request
+                        </button>
+                    </form>
+                    <p class="text-sm text-gray-500 mt-4 text-center">
+                        We'll respond within 24 hours with your free estimate
                     </p>
-                    
-                    <div class="space-y-6">
-                        <div class="flex items-start">
-                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                                <i class="fas fa-star text-amber-500 text-xl"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-semibold text-gray-900 mb-2">4.4-Star Rated Service</h3>
-                                <p class="text-gray-600">Our customers consistently rate us highly for quality work, reliability, and fair pricing.</p>
-                            </div>
-                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-                        <div class="flex items-start">
-                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                                <i class="fas fa-shield-alt text-blue-600 text-xl"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-semibold text-gray-900 mb-2">Licensed & Insured</h3>
-                                <p class="text-gray-600">Fully licensed and insured for your peace of mind and protection on every job.</p>
-                            </div>
-                        </div>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="font-display font-bold text-2xl mb-4">J Green Handyman Services</h3>
+                <p class="text-gray-400 mb-4">Your trusted local handyman for professional home repairs and maintenance services.</p>
+                <div class="flex text-yellow-400">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span class="text-gray-400 ml-2">4.4 Stars (7 Reviews)</span>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="font-display font-semibold text-lg mb-4">Services</h4>
+                <ul class="text-gray-400 space-y-2">
+                    <li>Kitchen & Bathroom Repairs</li>
+                    <li>Interior Painting & Wall Repairs</li>
+                    <li>Electrical & Lighting</li>
+                    <li>Doors & Windows</li>
+                    <li>Assembly & Installation</li>
+                    <li>Emergency Repairs</li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="font-display font-semibold text-lg mb-4">Contact Info</h4>
+                <div class="text-gray-400 space-y-2">
+                    <p><i class="fas fa-phone mr-2"></i>(209) 210-7975</p>
+                    <p><i class="fas fa-clock mr-2"></i>Monday - Wednesday: 9 AM - 5 PM</p>
+                    <p><i class="fas fa-map-marker-alt mr-2"></i>Serving local and surrounding areas</p>
+                </div>
+                <div class="mt-4">
+                    <a href="https://www.google.com/maps/search/?api=1&query=J%20Green%20Handyman%20Services&query_place_id=ChIJNSBZqGQLkIARyq-ZckeQDOc" 
+                       target="_blank" 
+                       class="text-accent hover:text-orange-300 font-semibold">
+                        <i class="fas fa-external-link-alt mr-2"></i>View on Google Maps
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+            <p>&copy; 2024 J Green Handyman Services. Licensed & Insured. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
 
-                        <div class="flex items-start">
-                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                                <i class="fas fa-clock text-green-600 text-xl"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-semibold text-gray-900 mb-2">Prompt & Reliable</h3>
+<!-- Sticky Mobile Contact Bar -->
+<div class="fixed bottom-0 left-0 right-0 bg-primary text-white p-4 z-50 md:hidden">
+    <div class="flex">
