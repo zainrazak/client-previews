@@ -6,224 +6,405 @@
     <title>On Time Handyman Services - Professional Home Repairs & Maintenance</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                    fontFamily: {
-                        'sans': ['Inter', 'sans-serif'],
-                        'serif': ['Merriweather', 'serif']
-                    },
                     colors: {
-                        'navy': {
-                            900: '#1a365d',
-                            800: '#2c5282',
-                            700: '#2d3748'
-                        },
-                        'gold': {
-                            500: '#d69e2e',
-                            400: '#f6e05e'
-                        }
+                        primary: '#14532D',
+                        accent: '#84CC16',
+                        light: '#F7FEE7'
+                    },
+                    fontFamily: {
+                        'display': ['Poppins', 'sans-serif'],
+                        'body': ['Open Sans', 'sans-serif']
                     }
                 }
             }
         }
     </script>
 </head>
-<body class="font-sans bg-gray-50">
+<body class="font-body">
     <!-- Navigation -->
-    <nav class="bg-navy-900 text-white px-4 py-3 fixed w-full top-0 z-50 shadow-lg">
-        <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <div class="flex items-center space-x-2">
-                <i class="fas fa-tools text-gold-500 text-xl"></i>
-                <span class="font-bold text-lg">On Time Handyman</span>
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="font-display font-bold text-xl text-primary">
+                    <i class="fas fa-tools mr-2 text-accent"></i>
+                    On Time Handyman Services
+                </div>
+                <a href="tel:(209) 513-6274" class="bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-lg font-semibold transition duration-300">
+                    <i class="fas fa-phone mr-2"></i>
+                    (209) 513-6274
+                </a>
             </div>
-            <a href="tel:2095136274" class="bg-gold-500 text-navy-900 px-4 py-2 rounded-lg font-semibold hover:bg-gold-400 transition">
-                <i class="fas fa-phone mr-2"></i>Call Now
-            </a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="bg-navy-900 text-white pt-20 pb-16">
+    <section class="relative bg-primary text-white min-h-screen flex items-center">
+        <div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/95 to-primary/80 z-10"></div>
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAweqwYn9CzsoAXhssKJ-5kIqDdxlMxbkATjGYN7As_abTXqLSilhCgfYmcycXRrLJbZPRSVTkeOiApivkCGD111udRmAWmrA4fYlV4T0qc9x1lcl6zPAgbNI-qJ8PSgeiziSoo5wdOg=w408-h306-k-no" 
+             alt="On Time Handyman Services at work" 
+             class="absolute inset-0 w-full h-full object-cover"
+             onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80'">
+        
+        <div class="relative z-20 max-w-6xl mx-auto px-4 text-center">
+            <div class="flex items-center justify-center mb-6">
+                <div class="flex text-accent text-lg mr-3">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span class="text-white/90">5.0 Stars • 10 Reviews</span>
+            </div>
+            
+            <h1 class="font-display text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                Your Trusted Local Handyman<br>
+                <span class="text-accent">Always On Time</span>
+            </h1>
+            
+            <p class="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto">
+                Professional home repairs, maintenance, and improvements delivered with precision and reliability. Serving your community with honest, dependable service since day one.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contact" class="bg-accent hover:bg-accent/90 text-primary px-8 py-4 rounded-lg font-semibold text-lg transition duration-300 inline-flex items-center justify-center">
+                    <i class="fas fa-calendar-check mr-2"></i>
+                    Get a Free Estimate
+                </a>
+                <a href="tel:(209) 513-6274" class="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 rounded-lg font-semibold text-lg transition duration-300 inline-flex items-center justify-center">
+                    <i class="fas fa-phone mr-2"></i>
+                    Call (209) 513-6274
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Signals -->
+    <section class="bg-light py-12">
         <div class="max-w-6xl mx-auto px-4">
-            <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="text-center">
+                    <div class="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-wrench text-xl"></i>
+                    </div>
+                    <h3 class="font-display font-semibold text-primary mb-2">Licensed & Insured</h3>
+                    <p class="text-gray-600">Fully licensed and insured for your peace of mind</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-clock text-xl"></i>
+                    </div>
+                    <h3 class="font-display font-semibold text-primary mb-2">Fast Response</h3>
+                    <p class="text-gray-600">Quick turnaround times that fit your schedule</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-dollar-sign text-xl"></i>
+                    </div>
+                    <h3 class="font-display font-semibold text-primary mb-2">Fair Flat Pricing</h3>
+                    <p class="text-gray-600">Transparent pricing with no hidden fees</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-map-pin text-xl"></i>
+                    </div>
+                    <h3 class="font-display font-semibold text-primary mb-2">Local & Trusted</h3>
+                    <p class="text-gray-600">Your neighbors' go-to handyman service</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="font-display text-3xl md:text-4xl font-bold text-primary mb-4">
+                    Complete Home Repair Solutions
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    From quick fixes to complete renovations, On Time Handyman Services handles every project with professional expertise and attention to detail.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-light p-6 rounded-lg">
+                    <div class="text-primary mb-4">
+                        <i class="fas fa-hammer text-2xl"></i>
+                    </div>
+                    <h3 class="font-display font-semibold text-xl text-primary mb-3">Carpentry & Woodwork</h3>
+                    <ul class="text-gray-600 space-y-1">
+                        <li>• Custom shelving and built-ins</li>
+                        <li>• Deck repair and maintenance</li>
+                        <li>• Door and window installation</li>
+                        <li>• Trim work and molding</li>
+                    </ul>
+                </div>
+
+                <div class="bg-light p-6 rounded-lg">
+                    <div class="text-primary mb-4">
+                        <i class="fas fa-wrench text-2xl"></i>
+                    </div>
+                    <h3 class="font-display font-semibold text-xl text-primary mb-3">Plumbing Repairs</h3>
+                    <ul class="text-gray-600 space-y-1">
+                        <li>• Faucet and fixture installation</li>
+                        <li>• Toilet repair and replacement</li>
+                        <li>• Leak detection and repair</li>
+                        <li>• Garbage disposal service</li>
+                    </ul>
+                </div>
+
+                <div class="bg-light p-6 rounded-lg">
+                    <div class="text-primary mb-4">
+                        <i class="fas fa-bolt text-2xl"></i>
+                    </div>
+                    <h3 class="font-display font-semibold text-xl text-primary mb-3">Electrical Work</h3>
+                    <ul class="text-gray-600 space-y-1">
+                        <li>• Light fixture installation</li>
+                        <li>• Outlet and switch repair</li>
+                        <li>• Ceiling fan installation</li>
+                        <li>• GFCI outlet upgrades</li>
+                    </ul>
+                </div>
+
+                <div class="bg-light p-6 rounded-lg">
+                    <div class="text-primary mb-4">
+                        <i class="fas fa-paint-roller text-2xl"></i>
+                    </div>
+                    <h3 class="font-display font-semibold text-xl text-primary mb-3">Painting & Drywall</h3>
+                    <ul class="text-gray-600 space-y-1">
+                        <li>• Interior and exterior painting</li>
+                        <li>• Drywall repair and patching</li>
+                        <li>• Texture matching and blending</li>
+                        <li>• Pressure washing services</li>
+                    </ul>
+                </div>
+
+                <div class="bg-light p-6 rounded-lg">
+                    <div class="text-primary mb-4">
+                        <i class="fas fa-home text-2xl"></i>
+                    </div>
+                    <h3 class="font-display font-semibold text-xl text-primary mb-3">Home Maintenance</h3>
+                    <ul class="text-gray-600 space-y-1">
+                        <li>• Gutter cleaning and repair</li>
+                        <li>• Weather stripping installation</li>
+                        <li>• Caulking and sealing</li>
+                        <li>• Seasonal maintenance checks</li>
+                    </ul>
+                </div>
+
+                <div class="bg-light p-6 rounded-lg">
+                    <div class="text-primary mb-4">
+                        <i class="fas fa-tools text-2xl"></i>
+                    </div>
+                    <h3 class="font-display font-semibold text-xl text-primary mb-3">Assembly & Installation</h3>
+                    <ul class="text-gray-600 space-y-1">
+                        <li>• Furniture assembly</li>
+                        <li>• TV mounting and setup</li>
+                        <li>• Cabinet hardware installation</li>
+                        <li>• Appliance installation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="py-16 bg-light">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="font-display text-3xl md:text-4xl font-bold text-primary mb-4">
+                    What Our Customers Say
+                </h2>
+                <div class="flex items-center justify-center mb-6">
+                    <div class="flex text-accent text-xl mr-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="text-gray-600 font-semibold">5.0 out of 5 stars (10 reviews)</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex text-accent mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Had a leaky faucet that was driving me crazy for weeks. Called On Time Handyman Services and they were at my house within two hours! Fixed it perfectly and even checked my other faucets to make sure they were working properly. Definitely calling them again."</p>
+                    <div class="font-semibold text-primary">Sarah M.</div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex text-accent mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Needed my deck repaired before hosting a family BBQ. The team showed up exactly on time and did an amazing job replacing the damaged boards and re-staining the whole deck. It looks better than new! Professional, clean, and reasonably priced."</p>
+                    <div class="font-semibold text-primary">Mike D.</div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex text-accent mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"I've used On Time Handyman Services for multiple projects around my house - from installing new light fixtures to fixing drywall holes from when we moved in. They're always punctual, honest about pricing, and do quality work. Highly recommend!"</p>
+                    <div class="font-semibold text-primary">Jennifer L.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="font-display text-3xl md:text-4xl font-bold text-primary mb-4">
+                    Ready to Get Started?
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Contact On Time Handyman Services today for your free estimate. We're here to help with all your home repair and maintenance needs.
+                </p>
+            </div>
+
+            <div class="bg-light p-8 rounded-lg">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="font-display font-semibold text-xl text-primary mb-4">Get in Touch</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-phone text-accent mr-3"></i>
+                                <a href="tel:(209) 513-6274" class="text-primary font-semibold hover:text-accent">(209) 513-6274</a>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-clock text-accent mr-3"></i>
+                                <div>
+                                    <div class="font-medium">Monday - Wednesday</div>
+                                    <div class="text-gray-600">8:00 AM - 5:00 PM</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-map-marker-alt text-accent mr-3"></i>
+                                <div>
+                                    <div class="font-medium">Service Area</div>
+                                    <div class="text-gray-600">Local community and surrounding areas</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="font-display font-semibold text-xl text-primary mb-4">Quick Response</h3>
+                        <p class="text-gray-600 mb-6">
+                            Call us now for immediate assistance or to schedule your free estimate. We pride ourselves on fast response times and reliable service.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-3">
+                            <a href="tel:(209) 513-6274" class="bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-lg font-semibold text-center transition duration-300">
+                                <i class="fas fa-phone mr-2"></i>
+                                Call Now
+                            </a>
+                            <a href="https://www.google.com/maps/search/?api=1&query=On%20Time%20Handyman%20Services&query_place_id=ChIJJ9HoJN4JkIARUCMDF4VhKEE" target="_blank" class="bg-accent hover:bg-accent/90 text-primary px-6 py-3 rounded-lg font-semibold text-center transition duration-300">
+                                <i class="fas fa-map-marker-alt mr-2"></i>
+                                Find Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
-                    <h1 class="font-serif text-4xl md:text-5xl font-bold leading-tight mb-4">
-                        Professional Home Repairs & Maintenance Services
-                    </h1>
-                    <p class="text-xl text-gray-300 mb-6">
-                        Trusted local handyman services with 5-star quality. From small fixes to major projects, we handle it all with precision and care.
+                    <div class="font-display font-bold text-2xl mb-4">
+                        <i class="fas fa-tools mr-2 text-accent"></i>
+                        On Time Handyman Services
+                    </div>
+                    <p class="text-white/80 mb-4">
+                        Your trusted local handyman for all home repair and maintenance needs. Professional, reliable, and always on time.
                     </p>
-                    <div class="flex items-center space-x-4 mb-6">
-                        <div class="flex text-gold-500">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <span class="text-gray-300">5.0 Stars (10 Reviews)</span>
-                    </div>
-                    <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
-                        <a href="tel:2095136274" class="bg-gold-500 text-navy-900 px-6 py-3 rounded-lg font-semibold hover:bg-gold-400 transition text-center">
-                            <i class="fas fa-phone mr-2"></i>Get Free Quote
-                        </a>
-                        <a href="https://www.google.com/maps/search/?api=1&query=On%20Time%20Handyman%20Services&query_place_id=ChIJJ9HoJN4JkIARUCMDF4VhKEE" target="_blank" class="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-navy-900 transition text-center">
-                            <i class="fas fa-map-marker-alt mr-2"></i>Find Us
-                        </a>
+                    <div class="flex text-accent text-lg">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="ml-2 text-white/90">5.0 Stars • 10 Reviews</span>
                     </div>
                 </div>
-                <div class="mt-8 md:mt-0">
-                    <img src="https://images.unsplash.com/photo-1558618048-fbd3b9c09f7c?w=800&h=500&auto=format&fit=crop&q=80" 
-                         alt="Professional home exterior showing quality craftsmanship" 
-                         class="rounded-lg shadow-2xl w-full"
-                         onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDgwMCA1MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9IiNlNWU3ZWIiLz48L3N2Zz4='">
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Services Section -->
-    <section class="py-16 bg-white">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="font-serif text-3xl md:text-4xl font-bold text-navy-900 mb-4">Our Expert Services</h2>
-                <p class="text-xl text-gray-600">Professional handyman services for all your home needs</p>
-            </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-gray-50 p-6 rounded-lg hover:shadow-lg transition">
-                    <div class="text-gold-500 text-3xl mb-4">
-                        <i class="fas fa-hammer"></i>
-                    </div>
-                    <h3 class="font-semibold text-xl text-navy-900 mb-3">Home Repairs</h3>
-                    <p class="text-gray-600">Fixing leaky faucets, patching drywall, door repairs, and general maintenance issues around your home.</p>
-                </div>
-                <div class="bg-gray-50 p-6 rounded-lg hover:shadow-lg transition">
-                    <div class="text-gold-500 text-3xl mb-4">
-                        <i class="fas fa-paint-roller"></i>
-                    </div>
-                    <h3 class="font-semibold text-xl text-navy-900 mb-3">Painting Services</h3>
-                    <p class="text-gray-600">Interior and exterior painting, touch-ups, and wall preparation for a fresh new look.</p>
-                </div>
-                <div class="bg-gray-50 p-6 rounded-lg hover:shadow-lg transition">
-                    <div class="text-gold-500 text-3xl mb-4">
-                        <i class="fas fa-wrench"></i>
-                    </div>
-                    <h3 class="font-semibold text-xl text-navy-900 mb-3">Plumbing Fixes</h3>
-                    <p class="text-gray-600">Minor plumbing repairs, fixture installation, and leak repairs to keep your home running smoothly.</p>
-                </div>
-                <div class="bg-gray-50 p-6 rounded-lg hover:shadow-lg transition">
-                    <div class="text-gold-500 text-3xl mb-4">
-                        <i class="fas fa-bolt"></i>
-                    </div>
-                    <h3 class="font-semibold text-xl text-navy-900 mb-3">Electrical Work</h3>
-                    <p class="text-gray-600">Light fixture installation, outlet repairs, and basic electrical maintenance for your safety.</p>
-                </div>
-                <div class="bg-gray-50 p-6 rounded-lg hover:shadow-lg transition">
-                    <div class="text-gold-500 text-3xl mb-4">
-                        <i class="fas fa-tools"></i>
-                    </div>
-                    <h3 class="font-semibold text-xl text-navy-900 mb-3">Furniture Assembly</h3>
-                    <p class="text-gray-600">Professional assembly of furniture, shelving, and home fixtures with precision and care.</p>
-                </div>
-                <div class="bg-gray-50 p-6 rounded-lg hover:shadow-lg transition">
-                    <div class="text-gold-500 text-3xl mb-4">
-                        <i class="fas fa-home"></i>
-                    </div>
-                    <h3 class="font-semibold text-xl text-navy-900 mb-3">Home Improvements</h3>
-                    <p class="text-gray-600">Small renovations, trim work, and home upgrades to enhance your living space.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About/Why Choose Us Section -->
-    <section class="py-16 bg-gray-50">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div>
-                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=500&auto=format&fit=crop&q=80" 
-                         alt="Professional handyman working on home repairs" 
-                         class="rounded-lg shadow-lg w-full"
-                         onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDgwMCA1MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9IiNlNWU3ZWIiLz48L3N2Zz4='">
-                </div>
-                <div>
-                    <h2 class="font-serif text-3xl md:text-4xl font-bold text-navy-900 mb-6">Why Choose On Time Handyman?</h2>
-                    <div class="space-y-4">
-                        <div class="flex items-start space-x-3">
-                            <div class="text-gold-500 text-xl mt-1">
-                                <i class="fas fa-check-circle"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-semibold text-lg text-navy-900">5-Star Rated Service</h3>
-                                <p class="text-gray-600">Consistently delivering exceptional results with 10 five-star reviews from satisfied customers.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start space-x-3">
-                            <div class="text-gold-500 text-xl mt-1">
-                                <i class="fas fa-clock"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-semibold text-lg text-navy-900">Always On Time</h3>
-                                <p class="text-gray-600">Reliable scheduling and punctual service - we respect your time and show up when promised.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start space-x-3">
-                            <div class="text-gold-500 text-xl mt-1">
-                                <i class="fas fa-home"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-semibold text-lg text-navy-900">Local & Trusted</h3>
-                                <p class="text-gray-600">Your neighborhood handyman service with deep community roots and local expertise.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start space-x-3">
-                            <div class="text-gold-500 text-xl mt-1">
-                                <i class="fas fa-shield-alt"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-semibold text-lg text-navy-900">Quality Guaranteed</h3>
-                                <p class="text-gray-600">Professional workmanship with attention to detail - your satisfaction is our priority.</p>
-                            </div>
-                        </div>
+                    <h4 class="font-display font-semibold text-lg mb-4">Contact Info</h4>
+                    <div class="space-y-2 text-white/90">
+                        <div><i class="fas fa-phone mr-2"></i>(209) 513-6274</div>
+                        <div><i class="fas fa-clock mr-2"></i>Mon-Wed: 8:00 AM - 5:00 PM</div>
+                        <div><i class="fas fa-map-marker-alt mr-2"></i>Serving local community and surrounding areas</div>
                     </div>
                 </div>
+
+                <div>
+                    <h4 class="font-display font-semibold text-lg mb-4">Our Services</h4>
+                    <ul class="text-white/90 space-y-1">
+                        <li>• Carpentry & Woodwork</li>
+                        <li>• Plumbing Repairs</li>
+                        <li>• Electrical Work</li>
+                        <li>• Painting & Drywall</li>
+                        <li>• Home Maintenance</li>
+                        <li>• Assembly & Installation</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-white/20 mt-8 pt-8 text-center text-white/70">
+                <p>&copy; 2024 On Time Handyman Services. All rights reserved. Licensed & Insured.</p>
             </div>
         </div>
-    </section>
+    </footer>
 
-    <!-- Testimonials Section -->
-    <section class="py-16 bg-white">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="font-serif text-3xl md:text-4xl font-bold text-navy-900 mb-4">What Our Customers Say</h2>
-                <p class="text-xl text-gray-600">Real reviews from satisfied homeowners</p>
-            </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- REVIEW SLOT -->
-                <div class="bg-gray-50 p-6 rounded-lg">
-                    <div class="flex text-gold-500 mb-4">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="text-gray-600 mb-4 italic">"Excellent service! Fixed our kitchen faucet and painted our living room. Professional, on-time, and great attention to detail. Highly recommended!"</p>
-                    <div class="font-semibold text-navy-900">- Sarah M.</div>
-                </div>
-                
-                <!-- REVIEW SLOT -->
-                <div class="bg-gray-50 p-6 rounded-lg">
-                    <div class="flex text-gold-500 mb-4">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="text-gray-600 mb-4 italic"
+    <!-- Mobile Sticky Bar -->
+    <div class="fixed bottom-0 left-0 right-0 bg-primary text-white py-3 px-4 flex items-center justify-between z-50 md:hidden">
+        <a href="tel:(209) 513-6274" class="flex items-center space-x-2 flex-1">
+            <i class="fas fa-phone"></i>
+            <span class="font-semibold">Call (209) 513-6274</span>
+        </a>
+        <div class="w-px bg-white/30 h-6 mx-4"></div>
+        <a href="#contact" class="flex items-center space-x-2 flex-1 justify-end">
+            <i class="fas fa-comment-dots"></i>
+            <span class="font-semibold">Get a Quote</span>
+        </a>
+    </div>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
