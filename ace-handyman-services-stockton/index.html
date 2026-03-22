@@ -3,162 +3,322 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ace Handyman Services Stockton | Professional Home Repairs & Maintenance | (209) 888-5732</title>
-    <meta name="description" content="Stockton's trusted handyman service with 4.7 stars & 145+ reviews. Professional home repairs, maintenance, and improvements. Free quotes. Call (209) 888-5732">
+    <title>Ace Handyman Services Stockton - Licensed Handyman & Home Repair Services</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One:wght@400&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                    fontFamily: {
-                        'sans': ['Inter', 'sans-serif'],
-                        'serif': ['Playfair Display', 'serif']
-                    },
                     colors: {
-                        'navy': '#1e3a8a',
-                        'gold': '#f59e0b'
+                        'brand-primary': '#14532D',
+                        'brand-accent': '#84CC16',
+                        'brand-light': '#F7FEE7',
+                    },
+                    fontFamily: {
+                        'display': ['Russo One', 'cursive'],
+                        'body': ['Open Sans', 'sans-serif'],
                     }
                 }
             }
         }
     </script>
 </head>
-<body class="font-sans text-gray-800">
+<body class="font-body bg-white">
     <!-- Navigation -->
-    <nav class="bg-white shadow-lg fixed w-full z-50">
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center py-3">
+            <div class="flex justify-between items-center h-16">
                 <div class="flex items-center">
-                    <i class="fas fa-tools text-navy text-2xl mr-3"></i>
-                    <span class="font-serif font-bold text-xl text-navy">Ace Handyman Services</span>
+                    <i class="fas fa-wrench text-brand-primary text-2xl mr-3"></i>
+                    <span class="font-display text-xl text-brand-primary">Ace Handyman Services</span>
                 </div>
-                <div class="hidden md:flex space-x-6">
-                    <a href="#services" class="text-gray-700 hover:text-navy font-medium">Services</a>
-                    <a href="#about" class="text-gray-700 hover:text-navy font-medium">About</a>
-                    <a href="#testimonials" class="text-gray-700 hover:text-navy font-medium">Reviews</a>
+                <div class="hidden md:flex items-center space-x-6">
+                    <span class="text-gray-600">Licensed & Insured</span>
+                    <a href="tel:(209)888-5732" class="bg-brand-primary text-white px-6 py-2 rounded-lg font-semibold hover:bg-green-800 transition duration-300">
+                        <i class="fas fa-phone mr-2"></i>(209) 888-5732
+                    </a>
                 </div>
-                <a href="tel:2098885732" class="bg-gold text-white px-4 py-2 rounded-lg font-semibold hover:bg-yellow-600 transition duration-200">
-                    <i class="fas fa-phone mr-2"></i>Call Now
-                </a>
+                <div class="md:hidden">
+                    <a href="tel:(209)888-5732" class="text-brand-primary text-xl">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative bg-gradient-to-br from-navy to-blue-800 text-white pt-20">
-        <div class="absolute inset-0 bg-black opacity-20"></div>
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div>
-                    <div class="flex items-center mb-4">
-                        <div class="flex text-gold text-lg">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <span class="ml-2 text-white">4.7 Stars • 145+ Reviews</span>
-                    </div>
-                    <h1 class="font-serif text-4xl md:text-5xl font-bold leading-tight mb-6">
-                        Stockton's Most Trusted Handyman Service
-                    </h1>
-                    <p class="text-xl text-blue-100 mb-8">
-                        From minor repairs to major home improvements, we handle it all. Licensed, insured, and backed by 145+ five-star reviews from satisfied Stockton homeowners.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="tel:2098885732" class="bg-gold text-navy px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-600 transition duration-200 text-center">
-                            <i class="fas fa-phone mr-2"></i>Call (209) 888-5732
-                        </a>
-                        <a href="#services" class="border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-navy transition duration-200 text-center">
-                            Get Free Quote
-                        </a>
-                    </div>
+    <section class="relative h-screen flex items-center justify-center text-center text-white">
+        <div class="absolute inset-0 bg-black bg-opacity-60 z-10"></div>
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('https://lh3.googleusercontent.com/gps-cs-s/AHVAweqdGXvD7ehPxYajUQovR19Ld75_ovfB69ioqVfCZ_emg2PAZkTVDsVFZgQ-0mfQmp5Wpq6stikfQxUgXpHHEwf3PA4tZHnkboUIGEDwS07fG99JcQuyUUEmUYg1fvIfTdlBkfWNkg=w408-h544-k-no'); background-image: url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80');" onerror="this.style.backgroundImage='url(https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80)'"></div>
+        <div class="relative z-20 max-w-4xl mx-auto px-4">
+            <h1 class="font-display text-4xl md:text-6xl mb-6 leading-tight">
+                Stockton's Most Trusted Handyman Service
+            </h1>
+            <p class="text-xl md:text-2xl mb-4 opacity-90">
+                From drywall repair to deck installation, we handle every home project with precision
+            </p>
+            <div class="flex items-center justify-center mb-8 space-x-2">
+                <div class="flex text-yellow-400">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
                 </div>
-                <div class="relative">
-                    <img src="https://images.unsplash.com/photo-1558618048-fbd3b9c09f7c?w=800&h=500&auto=format&fit=crop&q=80" alt="Professional handyman tools and home repair" class="rounded-lg shadow-2xl w-full" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDgwMCA1MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9IiNmMWY1ZjkiLz48cGF0aCBkPSJNMzUwIDIwMGg0MDBMMzUwIDI4MFYyMDBaIiBmaWxsPSIjZDFkNWRiIi8+PHBhdGggZD0ibTM1MCAyMDAtNTAgNTBoMTAwbC01MC01MFoiIGZpbGw9IiNlNWU3ZWIiLz48L3N2Zz4='">
+                <span class="text-lg font-semibold">4.7 stars</span>
+                <span class="text-gray-200">•</span>
+                <span class="text-lg">145 reviews</span>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-brand-accent text-brand-primary px-8 py-4 rounded-lg text-lg font-bold hover:bg-lime-400 transition duration-300">
+                    Get a Free Estimate
+                </button>
+                <a href="tel:(209)888-5732" class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-brand-primary transition duration-300">
+                    Call (209) 888-5732
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Signals -->
+    <section class="bg-brand-light py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="text-center">
+                    <i class="fas fa-wrench text-brand-primary text-3xl mb-3"></i>
+                    <h3 class="font-semibold text-brand-primary mb-1">Licensed & Insured</h3>
+                    <p class="text-sm text-gray-600">Fully bonded for your peace of mind</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-clock text-brand-primary text-3xl mb-3"></i>
+                    <h3 class="font-semibold text-brand-primary mb-1">Fast Response</h3>
+                    <p class="text-sm text-gray-600">Same-day estimates available</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-dollar-sign text-brand-primary text-3xl mb-3"></i>
+                    <h3 class="font-semibold text-brand-primary mb-1">Fair Flat Pricing</h3>
+                    <p class="text-sm text-gray-600">No hidden fees or surprises</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-map-pin text-brand-primary text-3xl mb-3"></i>
+                    <h3 class="font-semibold text-brand-primary mb-1">Local & Trusted</h3>
+                    <p class="text-sm text-gray-600">Proudly serving Stockton families</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="font-serif text-3xl md:text-4xl font-bold text-navy mb-4">
-                    Complete Handyman Services in Stockton
+    <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="font-display text-3xl md:text-4xl text-brand-primary mb-4">
+                    Complete Home Repair Solutions for Stockton Homeowners
                 </h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    No job too big or small. Our skilled craftsmen handle all your home repair and improvement needs with professional quality and attention to detail.
+                    No job too big or small. From quick fixes to major renovations, Ace Handyman Services Stockton has the skills and tools to get it done right.
                 </p>
             </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
-                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=500&auto=format&fit=crop&q=80" alt="Kitchen repairs and maintenance" class="w-full h-48 object-cover" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQ4MCIgdmlld0JveD0iMCAwIDgwMCA0ODAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI0ODAiIGZpbGw9IiNmMWY1ZjkiLz48L3N2Zz4='">
-                    <div class="p-6">
-                        <div class="flex items-center mb-3">
-                            <i class="fas fa-wrench text-gold text-2xl mr-3"></i>
-                            <h3 class="font-bold text-xl text-navy">Home Repairs</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-brand-light p-6 rounded-lg hover:shadow-lg transition duration-300">
+                    <i class="fas fa-hammer text-brand-primary text-3xl mb-4"></i>
+                    <h3 class="font-semibold text-xl text-brand-primary mb-3">Carpentry & Trim Work</h3>
+                    <p class="text-gray-600">Custom shelving, crown molding, baseboards, door installation, and finish carpentry</p>
+                </div>
+                <div class="bg-brand-light p-6 rounded-lg hover:shadow-lg transition duration-300">
+                    <i class="fas fa-paint-roller text-brand-primary text-3xl mb-4"></i>
+                    <h3 class="font-semibold text-xl text-brand-primary mb-3">Interior & Exterior Painting</h3>
+                    <p class="text-gray-600">Room makeovers, cabinet refinishing, fence staining, and complete exterior painting</p>
+                </div>
+                <div class="bg-brand-light p-6 rounded-lg hover:shadow-lg transition duration-300">
+                    <i class="fas fa-tools text-brand-primary text-3xl mb-4"></i>
+                    <h3 class="font-semibold text-xl text-brand-primary mb-3">Drywall & Texture Repair</h3>
+                    <p class="text-gray-600">Hole patching, crack repair, texture matching, and complete drywall installation</p>
+                </div>
+                <div class="bg-brand-light p-6 rounded-lg hover:shadow-lg transition duration-300">
+                    <i class="fas fa-lightbulb text-brand-primary text-3xl mb-4"></i>
+                    <h3 class="font-semibold text-xl text-brand-primary mb-3">Electrical & Plumbing</h3>
+                    <p class="text-gray-600">Light fixture installation, outlet repairs, faucet replacement, and minor plumbing fixes</p>
+                </div>
+                <div class="bg-brand-light p-6 rounded-lg hover:shadow-lg transition duration-300">
+                    <i class="fas fa-home text-brand-primary text-3xl mb-4"></i>
+                    <h3 class="font-semibold text-xl text-brand-primary mb-3">Kitchen & Bath Updates</h3>
+                    <p class="text-gray-600">Cabinet hardware, tile repair, vanity installation, and bathroom fixture updates</p>
+                </div>
+                <div class="bg-brand-light p-6 rounded-lg hover:shadow-lg transition duration-300">
+                    <i class="fas fa-tree text-brand-primary text-3xl mb-4"></i>
+                    <h3 class="font-semibold text-xl text-brand-primary mb-3">Deck & Fence Services</h3>
+                    <p class="text-gray-600">Deck staining, fence repair, gate installation, and outdoor structure maintenance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="py-16 bg-brand-light">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="font-display text-3xl md:text-4xl text-brand-primary mb-4">
+                    Real Reviews from Satisfied Stockton Customers
+                </h2>
+                <div class="flex items-center justify-center mb-6 space-x-2">
+                    <div class="flex text-yellow-500 text-xl">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="text-2xl font-bold text-brand-primary">4.7</span>
+                    <span class="text-gray-600">• 145 Google reviews</span>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex text-yellow-500 mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Had my kitchen cabinet doors sticking and some drywall cracks from settling. The team came out to my Stockton home same day I called and fixed everything perfectly. Fair price and really clean work!"</p>
+                    <div class="font-semibold text-brand-primary">Maria Rodriguez</div>
+                    <div class="text-sm text-gray-500">Lincoln Village West</div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex text-yellow-500 mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Needed my back deck restained before summer and some fence boards replaced. These guys showed up on time, worked efficiently, and the deck looks brand new. Highly recommend for any home repairs in Stockton!"</p>
+                    <div class="font-semibold text-brand-primary">Kevin Thompson</div>
+                    <div class="text-sm text-gray-500">Brookside</div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex text-yellow-500 mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Finally found a reliable handyman service! They installed new light fixtures in my dining room and fixed a stubborn bathroom faucet leak. Professional, reasonably priced, and they actually showed up when they said they would."</p>
+                    <div class="font-semibold text-brand-primary">Jennifer Park</div>
+                    <div class="text-sm text-gray-500">Quail Lakes</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-brand-primary text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="font-display text-3xl md:text-4xl mb-6">
+                Ready to Cross That Project Off Your List?
+            </h2>
+            <p class="text-xl mb-8 opacity-90">
+                Get your free estimate today. Ace Handyman Services Stockton is standing by to make your home improvement dreams a reality.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-brand-accent text-brand-primary px-8 py-4 rounded-lg text-lg font-bold hover:bg-lime-400 transition duration-300">
+                    Get a Free Estimate
+                </button>
+                <a href="tel:(209)888-5732" class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-brand-primary transition duration-300">
+                    Call (209) 888-5732
+                </a>
+            </div>
+            <p class="text-sm mt-6 opacity-75">
+                <i class="fas fa-clock mr-2"></i>
+                Monday-Wednesday: 8 AM to 5 PM • Same-day estimates available
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-wrench text-brand-accent text-2xl mr-3"></i>
+                        <span class="font-display text-xl">Ace Handyman Services Stockton</span>
+                    </div>
+                    <p class="text-gray-300 mb-4">Your trusted local handyman service for all home repair and improvement needs in Stockton and surrounding areas.</p>
+                    <div class="flex space-x-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
                         </div>
-                        <p class="text-gray-600 mb-4">Fixing leaky faucets, patching drywall, door adjustments, cabinet repairs, and all general maintenance issues.</p>
-                        <ul class="text-sm text-gray-500 space-y-1">
-                            <li>• Plumbing repairs</li>
-                            <li>• Drywall patching</li>
-                            <li>• Cabinet fixes</li>
-                        </ul>
+                        <span class="text-sm text-gray-300">4.7 stars • 145 reviews</span>
                     </div>
                 </div>
-
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
-                    <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&h=500&auto=format&fit=crop&q=80" alt="Bathroom renovation and repairs" class="w-full h-48 object-cover" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQ4MCIgdmlld0JveD0iMCAwIDgwMCA0ODAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI0ODAiIGZpbGw9IiNmMWY1ZjkiLz48L3N2Zz4='">
-                    <div class="p-6">
-                        <div class="flex items-center mb-3">
-                            <i class="fas fa-paint-roller text-gold text-2xl mr-3"></i>
-                            <h3 class="font-bold text-xl text-navy">Painting & Finishing</h3>
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Contact Information</h3>
+                    <div class="space-y-2 text-gray-300">
+                        <div class="flex items-center">
+                            <i class="fas fa-phone w-5 mr-3 text-brand-accent"></i>
+                            <a href="tel:(209)888-5732" class="hover:text-brand-accent transition duration-300">(209) 888-5732</a>
                         </div>
-                        <p class="text-gray-600 mb-4">Interior and exterior painting, trim work, staining, and all finishing touches to refresh your home.</p>
-                        <ul class="text-sm text-gray-500 space-y-1">
-                            <li>• Interior painting</li>
-                            <li>• Exterior touch-ups</li>
-                            <li>• Trim & molding</li>
-                        </ul>
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt w-5 mr-3 text-brand-accent mt-1"></i>
+                            <div>
+                                <div>3201 W Benjamin Holt Dr</div>
+                                <div>Stockton, CA 95219</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-clock w-5 mr-3 text-brand-accent"></i>
+                            <div>Mon-Wed: 8 AM to 5 PM</div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
-                    <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=800&h=500&auto=format&fit=crop&q=80" alt="Electrical and lighting installation" class="w-full h-48 object-cover" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQ4MCIgdmlld0JveD0iMCAwIDgwMCA0ODAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI0ODAiIGZpbGw9IiNmMWY1ZjkiLz48L3N2Zz4='">
-                    <div class="p-6">
-                        <div class="flex items-center mb-3">
-                            <i class="fas fa-lightbulb text-gold text-2xl mr-3"></i>
-                            <h3 class="font-bold text-xl text-navy">Electrical Work</h3>
-                        </div>
-                        <p class="text-gray-600 mb-4">Light fixture installation, outlet repairs, ceiling fan mounting, and basic electrical troubleshooting.</p>
-                        <ul class="text-sm text-gray-500 space-y-1">
-                            <li>• Light fixtures</li>
-                            <li>• Ceiling fans</li>
-                            <li>• Outlet repairs</li>
-                        </ul>
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Service Areas</h3>
+                    <div class="text-gray-300 space-y-1">
+                        <div>Stockton</div>
+                        <div>Manteca</div>
+                        <div>Tracy</div>
+                        <div>Lodi</div>
+                        <div>Modesto</div>
+                        <div>And surrounding areas</div>
                     </div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Ace%20Handyman%20Services%20Stockton&query_place_id=ChIJs0apBJ6XZakRhOaqDTK_Xtk" target="_blank" class="inline-block mt-4 text-brand-accent hover:text-lime-400 transition duration-300">
+                        <i class="fas fa-external-link-alt mr-2"></i>View on Google Maps
+                    </a>
                 </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Ace Handyman Services Stockton. Licensed & Insured. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
-                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=500&auto=format&fit=crop&q=80" alt="Carpentry and woodworking" class="w-full h-48 object-cover" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQ4MCIgdmlld0JveD0iMCAwIDgwMCA0ODAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI0ODAiIGZpbGw9IiNmMWY1ZjkiLz48L3N2Zz4='">
-                    <div class="p-6">
-                        <div class="flex items-center mb-3">
-                            <i class="fas fa-hammer text-gold text-2xl mr-3"></i>
-                            <h3 class="font-bold text-xl text-navy">Carpentry & Assembly</h3>
-                        </div>
-                        <p class="text-gray-600 mb-4">Custom shelving, furniture assembly, trim installation, and all woodworking projects big and small.</p>
-                        <ul class="text-sm text-gray-500 space-y-1">
-                            <li>• Custom shelving</li>
-                            <li>• Furniture assembly</li>
-                            <li>• Trim work</li>
-                        </ul>
-                    </div>
-                </div>
+    <!-- Mobile Sticky Bottom Bar -->
+    <div class="fixed bottom-0 left-0 right-0 bg-brand-primary text-white p-4 flex items-center justify-center space-x-4 z-50 md:hidden">
+        <a href="tel:(209)888-5732" class="flex items-center space-x-2 bg-white bg-opacity-20 px-4 py-2 rounded-lg">
+            <i class="fas fa-phone"></i>
+            <span class="font-semibold">Call (209) 888-5732</span>
+        </a>
+        <div class="w-px h-6 bg-white bg-opacity-30"></div>
+        <button class="flex items-center space-x-2 bg-white bg-opacity-20 px-4 py-2 rounded-lg">
+            <i class="fas fa-comment"></i>
+            <span class="font-semibold">Get a Quote</span>
+        </button>
+    </div>
 
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
-                    <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&h=500&auto=format&fit=crop&q=80" alt="Deck and fence repairs" class="w-full h-48 object-cover" onerror="
+    <!-- Add bottom padding to prevent content from being hidden behind mobile bar -->
+    <div class="h-20 md:hidden"></div>
+</body>
+</html>
