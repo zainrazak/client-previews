@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Cleaning Company - Professional House Cleaning Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'navy': '#1e3a8a',
+                        'gold': '#f59e0b'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'serif': ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <i class="fas fa-home text-navy text-2xl mr-3"></i>
+                    <span class="font-serif text-2xl font-semibold text-navy">Real Cleaning Company</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#services" class="text-gray-700 hover:text-navy transition">Services</a>
+                    <a href="#about" class="text-gray-700 hover:text-navy transition">About</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-navy transition">Reviews</a>
+                    <a href="tel:8334307325" class="bg-navy text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition">
+                        <i class="fas fa-phone mr-2"></i>Call Now
+                    </a>
+                </div>
+                <div class="md:hidden">
+                    <a href="tel:8334307325" class="bg-navy text-white px-4 py-2 rounded-lg">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-navy to-blue-800 text-white py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-gold text-xl">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="ml-2 text-lg">5.0 Stars • 9 Reviews</span>
+                    </div>
+                    <h1 class="font-serif text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                        Professional House Cleaning You Can Trust
+                    </h1>
+                    <p class="text-xl mb-8 leading-relaxed">
+                        Experience the difference of a truly clean home with our reliable, 5-star rated cleaning service. We bring the sparkle back to your space.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="tel:8334307325" class="bg-gold text-navy px-8 py-4 rounded-lg font-semibold text-lg hover:bg-yellow-500 transition text-center">
+                            <i class="fas fa-phone mr-2"></i>Get Free Quote
+                        </a>
+                        <a href="#services" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-navy transition text-center">
+                            View Services
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=500&auto=format&fit=crop&q=80" 
+                         alt="Professional house cleaning service" 
+                         class="rounded-lg shadow-2xl w-full"
+                         onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDgwMCA1MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9IiNmM2Y0ZjYiLz48L3N2Zz4='">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-navy mb-4">Our Cleaning Services</h2>
+                <p class="text-xl text-gray-600">Comprehensive cleaning solutions for every room in your home</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition">
+                    <div class="text-navy text-4xl mb-6">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-navy mb-4">Regular House Cleaning</h3>
+                    <p class="text-gray-600 mb-6">Weekly, bi-weekly, or monthly cleaning to keep your home spotless and fresh.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-gold mr-2"></i>All rooms and bathrooms</li>
+                        <li><i class="fas fa-check text-gold mr-2"></i>Kitchen deep clean</li>
+                        <li><i class="fas fa-check text-gold mr-2"></i>Dusting and vacuuming</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition">
+                    <div class="text-navy text-4xl mb-6">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-navy mb-4">Deep Cleaning</h3>
+                    <p class="text-gray-600 mb-6">Intensive top-to-bottom cleaning perfect for move-ins, special occasions, or seasonal refresh.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-gold mr-2"></i>Baseboards and trim</li>
+                        <li><i class="fas fa-check text-gold mr-2"></i>Inside appliances</li>
+                        <li><i class="fas fa-check text-gold mr-2"></i>Light fixtures and fans</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition">
+                    <div class="text-navy text-4xl mb-6">
+                        <i class="fas fa-bath"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-navy mb-4">Bathroom Cleaning</h3>
+                    <p class="text-gray-600 mb-6">Specialized bathroom cleaning with attention to hygiene and sanitization.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-gold mr-2"></i>Tile and grout cleaning</li>
+                        <li><i class="fas fa-check text-gold mr-2"></i>Toilet sanitization</li>
+                        <li><i class="fas fa-check text-gold mr-2"></i>Mirror and fixture polish</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition">
+                    <div class="text-navy text-4xl mb-6">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-navy mb-4">Kitchen Cleaning</h3>
+                    <p class="text-gray-600 mb-6">Thorough kitchen cleaning including appliances, counters, and cabinet fronts.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-gold mr-2"></i>Stovetop and oven cleaning</li>
+                        <li><i class="fas fa-check text-gold mr-2"></i>Refrigerator exterior</li>
+                        <li><i class="fas fa-check text-gold mr-2"></i>Sink and faucet shine</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition">
+                    <div class="text-navy text-4xl mb-6">
+                        <i class="fas fa-couch"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-navy mb-4">Move-In/Move-Out</h3>
+                    <p class="text-gray-600 mb-6">Complete cleaning service for transitions, ensuring your space is move-in ready.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-gold mr-2"></i>Empty home cleaning</li>
+                        <li><i class="fas fa-check text-gold mr-2"></i>Cabinet interiors</li>
+                        <li><i class="fas fa-check text-gold mr-2"></i>Window sill cleaning</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition">
+                    <div class="text-navy text-4xl mb-6">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-navy mb-4">Post-Construction</h3>
+                    <p class="text-gray-600 mb-6">Specialized cleaning after renovations or construction work to remove dust and debris.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-gold mr-2"></i>Dust removal</li>
+                        <li><i class="fas fa-check text-gold mr-2"></i>Paint splatter cleanup</li>
+                        <li><i class="fas fa-check text-gold mr-2"></i>Debris disposal</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About/Why Us Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=800&h=500&auto=format&fit=crop&q=80" 
+                         alt="Professional cleaning team at work" 
+                         class="rounded-lg shadow-xl w-full"
+                         onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDgwMCA1MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9IiNmM2Y0ZjYiLz48L3N2Zz4='">
+                </div>
+                <div>
+                    <h2 class="font-serif text-4xl md:text-5xl font-bold text-navy mb-6">Why Choose Real Cleaning Company?</h2>
+                    <p class="text-xl text-gray-600 mb-8">We're not just another cleaning service. We're your trusted local partner for maintaining a spotless, healthy home environment.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-gold text-navy rounded-full p-3 mr-4 flex-shrink-0">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-navy mb-2">5-Star Rated Service</h3>
+                                <p class="text-gray-600">Our perfect 5.0-star rating from 9 satisfied customers speaks to our commitment to excellence.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-gold text-navy rounded-full p-3 mr-4 flex-shrink-0">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-navy mb-2">Fully Insured & Bonded</h3>
+                                <p class="text-gray-600">Your home and belongings are protected with comprehensive insurance coverage.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-gold text-navy rounded-full p-3 mr-4 flex-shrink-0">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text
