@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prime Demo and Junk Removal - Stockton's Fastest Debris Removal Service</title>
+    <title>Prime Demo and Junk Removal | Stockton's Debris Removal Experts</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -14,417 +12,425 @@
                     colors: {
                         primary: '#7C2D12',
                         accent: '#FCD34D',
-                        light: '#FEFCE8',
+                        background: '#FEFCE8'
                     },
                     fontFamily: {
-                        display: ['Oswald', 'sans-serif'],
-                        body: ['Inter', 'sans-serif'],
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                        'display': ['Poppins', 'system-ui', 'sans-serif']
                     }
                 }
             }
         }
     </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
 </head>
-<body class="font-body">
+<body class="bg-background text-gray-900">
     <!-- Navigation -->
-    <nav class="bg-white shadow-lg fixed w-full z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex items-center">
-                    <h1 class="font-display font-bold text-xl text-primary">Prime Demo & Junk Removal</h1>
+    <nav class="bg-white shadow-sm sticky top-0 z-40">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="font-display font-bold text-xl text-primary">
+                    Prime Demo & Junk Removal
                 </div>
-                <div class="hidden md:flex items-center space-x-6">
-                    <a href="#services" class="text-gray-700 hover:text-primary transition">Services</a>
-                    <a href="#testimonials" class="text-gray-700 hover:text-primary transition">Reviews</a>
-                    <a href="tel:2098006164" class="bg-primary text-white px-4 py-2 rounded-lg font-semibold hover:bg-primary/90 transition">
-                        <i class="fas fa-phone mr-2"></i>(209) 800-6164
+                <div class="flex items-center space-x-6">
+                    <a href="tel:2098006164" class="hidden md:flex items-center text-primary font-semibold">
+                        <i class="fas fa-phone mr-2"></i>
+                        (209) 800-6164
                     </a>
-                </div>
-                <div class="md:hidden">
-                    <a href="tel:2098006164" class="bg-primary text-white px-3 py-2 rounded-lg text-sm font-semibold">
-                        <i class="fas fa-phone"></i>
-                    </a>
+                    <button class="bg-primary text-white px-6 py-2 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
+                        Get Quote
+                    </button>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative h-screen">
+    <section class="relative h-screen flex items-center justify-start">
         <div class="absolute inset-0">
-            <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAwepxU1KHga7gjJV6HE7sdokWgHKLitsOjOrqaI9LNdNHQEwemftyYFDX4EymTZCOL84HkyB8MIlD-zYEdlfAVlV8XXkM5RrNcPanlGBd7YN7Ds9WSo3FjCchg6t2URMbPFMhjQs=w408-h544-k-no" 
-                 alt="Prime Demo and Junk Removal truck in Stockton"
-                 class="w-full h-full object-cover"
-                 onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80'">
-            <div class="absolute inset-0 bg-primary/70"></div>
+            <img 
+                src="photos/photo-1.jpg" 
+                alt="Prime Demo and Junk Removal truck loaded with debris in Stockton"
+                class="w-full h-full object-cover"
+                onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=1200&q=80'"
+            >
+            <div class="absolute inset-0 bg-black/50"></div>
         </div>
-        
-        <div class="relative z-10 flex items-center justify-center h-full text-center text-white px-4">
-            <div class="max-w-4xl">
-                <h1 class="font-display font-bold text-4xl md:text-6xl mb-6 leading-tight">
-                    Stockton's Most Reliable<br>
-                    <span class="text-accent">Debris Removal Team</span>
+        <div class="relative z-10 max-w-6xl mx-auto px-4 w-full">
+            <div class="max-w-2xl">
+                <h1 class="font-display font-bold text-5xl md:text-7xl text-white leading-tight mb-6">
+                    Stockton's Debris Cleanup Specialists
                 </h1>
-                <p class="text-xl md:text-2xl mb-8 font-light">
-                    24/7 demolition cleanup, junk removal, and site clearing throughout the Central Valley
+                <p class="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed">
+                    Trusted by 107 local families with a 4.9-star rating for fast, reliable debris removal.
                 </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                    <button class="bg-accent text-primary px-8 py-4 rounded-lg text-lg font-bold hover:bg-accent/90 transition w-full sm:w-auto">
-                        Get Free Estimate
-                    </button>
-                    <a href="tel:2098006164" class="bg-white/20 backdrop-blur text-white border-2 border-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white/30 transition w-full sm:w-auto">
-                        <i class="fas fa-phone mr-2"></i>Call (209) 800-6164
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="tel:2098006164" class="bg-accent text-primary px-8 py-4 rounded-lg font-bold text-lg hover:bg-accent/90 transition-colors text-center">
+                        Call (209) 800-6164
                     </a>
-                </div>
-                <div class="flex items-center justify-center mt-8 text-accent">
-                    <div class="flex items-center space-x-1">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <span class="ml-2 text-white font-semibold">4.9 Stars • 107 Local Reviews</span>
+                    <button class="bg-white/20 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/30 transition-colors backdrop-blur-sm">
+                        Free Estimate
+                    </button>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Trust Signals -->
-    <section class="bg-light py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                <div class="text-center">
-                    <div class="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-truck-moving text-2xl"></i>
+    <!-- Trust Bar -->
+    <section class="py-8 bg-white border-b">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-wrap justify-center items-center gap-8">
+                <div class="flex items-center text-accent">
+                    <div class="flex text-xl">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
                     </div>
-                    <h3 class="font-display font-semibold text-primary mb-2">Careful Handling</h3>
-                    <p class="text-sm text-gray-600">Professional equipment and trained crews</p>
+                    <span class="ml-2 font-semibold text-gray-800">4.9 stars · 107 reviews</span>
                 </div>
-                <div class="text-center">
-                    <div class="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-hand-holding-dollar text-2xl"></i>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="flex items-center text-primary">
+                        <i class="fas fa-truck-moving text-2xl mr-3"></i>
+                        <span class="font-medium">Careful Handling</span>
                     </div>
-                    <h3 class="font-display font-semibold text-primary mb-2">Transparent Pricing</h3>
-                    <p class="text-sm text-gray-600">No hidden fees or surprise charges</p>
-                </div>
-                <div class="text-center">
-                    <div class="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-shield text-2xl"></i>
+                    <div class="flex items-center text-primary">
+                        <i class="fas fa-hand-holding-dollar text-2xl mr-3"></i>
+                        <span class="font-medium">Transparent Pricing</span>
                     </div>
-                    <h3 class="font-display font-semibold text-primary mb-2">Fully Insured</h3>
-                    <p class="text-sm text-gray-600">Complete liability coverage</p>
-                </div>
-                <div class="text-center">
-                    <div class="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-users text-2xl"></i>
+                    <div class="flex items-center text-primary">
+                        <i class="fas fa-shield text-2xl mr-3"></i>
+                        <span class="font-medium">Fully Insured</span>
                     </div>
-                    <h3 class="font-display font-semibold text-primary mb-2">Family Friendly</h3>
-                    <p class="text-sm text-gray-600">Safe, courteous service</p>
+                    <div class="flex items-center text-primary">
+                        <i class="fas fa-users text-2xl mr-3"></i>
+                        <span class="font-medium">Family Friendly</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section class="py-20 bg-background">
+        <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="font-display text-4xl md:text-5xl font-bold text-primary mb-6">
-                    Complete Debris Removal Services Across Stockton
+                <h2 class="font-display font-bold text-4xl md:text-5xl text-primary mb-4">
+                    Prime Demo's Stockton Cleanup Services
                 </h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Prime Demo and Junk Removal handles every type of cleanup project, from residential cleanouts to commercial demolition debris
+                <p class="text-xl text-gray-700 max-w-3xl mx-auto">
+                    From construction sites to estate cleanouts, we handle every type of debris removal in the Central Valley.
                 </p>
             </div>
-            
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-light rounded-xl p-8 hover:shadow-lg transition">
-                    <div class="bg-primary text-white w-12 h-12 rounded-lg flex items-center justify-center mb-6">
-                        <i class="fas fa-home text-xl"></i>
+                <div class="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-16 h-16 bg-accent/20 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-hammer text-2xl text-primary"></i>
                     </div>
-                    <h3 class="font-display text-xl font-bold text-primary mb-4">Residential Junk Removal</h3>
-                    <p class="text-gray-600 mb-4">Complete home cleanouts, furniture removal, appliance disposal, and garage cleanups throughout Stockton neighborhoods.</p>
-                    <ul class="text-sm text-gray-500 space-y-1">
-                        <li>• Furniture & appliances</li>
-                        <li>• Garage & basement cleanouts</li>
-                        <li>• Estate cleanings</li>
-                    </ul>
+                    <h3 class="font-display font-bold text-xl mb-4">Construction Debris</h3>
+                    <p class="text-gray-600 leading-relaxed">Drywall, lumber, roofing materials, and concrete removal from renovation and construction projects.</p>
                 </div>
-                
-                <div class="bg-light rounded-xl p-8 hover:shadow-lg transition">
-                    <div class="bg-primary text-white w-12 h-12 rounded-lg flex items-center justify-center mb-6">
-                        <i class="fas fa-hammer text-xl"></i>
+                <div class="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-16 h-16 bg-accent/20 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-home text-2xl text-primary"></i>
                     </div>
-                    <h3 class="font-display text-xl font-bold text-primary mb-4">Demolition Debris Cleanup</h3>
-                    <p class="text-gray-600 mb-4">Safe removal of construction waste, drywall, concrete, wood, and renovation debris from job sites.</p>
-                    <ul class="text-sm text-gray-500 space-y-1">
-                        <li>• Drywall & insulation</li>
-                        <li>• Concrete & masonry</li>
-                        <li>• Construction materials</li>
-                    </ul>
+                    <h3 class="font-display font-bold text-xl mb-4">Estate Cleanouts</h3>
+                    <p class="text-gray-600 leading-relaxed">Complete property cleanouts including furniture, appliances, and personal belongings with respectful handling.</p>
                 </div>
-                
-                <div class="bg-light rounded-xl p-8 hover:shadow-lg transition">
-                    <div class="bg-primary text-white w-12 h-12 rounded-lg flex items-center justify-center mb-6">
-                        <i class="fas fa-building text-xl"></i>
+                <div class="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-16 h-16 bg-accent/20 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-couch text-2xl text-primary"></i>
                     </div>
-                    <h3 class="font-display text-xl font-bold text-primary mb-4">Commercial Property Cleanouts</h3>
-                    <p class="text-gray-600 mb-4">Office cleanouts, retail space clearing, warehouse debris removal for Stockton businesses.</p>
-                    <ul class="text-sm text-gray-500 space-y-1">
-                        <li>• Office furniture removal</li>
-                        <li>• Equipment disposal</li>
-                        <li>• Retail fixture removal</li>
-                    </ul>
+                    <h3 class="font-display font-bold text-xl mb-4">Furniture Removal</h3>
+                    <p class="text-gray-600 leading-relaxed">Heavy furniture, mattresses, and appliance removal from homes, offices, and commercial properties.</p>
                 </div>
-                
-                <div class="bg-light rounded-xl p-8 hover:shadow-lg transition">
-                    <div class="bg-primary text-white w-12 h-12 rounded-lg flex items-center justify-center mb-6">
-                        <i class="fas fa-tree text-xl"></i>
+                <div class="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-16 h-16 bg-accent/20 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-tree text-2xl text-primary"></i>
                     </div>
-                    <h3 class="font-display text-xl font-bold text-primary mb-4">Yard Waste & Landscaping Debris</h3>
-                    <p class="text-gray-600 mb-4">Tree limbs, brush, grass clippings, and landscaping project cleanup throughout the Central Valley.</p>
-                    <ul class="text-sm text-gray-500 space-y-1">
-                        <li>• Tree trimming cleanup</li>
-                        <li>• Brush & yard waste</li>
-                        <li>• Landscaping debris</li>
-                    </ul>
+                    <h3 class="font-display font-bold text-xl mb-4">Yard Waste Removal</h3>
+                    <p class="text-gray-600 leading-relaxed">Tree branches, stumps, landscaping debris, and green waste from residential and commercial properties.</p>
                 </div>
-                
-                <div class="bg-light rounded-xl p-8 hover:shadow-lg transition">
-                    <div class="bg-primary text-white w-12 h-12 rounded-lg flex items-center justify-center mb-6">
-                        <i class="fas fa-truck text-xl"></i>
+                <div class="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-16 h-16 bg-accent/20 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-dumpster text-2xl text-primary"></i>
                     </div>
-                    <h3 class="font-display text-xl font-bold text-primary mb-4">Emergency Debris Removal</h3>
-                    <p class="text-gray-600 mb-4">24/7 emergency cleanup for storm damage, fire cleanup, and urgent debris removal situations.</p>
-                    <ul class="text-sm text-gray-500 space-y-1">
-                        <li>• Storm damage cleanup</li>
-                        <li>• Fire debris removal</li>
-                        <li>• Emergency response</li>
-                    </ul>
+                    <h3 class="font-display font-bold text-xl mb-4">Commercial Cleanouts</h3>
+                    <p class="text-gray-600 leading-relaxed">Office cleanouts, retail space clearing, and warehouse debris removal for Stockton businesses.</p>
                 </div>
-                
-                <div class="bg-light rounded-xl p-8 hover:shadow-lg transition">
-                    <div class="bg-primary text-white w-12 h-12 rounded-lg flex items-center justify-center mb-6">
-                        <i class="fas fa-recycle text-xl"></i>
+                <div class="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-16 h-16 bg-accent/20 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-tools text-2xl text-primary"></i>
                     </div>
-                    <h3 class="font-display text-xl font-bold text-primary mb-4">Eco-Friendly Disposal</h3>
-                    <p class="text-gray-600 mb-4">Responsible recycling and donation of materials whenever possible, minimizing landfill impact.</p>
-                    <ul class="text-sm text-gray-500 space-y-1">
-                        <li>• Metal recycling</li>
-                        <li>• Donation coordination</li>
-                        <li>• Proper disposal methods</li>
-                    </ul>
+                    <h3 class="font-display font-bold text-xl mb-4">Demolition Cleanup</h3>
+                    <p class="text-gray-600 leading-relaxed">Post-demolition site cleanup, structural debris removal, and site preparation for new construction.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Process Section -->
-    <section class="py-20 bg-primary text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Gallery Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="font-display text-4xl md:text-5xl font-bold mb-6">
-                    How Prime Demo and Junk Removal Works
+                <h2 class="font-display font-bold text-4xl md:text-5xl text-primary mb-4">
+                    Recent Stockton Cleanup Projects
                 </h2>
-                <p class="text-xl text-white/90 max-w-3xl mx-auto">
-                    Simple, fast, and transparent process from first call to final cleanup
+                <p class="text-xl text-gray-700">
+                    See how Prime Demo and Junk Removal transforms properties across the Central Valley.
                 </p>
             </div>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="text-center">
-                    <div class="bg-accent text-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">1</div>
-                    <h3 class="font-display text-2xl font-bold mb-4">Free On-Site Assessment</h3>
-                    <p class="text-white/90">Call (209) 800-6164 and we'll schedule a convenient time to evaluate your debris removal needs and provide an accurate quote.</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="group cursor-pointer">
+                    <div class="aspect-video rounded-xl overflow-hidden mb-4">
+                        <img 
+                            src="photos/photo-2.jpg" 
+                            alt="Downtown Stockton office building cleanout"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                            onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=1200&q=80'"
+                        >
+                    </div>
+                    <h3 class="font-display font-bold text-lg mb-2">Downtown Office Building</h3>
+                    <p class="text-gray-600">Complete 3-floor commercial cleanout in downtown Stockton financial district.</p>
                 </div>
-                
-                <div class="text-center">
-                    <div class="bg-accent text-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">2</div>
-                    <h3 class="font-display text-2xl font-bold mb-4">Schedule Your Pickup</h3>
-                    <p class="text-white/90">Once you approve the estimate, we'll arrive on time with the right equipment and crew size for your specific project.</p>
+                <div class="group cursor-pointer">
+                    <div class="aspect-video rounded-xl overflow-hidden mb-4">
+                        <img 
+                            src="photos/photo-3.jpg" 
+                            alt="Residential construction debris removal in North Stockton"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                            onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=1200&q=80'"
+                        >
+                    </div>
+                    <h3 class="font-display font-bold text-lg mb-2">North Stockton Remodel</h3>
+                    <p class="text-gray-600">Kitchen and bathroom renovation debris from Brookside neighborhood home.</p>
                 </div>
-                
-                <div class="text-center">
-                    <div class="bg-accent text-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl font-bold">3</div>
-                    <h3 class="font-display text-2xl font-bold mb-4">Complete Cleanup</h3>
-                    <p class="text-white/90">Our team handles all the heavy lifting, loading, and cleanup. We leave your property spotless and dispose of everything responsibly.</p>
+                <div class="group cursor-pointer">
+                    <div class="aspect-video rounded-xl overflow-hidden mb-4">
+                        <img 
+                            src="photos/photo-4.jpg" 
+                            alt="Estate cleanout service in Stockton's Weston Ranch"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                            onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=1200&q=80'"
+                        >
+                    </div>
+                    <h3 class="font-display font-bold text-lg mb-2">Weston Ranch Estate</h3>
+                    <p class="text-gray-600">Sensitive estate cleanout with furniture donation and debris removal.</p>
+                </div>
+                <div class="group cursor-pointer">
+                    <div class="aspect-video rounded-xl overflow-hidden mb-4">
+                        <img 
+                            src="photos/photo-5.jpg" 
+                            alt="Construction site cleanup in Stockton industrial area"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                            onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=1200&q=80'"
+                        >
+                    </div>
+                    <h3 class="font-display font-bold text-lg mb-2">Industrial Site Cleanup</h3>
+                    <p class="text-gray-600">Large-scale debris removal from Port of Stockton construction project.</p>
+                </div>
+                <div class="group cursor-pointer">
+                    <div class="aspect-video rounded-xl overflow-hidden mb-4">
+                        <img 
+                            src="photos/photo-6.jpg" 
+                            alt="Yard waste removal in Stockton residential area"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                            onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=1200&q=80'"
+                        >
+                    </div>
+                    <h3 class="font-display font-bold text-lg mb-2">Spanos Park Landscaping</h3>
+                    <p class="text-gray-600">Tree removal and landscaping debris cleanup from storm damage.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials -->
-    <section id="testimonials" class="py-20 bg-light">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Reviews Section -->
+    <section class="py-20 bg-background">
+        <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-16">
-                <h2 class="font-display text-4xl md:text-5xl font-bold text-primary mb-6">
-                    What Stockton Residents Are Saying
+                <h2 class="font-display font-bold text-4xl md:text-5xl text-primary mb-4">
+                    What Stockton Residents Say About Prime Demo
                 </h2>
-                <div class="flex items-center justify-center text-accent mb-4">
-                    <div class="flex space-x-1">
-                        <i class="fas fa-star text-2xl"></i>
-                        <i class="fas fa-star text-2xl"></i>
-                        <i class="fas fa-star text-2xl"></i>
-                        <i class="fas fa-star text-2xl"></i>
-                        <i class="fas fa-star text-2xl"></i>
+                <div class="flex justify-center items-center text-accent text-xl mb-4">
+                    <div class="flex mr-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
                     </div>
-                    <span class="ml-3 text-primary text-2xl font-bold">4.9 Stars on Google</span>
+                    <span class="font-semibold text-gray-800">4.9 stars from 107 Google reviews</span>
                 </div>
-                <p class="text-gray-600 text-lg">Based on 107 verified local reviews</p>
             </div>
-            
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-xl p-8 shadow-lg">
-                    <div class="flex items-center mb-4">
-                        <div class="flex text-accent space-x-1">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
+                <div class="bg-white rounded-xl p-8 shadow-sm">
+                    <div class="flex text-accent text-lg mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
                     </div>
-                    <p class="text-gray-600 mb-6 italic">"Prime Demo cleaned out my dad's garage in Lincoln Village after he passed. They were so respectful and careful with everything, even helped us donate furniture to charity. The crew worked around our schedule and the price was very fair for Stockton."</p>
-                    <div class="font-semibold text-primary">Maria Rodriguez</div>
-                    <div class="text-sm text-gray-500">Verified Customer</div>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        "Prime Demo cleared out my grandmother's house in Lincoln Village and they were incredibly respectful and thorough."
+                    </p>
+                    <div class="font-semibold text-primary">Maria S.</div>
+                    <div class="text-sm text-gray-500">Stockton resident</div>
                 </div>
-                
-                <div class="bg-white rounded-xl p-8 shadow-lg">
-                    <div class="flex items-center mb-4">
-                        <div class="flex text-accent space-x-1">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
+                <div class="bg-white rounded-xl p-8 shadow-sm">
+                    <div class="flex text-accent text-lg mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
                     </div>
-                    <p class="text-gray-600 mb-6 italic">"Had a kitchen remodel and needed all the old cabinets and drywall hauled away. These guys showed up exactly when they said they would, loaded everything up fast, and even swept the area clean. Best debris removal service in Stockton - highly recommend!"</p>
-                    <div class="font-semibold text-primary">David Chen</div>
-                    <div class="text-sm text-gray-500">Verified Customer</div>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        "Needed our office space cleared in downtown and they handled everything professionally. The team showed up exactly when promised and cleaned up completely after removing all our old furniture and equipment."
+                    </p>
+                    <div class="font-semibold text-primary">Robert K.</div>
+                    <div class="text-sm text-gray-500">Business owner</div>
                 </div>
-                
-                <div class="bg-white rounded-xl p-8 shadow-lg">
-                    <div class="flex items-center mb-4">
-                        <div class="flex text-accent space-x-1">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
+                <div class="bg-white rounded-xl p-8 shadow-sm">
+                    <div class="flex text-accent text-lg mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
                     </div>
-                    <p class="text-gray-600 mb-6 italic">"Called them for an emergency cleanup after tree branches fell on our property during the storm. They came out the same day even though it was late evening. Professional crew, fair pricing, and they handled everything safely. Will definitely use Prime Demo again."</p>
-                    <div class="font-semibold text-primary">Jennifer Thompson</div>
-                    <div class="text-sm text-gray-500">Verified Customer</div>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        "Called Prime Demo for construction cleanup after our kitchen remodel and they were amazing. Fair pricing, quick response, and they hauled away everything including the old cabinets and tile. Will definitely use them again for our bathroom project next year."
+                    </p>
+                    <div class="font-semibold text-primary">Jennifer L.</div>
+                    <div class="text-sm text-gray-500">Manteca</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="py-20 bg-primary text-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="font-display text-4xl md:text-5xl font-bold mb-6">
-                Ready to Clear Out Your Space?
+    <section class="py-20 bg-primary">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="font-display font-bold text-4xl md:text-5xl text-white mb-6">
+                Ready to Clear Your Space?
             </h2>
-            <p class="text-xl mb-8 text-white/90">
-                Get a free estimate today and see why Prime Demo and Junk Removal is Stockton's top-rated debris removal service
+            <p class="text-xl text-white/90 mb-10 leading-relaxed">
+                Call Prime Demo and Junk Removal at (209) 800-6164 for fast, reliable debris removal in Stockton and the Central Valley.
             </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <button class="bg-accent text-primary px-8 py-4 rounded-lg text-lg font-bold hover:bg-accent/90 transition w-full sm:w-auto">
-                    Get Free Estimate
-                </button>
-                <a href="tel:2098006164" class="bg-white/20 backdrop-blur text-white border-2 border-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white/30 transition w-full sm:w-auto">
-                    <i class="fas fa-phone mr-2"></i>Call (209) 800-6164
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="tel:2098006164" class="bg-accent text-primary px-10 py-4 rounded-lg font-bold text-lg hover:bg-accent/90 transition-colors">
+                    Call (209) 800-6164 Now
                 </a>
+                <button class="bg-white/20 text-white px-10 py-4 rounded-lg font-bold text-lg hover:bg-white/30 transition-colors backdrop-blur-sm">
+                    Get a Moving Quote
+                </button>
             </div>
-            <p class="text-white/70 mt-6">Available 24/7 for emergency debris removal</p>
+            <div class="mt-8 text-white/80">
+                <i class="fas fa-clock mr-2"></i>
+                Available 24/7 for Emergency Cleanups
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-4 gap-8">
-                <div class="md:col-span-2">
-                    <h3 class="font-display text-2xl font-bold mb-4">Prime Demo and Junk Removal</h3>
-                    <p class="text-gray-300 mb-6">Stockton's most reliable debris removal service. We handle everything from small cleanouts to large demolition projects with professional care and transparent pricing.</p>
-                    <div class="flex items-center text-accent mb-2">
-                        <i class="fas fa-star mr-1"></i>
-                        <i class="fas fa-star mr-1"></i>
-                        <i class="fas fa-star mr-1"></i>
-                        <i class="fas fa-star mr-1"></i>
-                        <i class="fas fa-star mr-1"></i>
-                        <span class="ml-2 text-white">4.9 Stars • 107 Reviews</span>
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="lg:col-span-2">
+                    <div class="font-display font-bold text-2xl text-accent mb-4">
+                        Prime Demo and Junk Removal
+                    </div>
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        Stockton's trusted debris removal specialists. Fast, reliable cleanup services for residential and commercial properties throughout the Central Valley.
+                    </p>
+                    <div class="flex space-x-4">
+                        <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
+                            <i class="fab fa-google text-xl"></i>
+                        </div>
+                        <div>
+                            <div class="font-semibold">4.9 Star Rating</div>
+                            <div class="text-gray-400 text-sm">107 Google Reviews</div>
+                        </div>
                     </div>
                 </div>
-                
                 <div>
-                    <h4 class="font-display font-semibold text-lg mb-4">Contact Information</h4>
-                    <div class="space-y-3">
+                    <h3 class="font-display font-bold text-lg mb-4">Contact Info</h3>
+                    <div class="space-y-3 text-gray-300">
                         <div class="flex items-center">
-                            <i class="fas fa-phone text-accent mr-3"></i>
-                            <a href="tel:2098006164" class="hover:text-accent transition">(209) 800-6164</a>
+                            <i class="fas fa-phone w-5 mr-3"></i>
+                            <a href="tel:2098006164" class="hover:text-accent transition-colors">(209) 800-6164</a>
                         </div>
                         <div class="flex items-start">
-                            <i class="fas fa-map-marker-alt text-accent mr-3 mt-1"></i>
+                            <i class="fas fa-map-marker-alt w-5 mr-3 mt-1"></i>
                             <div>
                                 <div>4512 Feather River Dr c</div>
                                 <div>Stockton, CA 95219</div>
                             </div>
                         </div>
                         <div class="flex items-center">
-                            <i class="fas fa-clock text-accent mr-3"></i>
-                            <span>Open 24 Hours</span>
+                            <i class="fas fa-clock w-5 mr-3"></i>
+                            <div>Open 24 Hours Daily</div>
                         </div>
                     </div>
                 </div>
-                
                 <div>
-                    <h4 class="font-display font-semibold text-lg mb-4">Service Areas</h4>
-                    <ul class="space-y-2 text-gray-300">
-                        <li>Stockton</li>
-                        <li>Lodi</li>
-                        <li>Manteca</li>
-                        <li>Tracy</li>
-                        <li>Modesto</li>
-                        <li>Central Valley</li>
-                    </ul>
+                    <h3 class="font-display font-bold text-lg mb-4">Service Areas</h3>
+                    <div class="space-y-2 text-gray-300">
+                        <div>Stockton</div>
+                        <div>Manteca</div>
+                        <div>Lodi</div>
+                        <div>Tracy</div>
+                        <div>Modesto</div>
+                        <div>Central Valley</div>
+                    </div>
                 </div>
             </div>
-            
             <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
                 <p>&copy; 2024 Prime Demo and Junk Removal. All rights reserved.</p>
-                <p class="mt-2">Serving Stockton and surrounding areas with professional debris removal services.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Mobile Sticky Bar -->
-    <div class="fixed bottom-0 left-0 right-0 bg-primary text-white p-4 z-50 md:hidden">
+    <!-- Mobile Bottom CTA Bar -->
+    <div class="fixed bottom-0 left-0 right-0 bg-primary text-white p-4 shadow-2xl z-50 md:hidden">
         <div class="flex items-center justify-between">
-            <a href="tel:2098006164" class="flex items-center justify-center bg-white/20 backdrop-blur rounded-lg px-4 py-2 flex-1 mr-2">
+            <a href="tel:2098006164" class="flex items-center font-semibold">
                 <i class="fas fa-phone mr-2"></i>
-                <span class="font-semibold">Call (209) 800-6164</span>
+                Call (209) 800-6164
             </a>
-            <button class="flex items-center justify-center bg-accent text-primary rounded-lg px-4 py-2 flex-1 ml-2 font-bold">
-                <i class="fas fa-comment mr-2"></i>
-                Get Free Quote
+            <button class="bg-accent text-primary px-6 py-2 rounded-lg font-bold">
+                <i class="fas fa-message mr-2"></i>
+                Get a Quote
             </button>
         </div>
     </div>
 
-    <!-- Smooth scrolling -->
+    <!-- Scroll Animation -->
     <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
             });
+        }, observerOptions);
+
+        // Animate service cards
+        document.querySelectorAll('.grid > div').forEach((card, index) => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
+            observer.observe(card);
         });
     </script>
 </body>
