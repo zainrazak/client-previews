@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fresh Start Home Services - Professional House Cleaning in Stockton, CA</title>
+    <title>Fresh Start Home Services - Stockton's Premier House Cleaning</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -12,41 +16,35 @@
                     colors: {
                         primary: '#2E4057',
                         accent: '#F4A261',
-                        lightbg: '#FFF3E0'
+                        background: '#FFF3E0'
                     },
                     fontFamily: {
-                        display: ['Playfair Display', 'serif'],
-                        body: ['Inter', 'sans-serif']
+                        'sans': ['Inter', 'sans-serif'],
+                        'serif': ['Playfair Display', 'serif']
                     }
                 }
             }
         }
     </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="font-body">
+<body class="bg-background font-sans">
     <!-- Navigation -->
-    <nav class="bg-white shadow-sm sticky top-0 z-40">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-                <div class="flex items-center">
-                    <i class="fas fa-home text-primary text-xl mr-2"></i>
-                    <span class="font-display font-semibold text-lg text-primary">Fresh Start Home Services</span>
-                </div>
+                <div class="font-serif font-semibold text-xl text-primary">Fresh Start Home Services</div>
                 <div class="hidden md:flex items-center space-x-6">
                     <a href="#services" class="text-gray-600 hover:text-primary transition-colors">Services</a>
+                    <a href="#gallery" class="text-gray-600 hover:text-primary transition-colors">Our Work</a>
                     <a href="#reviews" class="text-gray-600 hover:text-primary transition-colors">Reviews</a>
-                    <a href="#contact" class="text-gray-600 hover:text-primary transition-colors">Contact</a>
-                    <a href="tel:9252525565" class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors font-medium">
-                        <i class="fas fa-phone mr-1"></i>(925) 252-5565
+                    <a href="tel:9252525565" class="flex items-center text-primary font-medium">
+                        <i class="fas fa-phone mr-2"></i>
+                        (925) 252-5565
                     </a>
                 </div>
                 <div class="md:hidden">
-                    <a href="tel:9252525565" class="bg-primary text-white px-3 py-2 rounded-lg text-sm font-medium">
-                        <i class="fas fa-phone"></i>
+                    <a href="tel:9252525565" class="text-primary">
+                        <i class="fas fa-phone text-xl"></i>
                     </a>
                 </div>
             </div>
@@ -54,350 +52,377 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="bg-lightbg min-h-screen flex items-center">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div class="space-y-8">
-                    <div class="space-y-4">
-                        <h1 class="font-display font-bold text-4xl md:text-5xl lg:text-6xl text-primary leading-tight">
-                            Stockton's Most Trusted House Cleaning Service
-                        </h1>
-                        <p class="text-lg text-gray-600 leading-relaxed">
-                            Transform your home with Fresh Start Home Services. Professional, reliable cleaning that gives you more time for what matters most. Serving Stockton families since day one.
-                        </p>
-                    </div>
-                    
-                    <div class="flex items-center space-x-6">
-                        <div class="flex items-center">
-                            <div class="flex text-yellow-400 mr-2">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <span class="font-semibold text-primary">4.7 stars</span>
-                            <span class="text-gray-500 ml-1">(30 reviews)</span>
-                        </div>
-                    </div>
-
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="tel:9252525565" class="bg-primary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-primary/90 transition-colors text-center">
+    <section class="bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center min-h-[500px]">
+                <!-- Hero Content -->
+                <div class="px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-semibold text-primary leading-tight mb-4">
+                        Stockton's Trusted House Cleaning Experts
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Professional cleaning services with 4.7-star rating from 30 happy Stockton families.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                        <a href="tel:9252525565" class="bg-accent text-white px-8 py-3 rounded-lg font-medium text-center hover:bg-orange-500 transition-colors">
                             Book a Cleaning
                         </a>
-                        <a href="tel:9252525565" class="border-2 border-primary text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-primary hover:text-white transition-colors text-center">
-                            Call (925) 252-5565
+                        <a href="#services" class="border-2 border-primary text-primary px-8 py-3 rounded-lg font-medium text-center hover:bg-primary hover:text-white transition-colors">
+                            View Services
                         </a>
                     </div>
-
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-4">
+                    <!-- Trust Indicators -->
+                    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 pt-4 border-t border-gray-200">
                         <div class="text-center">
-                            <i class="fas fa-shield-halved text-accent text-2xl mb-2"></i>
-                            <p class="text-sm font-medium text-gray-700">Bonded & Insured</p>
+                            <i class="fas fa-shield-halved text-2xl text-accent mb-2"></i>
+                            <p class="text-sm text-gray-600 font-medium">Bonded & Insured</p>
                         </div>
                         <div class="text-center">
-                            <i class="fas fa-clock text-accent text-2xl mb-2"></i>
-                            <p class="text-sm font-medium text-gray-700">Same-Day Booking</p>
+                            <i class="fas fa-clock text-2xl text-accent mb-2"></i>
+                            <p class="text-sm text-gray-600 font-medium">Same-Day Booking</p>
                         </div>
                         <div class="text-center">
-                            <i class="fas fa-star text-accent text-2xl mb-2"></i>
-                            <p class="text-sm font-medium text-gray-700">5-Star Rated</p>
+                            <i class="fas fa-star text-2xl text-accent mb-2"></i>
+                            <p class="text-sm text-gray-600 font-medium">5-Star Rated</p>
                         </div>
                         <div class="text-center">
-                            <i class="fas fa-leaf text-accent text-2xl mb-2"></i>
-                            <p class="text-sm font-medium text-gray-700">Eco-Friendly Products</p>
+                            <i class="fas fa-leaf text-2xl text-accent mb-2"></i>
+                            <p class="text-sm text-gray-600 font-medium">Eco-Friendly</p>
                         </div>
                     </div>
                 </div>
+                
+                <!-- Hero Image -->
+                <div class="lg:h-full">
+                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80" 
+                         alt="Professional house cleaning in Stockton" 
+                         class="w-full h-64 lg:h-full object-cover"
+                         onerror="this.src='https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=800&q=80'">
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <div class="relative">
-                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80" 
-                         alt="Professional house cleaning service in Stockton" 
-                         class="rounded-2xl shadow-2xl w-full h-[500px] object-cover"
-                         onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjQwMCIgdmlld0JveD0iMCAwIDYwMCA0MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiBmaWxsPSIjRjRBMjYxIiBmaWxsLW9wYWNpdHk9IjAuMiIvPgo8dGV4dCB4PSIzMDAiIHk9IjIwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzJFNDA1NyIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE4Ij5DbGVhbmluZyBTZXJ2aWNlPC90ZXh0Pgo8L3N2Zz4='">
-                    <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-lg">
-                        <div class="flex items-center space-x-3">
-                            <i class="fas fa-check-circle text-green-500 text-xl"></i>
-                            <div>
-                                <p class="font-semibold text-primary">100% Satisfaction</p>
-                                <p class="text-sm text-gray-600">Guaranteed Results</p>
-                            </div>
-                        </div>
+    <!-- Rating Banner -->
+    <section class="bg-primary py-4">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-center text-white">
+                <div class="flex items-center space-x-2">
+                    <div class="flex">
+                        <i class="fas fa-star text-accent"></i>
+                        <i class="fas fa-star text-accent"></i>
+                        <i class="fas fa-star text-accent"></i>
+                        <i class="fas fa-star text-accent"></i>
+                        <i class="fas fa-star text-accent"></i>
                     </div>
+                    <span class="font-semibold">4.7 stars</span>
+                    <span class="text-gray-300">·</span>
+                    <span>30 reviews from Stockton homeowners</span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="font-display font-bold text-3xl md:text-4xl text-primary mb-4">
-                    Complete Cleaning Solutions for Stockton Homes
+    <section id="services" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-serif font-semibold text-primary mb-4">
+                    Fresh Start Home Services Specialties
                 </h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    From weekly maintenance to deep move-out cleans, Fresh Start Home Services handles every detail with professional precision.
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    From deep kitchen scrubs to bathroom sanitizing, we handle every detail of your Stockton home.
                 </p>
             </div>
-
+            
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-lightbg rounded-2xl p-8 hover:shadow-lg transition-shadow">
-                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80" 
-                         alt="Deep kitchen cleaning service" 
-                         class="w-full h-48 object-cover rounded-lg mb-6"
-                         onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjI0MCIgdmlld0JveD0iMCAwIDQwMCAyNDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMjQwIiBmaWxsPSIjRjRBMjYxIiBmaWxsLW9wYWNpdHk9IjAuMiIvPgo8dGV4dCB4PSIyMDAiIHk9IjEyMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzJFNDA1NyIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2Ij5LaXRjaGVuIENsZWFuaW5nPC90ZXh0Pgo8L3N2Zz4='">
-                    <h3 class="font-display font-semibold text-xl text-primary mb-3">Deep Kitchen Degreasing</h3>
-                    <p class="text-gray-600 mb-4">Complete appliance cleaning, cabinet wiping, countertop sanitizing, and floor mopping. We tackle grease buildup and food residue.</p>
-                    <div class="text-accent font-medium">Starting at $120</div>
-                </div>
-
-                <div class="bg-lightbg rounded-2xl p-8 hover:shadow-lg transition-shadow">
-                    <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=800&q=80" 
-                         alt="Bathroom deep cleaning service" 
-                         class="w-full h-48 object-cover rounded-lg mb-6"
-                         onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjI0MCIgdmlld0JveD0iMCAwIDQwMCAyNDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMjQwIiBmaWxsPSIjRjRBMjYxIiBmaWxsLW9wYWNpdHk9IjAuMiIvPgo8dGV4dCB4PSIyMDAiIHk9IjEyMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzJFNDA1NyIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2Ij5CYXRocm9vbSBDbGVhbmluZzwvdGV4dD4KPHN2Zz4='">
-                    <h3 class="font-display font-semibold text-xl text-primary mb-3">Bathroom Deep Sanitizing</h3>
-                    <p class="text-gray-600 mb-4">Tile scrubbing, grout whitening, toilet deep clean, shower glass restoration, and mirror polishing for a sparkling finish.</p>
-                    <div class="text-accent font-medium">Starting at $85</div>
-                </div>
-
-                <div class="bg-lightbg rounded-2xl p-8 hover:shadow-lg transition-shadow">
-                    <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=800&q=80" 
-                         alt="Move-out cleaning service in Stockton" 
-                         class="w-full h-48 object-cover rounded-lg mb-6"
-                         onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjI0MCIgdmlld0JveD0iMCAwIDQwMCAyNDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMjQwIiBmaWxsPSIjRjRBMjYxIiBmaWxsLW9wYWNpdHk9IjAuMiIvPgo8dGV4dCB4PSIyMDAiIHk9IjEyMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzJFNDA1NyIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2Ij5Nb3ZlLW91dCBDbGVhbjwvdGV4dD4KPHN2Zz4='">
-                    <h3 class="font-display font-semibold text-xl text-primary mb-3">Move-Out Deep Clean</h3>
-                    <p class="text-gray-600 mb-4">Comprehensive whole-house cleaning including inside cabinets, appliances, baseboards, and wall washing. Perfect for deposits.</p>
-                    <div class="text-accent font-medium">Starting at $280</div>
-                </div>
-
-                <div class="bg-lightbg rounded-2xl p-8 hover:shadow-lg transition-shadow">
-                    <div class="w-full h-48 bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg mb-6 flex items-center justify-center">
-                        <i class="fas fa-window-maximize text-primary text-4xl"></i>
+                <div class="bg-background rounded-lg p-6 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-kitchen-set text-white text-xl"></i>
                     </div>
-                    <h3 class="font-display font-semibold text-xl text-primary mb-3">Window & Blind Detail</h3>
-                    <p class="text-gray-600 mb-4">Interior window cleaning, sill wiping, blind dusting, and screen cleaning for crystal-clear views throughout your home.</p>
-                    <div class="text-accent font-medium">Starting at $95</div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Deep Kitchen Cleaning</h3>
+                    <p class="text-gray-600">Appliance interior cleaning, cabinet fronts, countertop sanitizing, and grease removal from all surfaces.</p>
                 </div>
-
-                <div class="bg-lightbg rounded-2xl p-8 hover:shadow-lg transition-shadow">
-                    <div class="w-full h-48 bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg mb-6 flex items-center justify-center">
-                        <i class="fas fa-calendar-check text-primary text-4xl"></i>
+                
+                <div class="bg-background rounded-lg p-6 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-bath text-white text-xl"></i>
                     </div>
-                    <h3 class="font-display font-semibold text-xl text-primary mb-3">Weekly Maintenance</h3>
-                    <p class="text-gray-600 mb-4">Regular house cleaning including dusting, vacuuming, mopping, and surface sanitizing to keep your home consistently fresh.</p>
-                    <div class="text-accent font-medium">Starting at $160</div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Bathroom Sanitization</h3>
+                    <p class="text-gray-600">Toilet deep clean, shower/tub scrubbing, mirror polishing, and tile grout restoration.</p>
                 </div>
-
-                <div class="bg-lightbg rounded-2xl p-8 hover:shadow-lg transition-shadow">
-                    <div class="w-full h-48 bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg mb-6 flex items-center justify-center">
-                        <i class="fas fa-couch text-primary text-4xl"></i>
+                
+                <div class="bg-background rounded-lg p-6 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-bed text-white text-xl"></i>
                     </div>
-                    <h3 class="font-display font-semibold text-xl text-primary mb-3">Post-Party Restoration</h3>
-                    <p class="text-gray-600 mb-4">Complete cleanup after events including floor restoration, surface disinfecting, trash removal, and getting your space back to normal.</p>
-                    <div class="text-accent font-medium">Starting at $195</div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Bedroom & Living Areas</h3>
+                    <p class="text-gray-600">Dusting furniture, vacuuming upholstery, baseboards wiping, and window sill cleaning.</p>
+                </div>
+                
+                <div class="bg-background rounded-lg p-6 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-broom text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Floor Care Specialists</h3>
+                    <p class="text-gray-600">Hardwood polishing, tile mopping, carpet spot treatment, and entrance mat cleaning.</p>
+                </div>
+                
+                <div class="bg-background rounded-lg p-6 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-home text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Move-Out Deep Cleans</h3>
+                    <p class="text-gray-600">Inside oven cleaning, refrigerator detailing, closet vacuuming, and deposit-back guarantee service.</p>
+                </div>
+                
+                <div class="bg-background rounded-lg p-6 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-calendar-check text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Weekly Maintenance Plans</h3>
+                    <p class="text-gray-600">Recurring service packages with priority booking and 15% savings for regular Stockton customers.</p>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="text-center mt-12">
-                <a href="tel:9252525565" class="bg-primary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-primary/90 transition-colors inline-block">
-                    Get Your Free Quote Today
-                </a>
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 bg-background">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-serif font-semibold text-primary mb-4">
+                    Before & After: Stockton Homes Transformed
+                </h2>
+                <p class="text-lg text-gray-600">
+                    See the Fresh Start difference in real Stockton kitchens and bathrooms.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=800&q=80" 
+                         alt="Kitchen deep clean transformation" 
+                         class="w-full h-64 object-cover"
+                         onerror="this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-2">Kitchen Deep Clean - March Park</h3>
+                        <p class="text-gray-600">Complete appliance detailing, cabinet restoration, and countertop sanitizing for this Stockton family kitchen.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg overflow-hidden shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&q=80" 
+                         alt="Bathroom sanitization service" 
+                         class="w-full h-64 object-cover"
+                         onerror="this.src='https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=800&q=80'">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-primary mb-2">Master Bath Restoration - Lincoln Village</h3>
+                        <p class="text-gray-600">Tile grout cleaning, fixture polishing, and complete sanitization of this Lincoln Village West home.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Reviews Section -->
-    <section id="reviews" class="py-20 bg-lightbg">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="font-display font-bold text-3xl md:text-4xl text-primary mb-4">
-                    What Stockton Families Say About Fresh Start
+    <section id="reviews" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-serif font-semibold text-primary mb-4">
+                    What Stockton Families Are Saying
                 </h2>
-                <div class="flex justify-center items-center space-x-2">
-                    <div class="flex text-yellow-400 text-xl">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                <div class="flex items-center justify-center space-x-2 mb-4">
+                    <div class="flex">
+                        <i class="fas fa-star text-accent"></i>
+                        <i class="fas fa-star text-accent"></i>
+                        <i class="fas fa-star text-accent"></i>
+                        <i class="fas fa-star text-accent"></i>
+                        <i class="fas fa-star text-accent"></i>
                     </div>
-                    <span class="font-semibold text-primary text-lg">4.7/5 stars</span>
-                    <span class="text-gray-500">• 30 reviews on Google</span>
+                    <span class="text-lg font-semibold">4.7 out of 5 stars</span>
                 </div>
             </div>
-
+            
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-2xl p-8 shadow-sm">
-                    <div class="flex text-yellow-400 mb-4">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                <div class="bg-background rounded-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="flex mr-2">
+                            <i class="fas fa-star text-accent"></i>
+                            <i class="fas fa-star text-accent"></i>
+                            <i class="fas fa-star text-accent"></i>
+                            <i class="fas fa-star text-accent"></i>
+                            <i class="fas fa-star text-accent"></i>
+                        </div>
                     </div>
-                    <p class="text-gray-700 mb-6">"Fresh Start did an amazing deep clean of our kitchen after our holiday cooking marathon. They got grease off our range hood that I didn't even know was there! The whole house smelled fresh and looked spotless. Definitely calling them again for our monthly cleaning."</p>
-                    <div class="flex items-center">
-                        <div class="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center mr-4">
-                            <i class="fas fa-user text-accent"></i>
-                        </div>
-                        <div>
-                            <p class="font-semibold text-primary">Maria Rodriguez</p>
-                            <p class="text-gray-500">Lincoln District, Stockton</p>
-                        </div>
+                    <p class="text-gray-700 mb-4 italic">"They got my oven looking brand new again!"</p>
+                    <div class="text-sm">
+                        <p class="font-semibold text-primary">Maria S.</p>
+                        <p class="text-gray-500">Stockton resident</p>
                     </div>
                 </div>
-
-                <div class="bg-white rounded-2xl p-8 shadow-sm">
-                    <div class="flex text-yellow-400 mb-4">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                
+                <div class="bg-background rounded-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="flex mr-2">
+                            <i class="fas fa-star text-accent"></i>
+                            <i class="fas fa-star text-accent"></i>
+                            <i class="fas fa-star text-accent"></i>
+                            <i class="fas fa-star text-accent"></i>
+                            <i class="fas fa-star text-accent"></i>
+                        </div>
                     </div>
-                    <p class="text-gray-700 mb-6">"We hired Fresh Start for our move-out cleaning and got our full deposit back! They cleaned inside every cabinet, scrubbed the bathroom tiles until they looked new, and even cleaned the baseboards. Super thorough and professional team."</p>
-                    <div class="flex items-center">
-                        <div class="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center mr-4">
-                            <i class="fas fa-user text-accent"></i>
-                        </div>
-                        <div>
-                            <p class="font-semibold text-primary">James Chen</p>
-                            <p class="text-gray-500">Pacific, Stockton</p>
-                        </div>
+                    <p class="text-gray-700 mb-4 italic">"Fresh Start cleaned our whole house before our move-out inspection in Lincoln Village. They even moved our furniture back perfectly. Got our full deposit back!"</p>
+                    <div class="text-sm">
+                        <p class="font-semibold text-primary">Jennifer K.</p>
+                        <p class="text-gray-500">Lincoln Village West</p>
                     </div>
                 </div>
-
-                <div class="bg-white rounded-2xl p-8 shadow-sm">
-                    <div class="flex text-yellow-400 mb-4">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                
+                <div class="bg-background rounded-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="flex mr-2">
+                            <i class="fas fa-star text-accent"></i>
+                            <i class="fas fa-star text-accent"></i>
+                            <i class="fas fa-star text-accent"></i>
+                            <i class="fas fa-star text-accent"></i>
+                            <i class="fas fa-star text-accent"></i>
+                        </div>
                     </div>
-                    <p class="text-gray-700 mb-6">"Reliable weekly service that actually shows up on time! They use eco-friendly products which is important to us with young kids. The house stays consistently clean and I love having my weekends back. Highly recommend Fresh Start to any busy Stockton family."</p>
-                    <div class="flex items-center">
-                        <div class="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center mr-4">
-                            <i class="fas fa-user text-accent"></i>
-                        </div>
-                        <div>
-                            <p class="font-semibold text-primary">Amanda Thompson</p>
-                            <p class="text-gray-500">Brookside, Stockton</p>
-                        </div>
+                    <p class="text-gray-700 mb-4 italic">"I've been using their weekly service for 6 months now and my house always looks amazing. They pay attention to details like cleaning inside the microwave and wiping down light switches. The team is always on time and very professional. Highly recommend to anyone in the Stockton area!"</p>
+                    <div class="text-sm">
+                        <p class="font-semibold text-primary">David Chen</p>
+                        <p class="text-gray-500">Brookside area</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div class="space-y-8">
-                    <div>
-                        <h2 class="font-display font-bold text-3xl md:text-4xl text-primary mb-4">
-                            Ready for Your Fresh Start?
-                        </h2>
-                        <p class="text-xl text-gray-600 mb-8">
-                            Join dozens of satisfied Stockton homeowners who trust Fresh Start Home Services for their cleaning needs. Same-day booking available.
-                        </p>
-                    </div>
-
-                    <div class="space-y-6">
-                        <div class="flex items-start space-x-4">
-                            <i class="fas fa-phone text-accent text-xl mt-1"></i>
-                            <div>
-                                <h3 class="font-semibold text-primary mb-1">Call or Text</h3>
-                                <a href="tel:9252525565" class="text-lg text-gray-700 hover:text-primary transition-colors">(925) 252-5565</a>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start space-x-4">
-                            <i class="fas fa-map-marker-alt text-accent text-xl mt-1"></i>
-                            <div>
-                                <h3 class="font-semibold text-primary mb-1">Service Area</h3>
-                                <p class="text-gray-700">4777 Grouse Run Dr #261<br>Stockton, CA 95207</p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start space-x-4">
-                            <i class="fas fa-clock text-accent text-xl mt-1"></i>
-                            <div>
-                                <h3 class="font-semibold text-primary mb-1">Business Hours</h3>
-                                <p class="text-gray-700">Monday - Wednesday: 9 AM to 5 PM</p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start space-x-4">
-                            <i class="fas fa-star text-accent text-xl mt-1"></i>
-                            <div>
-                                <h3 class="font-semibold text-primary mb-1">Google Reviews</h3>
-                                <div class="flex items-center">
-                                    <div class="flex text-yellow-400 mr-2">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <span class="text-gray-700">4.7 stars (30 reviews)</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="tel:9252525565" class="bg-primary text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-primary/90 transition-colors text-center">
-                            Book a Cleaning
-                        </a>
-                        <a href="https://www.google.com/maps/search/?api=1&query=Fresh%20Start%20Home%20Services&query_place_id=ChIJP1QfHFDDPwERjBPFjmTkqcY" target="_blank" class="border-2 border-primary text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-primary hover:text-white transition-colors text-center">
-                            View on Google Maps
-                        </a>
-                    </div>
-                </div>
-
-                <div class="bg-lightbg rounded-2xl p-8">
-                    <h3 class="font-display font-semibold text-2xl text-primary mb-6">Get Your Free Quote</h3>
-                    <form class="space-y-4">
-                        <div class="grid md:grid-cols-2 gap-4">
-                            <input type="text" placeholder="First Name" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:outline-none">
-                            <input type="text" placeholder="Last Name" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:outline-none">
-                        </div>
-                        <input type="tel" placeholder="Phone Number" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:outline-none">
-                        <input type="email" placeholder="Email Address" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:outline-none">
-                        <select class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:outline-none text-gray-700">
-                            <option>Select Service Type</option>
-                            <option>Weekly Maintenance</option>
-                            <option>Deep Kitchen Clean</option>
-                            <option>Move-Out Clean</option>
-                            <option>Bathroom Deep Clean</option>
-                            <option>Post-Party Cleanup</option>
-                            <option>Custom Service</option>
-                        </select>
-                        <textarea placeholder="Tell us about your cleaning needs..." rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:outline-none resize-none"></textarea>
-                        <button type="submit" class="w-full bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
-                            Get My Free Quote
-                        </button>
-                    </form>
-                    <p class="text-sm text-gray-500 mt-4 text-center">
-                        We'll call you back within 2 hours during business hours
-                    </p>
-                </div>
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary text-white">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-serif font-semibold mb-4">
+                Ready for Your Fresh Start?
+            </h2>
+            <p class="text-xl mb-8 text-gray-100">
+                Join 30+ satisfied Stockton families who trust Fresh Start Home Services with their cleaning needs.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 mb-8">
+                <a href="tel:9252525565" class="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-orange-500 transition-colors flex items-center justify-center">
+                    <i class="fas fa-phone mr-3"></i>
+                    Call (925) 252-5565 Now
+                </a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Fresh%20Start%20Home%20Services&query_place_id=ChIJP1QfHFDDPwERjBPFjmTkqcY" 
+                   target="_blank" 
+                   class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-primary transition-colors flex items-center justify-center">
+                    <i class="fas fa-map-marker-alt mr-3"></i>
+                    Find Us on Google
+                </a>
             </div>
+            <p class="text-gray-200">
+                <i class="fas fa-clock mr-2"></i>
+                Available Monday-Wednesday, 9 AM to 5 PM
+            </p>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-primary text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-4 gap-8">
-                <div class="md:col-span-2">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-home text-accent text-xl mr-2"></i>
-                        <span class="font-display font-semibold text-xl">Fresh Start Home Services</span>
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-serif font-semibold text-xl mb-4">Fresh Start Home Services</h3>
+                    <p class="text-gray-300 mb-4">Professional house cleaning services for Stockton families since day one.</p>
+                    <div class="flex items-center space-x-2">
+                        <div class="flex">
+                            <i class="fas fa-star text-accent"></i>
+                            <i class="fas fa-star text-accent"></i>
+                            <i class="fas fa-star text-accent"></i>
+                            <i class="fas fa-star text-accent"></i>
+                            <i class="fas fa-star text-accent"></i>
+                        </div>
+                        <span class="text-sm text-gray-300">4.7/5 from 30 reviews</span>
                     </div>
-                    <p class="text-white/80 mb-4 max-w-md">
-                        Stockton's trusted house cleaning service. Professional, reliable, and eco-friendly cleaning solutions for your
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Contact Info</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <p><i class="fas fa-phone mr-2"></i>(925) 252-5565</p>
+                        <p><i class="fas fa-map-marker-alt mr-2"></i>4777 Grouse Run Dr #261<br>Stockton, CA 95207</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Business Hours</h4>
+                    <div class="space-y-2 text-gray-300 text-sm">
+                        <p>Monday: 9 AM - 5 PM</p>
+                        <p>Tuesday: 9 AM - 5 PM</p>
+                        <p>Wednesday: 9 AM - 5 PM</p>
+                        <p>Thu-Sun: By Appointment</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Service Areas</h4>
+                    <div class="space-y-1 text-gray-300 text-sm">
+                        <p>Stockton</p>
+                        <p>Lincoln Village</p>
+                        <p>March Lane</p>
+                        <p>Brookside</p>
+                        <p>Spanos Park</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 2024 Fresh Start Home Services. Licensed, bonded, and insured house cleaning in Stockton, CA.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Bottom CTA Bar -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-4 md:hidden z-50">
+        <div class="flex space-x-3">
+            <a href="tel:9252525565" class="flex-1 bg-primary text-white py-3 rounded-lg font-medium text-center flex items-center justify-center">
+                <i class="fas fa-phone mr-2"></i>
+                Call (925) 252-5565
+            </a>
+            <a href="#services" class="flex-1 bg-accent text-white py-3 rounded-lg font-medium text-center flex items-center justify-center">
+                <i class="fas fa-message mr-2"></i>
+                Get a Quote
+            </a>
+        </div>
+    </div>
+
+    <!-- Smooth scroll animation -->
+    <script>
+        // Simple scroll animation for service cards
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Apply animation to service cards
+        document.addEventListener('DOMContentLoaded', () => {
+            const serviceCards = document.querySelectorAll('#services .bg-background');
+            serviceCards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
+                observer.observe(card);
+            });
+        });
+    </script>
+</body>
+</html>
