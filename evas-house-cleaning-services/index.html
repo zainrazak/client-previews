@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eva's House Cleaning Services - Professional Home Cleaning</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1B4332',
+                        accent: '#52B788',
+                        background: '#F0FFF4'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'display': ['Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="font-display font-bold text-primary text-xl">
+                    Eva's House Cleaning
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#services" class="text-gray-700 hover:text-primary transition-colors">Services</a>
+                    <a href="#gallery" class="text-gray-700 hover:text-primary transition-colors">Gallery</a>
+                    <a href="#reviews" class="text-gray-700 hover:text-primary transition-colors">Reviews</a>
+                    <a href="tel:(415) 410-4694" class="bg-accent text-white px-4 py-2 rounded-lg font-medium hover:bg-green-600 transition-colors">
+                        (415) 410-4694
+                    </a>
+                </div>
+                <button class="md:hidden">
+                    <i class="fas fa-bars text-primary text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-16 min-h-screen flex items-center">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1">
+                    <h1 class="font-display text-4xl md:text-5xl font-bold text-primary mb-6">
+                        Spotless Homes, Every Time
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8">
+                        Trusted by families with 5-star service and 18 glowing reviews.
+                    </p>
+                    
+                    <!-- Trust Bar -->
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                        <div class="flex flex-col items-center text-center">
+                            <i class="fas fa-shield-halved text-accent text-2xl mb-2"></i>
+                            <span class="text-sm font-medium">Bonded & Insured</span>
+                        </div>
+                        <div class="flex flex-col items-center text-center">
+                            <i class="fas fa-clock text-accent text-2xl mb-2"></i>
+                            <span class="text-sm font-medium">Same-Day Booking</span>
+                        </div>
+                        <div class="flex flex-col items-center text-center">
+                            <i class="fas fa-star text-accent text-2xl mb-2"></i>
+                            <span class="text-sm font-medium">5-Star Rated</span>
+                        </div>
+                        <div class="flex flex-col items-center text-center">
+                            <i class="fas fa-leaf text-accent text-2xl mb-2"></i>
+                            <span class="text-sm font-medium">Eco-Friendly</span>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-900 transition-colors">
+                            Book a Cleaning
+                        </button>
+                        <a href="tel:(415) 410-4694" class="border-2 border-primary text-primary px-8 py-4 rounded-lg font-semibold hover:bg-primary hover:text-white transition-colors text-center">
+                            Call (415) 410-4694
+                        </a>
+                    </div>
+
+                    <div class="mt-8 flex items-center">
+                        <div class="flex">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                        </div>
+                        <span class="ml-2 font-semibold">5-star rating · 18 reviews</span>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <img src="photos/photo-1.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'"
+                         alt="Eva's professional house cleaning service"
+                         class="w-full h-96 lg:h-full object-cover rounded-2xl shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-3xl md:text-4xl font-bold text-primary mb-4">
+                    Eva's Complete Home Care Services
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    From weekly maintenance to deep seasonal cleans, we handle every detail of your home with care and precision.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-background p-8 rounded-xl">
+                    <i class="fas fa-home text-accent text-3xl mb-4"></i>
+                    <h3 class="font-display text-xl font-semibold mb-3">Regular House Cleaning</h3>
+                    <p class="text-gray-600">Weekly, bi-weekly, or monthly cleaning to keep your home consistently spotless.</p>
+                </div>
+
+                <div class="bg-background p-8 rounded-xl">
+                    <i class="fas fa-magic text-accent text-3xl mb-4"></i>
+                    <h3 class="font-display text-xl font-semibold mb-3">Deep Cleaning Service</h3>
+                    <p class="text-gray-600">Comprehensive top-to-bottom cleaning for spring cleaning or first-time service.</p>
+                </div>
+
+                <div class="bg-background p-8 rounded-xl">
+                    <i class="fas fa-door-open text-accent text-3xl mb-4"></i>
+                    <h3 class="font-display text-xl font-semibold mb-3">Move-In/Move-Out</h3>
+                    <p class="text-gray-600">Complete cleaning for relocations to ensure your new or old home sparkles.</p>
+                </div>
+
+                <div class="bg-background p-8 rounded-xl">
+                    <i class="fas fa-bath text-accent text-3xl mb-4"></i>
+                    <h3 class="font-display text-xl font-semibold mb-3">Bathroom Sanitization</h3>
+                    <p class="text-gray-600">Deep sanitization of all bathroom surfaces, fixtures, and hard-to-reach areas.</p>
+                </div>
+
+                <div class="bg-background p-8 rounded-xl">
+                    <i class="fas fa-utensils text-accent text-3xl mb-4"></i>
+                    <h3 class="font-display text-xl font-semibold mb-3">Kitchen Deep Clean</h3>
+                    <p class="text-gray-600">Appliance cleaning, cabinet wiping, and thorough sanitization of cooking areas.</p>
+                </div>
+
+                <div class="bg-background p-8 rounded-xl">
+                    <i class="fas fa-calendar-alt text-accent text-3xl mb-4"></i>
+                    <h3 class="font-display text-xl font-semibold mb-3">Post-Construction Cleanup</h3>
+                    <p class="text-gray-600">Specialized cleaning to remove dust, debris, and residue after renovations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-background">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-3xl md:text-4xl font-bold text-primary mb-4">
+                    See Eva's Work in Action
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Real results from local homes we've transformed
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 opacity-0 transform translate-y-8" id="gallery-grid">
+                <div class="relative group">
+                    <img src="photos/photo-2.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'"
+                         alt="Sparkling kitchen after deep clean"
+                         class="w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-shadow">
+                    <div class="absolute inset-0 bg-primary bg-opacity-80 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg flex items-center justify-center">
+                        <span class="text-white font-semibold">Kitchen Deep Clean</span>
+                    </div>
+                </div>
+
+                <div class="relative group">
+                    <img src="photos/photo-3.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'"
+                         alt="Immaculate living room cleaning"
+                         class="w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-shadow">
+                    <div class="absolute inset-0 bg-primary bg-opacity-80 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg flex items-center justify-center">
+                        <span class="text-white font-semibold">Living Room Detail</span>
+                    </div>
+                </div>
+
+                <div class="relative group">
+                    <img src="photos/photo-4.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'"
+                         alt="Pristine bathroom after cleaning"
+                         class="w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-shadow">
+                    <div class="absolute inset-0 bg-primary bg-opacity-80 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg flex items-center justify-center">
+                        <span class="text-white font-semibold">Bathroom Sanitization</span>
+                    </div>
+                </div>
+
+                <div class="relative group">
+                    <img src="photos/photo-5.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'"
+                         alt="Spotless bedroom cleaning service"
+                         class="w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-shadow">
+                    <div class="absolute inset-0 bg-primary bg-opacity-80 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg flex items-center justify-center">
+                        <span class="text-white font-semibold">Bedroom Cleaning</span>
+                    </div>
+                </div>
+
+                <div class="relative group">
+                    <img src="photos/photo-6.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'"
+                         alt="Complete home cleaning transformation"
+                         class="w-full h-64 object-cover rounded-lg shadow-lg group-hover:shadow-xl transition-shadow">
+                    <div class="absolute inset-0 bg-primary bg-opacity-80 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg flex items-center justify-center">
+                        <span class="text-white font-semibold">Full House Clean</span>
+                    </div>
+                </div>
+
+                <div class="relative group md:col-span-2 lg:col-span-1">
+                    <div class="bg-accent p-8 rounded-lg h-64 flex flex-col justify-center items-center text-center">
+                        <i class="fas fa-camera text-white text-4xl mb-4"></i>
+                        <h3 class="text-white font-display font-semibold text-xl mb-2">Your Home Next?</h3>
+                        <p class="text-white opacity-90 mb-4">Let us transform your space</p>
+                        <button class="bg-white text-accent px-6 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                            Book a Cleaning
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-3xl md:text-4xl font-bold text-primary mb-4">
+                    What Neighbors Say About Eva's Cleaning
+                </h2>
+                <div class="flex items-center justify-center mb-4">
+                    <div class="flex">
+                        <i class="fas fa-star text-yellow-400 text-xl"></i>
+                        <i class="fas fa-star text-yellow-400 text-xl"></i>
+                        <i class="fas fa-star text-yellow-400 text-xl"></i>
+                        <i class="fas fa-star text-yellow-400 text-xl"></i>
+                        <i class="fas fa-star text-yellow-400 text-xl"></i>
+                    </div>
+                    <span class="ml-2 text-xl font-semibold">5.0 stars from 18 reviews</span>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-background p-6 rounded-xl">
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        "Eva's team did an amazing job on our kitchen deep clean - they even cleaned inside the oven and microwave which I never expected!"
+                    </p>
+                    <div class="text-sm text-gray-600">
+                        <strong>Sarah M.</strong>
+                    </div>
+                </div>
+
+                <div class="bg-background p-6 rounded-xl">
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        "Been using Eva's House Cleaning Services for 6 months now and they're incredibly reliable. They even moved my furniture to vacuum underneath and put everything back perfectly. The bathroom always sparkles when they're done. Highly recommend for anyone looking for consistent, quality cleaning."
+                    </p>
+                    <div class="text-sm text-gray-600">
+                        <strong>Michael R.</strong>
+                    </div>
+                </div>
+
+                <div class="bg-background p-6 rounded-xl">
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        "Eva came for our move-out cleaning and the place looked better than when we moved in. She's professional, thorough, and uses eco-friendly products which was important to us."
+                    </p>
+                    <div class="text-sm text-gray-600">
+                        <strong>Jennifer L.</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-primary text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="font-display text-3xl md:text-4xl font-bold mb-6">
+                Ready for a Spotless Home?
+            </h2>
+            <p class="text-xl mb-8 opacity-90">
+                Join 18 satisfied customers who trust Eva's House Cleaning Services. 
+                Book your cleaning today and experience the difference.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+                <button class="bg-accent text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-600 transition-colors">
+                    Book a Cleaning
+                </button>
+                <a href="tel:(415) 410-4694" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors">
+                    Call (415) 410-4694
+                </a>
+            </div>
+
+            <div class="text-center opacity-75">
+                <p class="mb-2">Available Mon–Sat 8am–6pm</p>
+                <p>Same-day booking available</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-display font-bold text-xl mb-4">Eva's House Cleaning</h3>
+                    <p class="text-gray-300 mb-4">Professional house cleaning services you can trust.</p>
+                    <div class="flex">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <span class="ml-2 text-sm">5.0 (18 reviews)</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4">Contact Info</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <p><i class="fas fa-phone mr-2"></i> (415) 410-4694</p>
+                        <p><i class="fas fa-clock mr-2"></i> Mon–Sat 8am–6pm</p>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Eva%E2%80%99s%20House%20Cleaning%20Services&query_place_id=ChIJqTGwoF2LuE0RsbqC7NPoX-4" target="_blank" class="hover:text-accent transition-colors">
+                            <i class="fas fa-map-marker-alt mr-2"></i> View on Google Maps
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4">Our Services</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <p>Regular House Cleaning</p>
+                        <p>Deep Cleaning Service</p>
+                        <p>Move-In/Move-Out</p>
+                        <p>Post-Construction Cleanup</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold mb-4">Service Areas</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <p>Local area served</p>
+                        <p>Same-day booking available</p>
+                        <p>Bonded & Insured</p>
+                        <p>Eco-friendly products</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Eva's House Cleaning Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Bottom CTA Bar -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-4 md:hidden z-40">
+        <div class="flex gap-3">
+            <a href="tel:(415) 410-4694" class="flex-1 bg-primary text-white py-3 rounded-lg font-semibold text-center">
+                <i class="fas fa-phone mr-2"></i>Call (415) 410-4694
+            </a>
+            <button class="flex-1 bg-accent text-white py-3 rounded-lg font-semibold">
+                <i class="fas fa-message mr-2"></i>Get a Quote
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Animate gallery on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in-up');
+                    entry.target.classList.remove('opacity-0', 'translate-y-8');
+                }
+            });
+        }, observerOptions);
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const galleryGrid = document.getElementById('gallery-grid');
+            if (galleryGrid) {
+                observer.observe(galleryGrid);
+            }
+        });
+
+        // Add CSS animation class
+        const style = document.createElement('style');
+        style.textContent = `
+            .animate-fade-in-up {
+                animation: fadeInUp 0.8s ease-out forwards;
+            }
+            
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(2rem);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
