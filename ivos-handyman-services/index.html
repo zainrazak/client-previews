@@ -3,43 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ivo's Handyman Services - Professional Home Repairs in Stockton, CA</title>
+    <title>Ivo'S Handyman Services | Stockton's Trusted Home Repair Experts</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        'primary': '#1C1917',
-                        'accent': '#EA580C',
-                        'light-bg': '#FFF7ED'
+                        primary: '#1C1917',
+                        accent: '#EA580C',
+                        background: '#FFF7ED'
                     },
                     fontFamily: {
-                        'display': ['Oswald', 'sans-serif'],
-                        'body': ['Inter', 'sans-serif']
+                        sans: ['Inter', 'sans-serif']
                     }
                 }
             }
         }
     </script>
 </head>
-<body class="font-body">
+<body class="font-sans bg-background">
     <!-- Navigation -->
-    <nav class="bg-white shadow-lg sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex items-center">
-                    <i class="fas fa-hammer text-accent text-2xl mr-3"></i>
-                    <span class="font-display font-semibold text-xl text-primary">Ivo's Handyman Services</span>
+    <nav class="bg-white shadow-sm border-b border-stone-200 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="text-xl font-bold text-primary">
+                    Ivo'S Handyman Services
                 </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#services" class="text-gray-700 hover:text-accent transition-colors">Services</a>
-                    <a href="#reviews" class="text-gray-700 hover:text-accent transition-colors">Reviews</a>
-                    <a href="#contact" class="text-gray-700 hover:text-accent transition-colors">Contact</a>
-                    <a href="tel:(925) 848-4287" class="bg-accent text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition-colors">
-                        <i class="fas fa-phone mr-2"></i>(925) 848-4287
+                <div class="flex items-center space-x-6">
+                    <div class="hidden md:flex items-center text-accent font-medium">
+                        <i class="fas fa-star mr-1"></i>
+                        <span>5.0 (28 reviews)</span>
+                    </div>
+                    <a href="tel:9258484287" class="bg-accent text-white px-4 py-2 rounded-lg font-medium hover:bg-orange-700 transition-colors">
+                        <i class="fas fa-phone mr-2"></i>
+                        (925) 848-4287
                     </a>
                 </div>
             </div>
@@ -47,375 +47,281 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative bg-primary h-96 md:h-[500px] flex items-center">
-        <div class="absolute inset-0 bg-black opacity-70"></div>
+    <section class="relative bg-primary min-h-[60vh] flex items-center">
         <div class="absolute inset-0">
-            <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAweoT06IIOMdwu5IuDY3_Z3hsBXi1_9rV9AG08qvJ5BCm4DQbetV8SCpXnGfy2zbkmBtN2X3wUjcBOmCruqxPHPRVK_mcmEgUcLJ7BWs7hEKHj3u8LQdpTqSQerQmQHxFarNmueRBgHCqjMAt=w426-h240-k-no" 
-                 alt="Ivo's Handyman Services work in progress" 
-                 class="w-full h-full object-cover"
-                 onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80'">
+            <img src="photos/photo-1.jpg" 
+                 onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1200&q=80'"
+                 alt="Ivo's handyman services in Stockton" 
+                 class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-primary bg-opacity-75"></div>
         </div>
-        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 class="font-display font-semibold text-4xl md:text-5xl lg:text-6xl text-white mb-6">
-                Stockton's Most Trusted<br>
-                <span class="text-accent">Handyman Services</span>
+        <div class="relative z-10 max-w-4xl mx-auto px-4 text-center text-white">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">
+                Stockton's Most Reliable Handyman Service
             </h1>
-            <p class="text-xl md:text-2xl text-gray-200 mb-8 max-w-2xl mx-auto">
-                From small repairs to complete home improvements, Ivo delivers quality craftsmanship that Stockton homeowners rely on.
+            <p class="text-xl md:text-2xl mb-8 text-stone-200">
+                5-star rated repairs and home improvements across Stockton
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="tel:(925) 848-4287" class="bg-accent text-white px-8 py-4 text-lg font-medium rounded-lg hover:bg-orange-600 transition-colors">
+                <a href="tel:9258484287" 
+                   class="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-orange-700 transition-colors">
+                    <i class="fas fa-phone mr-3"></i>Call Now: (925) 848-4287
+                </a>
+                <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})"
+                        class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-primary transition-all">
                     Get a Free Estimate
-                </a>
-                <a href="tel:(925) 848-4287" class="bg-transparent border-2 border-white text-white px-8 py-4 text-lg font-medium rounded-lg hover:bg-white hover:text-primary transition-colors">
-                    Call (925) 848-4287
-                </a>
+                </button>
             </div>
-            <div class="mt-8 flex justify-center items-center text-white">
-                <div class="flex items-center mr-6">
-                    <div class="flex text-yellow-400 text-lg mr-2">
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="bg-white py-8 border-b border-stone-200">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="text-center">
+                    <i class="fas fa-wrench text-3xl text-accent mb-3"></i>
+                    <div class="font-semibold text-primary">Licensed & Insured</div>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-clock text-3xl text-accent mb-3"></i>
+                    <div class="font-semibold text-primary">Fast Response</div>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-dollar-sign text-3xl text-accent mb-3"></i>
+                    <div class="font-semibold text-primary">Fair Pricing</div>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-map-pin text-3xl text-accent mb-3"></i>
+                    <div class="font-semibold text-primary">Local & Trusted</div>
+                </div>
+            </div>
+            <div class="text-center mt-6">
+                <div class="flex justify-center items-center text-accent font-semibold">
+                    <div class="flex text-yellow-400 mr-2">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <span class="font-medium">5.0 Stars</span>
-                </div>
-                <span class="text-gray-300">28 Google Reviews</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- Trust Signals -->
-    <section class="bg-light-bg py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-                <div class="text-center">
-                    <i class="fas fa-wrench text-accent text-3xl mb-4"></i>
-                    <h3 class="font-display font-medium text-primary text-lg mb-2">Licensed & Insured</h3>
-                    <p class="text-gray-600 text-sm">Full coverage protection</p>
-                </div>
-                <div class="text-center">
-                    <i class="fas fa-clock text-accent text-3xl mb-4"></i>
-                    <h3 class="font-display font-medium text-primary text-lg mb-2">Fast Response</h3>
-                    <p class="text-gray-600 text-sm">Same-day service available</p>
-                </div>
-                <div class="text-center">
-                    <i class="fas fa-dollar-sign text-accent text-3xl mb-4"></i>
-                    <h3 class="font-display font-medium text-primary text-lg mb-2">Fair Flat Pricing</h3>
-                    <p class="text-gray-600 text-sm">No hidden surprises</p>
-                </div>
-                <div class="text-center">
-                    <i class="fas fa-map-pin text-accent text-3xl mb-4"></i>
-                    <h3 class="font-display font-medium text-primary text-lg mb-2">Local & Trusted</h3>
-                    <p class="text-gray-600 text-sm">Serving Stockton since day one</p>
+                    5-star rating · 28 reviews
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="font-display font-semibold text-3xl md:text-4xl text-primary mb-4">
-                    Complete Home Solutions for Stockton Residents
-                </h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    Ivo'S Handyman Services handles everything from minor fixes to major projects with the same attention to detail and craftsmanship.
-                </p>
-            </div>
+    <!-- Services -->
+    <section class="py-16 bg-background">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-primary mb-12">
+                Ivo'S Handyman Services Across Stockton
+            </h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-light-bg rounded-xl p-6 hover:shadow-lg transition-shadow">
-                    <i class="fas fa-tools text-accent text-4xl mb-4"></i>
-                    <h3 class="font-display font-semibold text-xl text-primary mb-3">Kitchen & Bathroom Repairs</h3>
-                    <p class="text-gray-600 mb-4">Faucet replacement, tile repair, cabinet fixes, and countertop maintenance.</p>
-                    <ul class="text-sm text-gray-600 space-y-1">
-                        <li>• Leaky faucet repair</li>
-                        <li>• Cabinet door adjustments</li>
-                        <li>• Tile and grout restoration</li>
-                    </ul>
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-stone-200">
+                    <i class="fas fa-hammer text-accent text-2xl mb-4"></i>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Drywall Repair & Painting</h3>
+                    <p class="text-stone-600">Holes, cracks, and complete interior painting for your Stockton home</p>
                 </div>
-                <div class="bg-light-bg rounded-xl p-6 hover:shadow-lg transition-shadow">
-                    <i class="fas fa-paint-roller text-accent text-4xl mb-4"></i>
-                    <h3 class="font-display font-semibold text-xl text-primary mb-3">Interior Painting & Drywall</h3>
-                    <p class="text-gray-600 mb-4">Professional painting, hole patching, and texture matching for flawless walls.</p>
-                    <ul class="text-sm text-gray-600 space-y-1">
-                        <li>• Room painting and touch-ups</li>
-                        <li>• Drywall hole repair</li>
-                        <li>• Ceiling texture matching</li>
-                    </ul>
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-stone-200">
+                    <i class="fas fa-wrench text-accent text-2xl mb-4"></i>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Plumbing Fixes</h3>
+                    <p class="text-stone-600">Leaky faucets, toilet repairs, and minor pipe work</p>
                 </div>
-                <div class="bg-light-bg rounded-xl p-6 hover:shadow-lg transition-shadow">
-                    <i class="fas fa-door-open text-accent text-4xl mb-4"></i>
-                    <h3 class="font-display font-semibold text-xl text-primary mb-3">Door & Window Services</h3>
-                    <p class="text-gray-600 mb-4">Installation, repair, and adjustment of doors, windows, and hardware.</p>
-                    <ul class="text-sm text-gray-600 space-y-1">
-                        <li>• Door lock installation</li>
-                        <li>• Window screen repair</li>
-                        <li>• Sliding door maintenance</li>
-                    </ul>
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-stone-200">
+                    <i class="fas fa-bolt text-accent text-2xl mb-4"></i>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Electrical Repairs</h3>
+                    <p class="text-stone-600">Switch replacements, outlet installation, and light fixtures</p>
                 </div>
-                <div class="bg-light-bg rounded-xl p-6 hover:shadow-lg transition-shadow">
-                    <i class="fas fa-lightbulb text-accent text-4xl mb-4"></i>
-                    <h3 class="font-display font-semibold text-xl text-primary mb-3">Electrical & Lighting</h3>
-                    <p class="text-gray-600 mb-4">Fixture installation, outlet repair, and basic electrical troubleshooting.</p>
-                    <ul class="text-sm text-gray-600 space-y-1">
-                        <li>• Light fixture mounting</li>
-                        <li>• Outlet and switch repair</li>
-                        <li>• Ceiling fan installation</li>
-                    </ul>
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-stone-200">
+                    <i class="fas fa-door-open text-accent text-2xl mb-4"></i>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Door & Window Service</h3>
+                    <p class="text-stone-600">Installation, repairs, and weatherstripping for better efficiency</p>
                 </div>
-                <div class="bg-light-bg rounded-xl p-6 hover:shadow-lg transition-shadow">
-                    <i class="fas fa-home text-accent text-4xl mb-4"></i>
-                    <h3 class="font-display font-semibold text-xl text-primary mb-3">Exterior Maintenance</h3>
-                    <p class="text-gray-600 mb-4">Deck repairs, fence fixes, gutter cleaning, and outdoor improvements.</p>
-                    <ul class="text-sm text-gray-600 space-y-1">
-                        <li>• Deck board replacement</li>
-                        <li>• Fence panel repair</li>
-                        <li>• Gutter maintenance</li>
-                    </ul>
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-stone-200">
+                    <i class="fas fa-tools text-accent text-2xl mb-4"></i>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Furniture Assembly</h3>
+                    <p class="text-stone-600">IKEA, Amazon purchases, and custom shelving installation</p>
                 </div>
-                <div class="bg-light-bg rounded-xl p-6 hover:shadow-lg transition-shadow">
-                    <i class="fas fa-couch text-accent text-4xl mb-4"></i>
-                    <h3 class="font-display font-semibold text-xl text-primary mb-3">Furniture & Shelving</h3>
-                    <p class="text-gray-600 mb-4">Assembly, mounting, and installation of furniture, shelves, and storage solutions.</p>
-                    <ul class="text-sm text-gray-600 space-y-1">
-                        <li>• TV and shelf mounting</li>
-                        <li>• Furniture assembly</li>
-                        <li>• Closet organization systems</li>
-                    </ul>
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-stone-200">
+                    <i class="fas fa-home text-accent text-2xl mb-4"></i>
+                    <h3 class="text-xl font-semibold text-primary mb-3">General Home Maintenance</h3>
+                    <p class="text-stone-600">Caulking, tile repair, and seasonal home upkeep</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Reviews Section -->
-    <section id="reviews" class="py-16 bg-light-bg">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="font-display font-semibold text-3xl md:text-4xl text-primary mb-4">
-                    What Stockton Homeowners Say About Ivo
-                </h2>
-                <div class="flex justify-center items-center mb-6">
-                    <div class="flex text-yellow-400 text-2xl mr-4">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+    <!-- Gallery -->
+    <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-primary mb-12">
+                Recent Projects Around Stockton
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="group overflow-hidden rounded-lg shadow-sm">
+                    <img src="photos/photo-2.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1200&q=80'"
+                         alt="Kitchen cabinet repair" 
+                         class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-4 bg-stone-50">
+                        <h3 class="font-semibold text-primary">Kitchen Cabinet Repair</h3>
                     </div>
-                    <span class="text-2xl font-semibold text-primary">5.0 Stars</span>
-                    <span class="text-gray-600 ml-2">from 28 Google reviews</span>
+                </div>
+                <div class="group overflow-hidden rounded-lg shadow-sm">
+                    <img src="photos/photo-3.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1200&q=80'"
+                         alt="Bathroom tile work" 
+                         class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-4 bg-stone-50">
+                        <h3 class="font-semibold text-primary">Bathroom Tile Replacement</h3>
+                    </div>
+                </div>
+                <div class="group overflow-hidden rounded-lg shadow-sm">
+                    <img src="photos/photo-4.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1200&q=80'"
+                         alt="Living room painting" 
+                         class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-4 bg-stone-50">
+                        <h3 class="font-semibold text-primary">Interior Painting Project</h3>
+                    </div>
+                </div>
+                <div class="group overflow-hidden rounded-lg shadow-sm">
+                    <img src="photos/photo-5.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1200&q=80'"
+                         alt="Deck repair" 
+                         class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-4 bg-stone-50">
+                        <h3 class="font-semibold text-primary">Deck Restoration</h3>
+                    </div>
+                </div>
+                <div class="group overflow-hidden rounded-lg shadow-sm">
+                    <img src="photos/photo-6.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1200&q=80'"
+                         alt="Window installation" 
+                         class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-4 bg-stone-50">
+                        <h3 class="font-semibold text-primary">Window Installation</h3>
+                    </div>
+                </div>
+                <div class="bg-accent rounded-lg p-8 flex items-center justify-center">
+                    <div class="text-center text-white">
+                        <i class="fas fa-plus text-3xl mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Your Project Next?</h3>
+                        <p class="mb-4">Get your free estimate today</p>
+                        <a href="tel:9258484287" class="bg-white text-accent px-6 py-2 rounded-lg font-semibold hover:bg-stone-100 transition-colors">
+                            Call Now
+                        </a>
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="py-16 bg-background">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-primary mb-12">
+                What Stockton Residents Say
+            </h2>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-xl p-6 shadow-lg">
-                    <div class="flex text-yellow-400 text-lg mb-4">
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-stone-200">
+                    <div class="flex text-yellow-400 mb-3">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p class="text-gray-700 mb-4">
-                        "Ivo fixed our bathroom faucet that had been dripping for months. He came out to our place on Willow Street the same day I called and had it working perfectly in under an hour. Fair price and really knows his stuff!"
-                    </p>
-                    <div class="flex items-center">
-                        <div class="bg-accent text-white w-10 h-10 rounded-full flex items-center justify-center font-semibold mr-3">
-                            M
-                        </div>
-                        <div>
-                            <p class="font-semibold text-primary">Maria S.</p>
-                            <p class="text-sm text-gray-600">Stockton Homeowner</p>
-                        </div>
-                    </div>
+                    <p class="text-stone-700 mb-4">"Ivo fixed our leaky kitchen faucet same day - great service!"</p>
+                    <div class="font-medium text-primary">Maria L.</div>
+                    <div class="text-stone-500 text-sm">Lincoln District</div>
                 </div>
-                <div class="bg-white rounded-xl p-6 shadow-lg">
-                    <div class="flex text-yellow-400 text-lg mb-4">
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-stone-200">
+                    <div class="flex text-yellow-400 mb-3">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p class="text-gray-700 mb-4">
-                        "Called Ivo to mount our new 65" TV and install some floating shelves. He showed up right on time, brought all the right tools, and the work looks fantastic. My wife was impressed with how clean he left everything."
-                    </p>
-                    <div class="flex items-center">
-                        <div class="bg-accent text-white w-10 h-10 rounded-full flex items-center justify-center font-semibold mr-3">
-                            R
-                        </div>
-                        <div>
-                            <p class="font-semibold text-primary">Robert Chen</p>
-                            <p class="text-sm text-gray-600">North Stockton</p>
-                        </div>
-                    </div>
+                    <p class="text-stone-700 mb-4">"Painted our entire living room and dining room for a really fair price. He showed up on time and cleaned up everything. Will definitely call again for our next project."</p>
+                    <div class="font-medium text-primary">David R.</div>
+                    <div class="text-stone-500 text-sm">Brookside</div>
                 </div>
-                <div class="bg-white rounded-xl p-6 shadow-lg">
-                    <div class="flex text-yellow-400 text-lg mb-4">
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-stone-200">
+                    <div class="flex text-yellow-400 mb-3">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p class="text-gray-700 mb-4">
-                        "Ivo has helped us with several projects over the past year - from fixing squeaky doors to painting our guest bedroom. Always reliable, reasonably priced, and gets the job done right the first time. Highly recommend!"
-                    </p>
-                    <div class="flex items-center">
-                        <div class="bg-accent text-white w-10 h-10 rounded-full flex items-center justify-center font-semibold mr-3">
-                            J
-                        </div>
-                        <div>
-                            <p class="font-semibold text-primary">Jennifer M.</p>
-                            <p class="text-sm text-gray-600">Repeat Customer</p>
-                        </div>
-                    </div>
+                    <p class="text-stone-700 mb-4">"Had several small repairs around the house that were driving me crazy. Ivo took care of everything in one visit - loose cabinet doors, squeaky hinges, and even helped hang some pictures. Super professional and reasonably priced. Highly recommend to anyone in Stockton looking for reliable handyman work."</p>
+                    <div class="font-medium text-primary">Jennifer K.</div>
+                    <div class="text-stone-500 text-sm">Spanos West</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-primary">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h2 class="font-display font-semibold text-3xl md:text-4xl text-white mb-6">
-                        Ready to Get Your Project Started?
-                    </h2>
-                    <p class="text-xl text-gray-300 mb-8">
-                        Call Ivo'S Handyman Services today for a free estimate on your home repair or improvement project. Available 8 AM to 9 PM, Monday through Wednesday.
-                    </p>
-                    <div class="space-y-4 mb-8">
-                        <div class="flex items-center text-white">
-                            <i class="fas fa-phone text-accent text-xl mr-4"></i>
-                            <span class="text-lg">(925) 848-4287</span>
-                        </div>
-                        <div class="flex items-center text-white">
-                            <i class="fas fa-map-marker-alt text-accent text-xl mr-4"></i>
-                            <span class="text-lg">36 W Willow St, Stockton, CA 95202</span>
-                        </div>
-                        <div class="flex items-center text-white">
-                            <i class="fas fa-clock text-accent text-xl mr-4"></i>
-                            <span class="text-lg">Mon-Wed: 8 AM to 9 PM</span>
-                        </div>
-                    </div>
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="tel:(925) 848-4287" class="bg-accent text-white px-8 py-4 text-lg font-medium rounded-lg hover:bg-orange-600 transition-colors text-center">
-                            Get a Free Estimate
-                        </a>
-                        <a href="https://www.google.com/maps/search/?api=1&query=Ivo'S%20Handyman%20Services&query_place_id=ChIJYVAtKBSYJwERzerECTAIiAk" 
-                           target="_blank" 
-                           class="bg-transparent border-2 border-white text-white px-8 py-4 text-lg font-medium rounded-lg hover:bg-white hover:text-primary transition-colors text-center">
-                            View on Google Maps
-                        </a>
-                    </div>
-                </div>
-                <div class="bg-white rounded-xl p-8">
-                    <h3 class="font-display font-semibold text-2xl text-primary mb-6">Service Areas</h3>
-                    <div class="grid grid-cols-2 gap-4 text-gray-700">
-                        <div>
-                            <h4 class="font-semibold text-primary mb-2">Primary</h4>
-                            <ul class="space-y-1">
-                                <li>Stockton</li>
-                                <li>North Stockton</li>
-                                <li>Lincoln Village</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4 class="font-semibold text-primary mb-2">Surrounding</h4>
-                            <ul class="space-y-1">
-                                <li>Lodi</li>
-                                <li>Manteca</li>
-                                <li>Tracy</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="mt-6 p-4 bg-light-bg rounded-lg">
-                        <p class="text-sm text-gray-600">
-                            <strong>Emergency Services:</strong> Available for urgent repairs. Additional fees may apply for same-day service.
-                        </p>
-                    </div>
-                </div>
+    <!-- Contact/CTA -->
+    <section id="contact" class="py-16 bg-primary text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                Ready to Fix What's Broken?
+            </h2>
+            <p class="text-xl text-stone-200 mb-8">
+                Call Ivo'S Handyman Services today for your free estimate
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                <a href="tel:9258484287" 
+                   class="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-orange-700 transition-colors">
+                    <i class="fas fa-phone mr-3"></i>(925) 848-4287
+                </a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Ivo'S%20Handyman%20Services&query_place_id=ChIJYVAtKBSYJwERzerECTAIiAk" 
+                   target="_blank"
+                   class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-primary transition-all">
+                    <i class="fas fa-map-marker-alt mr-3"></i>Get Directions
+                </a>
+            </div>
+            <div class="text-stone-300">
+                <p class="mb-2">36 W Willow St, Stockton, CA 95202</p>
+                <p>Monday-Wednesday: 8 AM - 9 PM</p>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-3 gap-8">
-                <div>
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-hammer text-accent text-2xl mr-3"></i>
-                        <span class="font-display font-semibold text-xl">Ivo's Handyman Services</span>
-                    </div>
-                    <p class="text-gray-300 mb-4">
-                        Professional handyman services for Stockton and surrounding areas. Quality work, fair pricing, and reliable service you can trust.
-                    </p>
-                    <div class="flex text-yellow-400 text-lg">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <span class="text-white ml-2">5.0 Stars (28 reviews)</span>
-                    </div>
+    <footer class="bg-stone-800 text-stone-300 py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center">
+                <div class="text-2xl font-bold text-white mb-4">Ivo'S Handyman Services</div>
+                <div class="flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-8 text-sm">
+                    <div>36 W Willow St, Stockton, CA 95202</div>
+                    <div>(925) 848-4287</div>
+                    <div>Monday-Wednesday: 8 AM - 9 PM</div>
+                    <div>Serving Stockton & Surrounding Areas</div>
                 </div>
-                <div>
-                    <h4 class="font-display font-semibold text-lg mb-4">Contact Info</h4>
-                    <div class="space-y-3 text-gray-300">
-                        <div>
-                            <i class="fas fa-phone text-accent mr-3"></i>
-                            (925) 848-4287
-                        </div>
-                        <div>
-                            <i class="fas fa-map-marker-alt text-accent mr-3"></i>
-                            36 W Willow St<br>
-                            Stockton, CA 95202
-                        </div>
-                        <div>
-                            <i class="fas fa-clock text-accent mr-3"></i>
-                            Mon-Wed: 8 AM to 9 PM
-                        </div>
-                    </div>
+                <div class="mt-6 pt-6 border-t border-stone-700 text-stone-400 text-sm">
+                    © 2024 Ivo'S Handyman Services. Licensed & Insured.
                 </div>
-                <div>
-                    <h4 class="font-display font-semibold text-lg mb-4">Service Areas</h4>
-                    <ul class="text-gray-300 space-y-2">
-                        <li>Stockton, CA</li>
-                        <li>Lodi, CA</li>
-                        <li>Manteca, CA</li>
-                        <li>Tracy, CA</li>
-                        <li>Lincoln Village</li>
-                        <li>North Stockton</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2024 Ivo's Handyman Services. Licensed and Insured. Serving Stockton with pride.</p>
             </div>
         </div>
     </footer>
 
     <!-- Mobile Sticky Bottom Bar -->
-    <div class="fixed bottom-0 left-0 right-0 bg-primary text-white p-4 z-50 md:hidden shadow-lg">
-        <div class="flex justify-between items-center">
-            <a href="tel:(925) 848-4287" class="flex items-center bg-accent px-6 py-3 rounded-lg hover:bg-orange-600 transition-colors">
-                <i class="fas fa-phone mr-2"></i>
-                Call (925) 848-4287
+    <div class="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-stone-200 px-4 py-2 z-50">
+        <div class="flex space-x-2">
+            <a href="tel:9258484287" 
+               class="flex-1 bg-accent text-white py-3 rounded-lg font-semibold text-center hover:bg-orange-700 transition-colors">
+                <i class="fas fa-phone mr-2"></i>Call (925) 848-4287
             </a>
-            <a href="tel:(925) 848-4287" class="flex items-center bg-transparent border border-white px-6 py-3 rounded-lg hover:bg-white hover:text-primary transition-colors">
-                <i class="fas fa-comment mr-2"></i>
-                Get a Quote
-            </a>
+            <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})"
+                    class="flex-1 bg-primary text-white py-3 rounded-lg font-semibold text-center hover:bg-stone-800 transition-colors">
+                <i class="fas fa-comment mr-2"></i>Get a Quote
+            </button>
         </div>
     </div>
-
-    <!-- Add padding to bottom for mobile sticky bar -->
-    <div class="h-20 md:hidden"></div>
 </body>
 </html>
