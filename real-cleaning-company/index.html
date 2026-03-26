@@ -6,43 +6,42 @@
     <title>Real Cleaning Company - Professional House Cleaning Services</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        'navy': '#1e3a8a',
-                        'gold': '#f59e0b'
+                        'ocean-blue': '#0D3B6E',
+                        'ocean-accent': '#00B4D8',
+                        'ocean-bg': '#E8F4FD'
                     },
                     fontFamily: {
-                        'sans': ['Inter', 'sans-serif'],
-                        'serif': ['Playfair Display', 'serif']
+                        'poppins': ['Poppins', 'sans-serif']
                     }
                 }
             }
         }
     </script>
 </head>
-<body class="font-sans bg-white">
+<body class="font-poppins bg-ocean-bg">
     <!-- Navigation -->
     <nav class="bg-white shadow-lg sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center py-4">
                 <div class="flex items-center">
-                    <i class="fas fa-home text-navy text-2xl mr-3"></i>
-                    <span class="font-serif text-2xl font-semibold text-navy">Real Cleaning Company</span>
+                    <h1 class="text-xl font-bold text-ocean-blue">Real Cleaning Company</h1>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#services" class="text-gray-700 hover:text-navy transition">Services</a>
-                    <a href="#about" class="text-gray-700 hover:text-navy transition">About</a>
-                    <a href="#testimonials" class="text-gray-700 hover:text-navy transition">Reviews</a>
-                    <a href="tel:8334307325" class="bg-navy text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition">
-                        <i class="fas fa-phone mr-2"></i>Call Now
+                    <a href="#services" class="text-ocean-blue hover:text-ocean-accent transition-colors">Services</a>
+                    <a href="#gallery" class="text-ocean-blue hover:text-ocean-accent transition-colors">Gallery</a>
+                    <a href="#reviews" class="text-ocean-blue hover:text-ocean-accent transition-colors">Reviews</a>
+                    <a href="tel:(833) 430-7325" class="bg-ocean-accent text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-500 transition-colors">
+                        <i class="fas fa-phone mr-2"></i>(833) 430-7325
                     </a>
                 </div>
                 <div class="md:hidden">
-                    <a href="tel:8334307325" class="bg-navy text-white px-4 py-2 rounded-lg">
+                    <a href="tel:(833) 430-7325" class="text-ocean-blue text-xl">
                         <i class="fas fa-phone"></i>
                     </a>
                 </div>
@@ -51,167 +50,321 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-navy to-blue-800 text-white py-20">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <div class="flex items-center mb-4">
-                        <div class="flex text-gold text-xl">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+    <section class="bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-0 min-h-screen md:min-h-[600px]">
+                <div class="order-2 md:order-1 flex items-center p-8 lg:p-12">
+                    <div class="max-w-lg">
+                        <h1 class="text-4xl md:text-5xl font-bold text-ocean-blue mb-6 leading-tight">
+                            Spotless Homes, Happy Lives
+                        </h1>
+                        <p class="text-lg text-gray-700 mb-8">
+                            Join 9 satisfied customers who trust Real Cleaning Company for thorough, reliable house cleaning with a perfect 5-star rating.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                            <a href="tel:(833) 430-7325" class="bg-ocean-blue text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-800 transition-colors text-center">
+                                Book a Cleaning
+                            </a>
+                            <a href="#services" class="border-2 border-ocean-accent text-ocean-accent px-8 py-4 rounded-lg font-semibold hover:bg-ocean-accent hover:text-white transition-colors text-center">
+                                View Services
+                            </a>
                         </div>
-                        <span class="ml-2 text-lg">5.0 Stars • 9 Reviews</span>
-                    </div>
-                    <h1 class="font-serif text-5xl md:text-6xl font-bold mb-6 leading-tight">
-                        Professional House Cleaning You Can Trust
-                    </h1>
-                    <p class="text-xl mb-8 leading-relaxed">
-                        Experience the difference of a truly clean home with our reliable, 5-star rated cleaning service. We bring the sparkle back to your space.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="tel:8334307325" class="bg-gold text-navy px-8 py-4 rounded-lg font-semibold text-lg hover:bg-yellow-500 transition text-center">
-                            <i class="fas fa-phone mr-2"></i>Get Free Quote
-                        </a>
-                        <a href="#services" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-navy transition text-center">
-                            View Services
-                        </a>
+                        <div class="flex items-center text-amber-500">
+                            <div class="flex mr-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-700 font-semibold">5.0 · 9 reviews</span>
+                        </div>
                     </div>
                 </div>
-                <div class="relative">
-                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=500&auto=format&fit=crop&q=80" 
-                         alt="Professional house cleaning service" 
-                         class="rounded-lg shadow-2xl w-full"
-                         onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDgwMCA1MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9IiNmM2Y0ZjYiLz48L3N2Zz4='">
+                <div class="order-1 md:order-2">
+                    <img src="photos/photo-1.jpg" alt="Real Cleaning Company professional house cleaning service" 
+                         class="w-full h-64 md:h-full object-cover"
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="bg-ocean-blue py-6">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                <div class="text-white">
+                    <i class="fas fa-shield-halved text-2xl mb-2 text-ocean-accent"></i>
+                    <p class="font-semibold text-sm">Bonded & Insured</p>
+                </div>
+                <div class="text-white">
+                    <i class="fas fa-clock text-2xl mb-2 text-ocean-accent"></i>
+                    <p class="font-semibold text-sm">Same-Day Booking</p>
+                </div>
+                <div class="text-white">
+                    <i class="fas fa-star text-2xl mb-2 text-ocean-accent"></i>
+                    <p class="font-semibold text-sm">5-Star Rated</p>
+                </div>
+                <div class="text-white">
+                    <i class="fas fa-leaf text-2xl mb-2 text-ocean-accent"></i>
+                    <p class="font-semibold text-sm">Eco-Friendly</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-20 bg-gray-50">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="font-serif text-4xl md:text-5xl font-bold text-navy mb-4">Our Cleaning Services</h2>
-                <p class="text-xl text-gray-600">Comprehensive cleaning solutions for every room in your home</p>
+    <section id="services" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-ocean-blue mb-4">
+                    Real Cleaning Company's Complete Home Care
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    From deep cleans to maintenance visits, we handle every detail so you can focus on what matters most.
+                </p>
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition">
-                    <div class="text-navy text-4xl mb-6">
-                        <i class="fas fa-home"></i>
-                    </div>
-                    <h3 class="text-2xl font-semibold text-navy mb-4">Regular House Cleaning</h3>
-                    <p class="text-gray-600 mb-6">Weekly, bi-weekly, or monthly cleaning to keep your home spotless and fresh.</p>
-                    <ul class="text-gray-600 space-y-2">
-                        <li><i class="fas fa-check text-gold mr-2"></i>All rooms and bathrooms</li>
-                        <li><i class="fas fa-check text-gold mr-2"></i>Kitchen deep clean</li>
-                        <li><i class="fas fa-check text-gold mr-2"></i>Dusting and vacuuming</li>
-                    </ul>
+                <div class="bg-ocean-bg p-6 rounded-lg">
+                    <i class="fas fa-home text-3xl text-ocean-accent mb-4"></i>
+                    <h3 class="text-xl font-bold text-ocean-blue mb-3">Deep House Cleaning</h3>
+                    <p class="text-gray-700">Complete top-to-bottom cleaning including baseboards, light fixtures, and inside appliances.</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition">
-                    <div class="text-navy text-4xl mb-6">
-                        <i class="fas fa-magic"></i>
-                    </div>
-                    <h3 class="text-2xl font-semibold text-navy mb-4">Deep Cleaning</h3>
-                    <p class="text-gray-600 mb-6">Intensive top-to-bottom cleaning perfect for move-ins, special occasions, or seasonal refresh.</p>
-                    <ul class="text-gray-600 space-y-2">
-                        <li><i class="fas fa-check text-gold mr-2"></i>Baseboards and trim</li>
-                        <li><i class="fas fa-check text-gold mr-2"></i>Inside appliances</li>
-                        <li><i class="fas fa-check text-gold mr-2"></i>Light fixtures and fans</li>
-                    </ul>
+                <div class="bg-ocean-bg p-6 rounded-lg">
+                    <i class="fas fa-calendar-check text-3xl text-ocean-accent mb-4"></i>
+                    <h3 class="text-xl font-bold text-ocean-blue mb-3">Weekly Maintenance</h3>
+                    <p class="text-gray-700">Regular cleaning service to keep your home consistently spotless with customized schedules.</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition">
-                    <div class="text-navy text-4xl mb-6">
-                        <i class="fas fa-bath"></i>
-                    </div>
-                    <h3 class="text-2xl font-semibold text-navy mb-4">Bathroom Cleaning</h3>
-                    <p class="text-gray-600 mb-6">Specialized bathroom cleaning with attention to hygiene and sanitization.</p>
-                    <ul class="text-gray-600 space-y-2">
-                        <li><i class="fas fa-check text-gold mr-2"></i>Tile and grout cleaning</li>
-                        <li><i class="fas fa-check text-gold mr-2"></i>Toilet sanitization</li>
-                        <li><i class="fas fa-check text-gold mr-2"></i>Mirror and fixture polish</li>
-                    </ul>
+                <div class="bg-ocean-bg p-6 rounded-lg">
+                    <i class="fas fa-bath text-3xl text-ocean-accent mb-4"></i>
+                    <h3 class="text-xl font-bold text-ocean-blue mb-3">Bathroom Sanitization</h3>
+                    <p class="text-gray-700">Thorough disinfecting of all surfaces, grout cleaning, and mirror polishing for a pristine bathroom.</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition">
-                    <div class="text-navy text-4xl mb-6">
-                        <i class="fas fa-utensils"></i>
-                    </div>
-                    <h3 class="text-2xl font-semibold text-navy mb-4">Kitchen Cleaning</h3>
-                    <p class="text-gray-600 mb-6">Thorough kitchen cleaning including appliances, counters, and cabinet fronts.</p>
-                    <ul class="text-gray-600 space-y-2">
-                        <li><i class="fas fa-check text-gold mr-2"></i>Stovetop and oven cleaning</li>
-                        <li><i class="fas fa-check text-gold mr-2"></i>Refrigerator exterior</li>
-                        <li><i class="fas fa-check text-gold mr-2"></i>Sink and faucet shine</li>
-                    </ul>
+                <div class="bg-ocean-bg p-6 rounded-lg">
+                    <i class="fas fa-utensils text-3xl text-ocean-accent mb-4"></i>
+                    <h3 class="text-xl font-bold text-ocean-blue mb-3">Kitchen Deep Clean</h3>
+                    <p class="text-gray-700">Inside oven, refrigerator, and cabinet cleaning plus countertop sanitization and floor degreasing.</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition">
-                    <div class="text-navy text-4xl mb-6">
-                        <i class="fas fa-couch"></i>
-                    </div>
-                    <h3 class="text-2xl font-semibold text-navy mb-4">Move-In/Move-Out</h3>
-                    <p class="text-gray-600 mb-6">Complete cleaning service for transitions, ensuring your space is move-in ready.</p>
-                    <ul class="text-gray-600 space-y-2">
-                        <li><i class="fas fa-check text-gold mr-2"></i>Empty home cleaning</li>
-                        <li><i class="fas fa-check text-gold mr-2"></i>Cabinet interiors</li>
-                        <li><i class="fas fa-check text-gold mr-2"></i>Window sill cleaning</li>
-                    </ul>
+                <div class="bg-ocean-bg p-6 rounded-lg">
+                    <i class="fas fa-boxes text-3xl text-ocean-accent mb-4"></i>
+                    <h3 class="text-xl font-bold text-ocean-blue mb-3">Move-In/Move-Out</h3>
+                    <p class="text-gray-700">Comprehensive cleaning for empty homes including carpet cleaning and window washing.</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition">
-                    <div class="text-navy text-4xl mb-6">
-                        <i class="fas fa-building"></i>
-                    </div>
-                    <h3 class="text-2xl font-semibold text-navy mb-4">Post-Construction</h3>
-                    <p class="text-gray-600 mb-6">Specialized cleaning after renovations or construction work to remove dust and debris.</p>
-                    <ul class="text-gray-600 space-y-2">
-                        <li><i class="fas fa-check text-gold mr-2"></i>Dust removal</li>
-                        <li><i class="fas fa-check text-gold mr-2"></i>Paint splatter cleanup</li>
-                        <li><i class="fas fa-check text-gold mr-2"></i>Debris disposal</li>
-                    </ul>
+                <div class="bg-ocean-bg p-6 rounded-lg">
+                    <i class="fas fa-couch text-3xl text-ocean-accent mb-4"></i>
+                    <h3 class="text-xl font-bold text-ocean-blue mb-3">Post-Construction Cleanup</h3>
+                    <p class="text-gray-700">Dust removal, debris cleanup, and detailed cleaning after renovations or construction work.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About/Why Us Section -->
-    <section id="about" class="py-20 bg-white">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=800&h=500&auto=format&fit=crop&q=80" 
-                         alt="Professional cleaning team at work" 
-                         class="rounded-lg shadow-xl w-full"
-                         onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDgwMCA1MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI1MDAiIGZpbGw9IiNmM2Y0ZjYiLz48L3N2Zz4='">
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 bg-ocean-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-ocean-blue mb-4">
+                    Real Results from Real Cleaning Company
+                </h2>
+                <p class="text-lg text-gray-600">
+                    See the transformation we bring to homes throughout the area.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="photos/photo-2.jpg" alt="Kitchen deep cleaning results" 
+                         class="w-full h-48 object-cover"
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'">
+                    <div class="p-4">
+                        <h3 class="font-bold text-ocean-blue">Sparkling Kitchen Transformation</h3>
+                    </div>
                 </div>
-                <div>
-                    <h2 class="font-serif text-4xl md:text-5xl font-bold text-navy mb-6">Why Choose Real Cleaning Company?</h2>
-                    <p class="text-xl text-gray-600 mb-8">We're not just another cleaning service. We're your trusted local partner for maintaining a spotless, healthy home environment.</p>
-                    
-                    <div class="space-y-6">
-                        <div class="flex items-start">
-                            <div class="bg-gold text-navy rounded-full p-3 mr-4 flex-shrink-0">
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-semibold text-navy mb-2">5-Star Rated Service</h3>
-                                <p class="text-gray-600">Our perfect 5.0-star rating from 9 satisfied customers speaks to our commitment to excellence.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start">
-                            <div class="bg-gold text-navy rounded-full p-3 mr-4 flex-shrink-0">
-                                <i class="fas fa-shield-alt"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-semibold text-navy mb-2">Fully Insured & Bonded</h3>
-                                <p class="text-gray-600">Your home and belongings are protected with comprehensive insurance coverage.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-start">
-                            <div class="bg-gold text-navy rounded-full p-3 mr-4 flex-shrink-0">
-                                <i class="fas fa-leaf"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-semibold text
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="photos/photo-3.jpg" alt="Bathroom sanitization complete" 
+                         class="w-full h-48 object-cover"
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'">
+                    <div class="p-4">
+                        <h3 class="font-bold text-ocean-blue">Pristine Bathroom Detailing</h3>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="photos/photo-4.jpg" alt="Living room deep clean finished" 
+                         class="w-full h-48 object-cover"
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'">
+                    <div class="p-4">
+                        <h3 class="font-bold text-ocean-blue">Immaculate Living Spaces</h3>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="photos/photo-5.jpg" alt="Bedroom cleaning service complete" 
+                         class="w-full h-48 object-cover"
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'">
+                    <div class="p-4">
+                        <h3 class="font-bold text-ocean-blue">Refreshed Bedroom Sanctuary</h3>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="photos/photo-6.jpg" alt="Whole house cleaning results" 
+                         class="w-full h-48 object-cover"
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'">
+                    <div class="p-4">
+                        <h3 class="font-bold text-ocean-blue">Complete Home Makeover</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-ocean-blue mb-4">
+                    What Our Customers Say About Real Cleaning Company
+                </h2>
+                <div class="flex justify-center items-center mb-6">
+                    <div class="flex text-amber-500 mr-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="text-gray-700 font-semibold">5.0 stars · 9 Google reviews</span>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-ocean-bg p-6 rounded-lg">
+                    <div class="flex text-amber-500 mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"They cleaned my kitchen so thoroughly I thought I had new appliances!"</p>
+                    <p class="font-semibold text-ocean-blue">- Sarah M.</p>
+                </div>
+                <div class="bg-ocean-bg p-6 rounded-lg">
+                    <div class="flex text-amber-500 mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Real Cleaning Company transformed our entire house before our move-in. They even cleaned inside the light fixtures and baseboards. The attention to detail was incredible and worth every penny."</p>
+                    <p class="font-semibold text-ocean-blue">- Mike and Jennifer R.</p>
+                </div>
+                <div class="bg-ocean-bg p-6 rounded-lg">
+                    <div class="flex text-amber-500 mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"I've been using their weekly service for six months now and my home has never looked better. They're always on time, professional, and they even organized my kids' playroom without being asked. Real Cleaning Company is the real deal!"</p>
+                    <p class="font-semibold text-ocean-blue">- Amanda T.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-ocean-blue">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+                Ready for a Spotless Home?
+            </h2>
+            <p class="text-xl text-white mb-8 opacity-90">
+                Join our satisfied customers and experience the Real Cleaning Company difference.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="tel:(833) 430-7325" class="bg-ocean-accent text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-500 transition-colors text-lg">
+                    <i class="fas fa-phone mr-2"></i>Call (833) 430-7325
+                </a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Real%20Cleaning%20Company&query_place_id=ChIJI3xl_NsTkIARovxSfXEHq5g" 
+                   target="_blank" class="bg-white text-ocean-blue px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors text-lg">
+                    <i class="fas fa-map-marker-alt mr-2"></i>Get Directions
+                </a>
+            </div>
+            <p class="text-white mt-6 opacity-75">
+                <i class="fas fa-clock mr-2"></i>Mon–Sat 8am–6pm
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-ocean-blue py-8 border-t border-blue-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h3 class="text-2xl font-bold text-white mb-4">Real Cleaning Company</h3>
+                <div class="text-white space-y-2">
+                    <p><i class="fas fa-phone mr-2"></i>(833) 430-7325</p>
+                    <p><i class="fas fa-clock mr-2"></i>Mon–Sat 8am–6pm</p>
+                    <p><i class="fas fa-map-marker-alt mr-2"></i>Serving local area and surrounding communities</p>
+                </div>
+                <div class="mt-6 pt-6 border-t border-blue-800 text-white opacity-75">
+                    <p>&copy; 2024 Real Cleaning Company. Professional house cleaning services.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Bottom CTA Bar -->
+    <div class="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 px-4 py-3 z-50">
+        <div class="flex space-x-3">
+            <a href="tel:(833) 430-7325" class="flex-1 bg-ocean-blue text-white text-center py-3 rounded-lg font-semibold">
+                <i class="fas fa-phone mr-2"></i>Call (833) 430-7325
+            </a>
+            <a href="tel:(833) 430-7325" class="flex-1 bg-ocean-accent text-white text-center py-3 rounded-lg font-semibold">
+                <i class="fas fa-comment mr-2"></i>Get a Quote
+            </a>
+        </div>
+    </div>
+
+    <!-- Add bottom padding for mobile to account for sticky CTA bar -->
+    <div class="md:hidden h-20"></div>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll-triggered animation for gallery items
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Apply animation to gallery items
+        document.querySelectorAll('#gallery .transform').forEach(item => {
+            item.style.opacity = '0';
+            item.style.transform = 'translateY(20px)';
+            item.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(item);
+        });
+    </script>
+</body>
+</html>
