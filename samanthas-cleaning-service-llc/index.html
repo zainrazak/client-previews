@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samantha's Cleaning Service LLC - Professional House Cleaning</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2E4057',
+                        accent: '#F4A261',
+                        background: '#FFF3E0'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'serif': ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="font-serif font-bold text-xl text-primary">
+                    Samantha's Cleaning Service
+                </div>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="#services" class="text-primary hover:text-accent transition-colors">Services</a>
+                    <a href="#gallery" class="text-primary hover:text-accent transition-colors">Gallery</a>
+                    <a href="#reviews" class="text-primary hover:text-accent transition-colors">Reviews</a>
+                    <a href="tel:(209) 242-1970" class="bg-accent text-white px-4 py-2 rounded-lg hover:bg-opacity-90 transition-colors font-medium">
+                        <i class="fas fa-phone mr-2"></i>(209) 242-1970
+                    </a>
+                </div>
+                <div class="md:hidden">
+                    <a href="tel:(209) 242-1970" class="text-accent text-xl">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-8">
+                <!-- Hero Content -->
+                <div class="px-4 sm:px-6 lg:px-8 py-12 lg:py-20 flex flex-col justify-center order-2 lg:order-1">
+                    <h1 class="text-4xl lg:text-5xl font-serif font-bold text-primary leading-tight mb-6">
+                        Pristine Homes Start Here
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8">
+                        Trusted 5-star house cleaning service with 7 glowing reviews from happy neighbors.
+                    </p>
+                    
+                    <!-- Trust Bar -->
+                    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+                        <div class="text-center">
+                            <i class="fas fa-shield-halved text-2xl text-accent mb-2"></i>
+                            <p class="text-sm font-medium text-primary">Bonded & Insured</p>
+                        </div>
+                        <div class="text-center">
+                            <i class="fas fa-clock text-2xl text-accent mb-2"></i>
+                            <p class="text-sm font-medium text-primary">Same-Day Booking</p>
+                        </div>
+                        <div class="text-center">
+                            <i class="fas fa-star text-2xl text-accent mb-2"></i>
+                            <p class="text-sm font-medium text-primary">5-Star Rated</p>
+                        </div>
+                        <div class="text-center">
+                            <i class="fas fa-leaf text-2xl text-accent mb-2"></i>
+                            <p class="text-sm font-medium text-primary">Eco-Friendly</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition-colors">
+                            Book a Cleaning
+                        </button>
+                        <a href="tel:(209) 242-1970" class="border-2 border-primary text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-primary hover:text-white transition-colors text-center">
+                            Call (209) 242-1970
+                        </a>
+                    </div>
+
+                    <div class="mt-6 flex items-center">
+                        <div class="flex text-accent">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="ml-2 text-gray-600">5-star rating · 7 reviews</span>
+                    </div>
+                </div>
+
+                <!-- Hero Image -->
+                <div class="order-1 lg:order-2">
+                    <img src="photos/photo-1.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'" 
+                         alt="Professional house cleaning service" 
+                         class="w-full h-64 sm:h-80 lg:h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-serif font-bold text-primary mb-4">
+                    Complete House Cleaning Solutions
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    From deep cleans to weekly maintenance, Samantha's Cleaning Service LLC handles every detail with care and precision.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-background p-6 rounded-lg">
+                    <i class="fas fa-home text-3xl text-accent mb-4"></i>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Regular House Cleaning</h3>
+                    <p class="text-gray-600">Weekly, bi-weekly, or monthly cleaning to keep your home consistently fresh and tidy.</p>
+                </div>
+
+                <div class="bg-background p-6 rounded-lg">
+                    <i class="fas fa-sparkles text-3xl text-accent mb-4"></i>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Deep Cleaning Service</h3>
+                    <p class="text-gray-600">Thorough top-to-bottom cleaning including baseboards, light fixtures, and inside appliances.</p>
+                </div>
+
+                <div class="bg-background p-6 rounded-lg">
+                    <i class="fas fa-door-open text-3xl text-accent mb-4"></i>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Move-In/Move-Out</h3>
+                    <p class="text-gray-600">Complete cleaning for empty homes to ensure a fresh start or smooth transition.</p>
+                </div>
+
+                <div class="bg-background p-6 rounded-lg">
+                    <i class="fas fa-soap text-3xl text-accent mb-4"></i>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Kitchen Deep Clean</h3>
+                    <p class="text-gray-600">Inside ovens, refrigerators, cabinets, and all appliances for a spotless cooking space.</p>
+                </div>
+
+                <div class="bg-background p-6 rounded-lg">
+                    <i class="fas fa-bath text-3xl text-accent mb-4"></i>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Bathroom Sanitization</h3>
+                    <p class="text-gray-600">Complete disinfection of all surfaces, grout cleaning, and fixture polishing.</p>
+                </div>
+
+                <div class="bg-background p-6 rounded-lg">
+                    <i class="fas fa-calendar-check text-3xl text-accent mb-4"></i>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Post-Construction Cleanup</h3>
+                    <p class="text-gray-600">Dust removal, debris cleanup, and detailed cleaning after renovations or repairs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-serif font-bold text-primary mb-4">
+                    See the Samantha's Difference
+                </h2>
+                <p class="text-xl text-gray-600">Real results from real homes across the area</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg overflow-hidden shadow-md transform hover:scale-105 transition-transform duration-300">
+                    <img src="photos/photo-2.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'" 
+                         alt="Sparkling clean kitchen" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-primary">Sparkling Kitchen</h3>
+                        <p class="text-gray-600 text-sm">Complete appliance cleaning and countertop sanitization</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg overflow-hidden shadow-md transform hover:scale-105 transition-transform duration-300">
+                    <img src="photos/photo-3.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'" 
+                         alt="Pristine bathroom" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-primary">Pristine Bathroom</h3>
+                        <p class="text-gray-600 text-sm">Deep grout cleaning and fixture polishing</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg overflow-hidden shadow-md transform hover:scale-105 transition-transform duration-300">
+                    <img src="photos/photo-4.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'" 
+                         alt="Organized living space" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-primary">Organized Living Space</h3>
+                        <p class="text-gray-600 text-sm">Dusting, vacuuming, and surface organization</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg overflow-hidden shadow-md transform hover:scale-105 transition-transform duration-300">
+                    <img src="photos/photo-5.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'" 
+                         alt="Fresh bedroom" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-primary">Fresh Bedroom</h3>
+                        <p class="text-gray-600 text-sm">Thorough dusting and floor care</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg overflow-hidden shadow-md transform hover:scale-105 transition-transform duration-300">
+                    <img src="photos/photo-6.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'" 
+                         alt="Move-out ready home" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-primary">Move-Out Ready</h3>
+                        <p class="text-gray-600 text-sm">Complete empty home deep cleaning</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-serif font-bold text-primary mb-4">
+                    Local Families Love Samantha's Results
+                </h2>
+                <div class="flex justify-center items-center mb-6">
+                    <div class="flex text-accent text-xl">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="ml-3 text-lg text-gray-600">5.0 stars from 7 reviews</span>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-background p-6 rounded-lg">
+                    <div class="flex text-accent mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Samantha cleaned our kitchen so thoroughly that our old stainless steel appliances look brand new!"</p>
+                    <p class="font-semibold text-primary">- Maria R.</p>
+                </div>
+
+                <div class="bg-background p-6 rounded-lg">
+                    <div class="flex text-accent mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"We hired Samantha's Cleaning Service for our move-out cleaning and got our full deposit back. She even cleaned inside the oven and refrigerator which made all the difference. Highly recommend for anyone needing deep cleaning services."</p>
+                    <p class="font-semibold text-primary">- David K.</p>
+                </div>
+
+                <div class="bg-background p-6 rounded-lg">
+                    <div class="flex text-accent mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Been using Samantha's service for six months now and she's incredibly reliable. Shows up exactly when scheduled and always does an amazing job on our bathrooms. She even organized our linen closet without being asked. Professional and trustworthy - exactly what you want in your home."</p>
+                    <p class="font-semibold text-primary">- Jennifer L.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary text-white">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl lg:text-4xl font-serif font-bold mb-6">
+                Ready for a Spotless Home?
+            </h2>
+            <p class="text-xl mb-8 opacity-90">
+                Join our growing family of satisfied customers. Same-day booking available.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+                <button class="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition-colors">
+                    Book a Cleaning
+                </button>
+                <a href="tel:(209) 242-1970" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-primary transition-colors">
+                    Call (209) 242-1970
+                </a>
+            </div>
+            <div class="text-center">
+                <p class="text-lg opacity-90 mb-2">Available Mon–Sat 8am–6pm</p>
+                <p class="opacity-75">Bonded, Insured & Eco-Friendly</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-serif font-bold text-xl mb-4">Samantha's Cleaning Service LLC</h3>
+                    <p class="text-gray-300 mb-4">Professional house cleaning service serving the local area with 5-star results.</p>
+                    <div class="flex text-accent">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="ml-2 text-gray-300">7 reviews</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Contact Info</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <p><i class="fas fa-phone mr-2"></i>(209) 242-1970</p>
+                        <p><i class="fas fa-clock mr-2"></i>Mon–Sat 8am–6pm</p>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Samantha's%20Cleaning%20Service%20LLC&query_place_id=ChIJtUH7BkhxiqYRSR78lI-0qyg" 
+                           target="_blank" 
+                           class="inline-flex items-center text-accent hover:text-white transition-colors">
+                            <i class="fas fa-map-marker-alt mr-2"></i>View on Google Maps
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>Regular House Cleaning</li>
+                        <li>Deep Cleaning Service</li>
+                        <li>Move-In/Move-Out</li>
+                        <li>Kitchen Deep Clean</li>
+                        <li>Bathroom Sanitization</li>
+                        <li>Post-Construction Cleanup</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Why Choose Us</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><i class="fas fa-shield-halved mr-2 text-accent"></i>Bonded & Insured</li>
+                        <li><i class="fas fa-clock mr-2 text-accent"></i>Same-Day Booking</li>
+                        <li><i class="fas fa-star mr-2 text-accent"></i>5-Star Rated</li>
+                        <li><i class="fas fa-leaf mr-2 text-accent"></i>Eco-Friendly Products</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Samantha's Cleaning Service LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Bottom CTA Bar -->
+    <div class="md:hidden fixed bottom-0 left-0 right-0 bg-primary text-white p-4 z-50 shadow-lg">
+        <div class="flex gap-3">
+            <a href="tel:(209) 242-1970" class="flex-1 bg-accent text-white text-center py-3 rounded-lg font-semibold">
+                <i class="fas fa-phone mr-2"></i>Call (209) 242-1970
+            </a>
+            <button class="flex-1 bg-white text-primary text-center py-3 rounded-lg font-semibold">
+                <i class="fas fa-message mr-2"></i>Get a Quote
+            </button>
+        </div>
+    </div>
+
+    <!-- Add padding to body for mobile bottom bar -->
+    <div class="md:hidden h-20"></div>
+</body>
+</html>
