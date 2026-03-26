@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jabbour Handyman Services - Professional Home Repairs & Maintenance</title>
+    <title>Jabbour Handyman Services - Expert Home Repairs & Maintenance</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -14,409 +16,279 @@
                     colors: {
                         primary: '#7F1D1D',
                         accent: '#F59E0B',
-                        light: '#FFF8E7'
+                        background: '#FFF8E7'
                     },
                     fontFamily: {
-                        'display': ['Oswald', 'sans-serif'],
-                        'body': ['Open Sans', 'sans-serif']
+                        'sans': ['Inter', 'sans-serif']
                     }
                 }
             }
         }
     </script>
 </head>
-<body class="font-body text-gray-800 bg-white">
+<body class="bg-background font-sans">
     <!-- Navigation -->
-    <nav class="bg-white shadow-lg sticky top-0 z-50">
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-                <div class="flex items-center">
-                    <i class="fas fa-tools text-primary text-2xl mr-3"></i>
-                    <span class="font-display font-bold text-xl text-primary">Jabbour Handyman Services</span>
-                </div>
-                <div class="hidden md:flex items-center space-x-6">
-                    <a href="#services" class="text-gray-700 hover:text-primary transition-colors">Services</a>
-                    <a href="#reviews" class="text-gray-700 hover:text-primary transition-colors">Reviews</a>
-                    <a href="#contact" class="text-gray-700 hover:text-primary transition-colors">Contact</a>
-                    <a href="tel:(209) 271-3371" class="bg-accent text-white px-4 py-2 rounded-md font-medium hover:bg-yellow-600 transition-colors">
-                        <i class="fas fa-phone mr-2"></i>(209) 271-3371
-                    </a>
-                </div>
-                <div class="md:hidden">
-                    <a href="tel:(209) 271-3371" class="bg-accent text-white px-3 py-2 rounded-md text-sm font-medium">
-                        <i class="fas fa-phone"></i>
-                    </a>
-                </div>
+                <div class="font-bold text-xl text-primary">Jabbour Handyman Services</div>
+                <a href="tel:2092713371" class="bg-primary text-white px-4 py-2 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
+                    <i class="fas fa-phone mr-2"></i>(209) 271-3371
+                </a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative h-screen flex items-center justify-center">
-        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    <section class="relative min-h-screen flex items-center justify-center bg-primary">
         <div class="absolute inset-0">
-            <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAwerclnj8e6u5QqmX2U1KsQLPTdNFs0if0wKUnjMnyhQw3kRWAfKrD_x5LBQIOy5uc-NWCsRy9RWiMOYliFetQe-yAwGvuEh6boeaS-COgL7yRJG4SwvzdrKiaIEUHUp56b0dKHE=w408-h461-k-no" 
-                 alt="Jabbour Handyman Services Professional Work" 
-                 class="w-full h-full object-cover"
-                 onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80'">
+            <img src="photos/photo-1.jpg" 
+                 onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1200&q=80'"
+                 alt="Professional handyman at work" 
+                 class="w-full h-full object-cover opacity-20">
         </div>
-        <div class="relative z-10 text-center max-w-4xl mx-auto px-4">
-            <h1 class="font-display text-4xl md:text-6xl font-bold text-white mb-6">
-                Your Trusted Local Handyman for Every Home Repair
-            </h1>
-            <p class="text-xl md:text-2xl text-gray-200 mb-8 max-w-2xl mx-auto">
-                From leaky faucets to complete home maintenance, Jabbour Handyman Services delivers quality craftsmanship you can count on
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <a href="#contact" class="bg-accent text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-yellow-600 transition-colors shadow-lg">
-                    <i class="fas fa-clipboard-list mr-2"></i>Get a Free Estimate
+        <div class="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
+            <h1 class="text-4xl md:text-6xl font-black mb-6">Your Home Fix Expert</h1>
+            <p class="text-xl md:text-2xl mb-8 opacity-90">Trusted by 20+ local families with 4-star service you can count on.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="tel:2092713371" class="bg-accent text-primary px-8 py-4 rounded-lg font-bold text-lg hover:bg-accent/90 transition-colors">
+                    Get a Free Estimate
                 </a>
-                <a href="tel:(209) 271-3371" class="bg-primary text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-red-900 transition-colors shadow-lg">
-                    <i class="fas fa-phone mr-2"></i>Call (209) 271-3371
+                <a href="#services" class="border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/10 transition-colors">
+                    See Our Work
                 </a>
-            </div>
-            <div class="mt-8 flex flex-wrap justify-center items-center gap-8 text-white">
-                <div class="flex items-center">
-                    <i class="fas fa-star text-yellow-400 mr-1"></i>
-                    <span class="font-semibold">4.0 Stars</span>
-                    <span class="ml-2 text-gray-300">20 Reviews</span>
-                </div>
-                <div class="flex items-center">
-                    <i class="fas fa-clock text-accent mr-2"></i>
-                    <span>7 AM - 7 PM Daily</span>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- Trust Signals -->
-    <section class="bg-light py-16">
-        <div class="max-w-6xl mx-auto px-4">
+    <!-- Trust Bar -->
+    <section class="bg-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                 <div class="flex flex-col items-center">
-                    <div class="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mb-4">
-                        <i class="fas fa-wrench text-2xl"></i>
-                    </div>
-                    <h3 class="font-display font-semibold text-lg mb-2">Licensed & Insured</h3>
-                    <p class="text-gray-600 text-sm">Fully bonded and insured for your peace of mind</p>
+                    <i class="fas fa-wrench text-3xl text-primary mb-3"></i>
+                    <h3 class="font-semibold text-gray-900">Licensed & Insured</h3>
                 </div>
                 <div class="flex flex-col items-center">
-                    <div class="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mb-4">
-                        <i class="fas fa-clock text-2xl"></i>
-                    </div>
-                    <h3 class="font-display font-semibold text-lg mb-2">Fast Response</h3>
-                    <p class="text-gray-600 text-sm">Same-day service available for urgent repairs</p>
+                    <i class="fas fa-clock text-3xl text-primary mb-3"></i>
+                    <h3 class="font-semibold text-gray-900">Fast Response</h3>
                 </div>
                 <div class="flex flex-col items-center">
-                    <div class="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mb-4">
-                        <i class="fas fa-dollar-sign text-2xl"></i>
-                    </div>
-                    <h3 class="font-display font-semibold text-lg mb-2">Fair Flat Pricing</h3>
-                    <p class="text-gray-600 text-sm">No hidden fees, transparent pricing upfront</p>
+                    <i class="fas fa-dollar-sign text-3xl text-primary mb-3"></i>
+                    <h3 class="font-semibold text-gray-900">Fair Pricing</h3>
                 </div>
                 <div class="flex flex-col items-center">
-                    <div class="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mb-4">
-                        <i class="fas fa-map-pin text-2xl"></i>
-                    </div>
-                    <h3 class="font-display font-semibold text-lg mb-2">Local & Trusted</h3>
-                    <p class="text-gray-600 text-sm">Serving your community with reliable service</p>
+                    <i class="fas fa-map-pin text-3xl text-primary mb-3"></i>
+                    <h3 class="font-semibold text-gray-900">Local & Trusted</h3>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="py-20 bg-white">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="font-display text-4xl md:text-5xl font-bold text-primary mb-4">
-                    Complete Home Repair Solutions from Jabbour Handyman Services
-                </h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    No job too big or small - we handle everything from minor fixes to major home improvements with professional expertise
-                </p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-light p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow">
-                    <div class="bg-accent text-white w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                        <i class="fas fa-hammer text-xl"></i>
-                    </div>
-                    <h3 class="font-display font-semibold text-xl mb-3">General Repairs</h3>
-                    <p class="text-gray-600 mb-4">Drywall patching, door adjustments, cabinet fixes, and all your general maintenance needs</p>
-                    <ul class="text-sm text-gray-700 space-y-1">
-                        <li>• Hole and crack repair</li>
-                        <li>• Door and window adjustments</li>
-                        <li>• Cabinet hardware installation</li>
-                    </ul>
-                </div>
-                <div class="bg-light p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow">
-                    <div class="bg-accent text-white w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                        <i class="fas fa-wrench text-xl"></i>
-                    </div>
-                    <h3 class="font-display font-semibold text-xl mb-3">Plumbing Fixes</h3>
-                    <p class="text-gray-600 mb-4">Leaky faucets, running toilets, clogged drains, and basic plumbing maintenance</p>
-                    <ul class="text-sm text-gray-700 space-y-1">
-                        <li>• Faucet and toilet repairs</li>
-                        <li>• Drain cleaning and unclogging</li>
-                        <li>• Fixture installation</li>
-                    </ul>
-                </div>
-                <div class="bg-light p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow">
-                    <div class="bg-accent text-white w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                        <i class="fas fa-lightbulb text-xl"></i>
-                    </div>
-                    <h3 class="font-display font-semibold text-xl mb-3">Electrical Work</h3>
-                    <p class="text-gray-600 mb-4">Light fixtures, ceiling fans, outlet installation, and basic electrical repairs</p>
-                    <ul class="text-sm text-gray-700 space-y-1">
-                        <li>• Light fixture installation</li>
-                        <li>• Ceiling fan mounting</li>
-                        <li>• Outlet and switch replacement</li>
-                    </ul>
-                </div>
-                <div class="bg-light p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow">
-                    <div class="bg-accent text-white w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                        <i class="fas fa-paint-roller text-xl"></i>
-                    </div>
-                    <h3 class="font-display font-semibold text-xl mb-3">Painting & Touch-ups</h3>
-                    <p class="text-gray-600 mb-4">Interior painting, touch-up work, trim painting, and color matching services</p>
-                    <ul class="text-sm text-gray-700 space-y-1">
-                        <li>• Room painting and touch-ups</li>
-                        <li>• Trim and baseboard painting</li>
-                        <li>• Color matching and blending</li>
-                    </ul>
-                </div>
-                <div class="bg-light p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow">
-                    <div class="bg-accent text-white w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                        <i class="fas fa-home text-xl"></i>
-                    </div>
-                    <h3 class="font-display font-semibold text-xl mb-3">Home Maintenance</h3>
-                    <p class="text-gray-600 mb-4">Preventive maintenance, seasonal prep, gutter cleaning, and property upkeep</p>
-                    <ul class="text-sm text-gray-700 space-y-1">
-                        <li>• Seasonal maintenance checks</li>
-                        <li>• Gutter cleaning and repair</li>
-                        <li>• Weatherproofing and caulking</li>
-                    </ul>
-                </div>
-                <div class="bg-light p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow">
-                    <div class="bg-accent text-white w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                        <i class="fas fa-tools text-xl"></i>
-                    </div>
-                    <h3 class="font-display font-semibold text-xl mb-3">Assembly & Installation</h3>
-                    <p class="text-gray-600 mb-4">Furniture assembly, shelf mounting, TV installation, and fixture setup</p>
-                    <ul class="text-sm text-gray-700 space-y-1">
-                        <li>• Furniture and appliance assembly</li>
-                        <li>• Wall mounting and shelving</li>
-                        <li>• TV and electronics installation</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Reviews Section -->
-    <section id="reviews" class="py-20 bg-light">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="font-display text-4xl md:text-5xl font-bold text-primary mb-4">
-                    What Our Local Customers Say
-                </h2>
-                <div class="flex justify-center items-center mb-6">
-                    <div class="flex text-yellow-400 text-2xl mr-3">
+            <div class="text-center mt-8">
+                <div class="inline-flex items-center bg-accent/10 px-4 py-2 rounded-full">
+                    <div class="flex text-accent mr-2">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="far fa-star"></i>
                     </div>
-                    <span class="text-xl font-semibold text-gray-700">4.0 out of 5 (20 reviews)</span>
+                    <span class="text-gray-700 font-medium">4-star rating · 20 reviews</span>
                 </div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-xl shadow-md">
-                    <div class="flex text-yellow-400 mb-4">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="text-gray-700 mb-4 italic">
-                        "Called Jabbour for a kitchen faucet that wouldn't stop dripping. He showed up on time, diagnosed the problem quickly, and had it fixed in about 30 minutes. Fair price and clean work area when he left. Will definitely call again!"
-                    </p>
-                    <div class="flex items-center">
-                        <div class="bg-gray-300 w-10 h-10 rounded-full flex items-center justify-center mr-3">
-                            <i class="fas fa-user text-gray-600"></i>
-                        </div>
-                        <div>
-                            <p class="font-semibold">Maria Rodriguez</p>
-                            <p class="text-sm text-gray-500">Local Resident</p>
-                        </div>
-                    </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-16 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-black text-primary mb-4">What Jabbour Handyman Services Does Best</h2>
+                <p class="text-xl text-gray-600">From minor repairs to major improvements, we handle it all</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <i class="fas fa-tools text-2xl text-accent mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Plumbing Repairs</h3>
+                    <p class="text-gray-600">Leaky faucets, clogged drains, toilet repairs, and pipe fixes</p>
                 </div>
-                <div class="bg-white p-8 rounded-xl shadow-md">
-                    <div class="flex text-yellow-400 mb-4">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <p class="text-gray-700 mb-4 italic">
-                        "Great handyman service! Jabbour installed new ceiling fans in three bedrooms and patched some drywall damage from our move. Professional work and he cleaned up everything perfectly. Pricing was very reasonable too."
-                    </p>
-                    <div class="flex items-center">
-                        <div class="bg-gray-300 w-10 h-10 rounded-full flex items-center justify-center mr-3">
-                            <i class="fas fa-user text-gray-600"></i>
-                        </div>
-                        <div>
-                            <p class="font-semibold">David Thompson</p>
-                            <p class="text-sm text-gray-500">Homeowner</p>
-                        </div>
-                    </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <i class="fas fa-bolt text-2xl text-accent mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Electrical Work</h3>
+                    <p class="text-gray-600">Light fixtures, outlet installation, switch repairs, and ceiling fans</p>
                 </div>
-                <div class="bg-white p-8 rounded-xl shadow-md">
-                    <div class="flex text-yellow-400 mb-4">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <p class="text-gray-700 mb-4 italic">
-                        "Had several small projects that needed attention - loose cabinet doors, squeaky hinges, and a running toilet. Jabbour took care of everything in one visit. Nice to find someone reliable who actually shows up when they say they will!"
-                    </p>
-                    <div class="flex items-center">
-                        <div class="bg-gray-300 w-10 h-10 rounded-full flex items-center justify-center mr-3">
-                            <i class="fas fa-user text-gray-600"></i>
-                        </div>
-                        <div>
-                            <p class="font-semibold">Jennifer Chen</p>
-                            <p class="text-sm text-gray-500">Property Owner</p>
-                        </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <i class="fas fa-hammer text-2xl text-accent mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Carpentry & Repairs</h3>
+                    <p class="text-gray-600">Door frames, cabinet repairs, shelving, and trim work</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <i class="fas fa-paint-roller text-2xl text-accent mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Interior Painting</h3>
+                    <p class="text-gray-600">Room painting, touch-ups, trim work, and color consultation</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <i class="fas fa-wrench text-2xl text-accent mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Appliance Installation</h3>
+                    <p class="text-gray-600">Dishwashers, garbage disposals, water heaters, and more</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <i class="fas fa-home text-2xl text-accent mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Home Maintenance</h3>
+                    <p class="text-gray-600">Caulking, weatherstripping, gutter cleaning, and preventive care</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-black text-primary mb-4">Recent Projects Around Town</h2>
+                <p class="text-xl text-gray-600">See the quality craftsmanship our neighbors trust</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="group cursor-pointer">
+                    <img src="photos/photo-2.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1200&q=80'"
+                         alt="Kitchen faucet repair" 
+                         class="w-full h-64 object-cover rounded-lg group-hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-lg font-semibold mt-3 text-gray-900">Kitchen Faucet Replacement</h3>
+                </div>
+                <div class="group cursor-pointer">
+                    <img src="photos/photo-3.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1200&q=80'"
+                         alt="Bathroom tile work" 
+                         class="w-full h-64 object-cover rounded-lg group-hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-lg font-semibold mt-3 text-gray-900">Bathroom Tile Repair</h3>
+                </div>
+                <div class="group cursor-pointer">
+                    <img src="photos/photo-4.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1200&q=80'"
+                         alt="Living room painting" 
+                         class="w-full h-64 object-cover rounded-lg group-hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-lg font-semibold mt-3 text-gray-900">Living Room Paint Job</h3>
+                </div>
+                <div class="group cursor-pointer">
+                    <img src="photos/photo-5.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1200&q=80'"
+                         alt="Ceiling fan installation" 
+                         class="w-full h-64 object-cover rounded-lg group-hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-lg font-semibold mt-3 text-gray-900">Ceiling Fan Installation</h3>
+                </div>
+                <div class="group cursor-pointer">
+                    <img src="photos/photo-6.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1200&q=80'"
+                         alt="Cabinet door repair" 
+                         class="w-full h-64 object-cover rounded-lg group-hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-lg font-semibold mt-3 text-gray-900">Cabinet Door Repair</h3>
+                </div>
+                <div class="bg-primary text-white rounded-lg flex items-center justify-center h-64">
+                    <div class="text-center">
+                        <i class="fas fa-plus text-4xl mb-4"></i>
+                        <p class="text-xl font-semibold">Your Project Next?</p>
+                        <a href="tel:2092713371" class="inline-block mt-3 bg-accent text-primary px-6 py-2 rounded-lg font-bold hover:bg-accent/90 transition-colors">
+                            Call Now
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-primary text-white">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-            <h2 class="font-display text-4xl md:text-5xl font-bold mb-6">
-                Ready to Get Your Project Started?
-            </h2>
-            <p class="text-xl mb-12 opacity-90">
-                Contact Jabbour Handyman Services today for your free estimate. We're here to help with all your home repair and maintenance needs.
-            </p>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-                <div class="bg-red-800 bg-opacity-50 p-8 rounded-xl">
-                    <i class="fas fa-phone text-4xl text-accent mb-4"></i>
-                    <h3 class="font-display font-semibold text-2xl mb-4">Call for Immediate Service</h3>
-                    <a href="tel:(209) 271-3371" class="text-3xl font-bold text-accent hover:text-yellow-300 transition-colors">
-                        (209) 271-3371
-                    </a>
-                    <p class="mt-4 opacity-90">Monday - Wednesday: 7 AM to 7 PM</p>
+    <!-- Reviews -->
+    <section class="py-16 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-black text-primary mb-4">What Local Families Say</h2>
+                <p class="text-xl text-gray-600">Real reviews from real neighbors</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="flex text-accent mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Fixed our kitchen sink leak same day I called."</p>
+                    <div class="font-semibold text-gray-900">— Maria S.</div>
                 </div>
-                <div class="bg-red-800 bg-opacity-50 p-8 rounded-xl">
-                    <i class="fas fa-clipboard-list text-4xl text-accent mb-4"></i>
-                    <h3 class="font-display font-semibold text-2xl mb-4">Request Your Free Quote</h3>
-                    <p class="mb-6 opacity-90">Tell us about your project and get a detailed estimate</p>
-                    <a href="tel:(209) 271-3371" class="bg-accent text-white px-6 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition-colors inline-block">
-                        Get a Free Estimate
-                    </a>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="flex text-accent mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Jabbour installed three ceiling fans in our home. Great work, fair price, and he cleaned up everything when done."</p>
+                    <div class="font-semibold text-gray-900">— David R.</div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="flex text-accent mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Had him paint our master bedroom and repair some cabinet doors. He showed up on time, worked efficiently, and the quality was excellent. Would definitely hire again for future projects around the house."</p>
+                    <div class="font-semibold text-gray-900">— Jennifer M.</div>
                 </div>
             </div>
-            <div class="bg-red-800 bg-opacity-30 p-6 rounded-xl">
-                <div class="flex flex-col md:flex-row items-center justify-center gap-8 text-center md:text-left">
-                    <div>
-                        <h4 class="font-display font-semibold text-lg mb-2">Service Areas</h4>
-                        <p class="opacity-90">Serving local communities and surrounding areas</p>
-                    </div>
-                    <div>
-                        <h4 class="font-display font-semibold text-lg mb-2">Business Hours</h4>
-                        <p class="opacity-90">Monday - Wednesday: 7 AM - 7 PM</p>
-                    </div>
-                    <div>
-                        <h4 class="font-display font-semibold text-lg mb-2">Emergency Service</h4>
-                        <p class="opacity-90">Available for urgent repairs</p>
-                    </div>
-                </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary text-white">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-5xl font-black mb-6">Ready to Fix It Right?</h2>
+            <p class="text-xl mb-8 opacity-90">Call Jabbour Handyman Services today for your free estimate</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="tel:2092713371" class="bg-accent text-primary px-8 py-4 rounded-lg font-bold text-lg hover:bg-accent/90 transition-colors">
+                    <i class="fas fa-phone mr-2"></i>(209) 271-3371
+                </a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Jabbour%20Handyman%20Services&query_place_id=ChIJZ11VhpcNkIAR0SgsQhcfkzw" 
+                   target="_blank" 
+                   class="border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/10 transition-colors">
+                    <i class="fas fa-map-marker-alt mr-2"></i>Find Us on Google
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div>
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-tools text-accent text-2xl mr-3"></i>
-                        <span class="font-display font-bold text-xl">Jabbour Handyman Services</span>
-                    </div>
-                    <p class="text-gray-300 mb-4">
-                        Your trusted local handyman for reliable home repairs and maintenance services.
-                    </p>
-                    <div class="flex items-center text-yellow-400 mb-2">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <span class="ml-2 text-white">4.0 Stars (20 Reviews)</span>
-                    </div>
+    <footer class="bg-gray-900 text-gray-300 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h3 class="text-2xl font-bold text-white mb-4">Jabbour Handyman Services</h3>
+                <div class="space-y-2 mb-6">
+                    <p><i class="fas fa-phone mr-2 text-accent"></i>(209) 271-3371</p>
+                    <p><i class="fas fa-clock mr-2 text-accent"></i>Mon–Sat 8am–6pm</p>
+                    <p><i class="fas fa-map-marker-alt mr-2 text-accent"></i>Serving Central Valley and surrounding areas</p>
                 </div>
-                <div>
-                    <h4 class="font-display font-semibold text-lg mb-4">Contact Information</h4>
-                    <div class="space-y-3 text-gray-300">
-                        <div class="flex items-center">
-                            <i class="fas fa-phone text-accent mr-3"></i>
-                            <a href="tel:(209) 271-3371" class="hover:text-white transition-colors">(209) 271-3371</a>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-clock text-accent mr-3"></i>
-                            <span>Mon-Wed: 7 AM - 7 PM</span>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-map-pin text-accent mr-3"></i>
-                            <span>Serving Local Communities</span>
-                        </div>
-                    </div>
+                <div class="border-t border-gray-700 pt-6 text-sm text-gray-400">
+                    <p>&copy; 2024 Jabbour Handyman Services. Licensed & Insured.</p>
                 </div>
-                <div>
-                    <h4 class="font-display font-semibold text-lg mb-4">Our Services</h4>
-                    <ul class="space-y-2 text-gray-300">
-                        <li>• General Home Repairs</li>
-                        <li>• Plumbing Fixes</li>
-                        <li>• Electrical Work</li>
-                        <li>• Painting & Touch-ups</li>
-                        <li>• Home Maintenance</li>
-                        <li>• Assembly & Installation</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2024 Jabbour Handyman Services. Licensed & Insured. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Sticky Mobile Bottom Bar -->
-    <div class="fixed bottom-0 left-0 right-0 bg-primary text-white p-4 md:hidden z-50">
-        <div class="flex items-center justify-between">
-            <a href="tel:(209) 271-3371" class="flex items-center justify-center bg-white bg-opacity-20 px-4 py-2 rounded-lg flex-1 mr-2 hover:bg-opacity-30 transition-colors">
-                <i class="fas fa-phone mr-2"></i>
-                <span class="font-semibold">Call (209) 271-3371</span>
+    <!-- Mobile Bottom CTA Bar -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-4 md:hidden z-50">
+        <div class="flex gap-3">
+            <a href="tel:2092713371" class="flex-1 bg-primary text-white py-3 rounded-lg font-semibold text-center hover:bg-primary/90 transition-colors">
+                <i class="fas fa-phone mr-2"></i>Call (209) 271-3371
             </a>
-            <a href="#contact" class="flex items-center justify-center bg-accent px-4 py-2 rounded-lg flex-1 ml-2 hover:bg-yellow-600 transition-colors">
-                <i class="fas fa-comment mr-2"></i>
-                <span class="font-semibold">Get a Quote</span>
+            <a href="tel:2092713371" class="flex-1 bg-accent text-primary py-3 rounded-lg font-semibold text-center hover:bg-accent/90 transition-colors">
+                <i class="fas fa-comment mr-2"></i>Get a Quote
             </a>
         </div>
     </div>
 
-    <!-- Smooth Scrolling -->
     <script>
+        // Add smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
