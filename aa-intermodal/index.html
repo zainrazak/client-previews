@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A&A Intermodal - Manteca's Premier Trucking & Transportation Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Slab:wght@500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1B2A4A',
+                        accent: '#C9A227',
+                        background: '#F7F5EF'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'serif': ['Roboto Slab', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-background text-gray-900">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <i class="fas fa-truck text-primary text-2xl mr-3"></i>
+                    <div class="font-serif font-semibold text-xl text-primary">A&A Intermodal</div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#services" class="text-gray-700 hover:text-primary transition-colors">Services</a>
+                    <a href="#reviews" class="text-gray-700 hover:text-primary transition-colors">Reviews</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary transition-colors">Contact</a>
+                    <a href="tel:(209) 456-5985" class="flex items-center text-primary font-semibold">
+                        <i class="fas fa-phone mr-2"></i>
+                        (209) 456-5985
+                    </a>
+                </div>
+                <div class="md:hidden">
+                    <a href="tel:(209) 456-5985" class="text-primary">
+                        <i class="fas fa-phone text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-0 min-h-[600px]">
+                <!-- Hero Image -->
+                <div class="order-1 md:order-1">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80" 
+                         alt="Professional trucking services in Manteca" 
+                         class="w-full h-full object-cover"
+                         onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI2MDAiIHZpZXdCb3g9IjAgMCAxMjAwIDYwMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjEyMDAiIGhlaWdodD0iNjAwIiBmaWxsPSIjRjNGNEY2Ii8+Cjx0ZXh0IHg9IjYwMCIgeT0iMzAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOUI5QkEzIiBmb250LXNpemU9IjI0Ij5UcnVja2luZyBJbWFnZTwvdGV4dD4KPC9zdmc+'">
+                </div>
+                <!-- Hero Content -->
+                <div class="order-2 md:order-2 flex items-center px-6 md:px-12 py-12">
+                    <div>
+                        <h1 class="font-serif text-4xl md:text-5xl font-semibold text-primary mb-6 leading-tight">
+                            Manteca's Trusted Trucking Experts
+                        </h1>
+                        <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                            Professional freight transportation and intermodal services across Central Valley. Family-owned, fully insured, and dedicated to on-time delivery.
+                        </p>
+                        <div class="flex items-center mb-8">
+                            <div class="flex items-center mr-8">
+                                <div class="flex text-accent">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="ml-2 text-gray-600 font-medium">5.0 (6 reviews)</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="#contact" class="bg-primary text-white px-8 py-4 font-semibold hover:bg-opacity-90 transition-colors inline-flex items-center justify-center">
+                                Get a Free Quote
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                            <a href="tel:(209) 456-5985" class="border-2 border-primary text-primary px-8 py-4 font-semibold hover:bg-primary hover:text-white transition-colors inline-flex items-center justify-center">
+                                <i class="fas fa-phone mr-2"></i>
+                                Call Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="bg-primary py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="text-white">
+                    <i class="fas fa-star text-accent text-2xl mb-2"></i>
+                    <div class="font-semibold">Top Rated</div>
+                    <div class="text-sm opacity-90">5-Star Service</div>
+                </div>
+                <div class="text-white">
+                    <i class="fas fa-clock text-accent text-2xl mb-2"></i>
+                    <div class="font-semibold">Fast & Reliable</div>
+                    <div class="text-sm opacity-90">On-Time Delivery</div>
+                </div>
+                <div class="text-white">
+                    <i class="fas fa-shield text-accent text-2xl mb-2"></i>
+                    <div class="font-semibold">Fully Insured</div>
+                    <div class="text-sm opacity-90">Protected Cargo</div>
+                </div>
+                <div class="text-white">
+                    <i class="fas fa-map-pin text-accent text-2xl mb-2"></i>
+                    <div class="font-semibold">Locally Owned</div>
+                    <div class="text-sm opacity-90">Manteca Based</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-3xl md:text-4xl font-semibold text-primary mb-4">
+                    A&A Intermodal Transportation Services
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Comprehensive freight solutions from our Manteca facility to destinations across California and beyond.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 shadow-lg hover:shadow-xl transition-shadow">
+                    <i class="fas fa-shipping-fast text-accent text-3xl mb-4"></i>
+                    <h3 class="font-serif text-xl font-semibold text-primary mb-3">Intermodal Container Transport</h3>
+                    <p class="text-gray-600">Efficient rail-to-truck container moves from Port of Oakland and local rail yards to your destination.</p>
+                </div>
+                <div class="bg-white p-8 shadow-lg hover:shadow-xl transition-shadow">
+                    <i class="fas fa-truck-loading text-accent text-3xl mb-4"></i>
+                    <h3 class="font-serif text-xl font-semibold text-primary mb-3">LTL & FTL Freight</h3>
+                    <p class="text-gray-600">Less-than-truckload and full truckload services throughout Central Valley and California.</p>
+                </div>
+                <div class="bg-white p-8 shadow-lg hover:shadow-xl transition-shadow">
+                    <i class="fas fa-clock text-accent text-3xl mb-4"></i>
+                    <h3 class="font-serif text-xl font-semibold text-primary mb-3">Same-Day Delivery</h3>
+                    <p class="text-gray-600">Urgent freight delivery within 150 miles of Manteca for time-critical shipments.</p>
+                </div>
+                <div class="bg-white p-8 shadow-lg hover:shadow-xl transition-shadow">
+                    <i class="fas fa-warehouse text-accent text-3xl mb-4"></i>
+                    <h3 class="font-serif text-xl font-semibold text-primary mb-3">Drayage Services</h3>
+                    <p class="text-gray-600">Short-haul container moves between ports, rail terminals, and distribution centers.</p>
+                </div>
+                <div class="bg-white p-8 shadow-lg hover:shadow-xl transition-shadow">
+                    <i class="fas fa-route text-accent text-3xl mb-4"></i>
+                    <h3 class="font-serif text-xl font-semibold text-primary mb-3">Dedicated Route Service</h3>
+                    <p class="text-gray-600">Regular scheduled runs for businesses with consistent transportation needs.</p>
+                </div>
+                <div class="bg-white p-8 shadow-lg hover:shadow-xl transition-shadow">
+                    <i class="fas fa-dolly text-accent text-3xl mb-4"></i>
+                    <h3 class="font-serif text-xl font-semibold text-primary mb-3">Load & Unload Support</h3>
+                    <p class="text-gray-600">Professional loading and unloading assistance with proper equipment and trained personnel.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas with Visual -->
+    <section class="bg-gray-50 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="font-serif text-3xl font-semibold text-primary mb-6">
+                        Strategic Manteca Location Serves Entire Central Valley
+                    </h2>
+                    <p class="text-gray-600 mb-6">
+                        Located at the heart of California's logistics corridor, our Intermodal Way facility provides quick access to major highways and rail connections.
+                    </p>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-accent mr-3"></i>
+                            Direct access to Highway 99 and Interstate 5
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-accent mr-3"></i>
+                            90 minutes to Port of Oakland
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-accent mr-3"></i>
+                            Serving Stockton, Modesto, Tracy, and Lathrop
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-accent mr-3"></i>
+                            Same-day service to Sacramento and Bay Area
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80" 
+                         alt="Trucking operations in Central Valley" 
+                         class="w-full h-80 object-cover shadow-lg"
+                         onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDgwMCA1MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI4MDAiIGhlaWdodD0iNTAwIiBmaWxsPSIjRjNGNEY2Ii8+Cjx0ZXh0IHg9IjQwMCIgeT0iMjUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOUI5QkEzIiBmb250LXNpemU9IjE4Ij5TZXJ2aWNlIEFyZWE8L3RleHQ+Cjwvc3ZnPg=='">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-3xl md:text-4xl font-semibold text-primary mb-4">
+                    What Manteca Businesses Say About A&A Intermodal
+                </h2>
+                <div class="flex items-center justify-center">
+                    <div class="flex text-accent text-2xl mr-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="text-xl font-semibold text-gray-700">5.0 out of 5 (6 reviews)</span>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 shadow-lg">
+                    <div class="flex text-accent mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4 italic">
+                        "Quick turnaround on our container delivery from Oakland. Driver was professional and handled our freight with care."
+                    </p>
+                    <div class="text-sm text-gray-600 font-semibold">— Mike R., Manteca</div>
+                </div>
+                <div class="bg-white p-8 shadow-lg">
+                    <div class="flex text-accent mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4 italic">
+                        "We've been using A&A for our weekly runs to Sacramento for over a year. They're always on time and their rates are fair. The team really knows the Central Valley routes and helps us avoid delays during peak traffic hours."
+                    </p>
+                    <div class="text-sm text-gray-600 font-semibold">— Jennifer L., Local Distributor</div>
+                </div>
+                <div class="bg-white p-8 shadow-lg">
+                    <div class="flex text-accent mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4 italic">
+                        "Had an urgent shipment that needed to get to Stockton same day. A&A picked it up within 2 hours and delivered on schedule. Saved our customer relationship. Their location on Intermodal Way makes them super accessible for quick pickups. Highly recommend for any business in the Manteca area that needs reliable freight service."
+                    </p>
+                    <div class="text-sm text-gray-600 font-semibold">— Carlos M., Manufacturing</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About/Experience Section -->
+    <section class="bg-primary py-16 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?w=800&q=80" 
+                         alt="Professional trucking fleet" 
+                         class="w-full h-80 object-cover"
+                         onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDgwMCA1MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI4MDAiIGhlaWdodD0iNTAwIiBmaWxsPSIjMkQzNzQ4Ii8+Cjx0ZXh0IHg9IjQwMCIgeT0iMjUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOUI5QkEzIiBmb250LXNpemU9IjE4Ij5UcnVja2luZyBGbGVldDwvdGV4dD4KPHN2Zz4='"
+                         id="fadeInImage">
+                </div>
+                <div>
+                    <h2 class="font-serif text-3xl font-semibold mb-6">
+                        Family-Owned Trucking Excellence Since Day One
+                    </h2>
+                    <p class="text-lg opacity-90 mb-6 leading-relaxed">
+                        Operating from our strategic location at 2880 Intermodal Way, we've built our reputation on reliable service and local knowledge. Our experienced drivers and modern equipment ensure your freight arrives safely and on time.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div>
+                            <div class="text-3xl font-bold text-accent mb-2">100%</div>
+                            <div class="text-sm opacity-90">On-Time Delivery</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-accent mb-2">24/7</div>
+                            <div class="text-sm opacity-90">Dispatch Support</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-accent mb-2">DOT</div>
+                            <div class="text-sm opacity-90">Compliant & Insured</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-accent mb-2">Local</div>
+                            <div class="text-sm opacity-90">Manteca Expertise</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="bg-accent py-16">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 class="font-serif text-3xl md:text-4xl font-semibold text-white mb-6">
+                Ready to Move Your Freight?
+            </h2>
+            <p class="text-xl text-white opacity-90 mb-8">
+                Get a free quote from Manteca's trusted trucking professionals. Call now or request a quote online.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="tel:(209) 456-5985" class="bg-white text-accent px-8 py-4 text-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center">
+                    <i class="fas fa-phone mr-3"></i>
+                    Call (209) 456-5985
+                </a>
+                <a href="#quote" class="border-2 border-white text-white px-8 py-4 text-lg font-semibold hover:bg-white hover:text-accent transition-colors inline-flex items-center justify-center">
+                    Get a Free Quote
+                    <i class="fas fa-arrow-right ml-3"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="bg-gray-50 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div>
+                    <i class="fas fa-map-marker-alt text-primary text-3xl mb-4"></i>
+                    <h3 class="font-semibold text-lg text-primary mb-2">Visit Our Facility</h3>
+                    <p class="text-gray-600">2880 Intermodal Wy<br>Manteca, CA 95336</p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=A%26A%20Intermodal&query_place_id=ChIJoa7WdJhrkIARFAVd609P0BQ" 
+                       class="text-primary hover:underline mt-2 inline-block">Get Directions</a>
+                </div>
+                <div>
+                    <i class="fas fa-phone text-primary text-3xl mb-4"></i>
+                    <h3 class="font-semibold text-lg text-primary mb-2">Call for Quote</h3>
+                    <p class="text-gray-600">
+                        <a href="tel:(209) 456-5985" class="text-2xl font-semibold text-primary hover:text-accent">
+                            (209) 456-5985
+                        </a>
+                    </p>
+                </div>
+                <div>
+                    <i class="fas fa-clock text-primary text-3xl mb-4"></i>
+                    <h3 class="font-semibold text-lg text-primary mb-2">Business Hours</h3>
+                    <p class="text-gray-600">
+                        Monday - Wednesday<br>
+                        9:00 AM - 5:00 PM
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <div class="flex items-center justify-center mb-4">
+                    <i class="fas fa-truck text-accent text-3xl mr-4"></i>
+                    <div class="font-serif font-semibold text-2xl">A&A Intermodal</div>
+                </div>
+                <p class="text-gray-300 mb-4">
+                    Professional trucking services from Manteca to destinations throughout California
+                </p>
+                <div class="flex flex-wrap justify-center gap-6 text-sm text-gray-300">
+                    <span>2880 Intermodal Wy, Manteca, CA 95336</span>
+                    <span>•</span>
+                    <a href="tel:(209) 456-5985" class="hover:text-accent">(209) 456-5985</a>
+                    <span>•</span>
+                    <span>Mon-Wed: 9 AM - 5 PM</span>
+                </div>
+                <div class="mt-6 pt-6 border-t border-gray-600 text-sm text-gray-400">
+                    <p>&copy; 2024 A&A Intermodal. All rights reserved. • Manteca, California</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky Bottom Bar -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white border-t shadow-lg md:hidden z-50">
+        <div class="grid grid-cols-2">
+            <a href="tel:(209) 456-5985" 
+               class="flex items-center justify-center py-4 text-primary font-semibold hover:bg-gray-50">
+                <i class="fas fa-phone mr-2"></i>
+                Call (209) 456-5985
+            </a>
+            <a href="#contact" 
+               class="flex items-center justify-center py-4 bg-accent text-white font-semibold hover:bg-opacity-90">
+                <i class="fas fa-quote-left mr-2"></i>
+                Get a Quote
+            </a>
+        </div>
+    </div>
+
+    <!-- Scroll Animation Script -->
+    <script>
+        // Simple fade-in animation for the image
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '0';
+                    entry.target.style.transform = 'translateY(20px)';
+                    entry.target.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                    setTimeout(() => {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }, 200);
+                }
+            });
+        });
+
+        const fadeInImage = document.getElementById('fadeInImage');
+        if (fadeInImage) {
+            observer.observe(fadeInImage);
+        }
+    </script>
+</body>
+</html>
