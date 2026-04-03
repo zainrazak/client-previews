@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stanley Fetsch & Son Inc - Stockton's Premier Lawn Care & Landscaping</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1B4332',
+                        accent: '#52B788',
+                        background: '#F0FFF4'
+                    },
+                    fontFamily: {
+                        'serif': ['Merriweather', 'serif'],
+                        'sans': ['Open Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-background">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <h1 class="text-xl font-bold text-primary font-serif">Stanley Fetsch & Son Inc</h1>
+                </div>
+                <div class="hidden md:block">
+                    <a href="tel:(209) 466-3663" class="bg-accent text-white px-6 py-2 rounded-lg font-semibold hover:bg-primary transition-colors">
+                        <i class="fas fa-phone mr-2"></i>(209) 466-3663
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Sticky Bottom Bar -->
+    <div class="fixed bottom-0 left-0 right-0 bg-primary text-white p-3 z-50 md:hidden">
+        <div class="flex justify-between items-center">
+            <a href="tel:(209) 466-3663" class="flex items-center space-x-2 bg-white bg-opacity-20 px-3 py-2 rounded">
+                <i class="fas fa-phone"></i>
+                <span class="font-semibold">(209) 466-3663</span>
+            </a>
+            <button class="bg-accent px-4 py-2 rounded font-semibold">Get a Quote</button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="lg:flex lg:h-screen">
+        <!-- Hero Image -->
+        <div class="lg:w-1/2 h-64 lg:h-full">
+            <img src="photos/photo-1.jpg" 
+                 onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'"
+                 alt="Professional lawn care in Stockton" 
+                 class="w-full h-full object-cover">
+        </div>
+        
+        <!-- Hero Content -->
+        <div class="lg:w-1/2 bg-background flex items-center">
+            <div class="px-6 py-12 lg:px-12 lg:py-0 max-w-lg mx-auto lg:mx-0">
+                <h2 class="text-4xl lg:text-5xl font-bold text-primary font-serif leading-tight mb-6">
+                    Stockton's Lawn Perfection Experts
+                </h2>
+                <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                    Curb appeal that gets noticed — and neighbors who ask who does your lawn.
+                </p>
+                <div class="flex items-center mb-8">
+                    <div class="flex text-yellow-400 mr-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="text-gray-600">4.7 ★ (47 reviews)</span>
+                </div>
+                <button class="bg-accent text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary transition-colors shadow-lg">
+                    Get a Free Lawn Quote
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="bg-white py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="text-center">
+                    <div class="bg-accent text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-leaf text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-primary mb-1">Licensed & Insured</h3>
+                    <p class="text-sm text-gray-600">Fully protected service</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-accent text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-clock text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-primary mb-1">Weekly & Bi-Weekly Plans</h3>
+                    <p class="text-sm text-gray-600">Flexible scheduling</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-accent text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-shield-halved text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-primary mb-1">Satisfaction Guaranteed</h3>
+                    <p class="text-sm text-gray-600">Your happiness is our priority</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-accent text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-map-pin text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-primary mb-1">Locally Owned</h3>
+                    <p class="text-sm text-gray-600">Stockton family business</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="bg-background py-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary font-serif mb-4">
+                    Complete Lawn & Landscape Solutions
+                </h2>
+                <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+                    From weekly mowing to complete landscape makeovers, Stanley Fetsch & Son Inc transforms your outdoor space into the envy of the neighborhood.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="text-accent text-3xl mb-4">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Lawn Mowing & Edging</h3>
+                    <p class="text-gray-600">Professional weekly and bi-weekly lawn maintenance with precision edging for that crisp, manicured look.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="text-accent text-3xl mb-4">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Fertilization & Weed Control</h3>
+                    <p class="text-gray-600">Customized feeding programs and targeted weed elimination to keep your lawn thick, green, and healthy year-round.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="text-accent text-3xl mb-4">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Sprinkler Repair & Installation</h3>
+                    <p class="text-gray-600">Expert irrigation system installation, repair, and maintenance to ensure efficient water coverage for your landscape.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="text-accent text-3xl mb-4">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Tree & Shrub Trimming</h3>
+                    <p class="text-gray-600">Professional pruning and shaping to maintain healthy growth and enhance your property's natural beauty.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="text-accent text-3xl mb-4">
+                        <i class="fas fa-broom"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Leaf Cleanup & Yard Waste Removal</h3>
+                    <p class="text-gray-600">Seasonal cleanup services to keep your property pristine through fall and winter months.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="text-accent text-3xl mb-4">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Sod Installation</h3>
+                    <p class="text-gray-600">Fresh sod installation for instant green lawns, perfect for new construction or lawn renovation projects.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="text-accent text-3xl mb-4">
+                        <i class="fas fa-drafting-compass"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Landscaping Design</h3>
+                    <p class="text-gray-600">Creative landscape design and installation to transform your outdoor space into a personal paradise.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <div class="text-accent text-3xl mb-4">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Seasonal Cleanups</h3>
+                    <p class="text-gray-600">Spring and fall property preparation to ensure your landscape stays healthy through every season.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="bg-white py-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary font-serif mb-4">
+                    Stockton Homeowners Love Our Work
+                </h2>
+                <div class="flex justify-center items-center mb-6">
+                    <div class="flex text-yellow-400 mr-3 text-2xl">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="text-xl font-semibold text-gray-700">4.7 out of 5 stars (47 reviews)</span>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-background p-6 rounded-lg">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Stanley and his team completely transformed our front yard with new sod and sprinkler system. The whole Lincoln Village neighborhood has been asking who did our lawn! They show up every week exactly when they say they will. Couldn't be happier with the service."</p>
+                    <p class="font-semibold text-primary">— Maria Rodriguez</p>
+                </div>
+                
+                <div class="bg-background p-6 rounded-lg">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Been using Stanley Fetsch & Son for three years now. They handle our weekly mowing, fertilization, and seasonal cleanups. Professional, reliable, and reasonably priced. My lawn has never looked better!"</p>
+                    <p class="font-semibold text-primary">— David Chen</p>
+                </div>
+                
+                <div class="bg-background p-6 rounded-lg">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Had them redesign our backyard landscaping and install a new irrigation system. The crew was meticulous and cleaned up everything perfectly. Now we have the nicest yard on our Stockton street. Highly recommend!"</p>
+                    <p class="font-semibold text-primary">— Jennifer Thompson</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-primary py-16">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl lg:text-4xl font-bold text-white font-serif mb-6">
+                Ready for Stockton's Best Lawn Care?
+            </h2>
+            <p class="text-xl text-green-100 mb-8 max-w-2xl mx-auto">
+                Join 47+ satisfied customers who trust Stanley Fetsch & Son Inc with their outdoor spaces. Free estimates, no obligations.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <button class="bg-accent text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-primary transition-colors shadow-lg">
+                    Get a Free Lawn Quote
+                </button>
+                <a href="tel:(209) 466-3663" class="bg-white text-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-background transition-colors shadow-lg">
+                    <i class="fas fa-phone mr-2"></i>Call (209) 466-3663
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12 pb-20 md:pb-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold font-serif mb-4">Stanley Fetsch & Son Inc</h3>
+                    <p class="text-gray-300 mb-4">Stockton's trusted lawn care and landscaping professionals since day one.</p>
+                    <div class="flex text-yellow-400 mb-2">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="text-gray-300 ml-2">4.7 (47 reviews)</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Information</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <p><i class="fas fa-map-marker-alt mr-2"></i>1843 E Miner Ave, Stockton, CA 95205</p>
+                        <p><i class="fas fa-phone mr-2"></i>(209) 466-3663</p>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Stanley%20Fetsch%20%26%20Son%20Inc&query_place_id=ChIJuyaDIqwSkIAREVCQlS0oeCs" class="text-accent hover:text-white">
+                            <i class="fas fa-directions mr-2"></i>Get Directions
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Business Hours</h4>
+                    <div class="space-y-1 text-gray-300">
+                        <p>Monday: 8:00 AM - 4:30 PM</p>
+                        <p>Tuesday: 8:00 AM - 4:30 PM</p>
+                        <p>Wednesday: 8:00 AM - 4:30 PM</p>
+                        <p class="text-sm mt-2 text-gray-400">Call for weekend service availability</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Stanley Fetsch & Son Inc. Professional lawn care and landscaping services in Stockton, California.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
