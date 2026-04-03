@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ladies of the Lawn Yard Care - Stockton's Premier Lawn & Landscaping</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'forest-primary': '#1B4332',
+                        'forest-accent': '#52B788',
+                        'forest-bg': '#F0FFF4'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-display { font-family: 'Playfair Display', serif; }
+    </style>
+</head>
+<body class="bg-forest-bg text-forest-primary">
+
+<!-- Mobile Sticky CTA Bar -->
+<div class="fixed bottom-0 left-0 right-0 z-50 bg-forest-primary text-white p-4 md:hidden">
+    <div class="flex space-x-3">
+        <a href="tel:(209) 942-3110" class="flex-1 bg-white text-forest-primary text-center py-3 rounded-lg font-semibold">
+            <i class="fas fa-phone mr-2"></i>Call (209) 942-3110
+        </a>
+        <a href="#quote" class="flex-1 bg-forest-accent text-white text-center py-3 rounded-lg font-semibold">
+            Get a Quote
+        </a>
+    </div>
+</div>
+
+<!-- Navigation -->
+<nav class="bg-white shadow-sm sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+            <div class="flex-shrink-0">
+                <h1 class="text-xl font-bold text-forest-primary">Ladies of the Lawn Yard Care</h1>
+                <div class="text-sm text-gray-600 flex items-center mt-1">
+                    <span class="text-yellow-400">★★★★☆</span>
+                    <span class="ml-1">4.3 (4 reviews)</span>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#services" class="text-gray-600 hover:text-forest-primary">Services</a>
+                <a href="#reviews" class="text-gray-600 hover:text-forest-primary">Reviews</a>
+                <a href="tel:(209) 942-3110" class="text-forest-primary font-semibold">
+                    <i class="fas fa-phone mr-1"></i>(209) 942-3110
+                </a>
+                <a href="#quote" class="bg-forest-accent text-white px-6 py-2 rounded-lg hover:bg-opacity-90 font-semibold">
+                    Get a Free Lawn Quote
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="bg-white">
+    <div class="max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-2 min-h-[600px]">
+            <!-- Hero Text -->
+            <div class="flex items-center justify-center px-6 py-16 lg:px-12">
+                <div class="max-w-lg">
+                    <h2 class="font-display text-4xl lg:text-5xl font-semibold text-forest-primary mb-6">
+                        Stockton's Lawn Transformation Experts
+                    </h2>
+                    <p class="text-xl text-gray-600 mb-2">
+                        Curb appeal that gets noticed — and neighbors who ask who does your lawn.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Professional lawn care and landscaping services delivered with precision and care throughout Stockton's neighborhoods.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#quote" class="bg-forest-accent text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-opacity-90 text-center">
+                            Get a Free Lawn Quote
+                        </a>
+                        <a href="tel:(209) 942-3110" class="border-2 border-forest-primary text-forest-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-forest-primary hover:text-white text-center">
+                            <i class="fas fa-phone mr-2"></i>Call Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Hero Image -->
+            <div class="relative lg:order-last">
+                <img src="photos/photo-1.jpg" 
+                     onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'" 
+                     alt="Professional lawn care services in Stockton" 
+                     class="w-full h-full object-cover">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Trust Bar -->
+<section class="bg-forest-primary text-white py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+            <div>
+                <i class="fas fa-leaf text-forest-accent text-2xl mb-2"></i>
+                <p class="text-sm font-medium">Licensed & Insured</p>
+            </div>
+            <div>
+                <i class="fas fa-clock text-forest-accent text-2xl mb-2"></i>
+                <p class="text-sm font-medium">Weekly & Bi-Weekly Plans</p>
+            </div>
+            <div>
+                <i class="fas fa-shield-halved text-forest-accent text-2xl mb-2"></i>
+                <p class="text-sm font-medium">Satisfaction Guaranteed</p>
+            </div>
+            <div>
+                <i class="fas fa-map-pin text-forest-accent text-2xl mb-2"></i>
+                <p class="text-sm font-medium">Locally Owned</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h3 class="font-display text-3xl font-semibold text-forest-primary mb-4">
+                Complete Lawn & Landscaping Solutions
+            </h3>
+            <p class="text-xl text-gray-600">
+                From routine maintenance to complete landscape transformations
+            </p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-forest-bg p-6 rounded-lg border-l-4 border-forest-accent">
+                <i class="fas fa-cut text-forest-accent text-2xl mb-3"></i>
+                <h4 class="font-semibold text-forest-primary mb-2">Lawn Mowing & Edging</h4>
+                <p class="text-gray-600 text-sm">Precision cuts that keep your lawn looking professionally maintained</p>
+            </div>
+            
+            <div class="bg-forest-bg p-6 rounded-lg border-l-4 border-forest-accent">
+                <i class="fas fa-seedling text-forest-accent text-2xl mb-3"></i>
+                <h4 class="font-semibold text-forest-primary mb-2">Fertilization & Weed Control</h4>
+                <p class="text-gray-600 text-sm">Targeted treatments for thick, healthy grass and weed-free lawns</p>
+            </div>
+            
+            <div class="bg-forest-bg p-6 rounded-lg border-l-4 border-forest-accent">
+                <i class="fas fa-shower text-forest-accent text-2xl mb-3"></i>
+                <h4 class="font-semibold text-forest-primary mb-2">Sprinkler Repair & Installation</h4>
+                <p class="text-gray-600 text-sm">Efficient irrigation systems that save water and keep lawns green</p>
+            </div>
+            
+            <div class="bg-forest-bg p-6 rounded-lg border-l-4 border-forest-accent">
+                <i class="fas fa-tree text-forest-accent text-2xl mb-3"></i>
+                <h4 class="font-semibold text-forest-primary mb-2">Tree & Shrub Trimming</h4>
+                <p class="text-gray-600 text-sm">Expert pruning for healthy growth and enhanced curb appeal</p>
+            </div>
+            
+            <div class="bg-forest-bg p-6 rounded-lg border-l-4 border-forest-accent">
+                <i class="fas fa-broom text-forest-accent text-2xl mb-3"></i>
+                <h4 class="font-semibold text-forest-primary mb-2">Leaf Cleanup & Yard Waste Removal</h4>
+                <p class="text-gray-600 text-sm">Complete debris removal to keep your property pristine</p>
+            </div>
+            
+            <div class="bg-forest-bg p-6 rounded-lg border-l-4 border-forest-accent">
+                <i class="fas fa-layer-group text-forest-accent text-2xl mb-3"></i>
+                <h4 class="font-semibold text-forest-primary mb-2">Sod Installation</h4>
+                <p class="text-gray-600 text-sm">Instant lawn transformation with professional sod laying</p>
+            </div>
+            
+            <div class="bg-forest-bg p-6 rounded-lg border-l-4 border-forest-accent">
+                <i class="fas fa-palette text-forest-accent text-2xl mb-3"></i>
+                <h4 class="font-semibold text-forest-primary mb-2">Landscaping Design</h4>
+                <p class="text-gray-600 text-sm">Custom landscape plans that enhance your property value</p>
+            </div>
+            
+            <div class="bg-forest-bg p-6 rounded-lg border-l-4 border-forest-accent">
+                <i class="fas fa-calendar-alt text-forest-accent text-2xl mb-3"></i>
+                <h4 class="font-semibold text-forest-primary mb-2">Seasonal Cleanups</h4>
+                <p class="text-gray-600 text-sm">Spring and fall services to prepare your yard for the season ahead</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Reviews Section -->
+<section id="reviews" class="py-16 bg-forest-bg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h3 class="font-display text-3xl font-semibold text-forest-primary mb-4">
+                What Stockton Homeowners Say
+            </h3>
+            <div class="flex justify-center items-center space-x-2 mb-4">
+                <div class="text-yellow-400 text-xl">★★★★☆</div>
+                <span class="text-lg font-semibold">4.3 out of 5</span>
+                <span class="text-gray-600">(4 Google reviews)</span>
+            </div>
+        </div>
+        
+        <div class="grid lg:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-lg shadow-sm">
+                <div class="text-yellow-400 text-lg mb-4">★★★★★</div>
+                <p class="text-gray-700 mb-4">
+                    "Ladies of the Lawn transformed our backyard in Brookside. They installed new sod, fixed our sprinkler system, and now we have the greenest lawn on the block. Maria and her team are incredibly professional and detail-oriented. Worth every penny!"
+                </p>
+                <div class="text-sm">
+                    <p class="font-semibold text-forest-primary">Jennifer M.</p>
+                    <p class="text-gray-500">Brookside neighborhood</p>
+                </div>
+            </div>
+            
+            <div class="bg-white p-8 rounded-lg shadow-sm">
+                <div class="text-yellow-400 text-lg mb-4">★★★★☆</div>
+                <p class="text-gray-700 mb-4">
+                    "Great service! They've been doing our weekly mowing and edging for 6 months now. Always show up on time and leave the yard looking perfect. The fertilization program really made a difference - our grass has never looked better."
+                </p>
+                <div class="text-sm">
+                    <p class="font-semibold text-forest-primary">Robert K.</p>
+                    <p class="text-gray-500">Stockton resident</p>
+                </div>
+            </div>
+            
+            <div class="bg-white p-8 rounded-lg shadow-sm">
+                <div class="text-yellow-400 text-lg mb-4">★★★★☆</div>
+                <p class="text-gray-700 mb-4">
+                    "Called them for tree trimming and seasonal cleanup last fall. They cleaned up all the leaves, trimmed our overgrown shrubs, and hauled everything away. The Ladies of the Lawn crew worked efficiently and left our Lincoln Village property spotless. Will definitely use them again."
+                </p>
+                <div class="text-sm">
+                    <p class="font-semibold text-forest-primary">Patricia L.</p>
+                    <p class="text-gray-500">Lincoln Village</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section id="quote" class="py-16 bg-forest-primary text-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h3 class="font-display text-3xl font-semibold mb-4">
+            Ready for Stockton's Best Lawn Care Service?
+        </h3>
+        <p class="text-xl mb-8 text-gray-200">
+            Join your neighbors who trust Ladies of the Lawn Yard Care for professional, reliable lawn and landscaping services.
+        </p>
+        
+        <div class="bg-white p-8 rounded-lg text-forest-primary max-w-md mx-auto">
+            <h4 class="text-2xl font-semibold mb-6">Get Your Free Quote Today</h4>
+            <div class="space-y-4 text-left">
+                <div class="flex items-center">
+                    <i class="fas fa-phone text-forest-accent mr-3"></i>
+                    <div>
+                        <p class="font-semibold">Call for Immediate Service</p>
+                        <a href="tel:(209) 942-3110" class="text-2xl font-bold text-forest-accent hover:underline">
+                            (209) 942-3110
+                        </a>
+                    </div>
+                </div>
+                <div class="border-t pt-4">
+                    <div class="flex items-center mb-2">
+                        <i class="fas fa-clock text-forest-accent mr-3"></i>
+                        <span class="font-semibold">Available 24/7</span>
+                    </div>
+                    <p class="text-sm text-gray-600">Emergency services • Same-day quotes • Flexible scheduling</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-forest-primary text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-3 gap-8">
+            <div>
+                <h4 class="text-xl font-bold mb-4">Ladies of the Lawn Yard Care</h4>
+                <p class="text-gray-300 mb-4">Professional lawn care and landscaping services serving Stockton and surrounding areas.</p>
+                <div class="flex items-center text-gray-300">
+                    <span class="text-yellow-400 mr-2">★★★★☆</span>
+                    <span>4.3 (4 Google reviews)</span>
+                </div>
+            </div>
+            
+            <div>
+                <h5 class="font-semibold mb-4">Contact Info</h5>
+                <div class="space-y-2 text-gray-300">
+                    <div class="flex items-center">
+                        <i class="fas fa-map-pin mr-3 text-forest-accent"></i>
+                        <span>2126 Weber Ave, Stockton, CA 95205</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-phone mr-3 text-forest-accent"></i>
+                        <a href="tel:(209) 942-3110" class="hover:text-white">(209) 942-3110</a>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-map mr-3 text-forest-accent"></i>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Ladies%20of%20the%20Lawn%20Yard%20Care&query_place_id=ChIJE7e1sVJtkIAR9QfKKf5iRPo" 
+                           target="_blank" class="hover:text-white">View on Google Maps</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <h5 class="font-semibold mb-4">Service Hours</h5>
+                <div class="text-gray-300 space-y-1">
+                    <div class="flex justify-between">
+                        <span>Monday:</span>
+                        <span>Open 24 hours</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span>Tuesday:</span>
+                        <span>Open 24 hours</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span>Wednesday:</span>
+                        <span>Open 24 hours</span>
+                    </div>
+                    <p class="text-sm mt-2 text-forest-accent">Emergency services available anytime</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="border-t border-gray-600 mt-8 pt-8 text-center text-gray-400">
+            <p>&copy; 2024 Ladies of the Lawn Yard Care. Serving Stockton with pride.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Mobile padding to account for sticky CTA bar -->
+<div class="h-20 md:hidden"></div>
+
+<script>
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+</script>
+
+</body>
+</html>
