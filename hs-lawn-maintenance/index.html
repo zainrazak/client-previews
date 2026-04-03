@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HS LAWN MAINTENANCE | Professional Lawn Care in Riverside, CA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1B4332',
+                        accent: '#52B788',
+                        background: '#F0FFF4'
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'opensans': ['Open Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background font-opensans">
+    <!-- Sticky Mobile CTA Bar -->
+    <div class="fixed bottom-0 left-0 right-0 bg-primary text-white p-3 z-50 md:hidden">
+        <div class="flex items-center justify-between">
+            <a href="tel:909-519-6026" class="flex items-center space-x-2">
+                <i class="fas fa-phone text-accent"></i>
+                <span class="font-medium">Call (909) 519-6026</span>
+            </a>
+            <a href="tel:909-519-6026" class="bg-accent text-primary px-4 py-2 rounded-lg font-semibold">
+                Get a Quote
+            </a>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-40">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold font-poppins text-primary">
+                    HS LAWN MAINTENANCE
+                </div>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="#services" class="text-primary hover:text-accent font-medium">Services</a>
+                    <a href="#gallery" class="text-primary hover:text-accent font-medium">Gallery</a>
+                    <a href="#reviews" class="text-primary hover:text-accent font-medium">Reviews</a>
+                    <a href="tel:909-519-6026" class="bg-accent text-white px-6 py-2 rounded-lg font-semibold hover:bg-accent/90 transition">
+                        (909) 519-6026
+                    </a>
+                </div>
+                <div class="md:hidden">
+                    <a href="tel:909-519-6026" class="text-primary text-xl">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-white">
+        <div class="container mx-auto">
+            <div class="md:flex md:min-h-[600px]">
+                <!-- Hero Image - Left Half -->
+                <div class="md:w-1/2">
+                    <img src="photos/photo-1.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'"
+                         alt="Professional lawn care service in Riverside" 
+                         class="w-full h-64 md:h-full object-cover">
+                </div>
+                
+                <!-- Hero Content - Right Half -->
+                <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="text-gray-600 font-medium">5.0 (4 Google Reviews)</span>
+                    </div>
+                    
+                    <h1 class="text-4xl md:text-5xl font-bold font-poppins text-primary mb-4">
+                        Riverside's Premier Lawn Experts
+                    </h1>
+                    
+                    <p class="text-xl text-gray-700 mb-6 leading-relaxed">
+                        Curb appeal that gets noticed — and neighbors who ask who does your lawn.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                        <a href="tel:909-519-6026" class="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent/90 transition text-center">
+                            Get a Free Lawn Quote
+                        </a>
+                        <a href="tel:909-519-6026" class="border-2 border-primary text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-primary hover:text-white transition text-center">
+                            Call (909) 519-6026
+                        </a>
+                    </div>
+                    
+                    <p class="text-primary font-medium">
+                        <i class="fas fa-clock text-accent mr-2"></i>
+                        Available 24/7 for Emergency Services
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="bg-primary text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="text-center">
+                    <i class="fas fa-leaf text-accent text-3xl mb-3"></i>
+                    <p class="font-semibold">Licensed & Insured</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-clock text-accent text-3xl mb-3"></i>
+                    <p class="font-semibold">Weekly & Bi-Weekly Plans</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-shield-halved text-accent text-3xl mb-3"></i>
+                    <p class="font-semibold">Satisfaction Guaranteed</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-map-pin text-accent text-3xl mb-3"></i>
+                    <p class="font-semibold">Locally Owned</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold font-poppins text-primary mb-4">
+                    Complete Lawn Care & Landscaping Services
+                </h2>
+                <p class="text-xl text-gray-700">Professional maintenance that keeps Riverside properties looking their best year-round</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-background p-6 rounded-lg hover:shadow-lg transition">
+                    <i class="fas fa-cut text-accent text-3xl mb-4"></i>
+                    <h3 class="font-semibold text-primary mb-2">Lawn Mowing & Edging</h3>
+                    <p class="text-gray-600">Precision cuts with professional-grade equipment for that crisp, manicured look</p>
+                </div>
+                
+                <div class="bg-background p-6 rounded-lg hover:shadow-lg transition">
+                    <i class="fas fa-seedling text-accent text-3xl mb-4"></i>
+                    <h3 class="font-semibold text-primary mb-2">Fertilization & Weed Control</h3>
+                    <p class="text-gray-600">Custom fertilizer programs to keep your lawn thick, green, and weed-free</p>
+                </div>
+                
+                <div class="bg-background p-6 rounded-lg hover:shadow-lg transition">
+                    <i class="fas fa-tint text-accent text-3xl mb-4"></i>
+                    <h3 class="font-semibold text-primary mb-2">Sprinkler Repair & Installation</h3>
+                    <p class="text-gray-600">Expert irrigation services to keep your landscape properly watered</p>
+                </div>
+                
+                <div class="bg-background p-6 rounded-lg hover:shadow-lg transition">
+                    <i class="fas fa-tree text-accent text-3xl mb-4"></i>
+                    <h3 class="font-semibold text-primary mb-2">Tree & Shrub Trimming</h3>
+                    <p class="text-gray-600">Professional pruning to maintain healthy, attractive trees and shrubs</p>
+                </div>
+                
+                <div class="bg-background p-6 rounded-lg hover:shadow-lg transition">
+                    <i class="fas fa-leaf text-accent text-3xl mb-4"></i>
+                    <h3 class="font-semibold text-primary mb-2">Leaf Cleanup & Yard Waste Removal</h3>
+                    <p class="text-gray-600">Seasonal cleanups to keep your property neat and debris-free</p>
+                </div>
+                
+                <div class="bg-background p-6 rounded-lg hover:shadow-lg transition">
+                    <i class="fas fa-layer-group text-accent text-3xl mb-4"></i>
+                    <h3 class="font-semibold text-primary mb-2">Sod Installation</h3>
+                    <p class="text-gray-600">Transform bare spots into lush, green lawn with quality sod installation</p>
+                </div>
+                
+                <div class="bg-background p-6 rounded-lg hover:shadow-lg transition">
+                    <i class="fas fa-drafting-compass text-accent text-3xl mb-4"></i>
+                    <h3 class="font-semibold text-primary mb-2">Landscaping Design</h3>
+                    <p class="text-gray-600">Custom landscape designs to enhance your property's beauty and value</p>
+                </div>
+                
+                <div class="bg-background p-6 rounded-lg hover:shadow-lg transition">
+                    <i class="fas fa-broom text-accent text-3xl mb-4"></i>
+                    <h3 class="font-semibold text-primary mb-2">Seasonal Cleanups</h3>
+                    <p class="text-gray-600">Spring and fall maintenance to prepare your landscape for the seasons ahead</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 bg-background">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold font-poppins text-primary mb-4">
+                    Recent Projects in Riverside
+                </h2>
+                <p class="text-xl text-gray-700">See the transformation HS LAWN MAINTENANCE brings to local properties</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <img src="photos/photo-2.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'"
+                         alt="Professional lawn maintenance in Riverside" 
+                         class="w-full h-64 object-cover">
+                </div>
+                
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <img src="photos/photo-3.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1200&q=80'"
+                         alt="Landscaping services in Riverside CA" 
+                         class="w-full h-64 object-cover">
+                </div>
+                
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <img src="photos/photo-4.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=1200&q=80'"
+                         alt="Tree trimming services Riverside" 
+                         class="w-full h-64 object-cover">
+                </div>
+                
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <img src="photos/photo-5.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1574482620231-7d6df2fa2c85?w=1200&q=80'"
+                         alt="Sprinkler installation Riverside CA" 
+                         class="w-full h-64 object-cover">
+                </div>
+                
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <img src="photos/photo-6.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1587380207095-1fa3e53d1d35?w=1200&q=80'"
+                         alt="Fertilization and weed control Riverside" 
+                         class="w-full h-64 object-cover">
+                </div>
+                
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition flex items-center justify-center">
+                    <div class="text-center p-8">
+                        <i class="fas fa-camera text-accent text-4xl mb-4"></i>
+                        <h3 class="font-semibold text-primary mb-2">Your Project Next?</h3>
+                        <p class="text-gray-600 mb-4">Let us transform your landscape</p>
+                        <a href="tel:909-519-6026" class="bg-accent text-white px-6 py-2 rounded-lg font-semibold hover:bg-accent/90 transition">
+                            Get Started
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold font-poppins text-primary mb-4">
+                    What Riverside Neighbors Say
+                </h2>
+                <div class="flex items-center justify-center space-x-2 mb-4">
+                    <div class="flex text-yellow-400 text-xl">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="text-gray-700 font-medium">5.0 Stars on Google (4 Reviews)</span>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-background p-6 rounded-lg shadow-lg">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"HS Lawn Maintenance completely transformed our backyard in Canyon Crest. They installed new sod and fixed our broken sprinkler system. The crew was professional and the results speak for themselves - our neighbors keep asking who did the work!"</p>
+                    <div class="font-semibold text-primary">Maria Rodriguez</div>
+                    <div class="text-gray-600 text-sm">Riverside Homeowner</div>
+                </div>
+                
+                <div class="bg-background p-6 rounded-lg shadow-lg">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Been using them for monthly lawn service for over a year now. Always on time, fair pricing, and they do excellent edging work that really makes the difference. Highly recommend to anyone in Riverside looking for reliable lawn care."</p>
+                    <div class="font-semibold text-primary">James Chen</div>
+                    <div class="text-gray-600 text-sm">Local Business Owner</div>
+                </div>
+                
+                <div class="bg-background p-6 rounded-lg shadow-lg">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Called them for tree trimming and cleanup after the winds last month. They came out same day and did a thorough job cleaning up all the debris. Great service and reasonable prices!"</p>
+                    <div class="font-semibold text-primary">Sarah Williams</div>
+                    <div class="text-gray-600 text-sm">Riverside Resident</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold font-poppins mb-4">
+                Ready to Transform Your Riverside Property?
+            </h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">
+                Join the growing number of satisfied customers who trust HS LAWN MAINTENANCE for all their landscaping needs.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                <a href="tel:909-519-6026" class="bg-accent text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent/90 transition">
+                    Get a Free Lawn Quote
+                </a>
+                <a href="tel:909-519-6026" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-primary transition">
+                    Call (909) 519-6026
+                </a>
+            </div>
+            
+            <p class="text-lg">
+                <i class="fas fa-clock text-accent mr-2"></i>
+                Available 24/7 for Emergency Services
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary/90 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold font-poppins mb-4">HS LAWN MAINTENANCE</h3>
+                    <p class="text-gray-300 mb-4">Professional lawn care and landscaping services in Riverside, CA. Licensed, insured, and locally owned.</p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="text-white ml-2">5.0 (4 Google Reviews)</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Contact Info</h4>
+                    <div class="space-y-3">
+                        <p><i class="fas fa-map-pin text-accent mr-2"></i>3847 Madison St, Riverside, CA 92504</p>
+                        <p><i class="fas fa-phone text-accent mr-2"></i>(909) 519-6026</p>
+                        <p><i class="fas fa-clock text-accent mr-2"></i>Available 24/7</p>
+                        <a href="https://www.google.com/maps/search/?api=1&query=HS%20LAWN%20MAINTENANCE&query_place_id=ChIJyyibph-x3IAR7vC5M-d-0yI" 
+                           target="_blank" 
+                           class="text-accent hover:text-accent/80 transition">
+                           <i class="fas fa-external-link-alt mr-1"></i>View on Google Maps
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Service Hours</h4>
+                    <div class="space-y-2">
+                        <p>Monday: Open 24 hours</p>
+                        <p>Tuesday: Open 24 hours</p>
+                        <p>Wednesday: Open 24 hours</p>
+                        <p class="text-accent font-medium">Emergency services available</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/20 mt-8 pt-8 text-center">
+                <p>&copy; 2024 HS LAWN MAINTENANCE. All rights reserved. | Serving Riverside, CA and surrounding areas</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile bottom padding to account for sticky CTA bar -->
+    <div class="h-20 md:hidden"></div>
+</body>
+</html>
