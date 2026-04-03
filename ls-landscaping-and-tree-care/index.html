@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LS Landscaping and Tree Care | Professional Lawn Care in Stockton, CA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1B4332',
+                        accent: '#52B788',
+                        background: '#F0FFF4',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'serif': ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-background text-primary">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <i class="fas fa-leaf text-accent text-2xl mr-2"></i>
+                    <div>
+                        <h1 class="text-xl font-bold text-primary">LS Landscaping</h1>
+                        <p class="text-sm text-primary/70">& Tree Care</p>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-6">
+                    <div class="text-right">
+                        <p class="text-sm text-primary/70">Call Today</p>
+                        <a href="tel:(209)688-8072" class="text-lg font-semibold text-primary hover:text-accent">(209) 688-8072</a>
+                    </div>
+                    <button class="bg-accent text-white px-6 py-2 rounded-lg font-medium hover:bg-accent/90 transition-colors">
+                        Get a Free Lawn Quote
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 min-h-[80vh]">
+                <!-- Hero Image -->
+                <div class="order-2 lg:order-1">
+                    <img src="photos/photo-1.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'"
+                         alt="Professional lawn care in Stockton" 
+                         class="w-full h-full object-cover">
+                </div>
+                
+                <!-- Hero Content -->
+                <div class="order-1 lg:order-2 flex items-center px-4 sm:px-6 lg:px-12 py-12 lg:py-0">
+                    <div class="w-full">
+                        <div class="mb-6">
+                            <div class="flex items-center mb-2">
+                                <div class="flex text-yellow-400 text-lg">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="ml-2 text-primary/70 text-sm">5 ⭐ (3 Google reviews)</span>
+                            </div>
+                        </div>
+                        
+                        <h1 class="font-serif text-4xl lg:text-5xl font-bold text-primary mb-6 leading-tight">
+                            Stockton's Premium Lawn Care
+                        </h1>
+                        
+                        <p class="text-lg text-primary/80 mb-6 leading-relaxed">
+                            Curb appeal that gets noticed — and neighbors who ask who does your lawn.
+                        </p>
+                        
+                        <p class="text-primary/70 mb-8 text-lg">
+                            Professional lawn mowing, landscaping, and tree care services throughout Stockton and San Joaquin County.
+                        </p>
+                        
+                        <div class="space-y-4 sm:space-y-0 sm:flex sm:space-x-4">
+                            <button class="w-full sm:w-auto bg-accent text-white px-8 py-3 rounded-lg font-medium text-lg hover:bg-accent/90 transition-colors">
+                                Get a Free Lawn Quote
+                            </button>
+                            <a href="tel:(209)688-8072" class="w-full sm:w-auto block text-center border-2 border-primary text-primary px-8 py-3 rounded-lg font-medium text-lg hover:bg-primary hover:text-white transition-colors">
+                                Call (209) 688-8072
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="bg-primary text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-leaf text-accent text-2xl mb-2"></i>
+                    <p class="text-sm font-medium">Licensed & Insured</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-clock text-accent text-2xl mb-2"></i>
+                    <p class="text-sm font-medium">Weekly & Bi-Weekly Plans</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-shield-halved text-accent text-2xl mb-2"></i>
+                    <p class="text-sm font-medium">Satisfaction Guaranteed</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-map-pin text-accent text-2xl mb-2"></i>
+                    <p class="text-sm font-medium">Locally Owned</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-primary mb-4">Complete Lawn & Landscape Services</h2>
+                <p class="text-lg text-primary/70 max-w-2xl mx-auto">From regular maintenance to complete landscape transformations, LS Landscaping and Tree Care handles every aspect of your outdoor space.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-background rounded-xl p-6 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-cut text-accent text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">Lawn Mowing & Edging</h3>
+                    <p class="text-primary/70 text-sm">Professional weekly and bi-weekly lawn cutting with precision edging for clean lines.</p>
+                </div>
+                
+                <div class="bg-background rounded-xl p-6 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-seedling text-accent text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">Fertilization & Weed Control</h3>
+                    <p class="text-primary/70 text-sm">Seasonal fertilization programs and targeted weed control for healthy, thick grass.</p>
+                </div>
+                
+                <div class="bg-background rounded-xl p-6 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-tint text-accent text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">Sprinkler Repair & Installation</h3>
+                    <p class="text-primary/70 text-sm">Expert irrigation system maintenance and new sprinkler installations.</p>
+                </div>
+                
+                <div class="bg-background rounded-xl p-6 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-tree text-accent text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">Tree & Shrub Trimming</h3>
+                    <p class="text-primary/70 text-sm">Professional pruning and shaping to keep trees and shrubs healthy and attractive.</p>
+                </div>
+                
+                <div class="bg-background rounded-xl p-6 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-broom text-accent text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">Leaf Cleanup & Yard Waste Removal</h3>
+                    <p class="text-primary/70 text-sm">Fall cleanup services and regular yard waste removal to keep your property pristine.</p>
+                </div>
+                
+                <div class="bg-background rounded-xl p-6 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-layer-group text-accent text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">Sod Installation</h3>
+                    <p class="text-primary/70 text-sm">New lawn installation with quality sod for instant, beautiful results.</p>
+                </div>
+                
+                <div class="bg-background rounded-xl p-6 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-drafting-compass text-accent text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">Landscaping Design</h3>
+                    <p class="text-primary/70 text-sm">Custom landscape design and installation to transform your outdoor space.</p>
+                </div>
+                
+                <div class="bg-background rounded-xl p-6 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-calendar-alt text-accent text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-primary mb-2">Seasonal Cleanups</h3>
+                    <p class="text-primary/70 text-sm">Spring and fall property cleanups to prepare your landscape for each season.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="py-16 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-primary mb-4">Recent Projects in Stockton</h2>
+                <p class="text-lg text-primary/70">See the quality and attention to detail that sets us apart</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="aspect-square overflow-hidden rounded-xl">
+                    <img src="photos/photo-2.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'"
+                         alt="Professional lawn care results" 
+                         class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square overflow-hidden rounded-xl">
+                    <img src="photos/photo-3.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'"
+                         alt="Landscaping project in Stockton" 
+                         class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square overflow-hidden rounded-xl">
+                    <img src="photos/photo-4.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'"
+                         alt="Tree trimming service" 
+                         class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square overflow-hidden rounded-xl">
+                    <img src="photos/photo-5.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'"
+                         alt="Garden maintenance" 
+                         class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square overflow-hidden rounded-xl">
+                    <img src="photos/photo-6.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'"
+                         alt="Seasonal cleanup service" 
+                         class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="aspect-square overflow-hidden rounded-xl bg-accent flex items-center justify-center">
+                    <div class="text-center text-white">
+                        <i class="fas fa-camera text-4xl mb-4"></i>
+                        <p class="text-lg font-semibold">Your Project</p>
+                        <p class="text-sm opacity-90">Could Be Next</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <div class="flex justify-center items-center mb-4">
+                    <div class="flex text-yellow-400 text-2xl mr-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="text-lg font-semibold text-primary">5.0 out of 5 stars</span>
+                </div>
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-primary mb-4">What Stockton Homeowners Say</h2>
+                <p class="text-lg text-primary/70">Read reviews from satisfied customers across the community</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-background rounded-xl p-6">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-primary/80 mb-4 italic">"LS Landscaping transformed our backyard in Lincoln Village. They installed new sod, trimmed our overgrown oleanders, and set up a drip system for our flower beds. The crew was professional and cleaned up perfectly. Our neighbors keep asking who did the work!"</p>
+                    <div class="text-sm">
+                        <p class="font-semibold text-primary">Maria Rodriguez</p>
+                        <p class="text-primary/60">Lincoln Village, Stockton</p>
+                    </div>
+                </div>
+                
+                <div class="bg-background rounded-xl p-6">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-primary/80 mb-4 italic">"Been using them for weekly mowing service for 8 months now. Always on time, great attention to detail with edging, and reasonable prices. Finally found a lawn service I can count on here in Stockton."</p>
+                    <div class="text-sm">
+                        <p class="font-semibold text-primary">David Chen</p>
+                        <p class="text-primary/60">Stockton, CA</p>
+                    </div>
+                </div>
+                
+                <div class="bg-background rounded-xl p-6">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-primary/80 mb-4 italic">"Excellent work on our fall cleanup and tree trimming in Brookside. They removed years worth of leaves, pruned our fruit trees properly, and hauled everything away. Will definitely hire them again for spring cleanup. Highly recommend to anyone in the area."</p>
+                    <div class="text-sm">
+                        <p class="font-semibold text-primary">Jennifer Thompson</p>
+                        <p class="text-primary/60">Brookside, Stockton</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="font-serif text-3xl md:text-4xl font-bold mb-6">Ready for a Lawn That Stands Out?</h2>
+            <p class="text-xl mb-8 opacity-90">Join satisfied homeowners across Stockton who trust LS Landscaping and Tree Care for all their outdoor needs.</p>
+            
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6 mb-8">
+                <div class="flex items-center">
+                    <i class="fas fa-clock text-accent mr-2"></i>
+                    <span>Same-day estimates</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-shield text-accent mr-2"></i>
+                    <span>Licensed & insured</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-leaf text-accent mr-2"></i>
+                    <span>Locally owned</span>
+                </div>
+            </div>
+            
+            <div class="space-y-4 sm:space-y-0 sm:flex sm:justify-center sm:space-x-4">
+                <button class="w-full sm:w-auto bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent/90 transition-colors">
+                    Get a Free Lawn Quote
+                </button>
+                <a href="tel:(209)688-8072" class="w-full sm:w-auto block text-center border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-primary transition-colors">
+                    Call (209) 688-8072
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-leaf text-accent text-2xl mr-2"></i>
+                        <div>
+                            <h3 class="text-xl font-bold">LS Landscaping</h3>
+                            <p class="text-sm text-gray-400">& Tree Care</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-4">Professional lawn care and landscaping services throughout Stockton and San Joaquin County.</p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="ml-2 text-gray-400 text-sm">5 ⭐ (3 Google reviews)</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-accent mr-2"></i>
+                            <a href="tel:(209)688-8072" class="hover:text-white">(209) 688-8072</a>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-accent mr-2"></i>
+                            <span>S California St, Stockton, CA 95206</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-clock text-accent mr-2"></i>
+                            <span>Mon-Wed: 7:45 AM - 6:45 PM</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Our Services</h4>
+                    <ul class="space-y-1 text-gray-400 text-sm">
+                        <li>Lawn Mowing & Edging</li>
+                        <li>Tree & Shrub Trimming</li>
+                        <li>Fertilization & Weed Control</li>
+                        <li>Sprinkler Repair & Installation</li>
+                        <li>Landscaping Design</li>
+                        <li>Seasonal Cleanups</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 LS Landscaping and Tree Care. All rights reserved. | Stockton, California</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky CTA Bar -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-4 md:hidden z-50">
+        <div class="flex space-x-2">
+            <a href="tel:(209)688-8072" class="flex-1 bg-primary text-white text-center py-3 rounded-lg font-semibold">
+                Call (209) 688-8072
+            </a>
+            <button class="flex-1 bg-accent text-white text-center py-3 rounded-lg font-semibold">
+                Get a Quote
+            </button>
+        </div>
+    </div>
+
+    <!-- Add bottom padding to prevent content overlap with sticky bar on mobile -->
+    <div class="h-20 md:hidden"></div>
+</body>
+</html>
