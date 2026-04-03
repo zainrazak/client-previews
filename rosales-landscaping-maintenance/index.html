@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosales Landscaping & Maintenance | Stockton Lawn Care & Landscaping</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1B4332',
+                        accent: '#52B788',
+                        background: '#F0FFF4'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-background text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-primary text-white py-4 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">
+            <div class="font-bold text-xl">Rosales Landscaping</div>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#services" class="hover:text-accent transition">Services</a>
+                <a href="#reviews" class="hover:text-accent transition">Reviews</a>
+                <a href="tel:5307869139" class="bg-accent px-4 py-2 rounded-lg hover:bg-green-600 transition">
+                    <i class="fas fa-phone mr-2"></i>(530) 786-9139
+                </a>
+            </div>
+            <div class="md:hidden">
+                <a href="tel:5307869139" class="bg-accent px-3 py-2 rounded text-sm">
+                    <i class="fas fa-phone"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen bg-background">
+        <div class="max-w-6xl mx-auto">
+            <div class="md:grid md:grid-cols-2 md:gap-8 md:items-center md:min-h-[600px]">
+                <!-- Hero Image -->
+                <div class="h-64 md:h-full md:order-1">
+                    <img src="photos/photo-1.jpg" 
+                         alt="Professional lawn care in Stockton CA" 
+                         class="w-full h-full object-cover rounded-none md:rounded-lg"
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'">
+                </div>
+                
+                <!-- Hero Content -->
+                <div class="px-4 py-8 md:py-16 md:order-2">
+                    <h1 class="text-4xl md:text-5xl font-bold text-primary mb-4 font-serif leading-tight">
+                        Stockton's Premier Lawn Experts
+                    </h1>
+                    <p class="text-xl text-gray-700 mb-6">
+                        Curb appeal that gets noticed — and neighbors who ask who does your lawn.
+                    </p>
+                    <div class="flex items-center mb-6">
+                        <div class="flex text-yellow-500 mr-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="text-gray-600">4.9 stars • 16 reviews</span>
+                    </div>
+                    <a href="tel:5307869139" 
+                       class="bg-accent text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-600 transition inline-block">
+                        Get a Free Lawn Quote
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="bg-white py-8 border-b">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-leaf text-accent text-2xl mb-2"></i>
+                    <span class="text-sm font-medium">Licensed & Insured</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-clock text-accent text-2xl mb-2"></i>
+                    <span class="text-sm font-medium">Weekly & Bi-Weekly Plans</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-shield-halved text-accent text-2xl mb-2"></i>
+                    <span class="text-sm font-medium">Satisfaction Guaranteed</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-map-pin text-accent text-2xl mb-2"></i>
+                    <span class="text-sm font-medium">Locally Owned</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-16 bg-background">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-primary mb-4 text-center font-serif">
+                Complete Lawn Care Solutions
+            </h2>
+            <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+                From weekly maintenance to complete landscape transformations, Rosales Landscaping & Maintenance handles every aspect of your outdoor space.
+            </p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <i class="fas fa-cut text-accent text-2xl mb-3"></i>
+                    <h3 class="font-semibold mb-2">Lawn Mowing & Edging</h3>
+                    <p class="text-gray-600 text-sm">Professional cutting and edging for a crisp, manicured look every visit.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <i class="fas fa-seedling text-accent text-2xl mb-3"></i>
+                    <h3 class="font-semibold mb-2">Fertilization & Weed Control</h3>
+                    <p class="text-gray-600 text-sm">Seasonal treatments that keep your grass thick and weeds under control.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <i class="fas fa-tint text-accent text-2xl mb-3"></i>
+                    <h3 class="font-semibold mb-2">Sprinkler Repair & Installation</h3>
+                    <p class="text-gray-600 text-sm">Expert irrigation services to keep your landscape properly watered year-round.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <i class="fas fa-tree text-accent text-2xl mb-3"></i>
+                    <h3 class="font-semibold mb-2">Tree & Shrub Trimming</h3>
+                    <p class="text-gray-600 text-sm">Precision pruning that maintains plant health and enhances your property's appeal.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <i class="fas fa-leaf text-accent text-2xl mb-3"></i>
+                    <h3 class="font-semibold mb-2">Leaf Cleanup & Yard Waste Removal</h3>
+                    <p class="text-gray-600 text-sm">Seasonal cleanups that keep your yard looking pristine through every season.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <i class="fas fa-grass text-accent text-2xl mb-3"></i>
+                    <h3 class="font-semibold mb-2">Sod Installation</h3>
+                    <p class="text-gray-600 text-sm">Transform bare or damaged areas with professional sod installation services.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <i class="fas fa-palette text-accent text-2xl mb-3"></i>
+                    <h3 class="font-semibold mb-2">Landscaping Design</h3>
+                    <p class="text-gray-600 text-sm">Custom landscape designs that reflect your style and enhance property value.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <i class="fas fa-calendar-alt text-accent text-2xl mb-3"></i>
+                    <h3 class="font-semibold mb-2">Seasonal Cleanups</h3>
+                    <p class="text-gray-600 text-sm">Spring and fall services that prepare your landscape for the seasons ahead.</p>
+                </div>
+            </div>
+
+            <!-- Service Photos -->
+            <div class="grid md:grid-cols-3 gap-6">
+                <img src="photos/photo-2.jpg" 
+                     alt="Lawn mowing service in Stockton" 
+                     class="w-full h-48 object-cover rounded-lg"
+                     onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'">
+                <img src="photos/photo-3.jpg" 
+                     alt="Landscaping design Stockton CA" 
+                     class="w-full h-48 object-cover rounded-lg"
+                     onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'">
+                <img src="photos/photo-4.jpg" 
+                     alt="Tree trimming services Stockton" 
+                     class="w-full h-48 object-cover rounded-lg"
+                     onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'">
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section id="reviews" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-primary mb-12 text-center font-serif">
+                What Stockton Homeowners Say
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-background p-6 rounded-lg">
+                    <div class="flex text-yellow-500 mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        "Rosales Landscaping transformed our front yard in the Brookside neighborhood. The sod installation was flawless and they fixed our broken sprinkler heads the same day. Our lawn has never looked better!"
+                    </p>
+                    <div class="font-semibold text-primary">— Maria S.</div>
+                </div>
+                
+                <div class="bg-background p-6 rounded-lg">
+                    <div class="flex text-yellow-500 mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        "Been using them for weekly mowing and seasonal cleanups for over a year. Always on time, fair prices, and they do excellent edging work. Highly recommend to anyone in Stockton looking for reliable lawn care."
+                    </p>
+                    <div class="font-semibold text-primary">— Robert Chen</div>
+                </div>
+                
+                <div class="bg-background p-6 rounded-lg">
+                    <div class="flex text-yellow-500 mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        "Professional tree trimming and fertilization service. They know exactly what they're doing and my backyard looks amazing now. Great communication and cleanup too."
+                    </p>
+                    <div class="font-semibold text-primary">— Jennifer K.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before/After Gallery -->
+    <section class="py-16 bg-background">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-primary mb-12 text-center font-serif">
+                Transforming Stockton Properties
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <img src="photos/photo-5.jpg" 
+                     alt="Landscape transformation Stockton CA" 
+                     class="w-full h-64 object-cover rounded-lg"
+                     onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'">
+                <img src="photos/photo-6.jpg" 
+                     alt="Professional lawn care results Stockton" 
+                     class="w-full h-64 object-cover rounded-lg"
+                     onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'">
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4 font-serif">
+                Ready for a Lawn That Stands Out?
+            </h2>
+            <p class="text-xl mb-8">
+                Join hundreds of satisfied Stockton homeowners who trust Rosales Landscaping & Maintenance for their outdoor needs.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="tel:5307869139" 
+                   class="bg-accent text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-600 transition">
+                    <i class="fas fa-phone mr-2"></i>Call (530) 786-9139
+                </a>
+                <a href="tel:5307869139" 
+                   class="bg-white text-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition">
+                    Get a Free Lawn Quote
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-6">
+                <div>
+                    <h3 class="font-bold text-xl mb-4">Rosales Landscaping & Maintenance</h3>
+                    <p class="text-gray-300 mb-4">Professional lawn care and landscaping services serving Stockton and surrounding areas.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-3">Contact Info</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <div><i class="fas fa-map-marker-alt mr-2"></i>7133 Westland Ave, Stockton, CA 95207</div>
+                        <div><i class="fas fa-phone mr-2"></i>(530) 786-9139</div>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-3">Business Hours</h4>
+                    <div class="space-y-1 text-gray-300 text-sm">
+                        <div>Monday - Wednesday: 7 AM to 6 PM</div>
+                        <div>Thursday - Sunday: By Appointment</div>
+                    </div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Rosales%20Landscaping%20%26%20Maintenance&query_place_id=ChIJoZsXUMQNkIAR7T9FepaGuMc" 
+                       target="_blank" 
+                       class="inline-block mt-3 text-accent hover:text-green-400">
+                        <i class="fas fa-map-marker-alt mr-1"></i>View on Google Maps
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
+                <p>&copy; 2024 Rosales Landscaping & Maintenance. Licensed & Insured in Stockton, CA.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky Bar -->
+    <div class="fixed bottom-0 left-0 right-0 bg-primary text-white p-3 flex justify-between items-center z-50 md:hidden">
+        <a href="tel:5307869139" class="flex items-center">
+            <i class="fas fa-phone mr-2"></i>
+            <span>Call (530) 786-9139</span>
+        </a>
+        <a href="tel:5307869139" class="bg-accent px-4 py-2 rounded-lg font-semibold">
+            Get a Quote
+        </a>
+    </div>
+</body>
+</html>
