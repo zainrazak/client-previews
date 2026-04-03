@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silver Bear Landscaping - Stockton's Premier Lawn Care Service</title>
+    <meta name="description" content="Professional lawn care and landscaping in Stockton, CA. Mowing, fertilization, sprinkler repair, and complete yard maintenance. Free quotes available.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1B4332',
+                        accent: '#52B788',
+                        background: '#F0FFF4'
+                    },
+                    fontFamily: {
+                        'heading': ['Poppins', 'sans-serif'],
+                        'body': ['Open Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background font-body">
+    <!-- Mobile CTA Bar -->
+    <div class="md:hidden fixed bottom-0 left-0 right-0 bg-primary text-white p-4 z-50 shadow-lg">
+        <div class="flex items-center justify-between">
+            <a href="tel:(209)616-3650" class="flex items-center space-x-2 bg-accent px-4 py-2 rounded-lg font-medium">
+                <i class="fas fa-phone"></i>
+                <span>Call (209) 616-3650</span>
+            </a>
+            <a href="#contact" class="bg-white text-primary px-4 py-2 rounded-lg font-medium hover:bg-gray-100 transition-colors">
+                Get a Quote
+            </a>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <h1 class="text-xl font-heading font-bold text-primary">Silver Bear Landscaping</h1>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#services" class="text-gray-700 hover:text-primary font-medium">Services</a>
+                    <a href="#reviews" class="text-gray-700 hover:text-primary font-medium">Reviews</a>
+                    <a href="tel:(209)616-3650" class="text-primary font-semibold hover:text-accent">(209) 616-3650</a>
+                    <a href="#contact" class="bg-accent text-white px-6 py-2 rounded-lg font-medium hover:bg-green-600 transition-colors">Get a Free Lawn Quote</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
+                <!-- Hero Image -->
+                <div class="lg:order-2">
+                    <img src="photos/photo-1.jpg" 
+                         alt="Professional lawn care service in Stockton" 
+                         class="w-full h-64 lg:h-96 object-cover"
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'">
+                </div>
+                
+                <!-- Hero Content -->
+                <div class="px-4 sm:px-6 lg:px-8 py-12 lg:py-16 lg:order-1">
+                    <h2 class="text-3xl lg:text-4xl font-heading font-bold text-primary mb-4">
+                        Stockton's Lawn Care Professionals
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-6 font-medium">
+                        Curb appeal that gets noticed — and neighbors who ask who does your lawn.
+                    </p>
+                    
+                    <!-- Rating -->
+                    <div class="flex items-center space-x-2 mb-6">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="text-gray-700 font-medium">4.6 stars from 32 Google reviews</span>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#contact" class="bg-accent text-white px-8 py-3 rounded-lg font-semibold text-center hover:bg-green-600 transition-colors">
+                            Get a Free Lawn Quote
+                        </a>
+                        <a href="tel:(209)616-3650" class="border-2 border-primary text-primary px-8 py-3 rounded-lg font-semibold text-center hover:bg-primary hover:text-white transition-colors">
+                            Call (209) 616-3650
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="bg-primary py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+                <div class="text-white">
+                    <i class="fas fa-shield-halved text-2xl text-accent mb-2"></i>
+                    <p class="font-medium text-sm">Licensed & Insured</p>
+                </div>
+                <div class="text-white">
+                    <i class="fas fa-clock text-2xl text-accent mb-2"></i>
+                    <p class="font-medium text-sm">Weekly & Bi-Weekly Plans</p>
+                </div>
+                <div class="text-white">
+                    <i class="fas fa-leaf text-2xl text-accent mb-2"></i>
+                    <p class="font-medium text-sm">Satisfaction Guaranteed</p>
+                </div>
+                <div class="text-white">
+                    <i class="fas fa-map-pin text-2xl text-accent mb-2"></i>
+                    <p class="font-medium text-sm">Locally Owned</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-heading font-bold text-primary mb-4">Complete Lawn & Landscape Services</h2>
+                <p class="text-lg text-gray-600">Keeping Stockton properties beautiful year-round</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-background p-6 rounded-lg border border-gray-200">
+                    <i class="fas fa-cut text-3xl text-accent mb-4"></i>
+                    <h3 class="text-xl font-heading font-semibold text-primary mb-2">Lawn Mowing & Edging</h3>
+                    <p class="text-gray-600">Professional weekly and bi-weekly lawn maintenance with crisp edges and pristine finish.</p>
+                </div>
+
+                <div class="bg-background p-6 rounded-lg border border-gray-200">
+                    <i class="fas fa-seedling text-3xl text-accent mb-4"></i>
+                    <h3 class="text-xl font-heading font-semibold text-primary mb-2">Fertilization & Weed Control</h3>
+                    <p class="text-gray-600">Custom fertilization programs and targeted weed control for healthy, thick grass.</p>
+                </div>
+
+                <div class="bg-background p-6 rounded-lg border border-gray-200">
+                    <i class="fas fa-droplet text-3xl text-accent mb-4"></i>
+                    <h3 class="text-xl font-heading font-semibold text-primary mb-2">Sprinkler Repair & Installation</h3>
+                    <p class="text-gray-600">Expert irrigation system repairs and new installations for optimal water efficiency.</p>
+                </div>
+
+                <div class="bg-background p-6 rounded-lg border border-gray-200">
+                    <i class="fas fa-tree text-3xl text-accent mb-4"></i>
+                    <h3 class="text-xl font-heading font-semibold text-primary mb-2">Tree & Shrub Trimming</h3>
+                    <p class="text-gray-600">Professional pruning and shaping to maintain healthy, attractive trees and shrubs.</p>
+                </div>
+
+                <div class="bg-background p-6 rounded-lg border border-gray-200">
+                    <i class="fas fa-leaf text-3xl text-accent mb-4"></i>
+                    <h3 class="text-xl font-heading font-semibold text-primary mb-2">Leaf Cleanup & Yard Waste Removal</h3>
+                    <p class="text-gray-600">Seasonal cleanup services to keep your property neat and debris-free.</p>
+                </div>
+
+                <div class="bg-background p-6 rounded-lg border border-gray-200">
+                    <i class="fas fa-spa text-3xl text-accent mb-4"></i>
+                    <h3 class="text-xl font-heading font-semibold text-primary mb-2">Sod Installation</h3>
+                    <p class="text-gray-600">Professional sod laying for instant, beautiful lawns with guaranteed establishment.</p>
+                </div>
+
+                <div class="bg-background p-6 rounded-lg border border-gray-200">
+                    <i class="fas fa-paint-brush text-3xl text-accent mb-4"></i>
+                    <h3 class="text-xl font-heading font-semibold text-primary mb-2">Landscaping Design</h3>
+                    <p class="text-gray-600">Custom landscape design and installation to transform your outdoor space.</p>
+                </div>
+
+                <div class="bg-background p-6 rounded-lg border border-gray-200">
+                    <i class="fas fa-broom text-3xl text-accent mb-4"></i>
+                    <h3 class="text-xl font-heading font-semibold text-primary mb-2">Seasonal Cleanups</h3>
+                    <p class="text-gray-600">Spring and fall cleanup services to prepare your landscape for each season.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="py-16 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-heading font-bold text-primary mb-4">Recent Projects in Stockton</h2>
+                <p class="text-lg text-gray-600">See the difference professional lawn care makes</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <img src="photos/photo-2.jpg" 
+                     alt="Professional lawn mowing in Stockton" 
+                     class="w-full h-64 object-cover rounded-lg shadow-md"
+                     onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'">
+                
+                <img src="photos/photo-3.jpg" 
+                     alt="Landscape design and installation" 
+                     class="w-full h-64 object-cover rounded-lg shadow-md"
+                     onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'">
+                
+                <img src="photos/photo-4.jpg" 
+                     alt="Tree trimming and yard cleanup" 
+                     class="w-full h-64 object-cover rounded-lg shadow-md"
+                     onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'">
+                
+                <img src="photos/photo-5.jpg" 
+                     alt="Sprinkler system installation" 
+                     class="w-full h-64 object-cover rounded-lg shadow-md"
+                     onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'">
+                
+                <img src="photos/photo-6.jpg" 
+                     alt="Fertilization and weed control" 
+                     class="w-full h-64 object-cover rounded-lg shadow-md"
+                     onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'">
+                
+                <div class="bg-accent text-white p-8 rounded-lg shadow-md flex items-center justify-center">
+                    <div class="text-center">
+                        <i class="fas fa-camera text-4xl mb-4"></i>
+                        <p class="font-semibold">Your property could be next!</p>
+                        <a href="#contact" class="inline-block mt-4 bg-white text-accent px-6 py-2 rounded-lg font-medium hover:bg-gray-100 transition-colors">
+                            Get Started
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-heading font-bold text-primary mb-4">What Stockton Homeowners Say</h2>
+                <div class="flex items-center justify-center space-x-2 mb-6">
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star text-xl"></i>
+                        <i class="fas fa-star text-xl"></i>
+                        <i class="fas fa-star text-xl"></i>
+                        <i class="fas fa-star text-xl"></i>
+                        <i class="fas fa-star-half-alt text-xl"></i>
+                    </div>
+                    <span class="text-lg text-gray-700 font-medium">4.6 stars from 32 Google reviews</span>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-background p-6 rounded-lg border border-gray-200">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Silver Bear Landscaping transformed our front yard in Lincoln Village. The sod installation was perfect and they got our sprinklers working like new. Our neighbors keep asking who did the work!"</p>
+                    <div class="font-semibold text-primary">Maria Rodriguez</div>
+                    <div class="text-sm text-gray-500">Lincoln Village West</div>
+                </div>
+
+                <div class="bg-background p-6 rounded-lg border border-gray-200">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Been using them for lawn mowing and fertilization for over a year. Always show up on time and my grass has never looked better. Best decision I made was switching to Silver Bear."</p>
+                    <div class="font-semibold text-primary">Dave Thompson</div>
+                    <div class="text-sm text-gray-500">Brookside</div>
+                </div>
+
+                <div class="bg-background p-6 rounded-lg border border-gray-200">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Professional tree trimming and fall cleanup service. They cleaned up everything perfectly and were very reasonably priced. Highly recommend for anyone in Stockton looking for quality landscaping."</p>
+                    <div class="font-semibold text-primary">Jennifer Kim</div>
+                    <div class="text-sm text-gray-500">Spanos Park</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="py-16 bg-primary">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-heading font-bold text-white mb-4">Ready for the Best Lawn in Stockton?</h2>
+            <p class="text-xl text-gray-200 mb-8">Get your free quote today and see why Silver Bear Landscaping is Stockton's top choice for lawn care.</p>
+            
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6 mb-8">
+                <a href="tel:(209)616-3650" class="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-green-600 transition-colors flex items-center">
+                    <i class="fas fa-phone mr-3"></i>
+                    Call (209) 616-3650
+                </a>
+                <a href="#" class="bg-white text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors">
+                    Get a Free Lawn Quote
+                </a>
+            </div>
+
+            <div class="text-gray-300">
+                <p class="mb-2">📍 2850 N Modoc Ave, Stockton, CA 95204</p>
+                <p class="mb-2">🕒 Open 24 Hours Daily</p>
+                <p>⭐ 4.6 Stars · 32 Google Reviews</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-8 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 text-center md:text-left">
+                <div>
+                    <h3 class="font-heading font-bold text-primary text-xl mb-4">Silver Bear Landscaping</h3>
+                    <p class="text-gray-600">Professional lawn care and landscaping services in Stockton, CA.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-primary mb-4">Contact Info</h4>
+                    <p class="text-gray-600 mb-2">📞 (209) 616-3650</p>
+                    <p class="text-gray-600 mb-2">📍 2850 N Modoc Ave, Stockton, CA 95204</p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Silver%20Bear%20Landscaping&query_place_id=ChIJmST5zDMNkIARpd9hyzkFkX8" 
+                       target="_blank" class="text-accent hover:text-green-600">View on Google Maps</a>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-primary mb-4">Hours</h4>
+                    <p class="text-gray-600">Monday: Open 24 hours</p>
+                    <p class="text-gray-600">Tuesday: Open 24 hours</p>
+                    <p class="text-gray-600">Wednesday: Open 24 hours</p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-200 mt-8 pt-8 text-center text-gray-500">
+                <p>&copy; 2024 Silver Bear Landscaping. All rights reserved. Serving Stockton, CA.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bottom padding for mobile CTA -->
+    <div class="md:hidden h-20"></div>
+</body>
+</html>
