@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monarca Lawn Service - Houston's Premier Lawn Care & Landscaping</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1B4332',
+                        accent: '#52B788',
+                        bg: '#F0FFF4'
+                    },
+                    fontFamily: {
+                        'sans': ['Open Sans', 'system-ui', 'sans-serif'],
+                        'roboto': ['Roboto', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-bg font-sans text-primary">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <i class="fas fa-leaf text-accent text-2xl mr-2"></i>
+                    <span class="font-bold text-xl text-primary">Monarca Lawn Service</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#services" class="text-primary hover:text-accent transition-colors">Services</a>
+                    <a href="#reviews" class="text-primary hover:text-accent transition-colors">Reviews</a>
+                    <a href="#contact" class="text-primary hover:text-accent transition-colors">Contact</a>
+                    <a href="tel:8322072789" class="bg-accent text-white px-4 py-2 rounded-md font-semibold hover:bg-green-600 transition-colors">
+                        <i class="fas fa-phone mr-2"></i>(832) 207-2789
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen bg-bg">
+        <div class="max-w-7xl mx-auto">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-0 min-h-screen">
+                <!-- Hero Image -->
+                <div class="relative h-64 lg:h-full">
+                    <img 
+                        src="photos/photo-1.jpg" 
+                        alt="Beautiful landscaped lawn in Houston" 
+                        class="absolute inset-0 w-full h-full object-cover"
+                        onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'"
+                    >
+                </div>
+                
+                <!-- Hero Content -->
+                <div class="px-4 py-16 lg:px-12 lg:py-24 flex flex-col justify-center">
+                    <div class="max-w-md mx-auto lg:max-w-none">
+                        <h1 class="text-4xl lg:text-5xl font-bold text-primary mb-6 leading-tight">
+                            Houston's Lawn Care Perfection
+                        </h1>
+                        <p class="text-lg text-gray-700 mb-2 font-roboto">
+                            Curb appeal that gets noticed — and neighbors who ask who does your lawn.
+                        </p>
+                        <p class="text-gray-600 mb-8">
+                            Professional lawn care and landscaping services that transform your outdoor space into the envy of the neighborhood.
+                        </p>
+                        
+                        <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                            <button class="bg-accent text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-green-600 transition-colors shadow-lg">
+                                Get a Free Lawn Quote
+                            </button>
+                            <a href="tel:8322072789" class="border-2 border-primary text-primary px-8 py-4 rounded-lg font-semibold text-center hover:bg-primary hover:text-white transition-colors">
+                                Call Now: (832) 207-2789
+                            </a>
+                        </div>
+
+                        <!-- Trust Indicators -->
+                        <div class="flex items-center space-x-4 text-sm text-gray-600">
+                            <div class="flex items-center">
+                                <div class="text-yellow-400 mr-1">★★★★★</div>
+                                <span class="font-semibold">5.0 (25 reviews)</span>
+                            </div>
+                            <div class="w-px h-4 bg-gray-300"></div>
+                            <span>Licensed & Insured</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="bg-white py-8 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="flex flex-col items-center text-center">
+                    <i class="fas fa-leaf text-accent text-3xl mb-2"></i>
+                    <span class="text-sm font-semibold text-primary">Licensed & Insured</span>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                    <i class="fas fa-clock text-accent text-3xl mb-2"></i>
+                    <span class="text-sm font-semibold text-primary">Weekly & Bi-Weekly Plans</span>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                    <i class="fas fa-shield-halved text-accent text-3xl mb-2"></i>
+                    <span class="text-sm font-semibold text-primary">Satisfaction Guaranteed</span>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                    <i class="fas fa-map-pin text-accent text-3xl mb-2"></i>
+                    <span class="text-sm font-semibold text-primary">Locally Owned</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-bg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-primary mb-4">Complete Lawn Care Solutions</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">From routine maintenance to complete landscape transformations, Monarca Lawn Service delivers the results your Houston property deserves.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+                    <img 
+                        src="photos/photo-2.jpg" 
+                        alt="Professional lawn mowing service" 
+                        class="w-full h-48 object-cover rounded-lg mb-6"
+                        onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'"
+                    >
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <i class="fas fa-cut text-accent mr-3"></i>
+                            <span class="font-semibold">Lawn Mowing & Edging</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-seedling text-accent mr-3"></i>
+                            <span class="font-semibold">Fertilization & Weed Control</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-tint text-accent mr-3"></i>
+                            <span class="font-semibold">Sprinkler Repair & Installation</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-tree text-accent mr-3"></i>
+                            <span class="font-semibold">Tree & Shrub Trimming</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+                    <img 
+                        src="photos/photo-3.jpg" 
+                        alt="Landscape design and installation" 
+                        class="w-full h-48 object-cover rounded-lg mb-6"
+                        onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'"
+                    >
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <i class="fas fa-leaf text-accent mr-3"></i>
+                            <span class="font-semibold">Leaf Cleanup & Yard Waste Removal</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-layer-group text-accent mr-3"></i>
+                            <span class="font-semibold">Sod Installation</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-palette text-accent mr-3"></i>
+                            <span class="font-semibold">Landscaping Design</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-broom text-accent mr-3"></i>
+                            <span class="font-semibold">Seasonal Cleanups</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <button class="bg-accent text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-green-600 transition-colors shadow-lg">
+                    Get a Free Lawn Quote
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-primary mb-4">Transforming Houston Lawns</h2>
+                <p class="text-lg text-gray-600">See the difference professional care makes</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <img 
+                        src="photos/photo-4.jpg" 
+                        alt="Beautiful lawn maintenance Houston" 
+                        class="w-full h-64 object-cover"
+                        onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'"
+                    >
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <img 
+                        src="photos/photo-5.jpg" 
+                        alt="Landscaping project Houston" 
+                        class="w-full h-64 object-cover"
+                        onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'"
+                    >
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                    <img 
+                        src="photos/photo-6.jpg" 
+                        alt="Professional lawn care results" 
+                        class="w-full h-64 object-cover"
+                        onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'"
+                    >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-20 bg-bg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-primary mb-4">Houston Homeowners Love Our Work</h2>
+                <div class="flex justify-center items-center space-x-2 mb-4">
+                    <div class="text-yellow-400 text-2xl">★★★★★</div>
+                    <span class="text-xl font-semibold text-primary">5.0 Stars • 25 Google Reviews</span>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <div class="text-yellow-400 text-lg mb-4">★★★★★</div>
+                    <p class="text-gray-700 mb-6">"Monarca completely transformed our front yard in Katy. The sod installation was perfect and their weekly mowing keeps everything looking pristine. Our neighbors constantly ask who does our landscaping!"</p>
+                    <div class="font-semibold text-primary">- Sarah M.</div>
+                    <div class="text-sm text-gray-500">Katy, TX</div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <div class="text-yellow-400 text-lg mb-4">★★★★★</div>
+                    <p class="text-gray-700 mb-6">"Best lawn service in Houston! They fixed our sprinkler system and now handle all our maintenance. Professional, reliable, and reasonably priced. Highly recommend for anyone in the Memorial area."</p>
+                    <div class="font-semibold text-primary">- Mike R.</div>
+                    <div class="text-sm text-gray-500">Memorial, TX</div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <div class="text-yellow-400 text-lg mb-4">★★★★★</div>
+                    <p class="text-gray-700 mb-6">"Outstanding service! They handle our fertilization program and seasonal cleanups. Our St. Augustine grass has never looked better. The crew is always punctual and does quality work every time."</p>
+                    <div class="font-semibold text-primary">- Jennifer L.</div>
+                    <div class="text-sm text-gray-500">Spring, TX</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="py-20 bg-primary">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-white mb-6">Ready for Houston's Best Lawn Care?</h2>
+            <p class="text-xl text-green-100 mb-8">Join hundreds of satisfied Houston homeowners who trust Monarca Lawn Service with their outdoor spaces.</p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+                <button class="bg-accent text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-green-600 transition-colors shadow-lg">
+                    Get a Free Lawn Quote
+                </button>
+                <a href="tel:8322072789" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors">
+                    Call (832) 207-2789
+                </a>
+            </div>
+
+            <div class="text-green-100 space-y-2">
+                <div class="flex items-center justify-center">
+                    <i class="fas fa-map-marker-alt mr-2"></i>
+                    <span>13203 Vista Oro Dr, Houston, TX 77041</span>
+                </div>
+                <div class="flex items-center justify-center">
+                    <i class="fas fa-clock mr-2"></i>
+                    <span>Mon-Wed: 8 AM - 8 PM</span>
+                </div>
+                <a href="https://www.google.com/maps/search/?api=1&query=Monarca%20Lawn%20service&query_place_id=ChIJl6eblbnRQIYRkUY40y-QDfw" 
+                   target="_blank" 
+                   class="inline-flex items-center text-accent hover:text-green-300 transition-colors">
+                    <i class="fas fa-directions mr-2"></i>
+                    Get Directions
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-leaf text-accent text-2xl mr-2"></i>
+                        <span class="font-bold text-xl text-primary">Monarca Lawn Service</span>
+                    </div>
+                    <p class="text-gray-600">Houston's premier lawn care and landscaping service, delivering exceptional results for residential and commercial properties.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-primary mb-4">Contact Info</h4>
+                    <div class="space-y-2 text-gray-600">
+                        <div class="flex items-center">
+                            <i class="fas fa-phone mr-3 text-accent"></i>
+                            <a href="tel:8322072789" class="hover:text-accent transition-colors">(832) 207-2789</a>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt mr-3 text-accent mt-1"></i>
+                            <span>13203 Vista Oro Dr<br>Houston, TX 77041</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-primary mb-4">Business Hours</h4>
+                    <div class="space-y-1 text-gray-600">
+                        <div>Monday: 8 AM - 8 PM</div>
+                        <div>Tuesday: 8 AM - 8 PM</div>
+                        <div>Wednesday: 8 AM - 8 PM</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-200 mt-8 pt-8 text-center text-gray-500">
+                <p>&copy; 2024 Monarca Lawn Service. Licensed & Insured. Serving Houston, TX.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile CTA Bar -->
+    <div class="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t shadow-lg z-50">
+        <div class="grid grid-cols-2">
+            <a href="tel:8322072789" class="flex items-center justify-center py-4 bg-primary text-white font-semibold">
+                <i class="fas fa-phone mr-2"></i>
+                Call (832) 207-2789
+            </a>
+            <button class="flex items-center justify-center py-4 bg-accent text-white font-semibold">
+                <i class="fas fa-calculator mr-2"></i>
+                Get a Quote
+            </button>
+        </div>
+    </div>
+
+    <!-- Add bottom padding on mobile to account for fixed CTA bar -->
+    <div class="md:hidden h-16"></div>
+</body>
+</html>
