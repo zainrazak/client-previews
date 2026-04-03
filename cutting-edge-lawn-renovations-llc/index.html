@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cutting Edge Lawn Renovations LLC - Riverside Lawn Care & Landscaping</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1B4332',
+                        accent: '#52B788',
+                        background: '#F0FFF4'
+                    },
+                    fontFamily: {
+                        'sans': ['Roboto', 'sans-serif'],
+                        'heading': ['Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-background">
+    <!-- Navigation -->
+    <nav class="bg-primary text-white sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <h1 class="font-heading font-bold text-lg">Cutting Edge Lawn Renovations</h1>
+                </div>
+                <div class="hidden md:block">
+                    <a href="tel:9519636308" class="bg-accent hover:bg-green-600 px-4 py-2 rounded-lg font-semibold transition-colors">
+                        <i class="fas fa-phone mr-2"></i>(951) 963-6308
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-background">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row min-h-screen">
+                <!-- Hero Image -->
+                <div class="md:w-1/2 h-64 md:h-auto">
+                    <img src="photos/photo-1.jpg" 
+                         alt="Professional lawn care in Riverside CA"
+                         class="w-full h-full object-cover"
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'">
+                </div>
+                
+                <!-- Hero Content -->
+                <div class="md:w-1/2 flex items-center p-6 md:p-12">
+                    <div class="w-full">
+                        <h2 class="font-heading font-bold text-4xl md:text-5xl text-primary mb-4">
+                            Riverside's Premier Lawn Transformation
+                        </h2>
+                        <p class="text-xl text-gray-700 mb-6 leading-relaxed">
+                            Curb appeal that gets noticed — and neighbors who ask who does your lawn.
+                        </p>
+                        <div class="flex items-center mb-6">
+                            <div class="flex text-yellow-400 text-lg mr-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="text-gray-600 font-medium">4.5 stars (8 Google reviews)</span>
+                        </div>
+                        <div class="space-y-4 md:space-y-0 md:space-x-4 md:flex">
+                            <a href="#quote" class="block md:inline-block bg-accent hover:bg-green-600 text-white px-8 py-4 rounded-lg font-semibold text-center transition-colors">
+                                Get a Free Lawn Quote
+                            </a>
+                            <a href="tel:9519636308" class="block md:inline-block border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-4 rounded-lg font-semibold text-center transition-colors">
+                                Call (951) 963-6308
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="bg-white py-12 border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-leaf text-3xl text-accent mb-3"></i>
+                    <p class="font-medium text-primary">Licensed & Insured</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-clock text-3xl text-accent mb-3"></i>
+                    <p class="font-medium text-primary">Weekly & Bi-Weekly Plans</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-shield-halved text-3xl text-accent mb-3"></i>
+                    <p class="font-medium text-primary">Satisfaction Guaranteed</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-map-pin text-3xl text-accent mb-3"></i>
+                    <p class="font-medium text-primary">Locally Owned</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h3 class="font-heading font-bold text-3xl md:text-4xl text-primary mb-4">
+                    Complete Lawn & Landscape Services
+                </h3>
+                <p class="text-xl text-gray-700 max-w-2xl mx-auto">
+                    From routine maintenance to complete landscape transformations, Cutting Edge Lawn Renovations LLC delivers results that enhance your property value.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+                    <i class="fas fa-cut text-2xl text-accent mb-4"></i>
+                    <h4 class="font-semibold text-primary mb-2">Lawn Mowing & Edging</h4>
+                    <p class="text-gray-600">Professional cuts with crisp edges that define your lawn's borders.</p>
+                </div>
+                
+                <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+                    <i class="fas fa-seedling text-2xl text-accent mb-4"></i>
+                    <h4 class="font-semibold text-primary mb-2">Fertilization & Weed Control</h4>
+                    <p class="text-gray-600">Custom feeding programs that keep your grass healthy year-round.</p>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+                    <i class="fas fa-shower text-2xl text-accent mb-4"></i>
+                    <h4 class="font-semibold text-primary mb-2">Sprinkler Repair & Installation</h4>
+                    <p class="text-gray-600">Efficient irrigation systems that save water and maintain green lawns.</p>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+                    <i class="fas fa-tree text-2xl text-accent mb-4"></i>
+                    <h4 class="font-semibold text-primary mb-2">Tree & Shrub Trimming</h4>
+                    <p class="text-gray-600">Expert pruning that promotes healthy growth and attractive shapes.</p>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+                    <i class="fas fa-leaf text-2xl text-accent mb-4"></i>
+                    <h4 class="font-semibold text-primary mb-2">Leaf Cleanup & Yard Waste Removal</h4>
+                    <p class="text-gray-600">Seasonal cleanups that keep your property looking pristine.</p>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+                    <i class="fas fa-grass text-2xl text-accent mb-4"></i>
+                    <h4 class="font-semibold text-primary mb-2">Sod Installation</h4>
+                    <p class="text-gray-600">Instant lawn transformations with premium grass varieties.</p>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+                    <i class="fas fa-palette text-2xl text-accent mb-4"></i>
+                    <h4 class="font-semibold text-primary mb-2">Landscaping Design</h4>
+                    <p class="text-gray-600">Custom landscape plans that maximize your outdoor living space.</p>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+                    <i class="fas fa-broom text-2xl text-accent mb-4"></i>
+                    <h4 class="font-semibold text-primary mb-2">Seasonal Cleanups</h4>
+                    <p class="text-gray-600">Spring and fall services that prepare your yard for every season.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="font-heading font-bold text-3xl md:text-4xl text-primary text-center mb-12">
+                Recent Projects in Riverside
+            </h3>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="rounded-lg overflow-hidden shadow-md">
+                    <img src="photos/photo-2.jpg" 
+                         alt="Lawn maintenance project in Riverside"
+                         class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-md">
+                    <img src="photos/photo-3.jpg" 
+                         alt="Landscaping design in Riverside CA"
+                         class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-md">
+                    <img src="photos/photo-4.jpg" 
+                         alt="Sprinkler installation Riverside"
+                         class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-md">
+                    <img src="photos/photo-5.jpg" 
+                         alt="Tree trimming service Riverside"
+                         class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-md">
+                    <img src="photos/photo-6.jpg" 
+                         alt="Sod installation Riverside CA"
+                         class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-md bg-primary flex items-center justify-center">
+                    <div class="text-center text-white p-6">
+                        <i class="fas fa-plus text-4xl mb-4"></i>
+                        <p class="font-semibold text-lg">Your Project Next?</p>
+                        <p class="text-sm opacity-90 mt-2">Get your free quote today</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section class="py-16 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="font-heading font-bold text-3xl md:text-4xl text-primary text-center mb-12">
+                What Riverside Homeowners Say
+            </h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400 text-sm mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="text-sm text-gray-500">5.0</span>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        "Cutting Edge transformed our backyard in Arlington Heights. The sprinkler system they installed works perfectly, and our lawn has never looked better. Professional crew that showed up on time every week."
+                    </p>
+                    <p class="font-semibold text-primary">- Maria S.</p>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400 text-sm mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="text-sm text-gray-500">5.0</span>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        "Been using them for two years now. They handle everything - mowing, edging, fertilization, and seasonal cleanups. My neighbors in Riverside always compliment how great my yard looks."
+                    </p>
+                    <p class="font-semibold text-primary">- James R.</p>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400 text-sm mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <span class="text-sm text-gray-500">4.0</span>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        "Great job on our complete landscape redesign. The new sod installation looks amazing and their tree trimming really opened up our front yard. Highly recommend for any lawn care needs."
+                    </p>
+                    <p class="font-semibold text-primary">- Linda K.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="quote" class="py-16 bg-primary text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="font-heading font-bold text-3xl md:text-4xl mb-4">
+                Ready for Riverside's Best-Looking Lawn?
+            </h3>
+            <p class="text-xl mb-8 opacity-90">
+                Join satisfied homeowners across Riverside who trust Cutting Edge Lawn Renovations LLC for reliable, professional lawn care that delivers results.
+            </p>
+            <div class="space-y-4 md:space-y-0 md:space-x-6 md:flex md:justify-center">
+                <a href="tel:9519636308" class="block md:inline-block bg-accent hover:bg-green-600 px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
+                    <i class="fas fa-phone mr-2"></i>Call (951) 963-6308
+                </a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Cutting%20Edge%20Lawn%20Renovations%20LLC&query_place_id=ChIJm-cmPJVBqiQRpzwkawLb8os" 
+                   target="_blank" 
+                   class="block md:inline-block border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
+                    <i class="fas fa-map-marker-alt mr-2"></i>Get Directions
+                </a>
+            </div>
+            <p class="text-sm mt-6 opacity-75">
+                Free estimates • Licensed & insured • Satisfaction guaranteed
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h4 class="font-heading font-bold text-lg mb-4">Cutting Edge Lawn Renovations LLC</h4>
+                    <p class="text-gray-300 text-sm">
+                        Riverside's premier lawn care and landscaping service. Professional results, guaranteed satisfaction.
+                    </p>
+                </div>
+                
+                <div>
+                    <h5 class="font-semibold mb-4">Contact Info</h5>
+                    <div class="space-y-2 text-sm text-gray-300">
+                        <p><i class="fas fa-phone mr-2"></i>(951) 963-6308</p>
+                        <p><i class="fas fa-map-marker-alt mr-2"></i>6327 Banner Ct<br>Riverside, CA 92504</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h5 class="font-semibold mb-4">Business Hours</h5>
+                    <div class="space-y-1 text-sm text-gray-300">
+                        <p>Monday: 8 AM - 5 PM</p>
+                        <p>Tuesday: 8 AM - 5 PM</p>
+                        <p>Wednesday: 8 AM - 5 PM</p>
+                        <p>Thu-Sun: By Appointment</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h5 class="font-semibold mb-4">Service Areas</h5>
+                    <div class="space-y-1 text-sm text-gray-300">
+                        <p>Riverside</p>
+                        <p>Arlington Heights</p>
+                        <p>Canyon Crest</p>
+                        <p>Downtown Riverside</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-6 text-center text-sm text-gray-400">
+                <p>&copy; 2024 Cutting Edge Lawn Renovations LLC. All rights reserved. | Licensed & Insured | Riverside, CA</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky CTA Bar -->
+    <div class="md:hidden fixed bottom-0 left-0 right-0 bg-primary text-white p-3 z-50 shadow-lg">
+        <div class="flex space-x-3">
+            <a href="tel:9519636308" class="flex-1 bg-accent hover:bg-green-600 py-3 px-4 rounded-lg font-semibold text-center transition-colors">
+                <i class="fas fa-phone mr-2"></i>Call (951) 963-6308
+            </a>
+            <a href="#quote" class="flex-1 border border-white py-3 px-4 rounded-lg font-semibold text-center">
+                Get a Quote
+            </a>
+        </div>
+    </div>
+
+    <!-- Add padding to body to account for mobile CTA bar -->
+    <div class="md:hidden h-20"></div>
+</body>
+</html>
