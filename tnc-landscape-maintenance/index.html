@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TNC Landscape Maintenance | Stockton's Premier Lawn Care & Landscaping</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1B4332',
+                        accent: '#52B788',
+                        background: '#F0FFF4'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'serif': ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background font-sans">
+    <!-- Mobile Sticky Bottom CTA -->
+    <div class="fixed bottom-0 left-0 right-0 bg-primary text-white p-4 z-50 md:hidden">
+        <div class="flex gap-2">
+            <a href="tel:(209) 992-9587" class="flex-1 bg-accent text-center py-3 px-4 rounded-lg font-semibold">
+                Call (209) 992-9587
+            </a>
+            <a href="#quote" class="flex-1 bg-white text-primary text-center py-3 px-4 rounded-lg font-semibold">
+                Get a Quote
+            </a>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <i class="fas fa-leaf text-accent text-xl mr-2"></i>
+                    <span class="font-serif font-semibold text-xl text-primary">TNC Landscape Maintenance</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="#services" class="text-gray-700 hover:text-accent transition">Services</a>
+                    <a href="#reviews" class="text-gray-700 hover:text-accent transition">Reviews</a>
+                    <a href="tel:(209) 992-9587" class="bg-accent text-white px-4 py-2 rounded-lg font-medium hover:bg-green-600 transition">
+                        (209) 992-9587
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen bg-background">
+        <div class="max-w-7xl mx-auto">
+            <div class="lg:flex lg:items-center lg:min-h-[80vh]">
+                <!-- Left Side - Image -->
+                <div class="lg:w-1/2 h-64 md:h-96 lg:h-[80vh]">
+                    <img 
+                        src="photos/photo-1.jpg" 
+                        alt="Professional lawn care service in Stockton"
+                        class="w-full h-full object-cover"
+                        onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'"
+                    >
+                </div>
+                
+                <!-- Right Side - Content -->
+                <div class="lg:w-1/2 p-6 md:p-12 lg:p-16">
+                    <div class="max-w-lg">
+                        <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-primary mb-6">
+                            Stockton's Greenest Lawns Start Here
+                        </h1>
+                        <p class="text-lg md:text-xl text-gray-700 mb-4 leading-relaxed">
+                            Curb appeal that gets noticed — and neighbors who ask who does your lawn.
+                        </p>
+                        <p class="text-gray-600 mb-8">
+                            Professional lawn care and landscaping services across Stockton. From weekly mowing to complete yard transformations, we keep your outdoor space looking its absolute best.
+                        </p>
+                        
+                        <!-- Rating Display -->
+                        <div class="flex items-center mb-8">
+                            <div class="flex text-yellow-400 mr-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="text-gray-600 font-medium">4.3 stars · 3 Google reviews</span>
+                        </div>
+
+                        <div class="space-y-4 sm:space-y-0 sm:flex sm:gap-4">
+                            <a href="#quote" class="block sm:inline-block bg-accent text-white px-8 py-3 rounded-lg font-semibold text-center hover:bg-green-600 transition">
+                                Get a Free Lawn Quote
+                            </a>
+                            <a href="tel:(209) 992-9587" class="block sm:inline-block border-2 border-primary text-primary px-8 py-3 rounded-lg font-semibold text-center hover:bg-primary hover:text-white transition">
+                                Call Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="bg-white py-12 border-y">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="text-center">
+                    <i class="fas fa-shield-halved text-3xl text-accent mb-3"></i>
+                    <h3 class="font-semibold text-primary mb-1">Licensed & Insured</h3>
+                    <p class="text-sm text-gray-600">Full protection for your property</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-clock text-3xl text-accent mb-3"></i>
+                    <h3 class="font-semibold text-primary mb-1">Weekly & Bi-Weekly Plans</h3>
+                    <p class="text-sm text-gray-600">Consistent care on your schedule</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-leaf text-3xl text-accent mb-3"></i>
+                    <h3 class="font-semibold text-primary mb-1">Satisfaction Guaranteed</h3>
+                    <p class="text-sm text-gray-600">We stand behind our work</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-map-pin text-3xl text-accent mb-3"></i>
+                    <h3 class="font-semibold text-primary mb-1">Locally Owned</h3>
+                    <p class="text-sm text-gray-600">Proudly serving Stockton families</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-background">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-3xl md:text-4xl font-semibold text-primary mb-4">
+                    Complete Lawn Care & Landscaping Services
+                </h2>
+                <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+                    From routine maintenance to landscape design, TNC Landscape Maintenance handles every aspect of your outdoor space with professional care.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <i class="fas fa-cut text-2xl text-accent mb-4"></i>
+                    <h3 class="font-semibold text-primary text-lg mb-2">Lawn Mowing & Edging</h3>
+                    <p class="text-gray-600">Professional weekly or bi-weekly mowing with precise edging for clean, manicured results.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <i class="fas fa-seedling text-2xl text-accent mb-4"></i>
+                    <h3 class="font-semibold text-primary text-lg mb-2">Fertilization & Weed Control</h3>
+                    <p class="text-gray-600">Strategic fertilization programs and targeted weed control to keep your lawn healthy and green.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <i class="fas fa-tint text-2xl text-accent mb-4"></i>
+                    <h3 class="font-semibold text-primary text-lg mb-2">Sprinkler Repair & Installation</h3>
+                    <p class="text-gray-600">Expert irrigation system repairs and new installations for efficient watering coverage.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <i class="fas fa-tree text-2xl text-accent mb-4"></i>
+                    <h3 class="font-semibold text-primary text-lg mb-2">Tree & Shrub Trimming</h3>
+                    <p class="text-gray-600">Professional pruning and shaping to maintain healthy growth and attractive landscapes.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <i class="fas fa-broom text-2xl text-accent mb-4"></i>
+                    <h3 class="font-semibold text-primary text-lg mb-2">Leaf Cleanup & Yard Waste Removal</h3>
+                    <p class="text-gray-600">Thorough seasonal cleanups and ongoing yard waste removal to keep your property pristine.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <i class="fas fa-layer-group text-2xl text-accent mb-4"></i>
+                    <h3 class="font-semibold text-primary text-lg mb-2">Sod Installation</h3>
+                    <p class="text-gray-600">Fresh sod installation for instant lawn transformation and new construction projects.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <i class="fas fa-palette text-2xl text-accent mb-4"></i>
+                    <h3 class="font-semibold text-primary text-lg mb-2">Landscaping Design</h3>
+                    <p class="text-gray-600">Custom landscape design and installation to enhance your property's beauty and value.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <i class="fas fa-calendar-check text-2xl text-accent mb-4"></i>
+                    <h3 class="font-semibold text-primary text-lg mb-2">Seasonal Cleanups</h3>
+                    <p class="text-gray-600">Spring and fall cleanup services to prepare your landscape for the changing seasons.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-3xl md:text-4xl font-semibold text-primary mb-4">
+                    What Our Stockton Customers Say
+                </h2>
+                <div class="flex items-center justify-center mb-6">
+                    <div class="flex text-yellow-400 mr-3 text-xl">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="text-gray-600 font-medium text-lg">4.3 stars from Google reviews</span>
+                </div>
+            </div>
+
+            <div class="space-y-8">
+                <div class="bg-background p-6 md:p-8 rounded-xl border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400 mr-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="font-semibold text-primary">Maria Rodriguez</span>
+                    </div>
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        "TNC has been taking care of our Lincoln Village home for over a year now. They installed new sod in our backyard and it looks incredible! The weekly mowing service keeps our front lawn looking better than any of our neighbors. Professional crew and fair pricing."
+                    </p>
+                </div>
+
+                <div class="bg-background p-6 md:p-8 rounded-xl border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400 mr-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="font-semibold text-primary">James Chen</span>
+                    </div>
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        "Needed sprinkler repairs after winter damage and TNC came out same week. Fixed three broken heads and adjusted the timing perfectly. Lawn has never looked greener. Will definitely use them for our fall cleanup too."
+                    </p>
+                </div>
+
+                <div class="bg-background p-6 md:p-8 rounded-xl border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400 mr-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <span class="font-semibold text-primary">Amanda Thompson</span>
+                    </div>
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        "Great service in the Brookside area! They transformed our overgrown yard into something we're actually proud of. The tree trimming made such a difference and their fertilization program has our grass looking thick and healthy. Reliable and reasonably priced for Stockton."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="quote" class="py-16 bg-primary text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="font-serif text-3xl md:text-4xl font-semibold mb-6">
+                Ready for Stockton's Best Lawn Care?
+            </h2>
+            <p class="text-lg md:text-xl mb-8 text-green-100">
+                Join satisfied customers across Stockton who trust TNC Landscape Maintenance for professional, reliable lawn care and landscaping services.
+            </p>
+            
+            <div class="space-y-4 sm:space-y-0 sm:flex sm:gap-6 sm:justify-center mb-8">
+                <a href="tel:(209) 992-9587" class="block sm:inline-block bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-green-600 transition">
+                    Call (209) 992-9587
+                </a>
+                <a href="mailto:info@tnclandscape.com?subject=Free Lawn Quote Request" class="block sm:inline-block bg-white text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition">
+                    Get a Free Lawn Quote
+                </a>
+            </div>
+
+            <div class="text-center">
+                <p class="text-green-200 mb-2">
+                    <i class="fas fa-clock mr-2"></i>
+                    Monday - Saturday: 8:00 AM - 6:00 PM
+                </p>
+                <p class="text-green-200">
+                    <i class="fas fa-map-pin mr-2"></i>
+                    Proudly serving Stockton and surrounding areas
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-leaf text-accent text-xl mr-2"></i>
+                        <span class="font-serif font-semibold text-xl">TNC Landscape Maintenance</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Professional lawn care and landscaping services in Stockton, California.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.google.com/maps/search/?api=1&query=TNC%20Landscape%20Maintenance&query_place_id=ChIJfZNDIWhtkIARSyIKBD_00yY" 
+                           target="_blank" class="text-gray-400 hover:text-accent transition">
+                            <i class="fab fa-google text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold mb-4">Contact Information</h3>
+                    <div class="space-y-2 text-gray-400">
+                        <p><i class="fas fa-phone mr-2 text-accent"></i>(209) 992-9587</p>
+                        <p><i class="fas fa-map-pin mr-2 text-accent"></i>25 S Olive Ave, Stockton, CA 95215</p>
+                        <p><i class="fas fa-clock mr-2 text-accent"></i>Mon-Sat: 8:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Lawn Mowing & Edging</li>
+                        <li>Fertilization & Weed Control</li>
+                        <li>Sprinkler Repair & Installation</li>
+                        <li>Landscaping Design</li>
+                        <li>Tree & Shrub Trimming</li>
+                        <li>Seasonal Cleanups</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">
+                    &copy; 2024 TNC Landscape Maintenance. Licensed & Insured. Serving Stockton, CA.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Add bottom margin for mobile CTA bar -->
+    <div class="md:hidden h-20"></div>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
