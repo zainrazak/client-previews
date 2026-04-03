@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramos Tree Services & Landscaping | San Bernardino Lawn Care</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1B4332',
+                        accent: '#52B788',
+                        background: '#F0FFF4'
+                    },
+                    fontFamily: {
+                        'display': ['Poppins', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-body bg-background text-primary">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <h1 class="text-xl font-display font-bold text-primary">Ramos Tree Services</h1>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#services" class="text-primary hover:text-accent transition">Services</a>
+                    <a href="#reviews" class="text-primary hover:text-accent transition">Reviews</a>
+                    <div class="flex items-center text-primary font-medium">
+                        <i class="fas fa-phone mr-2 text-accent"></i>
+                        <a href="tel:6193438486" class="hover:text-accent transition">(619) 343-8486</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <a href="tel:6193438486" class="text-accent">
+                        <i class="fas fa-phone text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="lg:flex lg:h-screen lg:min-h-[600px]">
+        <!-- Hero Image -->
+        <div class="lg:w-1/2 h-64 lg:h-full">
+            <img src="photos/photo-1.jpg" alt="Professional lawn care San Bernardino" 
+                 class="w-full h-full object-cover"
+                 onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'">
+        </div>
+        
+        <!-- Hero Content -->
+        <div class="lg:w-1/2 flex items-center justify-center px-6 py-12 lg:py-20">
+            <div class="max-w-lg text-center lg:text-left">
+                <h1 class="text-4xl lg:text-5xl font-display font-bold text-primary leading-tight mb-4">
+                    San Bernardino's Premier Lawn Experts
+                </h1>
+                <p class="text-lg text-gray-700 mb-6 italic">
+                    Curb appeal that gets noticed — and neighbors who ask who does your lawn.
+                </p>
+                <div class="flex items-center justify-center lg:justify-start mb-6">
+                    <div class="flex text-yellow-400 mr-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="text-gray-600 font-medium">4.3 stars • 6 Google reviews</span>
+                </div>
+                <button class="bg-accent hover:bg-green-600 text-white font-semibold py-4 px-8 rounded-lg text-lg transition transform hover:scale-105 w-full lg:w-auto">
+                    Get a Free Lawn Quote
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="bg-primary py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-white">
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-leaf text-3xl text-accent mb-3"></i>
+                    <p class="font-medium text-sm">Licensed & Insured</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-clock text-3xl text-accent mb-3"></i>
+                    <p class="font-medium text-sm">Weekly & Bi-Weekly Plans</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-shield-halved text-3xl text-accent mb-3"></i>
+                    <p class="font-medium text-sm">Satisfaction Guaranteed</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-map-pin text-3xl text-accent mb-3"></i>
+                    <p class="font-medium text-sm">Locally Owned</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-display font-bold text-center text-primary mb-12">
+                Complete Lawn Care & Landscaping Solutions
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-background rounded-lg p-6 border border-gray-200 hover:shadow-lg transition">
+                    <img src="photos/photo-2.jpg" alt="Lawn mowing San Bernardino" 
+                         class="w-full h-48 object-cover rounded-lg mb-4"
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'">
+                    <h3 class="text-xl font-semibold text-primary mb-2">Lawn Mowing & Edging</h3>
+                    <p class="text-gray-600">Precision cuts that make your property stand out on Highland Avenue and beyond.</p>
+                </div>
+                
+                <div class="bg-background rounded-lg p-6 border border-gray-200 hover:shadow-lg transition">
+                    <img src="photos/photo-3.jpg" alt="Fertilization services San Bernardino" 
+                         class="w-full h-48 object-cover rounded-lg mb-4"
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'">
+                    <h3 class="text-xl font-semibold text-primary mb-2">Fertilization & Weed Control</h3>
+                    <p class="text-gray-600">Keep your lawn thick and green through San Bernardino's challenging seasons.</p>
+                </div>
+                
+                <div class="bg-background rounded-lg p-6 border border-gray-200 hover:shadow-lg transition">
+                    <img src="photos/photo-4.jpg" alt="Sprinkler repair San Bernardino" 
+                         class="w-full h-48 object-cover rounded-lg mb-4"
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'">
+                    <h3 class="text-xl font-semibold text-primary mb-2">Sprinkler Repair & Installation</h3>
+                    <p class="text-gray-600">Efficient irrigation systems that save water and maintain perfect coverage.</p>
+                </div>
+                
+                <div class="bg-background rounded-lg p-6 border border-gray-200 hover:shadow-lg transition">
+                    <img src="photos/photo-5.jpg" alt="Tree trimming San Bernardino" 
+                         class="w-full h-48 object-cover rounded-lg mb-4"
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'">
+                    <h3 class="text-xl font-semibold text-primary mb-2">Tree & Shrub Trimming</h3>
+                    <p class="text-gray-600">Expert pruning that promotes healthy growth and enhances your landscape design.</p>
+                </div>
+                
+                <div class="bg-background rounded-lg p-6 border border-gray-200 hover:shadow-lg transition">
+                    <img src="photos/photo-6.jpg" alt="Leaf cleanup San Bernardino" 
+                         class="w-full h-48 object-cover rounded-lg mb-4"
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'">
+                    <h3 class="text-xl font-semibold text-primary mb-2">Leaf Cleanup & Yard Waste Removal</h3>
+                    <p class="text-gray-600">Seasonal cleanups that keep your property pristine year-round.</p>
+                </div>
+                
+                <div class="bg-background rounded-lg p-6 border border-gray-200 hover:shadow-lg transition">
+                    <div class="h-48 bg-accent bg-opacity-10 rounded-lg mb-4 flex items-center justify-center">
+                        <i class="fas fa-seedling text-6xl text-accent"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-2">Additional Services</h3>
+                    <ul class="text-gray-600 space-y-1">
+                        <li>• Sod Installation</li>
+                        <li>• Landscaping Design</li>
+                        <li>• Seasonal Cleanups</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-16 bg-background">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-display font-bold text-center text-primary mb-12">
+                What San Bernardino Homeowners Say
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <div class="flex text-yellow-400 mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Ramos completely transformed our front yard landscaping on the west side of town. The new sod installation looks incredible and their weekly mowing keeps everything perfect. Neighbors are constantly asking who does our lawn!"</p>
+                    <p class="font-semibold text-primary">- Maria Rodriguez</p>
+                </div>
+                
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <div class="flex text-yellow-400 mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Had sprinkler issues for months until I called Ramos Tree Services & Landscaping. They diagnosed and fixed everything in one visit. Professional, reliable, and reasonably priced."</p>
+                    <p class="font-semibold text-primary">- David Chen</p>
+                </div>
+                
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <div class="flex text-yellow-400 mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Great tree trimming work around our San Bernardino home. They cleaned up everything and the trees look healthier than ever. Available 24/7 which is amazing for emergency work."</p>
+                    <p class="font-semibold text-primary">- Jennifer Martinez</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary text-white">
+        <div class="max-w-4xl mx-auto text-center px-4">
+            <h2 class="text-4xl font-display font-bold mb-4">
+                Ready for the Best Lawn in Your Neighborhood?
+            </h2>
+            <p class="text-xl mb-8 text-gray-200">
+                Join dozens of satisfied San Bernardino homeowners who trust Ramos Tree Services & Landscaping
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <button class="bg-accent hover:bg-green-600 text-white font-semibold py-4 px-8 rounded-lg text-lg transition transform hover:scale-105">
+                    Get a Free Lawn Quote
+                </button>
+                <a href="tel:6193438486" class="border-2 border-white hover:bg-white hover:text-primary text-white font-semibold py-4 px-8 rounded-lg text-lg transition">
+                    Call (619) 343-8486
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-12 border-t">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-2xl font-display font-bold text-primary mb-4">Ramos Tree Services & Landscaping</h3>
+                    <p class="text-gray-600 mb-4">Professional lawn care and landscaping services throughout San Bernardino and surrounding areas.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold text-primary mb-4">Contact Info</h4>
+                    <div class="space-y-2 text-gray-600">
+                        <p><i class="fas fa-map-pin mr-2 text-accent"></i>679 W Highland Ave, San Bernardino, CA 92405</p>
+                        <p><i class="fas fa-phone mr-2 text-accent"></i>(619) 343-8486</p>
+                        <p><i class="fas fa-clock mr-2 text-accent"></i>Available 24 Hours Daily</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold text-primary mb-4">Service Areas</h4>
+                    <p class="text-gray-600">San Bernardino, Highland, Redlands, Colton, Rialto, and surrounding communities</p>
+                    <div class="mt-4">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Ramos%20Tree%20Services%20%26%20Landscaping&query_place_id=ChIJFd31wTFTw4ARbpa4yeX97Ew" 
+                           target="_blank" 
+                           class="text-accent hover:text-green-600 font-medium">
+                            <i class="fas fa-external-link-alt mr-1"></i>View on Google Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t mt-8 pt-8 text-center text-gray-500">
+                <p>&copy; 2024 Ramos Tree Services & Landscaping. Licensed & Insured. San Bernardino, CA.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky CTA Bar -->
+    <div class="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t shadow-lg z-40">
+        <div class="flex">
+            <a href="tel:6193438486" class="flex-1 bg-primary text-white py-4 text-center font-semibold">
+                <i class="fas fa-phone mr-2"></i>Call (619) 343-8486
+            </a>
+            <button class="flex-1 bg-accent text-white py-4 text-center font-semibold">
+                Get a Quote
+            </button>
+        </div>
+    </div>
+
+    <!-- Add padding to prevent content from hiding behind mobile CTA -->
+    <div class="md:hidden h-16"></div>
+
+</body>
+</html>
