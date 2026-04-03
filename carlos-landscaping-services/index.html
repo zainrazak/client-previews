@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos Landscaping Services | Professional Lawn Care Houston TX</title>
+    <meta name="description" content="Professional lawn care and landscaping in Houston. Licensed & insured. Weekly mowing, fertilization, sprinkler repair. Call (832) 706-9260 for free quote.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1B4332',
+                        accent: '#52B788',
+                        background: '#F0FFF4'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'serif': ['Merriweather', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-background text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="font-bold text-xl text-primary font-serif">
+                    Carlos Landscaping Services
+                </div>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="#services" class="text-gray-700 hover:text-primary transition-colors">Services</a>
+                    <a href="#gallery" class="text-gray-700 hover:text-primary transition-colors">Gallery</a>
+                    <a href="#reviews" class="text-gray-700 hover:text-primary transition-colors">Reviews</a>
+                    <a href="tel:8327069260" class="bg-accent text-white px-4 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition-colors">
+                        <i class="fas fa-phone mr-2"></i>(832) 706-9260
+                    </a>
+                </div>
+                <button class="md:hidden text-primary">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 min-h-[600px]">
+                <!-- Hero Image -->
+                <div class="order-2 md:order-1">
+                    <img src="photos/photo-1.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'"
+                         alt="Professional lawn care service in Houston" 
+                         class="w-full h-full object-cover">
+                </div>
+                
+                <!-- Hero Content -->
+                <div class="order-1 md:order-2 flex items-center px-6 py-12 md:px-12">
+                    <div>
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400 mr-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-600 font-semibold">5.0 (4 reviews)</span>
+                        </div>
+                        
+                        <h1 class="text-4xl md:text-5xl font-bold text-primary mb-4 font-serif">
+                            Houston's Premier Lawn Experts
+                        </h1>
+                        
+                        <p class="text-xl text-gray-600 mb-6 font-medium">
+                            Curb appeal that gets noticed — and neighbors who ask who does your lawn.
+                        </p>
+                        
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="#contact" class="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition-colors text-center">
+                                Get a Free Lawn Quote
+                            </a>
+                            <a href="tel:8327069260" class="border-2 border-primary text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-primary hover:text-white transition-colors text-center">
+                                <i class="fas fa-phone mr-2"></i>Call Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="bg-primary text-white py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-leaf text-2xl text-accent mb-2"></i>
+                    <span class="text-sm font-semibold">Licensed & Insured</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-clock text-2xl text-accent mb-2"></i>
+                    <span class="text-sm font-semibold">Weekly & Bi-Weekly Plans</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-shield-halved text-2xl text-accent mb-2"></i>
+                    <span class="text-sm font-semibold">Satisfaction Guaranteed</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-map-pin text-2xl text-accent mb-2"></i>
+                    <span class="text-sm font-semibold">Locally Owned</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4 font-serif">
+                    Complete Lawn & Landscape Solutions
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    From weekly maintenance to complete landscape transformations, carlos landscaping services handles every aspect of your outdoor space.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-background p-6 rounded-xl border border-gray-100 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-cut text-white text-xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg text-primary mb-2">Lawn Mowing & Edging</h3>
+                    <p class="text-gray-600 text-sm">Professional weekly or bi-weekly mowing with precision edging for that crisp, manicured look.</p>
+                </div>
+                
+                <div class="bg-background p-6 rounded-xl border border-gray-100 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-seedling text-white text-xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg text-primary mb-2">Fertilization & Weed Control</h3>
+                    <p class="text-gray-600 text-sm">Custom fertilization programs and targeted weed treatments to keep your lawn thick and green.</p>
+                </div>
+                
+                <div class="bg-background p-6 rounded-xl border border-gray-100 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-tint text-white text-xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg text-primary mb-2">Sprinkler Repair & Installation</h3>
+                    <p class="text-gray-600 text-sm">Expert irrigation system installation and repair to ensure your landscape stays properly hydrated.</p>
+                </div>
+                
+                <div class="bg-background p-6 rounded-xl border border-gray-100 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-tree text-white text-xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg text-primary mb-2">Tree & Shrub Trimming</h3>
+                    <p class="text-gray-600 text-sm">Professional pruning and trimming to maintain healthy, attractive trees and shrubs year-round.</p>
+                </div>
+                
+                <div class="bg-background p-6 rounded-xl border border-gray-100 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-leaf text-white text-xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg text-primary mb-2">Leaf Cleanup & Yard Waste Removal</h3>
+                    <p class="text-gray-600 text-sm">Seasonal cleanup services to keep your property looking pristine throughout the year.</p>
+                </div>
+                
+                <div class="bg-background p-6 rounded-xl border border-gray-100 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-grass text-white text-xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg text-primary mb-2">Sod Installation</h3>
+                    <p class="text-gray-600 text-sm">Professional sod installation for instant lawn transformation and immediate curb appeal.</p>
+                </div>
+                
+                <div class="bg-background p-6 rounded-xl border border-gray-100 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-drafting-compass text-white text-xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg text-primary mb-2">Landscaping Design</h3>
+                    <p class="text-gray-600 text-sm">Custom landscape design and installation to create the outdoor space of your dreams.</p>
+                </div>
+                
+                <div class="bg-background p-6 rounded-xl border border-gray-100 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-broom text-white text-xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg text-primary mb-2">Seasonal Cleanups</h3>
+                    <p class="text-gray-600 text-sm">Spring and fall cleanup services to prepare your landscape for each season's challenges.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 bg-background">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4 font-serif">
+                    Transforming Houston Landscapes
+                </h2>
+                <p class="text-xl text-gray-600">
+                    See the carlos landscaping services difference in every project we complete
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="aspect-square">
+                    <img src="photos/photo-2.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'"
+                         alt="Professional lawn mowing Houston" 
+                         class="w-full h-full object-cover rounded-lg hover:scale-105 transition-transform">
+                </div>
+                <div class="aspect-square">
+                    <img src="photos/photo-3.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'"
+                         alt="Landscape design Houston" 
+                         class="w-full h-full object-cover rounded-lg hover:scale-105 transition-transform">
+                </div>
+                <div class="aspect-square">
+                    <img src="photos/photo-4.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'"
+                         alt="Tree trimming service Houston" 
+                         class="w-full h-full object-cover rounded-lg hover:scale-105 transition-transform">
+                </div>
+                <div class="aspect-square">
+                    <img src="photos/photo-5.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'"
+                         alt="Sprinkler installation Houston" 
+                         class="w-full h-full object-cover rounded-lg hover:scale-105 transition-transform">
+                </div>
+                <div class="aspect-square">
+                    <img src="photos/photo-6.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'"
+                         alt="Sod installation Houston" 
+                         class="w-full h-full object-cover rounded-lg hover:scale-105 transition-transform">
+                </div>
+                <div class="aspect-square bg-accent flex items-center justify-center rounded-lg">
+                    <div class="text-center text-white p-6">
+                        <i class="fas fa-plus text-3xl mb-4"></i>
+                        <p class="font-semibold">Your Project Next</p>
+                        <p class="text-sm opacity-90 mt-2">Call for your free quote</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4 font-serif">
+                    Houston Homeowners Love Our Work
+                </h2>
+                <div class="flex items-center justify-center mb-4">
+                    <div class="flex text-yellow-400 mr-3 text-xl">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="text-gray-600 font-semibold text-lg">5.0 out of 5 stars (4 Google reviews)</span>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-background p-8 rounded-xl">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4 italic">
+                        "Carlos completely transformed our front yard in Spring Branch. The sod installation was perfect and his weekly mowing service keeps everything looking pristine. Our neighbors constantly ask who does our landscaping!"
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-accent rounded-full flex items-center justify-center text-white font-semibold mr-3">
+                            M
+                        </div>
+                        <div>
+                            <p class="font-semibold text-primary">Maria Rodriguez</p>
+                            <p class="text-gray-500 text-sm">Spring Branch, Houston</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-background p-8 rounded-xl">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4 italic">
+                        "Reliable, professional, and reasonably priced. Carlos handles our bi-weekly mowing and seasonal cleanup. Always shows up on time and does excellent work. Highly recommend for anyone in the Heights area."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-accent rounded-full flex items-center justify-center text-white font-semibold mr-3">
+                            J
+                        </div>
+                        <div>
+                            <p class="font-semibold text-primary">James Patterson</p>
+                            <p class="text-gray-500 text-sm">The Heights, Houston</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-background p-8 rounded-xl">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4 italic">
+                        "Best landscaping service in Houston! Carlos installed our new irrigation system and designed beautiful flower beds. His attention to detail is outstanding and the pricing was very fair."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-accent rounded-full flex items-center justify-center text-white font-semibold mr-3">
+                            S
+                        </div>
+                        <div>
+                            <p class="font-semibold text-primary">Sarah Chen</p>
+                            <p class="text-gray-500 text-sm">Houston Homeowner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="py-16 bg-primary text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 font-serif">
+                Ready for a Lawn That Stands Out?
+            </h2>
+            <p class="text-xl mb-8 text-gray-200">
+                Join hundreds of satisfied Houston homeowners who trust carlos landscaping services for all their lawn care needs.
+            </p>
+            
+            <div class="bg-white rounded-2xl p-8 text-gray-800 max-w-md mx-auto">
+                <h3 class="text-2xl font-bold text-primary mb-4">Get Your Free Quote</h3>
+                <div class="space-y-4">
+                    <a href="tel:8327069260" class="block bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition-colors">
+                        <i class="fas fa-phone mr-2"></i>Call (832) 706-9260
+                    </a>
+                    <div class="text-center">
+                        <p class="text-gray-600 mb-2">Available Monday - Wednesday</p>
+                        <p class="text-gray-600 font-semibold">9:00 AM - 1:00 PM</p>
+                    </div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=carlos%20landscaping%20services&query_place_id=ChIJq_cu-mTJQIYRGJHL8dx77pY" 
+                       target="_blank" 
+                       class="block border-2 border-primary text-primary px-8 py-4 rounded-lg font-semibold hover:bg-primary hover:text-white transition-colors">
+                        <i class="fas fa-map-marker-alt mr-2"></i>Visit Our Location
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 font-serif">Carlos Landscaping Services</h3>
+                    <p class="text-gray-400 mb-4">Professional lawn care and landscaping services for Houston homeowners who demand excellence.</p>
+                    <div class="flex items-center text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="ml-2 text-gray-400">5.0 (4 reviews)</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Contact Information</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p><i class="fas fa-map-marker-alt mr-2"></i>7202 Leaning Oak Dr, Houston, TX 77088</p>
+                        <p><i class="fas fa-phone mr-2"></i>(832) 706-9260</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Business Hours</h4>
+                    <div class="space-y-1 text-gray-400">
+                        <p>Monday: 9:00 AM - 1:00 PM</p>
+                        <p>Tuesday: 9:00 AM - 1:00 PM</p>
+                        <p>Wednesday: 9:00 AM - 1:00 PM</p>
+                        <p>Thursday - Sunday: Closed</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Carlos Landscaping Services. Licensed & Insured. Serving Houston, TX.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky CTA Bar -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white shadow-lg border-t md:hidden z-50">
+        <div class="grid grid-cols-2">
+            <a href="tel:8327069260" class="bg-primary text-white py-4 px-4 text-center font-semibold">
+                <i class="fas fa-phone mr-2"></i>Call (832) 706-9260
+            </a>
+            <a href="#contact" class="bg-accent text-white py-4 px-4 text-center font-semibold">
+                Get a Quote
+            </a>
+        </div>
+    </div>
+
+    <!-- Add padding bottom to prevent content being hidden behind mobile bar -->
+    <div class="h-16 md:hidden"></div>
+</body>
+</html>
