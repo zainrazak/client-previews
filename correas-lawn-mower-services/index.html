@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correa's Lawn Mower Services | San Bernardino Lawn Care & Landscaping</title>
+    <meta name="description" content="Professional lawn care and landscaping in San Bernardino. Weekly mowing, sprinkler repair, tree trimming, and more. Licensed & insured. Call (909) 883-8062 for your free quote.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1B4332',
+                        accent: '#52B788',
+                        background: '#F0FFF4'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'serif': ['Merriweather', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background font-sans">
+    <!-- Mobile Sticky Bottom CTA -->
+    <div class="fixed bottom-0 left-0 right-0 bg-primary text-white p-4 z-50 md:hidden">
+        <div class="flex items-center justify-between gap-3">
+            <a href="tel:909-883-8062" class="flex-1 bg-accent text-white py-3 px-4 rounded-lg text-center font-semibold">
+                <i class="fas fa-phone mr-2"></i>Call (909) 883-8062
+            </a>
+            <a href="#quote" class="flex-1 bg-white text-primary py-3 px-4 rounded-lg text-center font-semibold">
+                Get a Quote
+            </a>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <h1 class="text-xl font-bold text-primary">Correa's Lawn Mower Services</h1>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#services" class="text-primary hover:text-accent font-medium">Services</a>
+                    <a href="#reviews" class="text-primary hover:text-accent font-medium">Reviews</a>
+                    <div class="flex items-center text-primary font-semibold">
+                        <i class="fas fa-phone text-accent mr-2"></i>
+                        <a href="tel:909-883-8062" class="hover:text-accent">(909) 883-8062</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 min-h-[600px]">
+                <!-- Hero Image -->
+                <div class="order-1 md:order-1">
+                    <img src="photos/photo-1.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'"
+                         alt="Professional lawn care service in San Bernardino" 
+                         class="w-full h-64 md:h-full object-cover">
+                </div>
+                
+                <!-- Hero Content -->
+                <div class="order-2 md:order-2 flex items-center p-8 lg:p-16">
+                    <div class="w-full">
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400 text-sm mr-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="text-gray-600 text-sm">4.2 ★ (115 Google reviews)</span>
+                        </div>
+                        
+                        <h2 class="text-4xl lg:text-5xl font-serif font-bold text-primary mb-6">
+                            San Bernardino's Premier Lawn Care
+                        </h2>
+                        
+                        <p class="text-xl text-gray-700 mb-8 leading-relaxed">
+                            Curb appeal that gets noticed — and neighbors who ask who does your lawn.
+                        </p>
+                        
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="#quote" class="bg-accent text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-600 transition-colors text-center">
+                                Get a Free Lawn Quote
+                            </a>
+                            <a href="tel:909-883-8062" class="border-2 border-primary text-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary hover:text-white transition-colors text-center">
+                                <i class="fas fa-phone mr-2"></i>Call Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="bg-primary py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-white">
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-leaf text-accent text-3xl mb-3"></i>
+                    <span class="font-semibold text-sm">Licensed & Insured</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-clock text-accent text-3xl mb-3"></i>
+                    <span class="font-semibold text-sm">Weekly & Bi-Weekly Plans</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-shield-halved text-accent text-3xl mb-3"></i>
+                    <span class="font-semibold text-sm">Satisfaction Guaranteed</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-map-pin text-accent text-3xl mb-3"></i>
+                    <span class="font-semibold text-sm">Locally Owned</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-primary mb-4">
+                    Complete Lawn Care & Landscaping Services
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    From weekly maintenance to major landscaping projects, Correa's Lawn Mower Services keeps your property looking its absolute best year-round.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-background p-6 rounded-lg border-l-4 border-accent">
+                    <div class="flex items-start mb-4">
+                        <i class="fas fa-cut text-accent text-2xl mr-4 mt-1"></i>
+                        <div>
+                            <h3 class="font-bold text-primary text-lg mb-2">Lawn Mowing & Edging</h3>
+                            <p class="text-gray-600">Professional weekly and bi-weekly lawn maintenance with precision edging.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-background p-6 rounded-lg border-l-4 border-accent">
+                    <div class="flex items-start mb-4">
+                        <i class="fas fa-seedling text-accent text-2xl mr-4 mt-1"></i>
+                        <div>
+                            <h3 class="font-bold text-primary text-lg mb-2">Fertilization & Weed Control</h3>
+                            <p class="text-gray-600">Keep your grass thick and green while eliminating unwanted weeds.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-background p-6 rounded-lg border-l-4 border-accent">
+                    <div class="flex items-start mb-4">
+                        <i class="fas fa-tint text-accent text-2xl mr-4 mt-1"></i>
+                        <div>
+                            <h3 class="font-bold text-primary text-lg mb-2">Sprinkler Repair & Installation</h3>
+                            <p class="text-gray-600">Expert irrigation system maintenance and new sprinkler installations.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-background p-6 rounded-lg border-l-4 border-accent">
+                    <div class="flex items-start mb-4">
+                        <i class="fas fa-tree text-accent text-2xl mr-4 mt-1"></i>
+                        <div>
+                            <h3 class="font-bold text-primary text-lg mb-2">Tree & Shrub Trimming</h3>
+                            <p class="text-gray-600">Professional pruning to keep trees and shrubs healthy and attractive.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-background p-6 rounded-lg border-l-4 border-accent">
+                    <div class="flex items-start mb-4">
+                        <i class="fas fa-leaf text-accent text-2xl mr-4 mt-1"></i>
+                        <div>
+                            <h3 class="font-bold text-primary text-lg mb-2">Leaf Cleanup & Yard Waste Removal</h3>
+                            <p class="text-gray-600">Seasonal cleanup services to keep your property neat and tidy.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-background p-6 rounded-lg border-l-4 border-accent">
+                    <div class="flex items-start mb-4">
+                        <i class="fas fa-layer-group text-accent text-2xl mr-4 mt-1"></i>
+                        <div>
+                            <h3 class="font-bold text-primary text-lg mb-2">Sod Installation</h3>
+                            <p class="text-gray-600">Transform bare or damaged areas with fresh, high-quality sod.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-background p-6 rounded-lg border-l-4 border-accent">
+                    <div class="flex items-start mb-4">
+                        <i class="fas fa-palette text-accent text-2xl mr-4 mt-1"></i>
+                        <div>
+                            <h3 class="font-bold text-primary text-lg mb-2">Landscaping Design</h3>
+                            <p class="text-gray-600">Custom landscape design and installation for maximum curb appeal.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-background p-6 rounded-lg border-l-4 border-accent">
+                    <div class="flex items-start mb-4">
+                        <i class="fas fa-broom text-accent text-2xl mr-4 mt-1"></i>
+                        <div>
+                            <h3 class="font-bold text-primary text-lg mb-2">Seasonal Cleanups</h3>
+                            <p class="text-gray-600">Spring and fall cleanup services to prepare your yard for every season.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-16 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-primary mb-4">
+                    Our Work Speaks for Itself
+                </h2>
+                <p class="text-xl text-gray-600">
+                    See the transformation we bring to San Bernardino properties
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="photos/photo-2.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'"
+                         alt="Professional lawn mowing service" 
+                         class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="photos/photo-3.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'"
+                         alt="Landscape design and installation" 
+                         class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="photos/photo-4.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'"
+                         alt="Tree and shrub trimming service" 
+                         class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg lg:col-span-2">
+                    <img src="photos/photo-5.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'"
+                         alt="Sprinkler installation and repair" 
+                         class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300">
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="photos/photo-6.jpg" 
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80'"
+                         alt="Seasonal cleanup and maintenance" 
+                         class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-primary mb-4">
+                    What San Bernardino Homeowners Say
+                </h2>
+                <div class="flex items-center justify-center mb-6">
+                    <div class="flex text-yellow-400 text-xl mr-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="text-gray-600 text-lg">4.2 ★ from 115 Google reviews</span>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-background p-8 rounded-lg">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 italic">
+                        "Correa's has been taking care of our Highland Avenue property for over a year now. Their weekly mowing service keeps our lawn looking perfect, and they even fixed our broken sprinkler heads without us asking. Great communication and fair pricing."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="bg-accent text-white w-10 h-10 rounded-full flex items-center justify-center font-bold mr-4">
+                            M
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-primary">Maria Rodriguez</h4>
+                            <p class="text-gray-600 text-sm">San Bernardino Homeowner</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-background p-8 rounded-lg">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 italic">
+                        "Finally found a lawn service that shows up when they say they will! They completely transformed our backyard with new sod and trimmed all our overgrown trees. The Arrowhead area has never looked better."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="bg-accent text-white w-10 h-10 rounded-full flex items-center justify-center font-bold mr-4">
+                            J
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-primary">James Wilson</h4>
+                            <p class="text-gray-600 text-sm">Arrowhead Resident</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-background p-8 rounded-lg">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 italic">
+                        "Professional and reliable. They handle our bi-weekly lawn maintenance and seasonal cleanups. Always leave the property looking immaculate."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="bg-accent text-white w-10 h-10 rounded-full flex items-center justify-center font-bold mr-4">
+                            L
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-primary">Linda Chen</h4>
+                            <p class="text-gray-600 text-sm">Del Rosa Homeowner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="quote" class="py-16 bg-primary text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6">
+                Ready for the Best Lawn in Your Neighborhood?
+            </h2>
+            <p class="text-xl mb-8 opacity-90">
+                Join over 115 satisfied customers who trust Correa's Lawn Mower Services with their San Bernardino properties. Get your free quote today.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                <div class="bg-accent bg-opacity-20 p-6 rounded-lg">
+                    <div class="flex items-center text-lg font-semibold mb-2">
+                        <i class="fas fa-phone text-accent mr-3"></i>
+                        Call for Immediate Service
+                    </div>
+                    <a href="tel:909-883-8062" class="text-2xl font-bold text-accent hover:text-green-300 transition-colors">
+                        (909) 883-8062
+                    </a>
+                </div>
+                
+                <div class="text-white text-lg">or</div>
+                
+                <a href="https://www.google.com/maps/search/?api=1&query=Correa's%20Lawn%20Mower%20Services&query_place_id=ChIJKzXQtoNUw4ARYAI5BqzCfao" 
+                   class="bg-accent text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-600 transition-colors inline-flex items-center">
+                    <i class="fas fa-map-marker-alt mr-2"></i>
+                    Get a Free Lawn Quote
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 text-accent">Correa's Lawn Mower Services</h3>
+                    <p class="text-gray-300 mb-4">
+                        Professional lawn care and landscaping services for San Bernardino properties. Licensed, insured, and committed to excellence.
+                    </p>
+                    <div class="flex text-yellow-400 text-sm">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span class="text-gray-300 ml-2">4.2 ★ (115 reviews)</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-accent">Contact Information</h4>
+                    <div class="space-y-3 text-gray-300">
+                        <div class="flex items-center">
+                            <i class="fas fa-map-pin text-accent w-5 mr-3"></i>
+                            <span>1110 E Highland Ave<br>San Bernardino, CA 92404</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-accent w-5 mr-3"></i>
+                            <a href="tel:909-883-8062" class="hover:text-accent">(909) 883-8062</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-accent">Business Hours</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <div>Monday: 8 AM to 5 PM</div>
+                        <div>Tuesday: 8 AM to 5 PM</div>
+                        <div>Wednesday: 8 AM to 5 PM</div>
+                        <div>Thursday-Sunday: By Appointment</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 mt-8 text-center text-gray-400">
+                <p>&copy; 2024 Correa's Lawn Mower Services. All rights reserved. | San Bernardino, CA</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Add bottom padding for mobile sticky bar -->
+    <div class="h-20 md:hidden"></div>
+</body>
+</html>
