@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B & B Heating & Air Conditioning Inc - Stockton AC Repair & Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0C2340',
+                        accent: '#00B4D8',
+                        background: '#E8F4FD'
+                    },
+                    fontFamily: {
+                        'sans': ['Roboto', 'sans-serif'],
+                        'body': ['Open Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-body bg-white">
+    <!-- Navigation -->
+    <nav class="bg-primary shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-white font-bold text-xl">
+                    B & B Heating & Air
+                </div>
+                <div class="hidden md:flex items-center space-x-6">
+                    <span class="text-white font-medium">Stockton's AC Experts</span>
+                    <a href="tel:(209) 474-8100" class="text-accent font-bold text-lg hover:text-white transition">
+                        <i class="fas fa-phone"></i> (209) 474-8100
+                    </a>
+                </div>
+                <div class="md:hidden">
+                    <a href="tel:(209) 474-8100" class="text-accent font-bold">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen">
+        <div class="absolute inset-0">
+            <img src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/stockton/hvac/b-b-heating-air-conditioning-inc/photo-1.jpg" 
+                 alt="B & B Heating & Air Conditioning truck in Stockton" 
+                 class="w-full h-full object-cover"
+                 onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=1200&q=80'">
+            <div class="absolute inset-0 bg-primary bg-opacity-70"></div>
+        </div>
+        
+        <div class="relative h-full flex items-end">
+            <div class="max-w-7xl mx-auto px-4 pb-20 w-full">
+                <div class="max-w-2xl">
+                    <h1 class="text-5xl md:text-7xl font-bold text-white mb-4 leading-tight">
+                        Stockton AC Repair Done Right
+                    </h1>
+                    <p class="text-xl text-background mb-8 font-medium">
+                        When it's 105° outside, you need AC that works. We make that happen fast.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="tel:(209) 474-8100" 
+                           class="bg-accent text-primary px-8 py-4 rounded-lg font-bold text-lg hover:bg-white transition text-center">
+                            Schedule AC Service
+                        </a>
+                        <a href="#services" 
+                           class="border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-primary transition text-center">
+                            View Services
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="bg-background py-8">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-snowflake text-3xl text-accent mb-2"></i>
+                    <span class="font-semibold text-primary">NATE Certified Techs</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-bolt text-3xl text-accent mb-2"></i>
+                    <span class="font-semibold text-primary">Same-Day Service</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-certificate text-3xl text-accent mb-2"></i>
+                    <span class="font-semibold text-primary">All Brands Serviced</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-clock text-3xl text-accent mb-2"></i>
+                    <span class="font-semibold text-primary">24/7 Emergency</span>
+                </div>
+            </div>
+            
+            <!-- Rating -->
+            <div class="text-center mt-8">
+                <div class="text-3xl text-accent mb-2">
+                    ⭐⭐⭐⭐⭐ <span class="text-primary font-bold">4.8</span>
+                </div>
+                <p class="text-primary font-medium">64 Google Reviews from Satisfied Stockton Customers</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-primary mb-4">
+                    Complete HVAC Services for Stockton Homes
+                </h2>
+                <p class="text-xl text-gray-600">
+                    From emergency repairs to new installations, we handle every AC and heating need
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-background p-6 rounded-lg border-l-4 border-accent">
+                    <h3 class="text-xl font-bold text-primary mb-3">AC Repair & Diagnostics</h3>
+                    <p class="text-gray-700">Fast diagnosis and repair of AC units. We fix what's broken, not what's working.</p>
+                </div>
+                
+                <div class="bg-background p-6 rounded-lg border-l-4 border-accent">
+                    <h3 class="text-xl font-bold text-primary mb-3">AC Installation & Replacement</h3>
+                    <p class="text-gray-700">New system installations with proper sizing for maximum efficiency in Stockton's climate.</p>
+                </div>
+                
+                <div class="bg-background p-6 rounded-lg border-l-4 border-accent">
+                    <h3 class="text-xl font-bold text-primary mb-3">Heating System Repair</h3>
+                    <p class="text-gray-700">Keep warm during Stockton's cooler months with reliable heating system repairs.</p>
+                </div>
+                
+                <div class="bg-background p-6 rounded-lg border-l-4 border-accent">
+                    <h3 class="text-xl font-bold text-primary mb-3">Furnace Tune-Up & Maintenance</h3>
+                    <p class="text-gray-700">Annual maintenance to prevent breakdowns and extend equipment life.</p>
+                </div>
+                
+                <div class="bg-background p-6 rounded-lg border-l-4 border-accent">
+                    <h3 class="text-xl font-bold text-primary mb-3">Duct Cleaning & Sealing</h3>
+                    <p class="text-gray-700">Improve air quality and system efficiency with professional duct services.</p>
+                </div>
+                
+                <div class="bg-background p-6 rounded-lg border-l-4 border-accent">
+                    <h3 class="text-xl font-bold text-primary mb-3">Thermostat Installation</h3>
+                    <p class="text-gray-700">Upgrade to smart thermostats for better comfort and energy savings.</p>
+                </div>
+                
+                <div class="bg-background p-6 rounded-lg border-l-4 border-accent">
+                    <h3 class="text-xl font-bold text-primary mb-3">Indoor Air Quality Testing</h3>
+                    <p class="text-gray-700">Ensure healthy air with professional testing and filtration solutions.</p>
+                </div>
+                
+                <div class="bg-background p-6 rounded-lg border-l-4 border-accent">
+                    <h3 class="text-xl font-bold text-primary mb-3">Preventive Maintenance Plans</h3>
+                    <p class="text-gray-700">Regular service plans to prevent costly breakdowns and maintain warranties.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="py-16 bg-background">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-primary text-center mb-12">
+                See Our Work in Action
+            </h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <img src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/stockton/hvac/b-b-heating-air-conditioning-inc/photo-2.jpg" 
+                     alt="HVAC equipment installation" 
+                     class="w-full h-48 object-cover rounded-lg"
+                     onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=1200&q=80'">
+                
+                <img src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/stockton/hvac/b-b-heating-air-conditioning-inc/photo-3.jpg" 
+                     alt="AC unit maintenance" 
+                     class="w-full h-48 object-cover rounded-lg"
+                     onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=1200&q=80'">
+                
+                <img src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/stockton/hvac/b-b-heating-air-conditioning-inc/photo-4.jpg" 
+                     alt="Professional HVAC technician at work" 
+                     class="w-full h-48 object-cover rounded-lg"
+                     onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=1200&q=80'">
+                
+                <img src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/stockton/hvac/b-b-heating-air-conditioning-inc/photo-5.jpg" 
+                     alt="Modern AC system installation" 
+                     class="w-full h-48 object-cover rounded-lg"
+                     onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=1200&q=80'">
+                
+                <img src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/stockton/hvac/b-b-heating-air-conditioning-inc/photo-6.jpg" 
+                     alt="HVAC repair service" 
+                     class="w-full h-48 object-cover rounded-lg"
+                     onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=1200&q=80'">
+                
+                <img src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/stockton/hvac/b-b-heating-air-conditioning-inc/photo-1.jpg" 
+                     alt="B & B service van" 
+                     class="w-full h-48 object-cover rounded-lg"
+                     onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=1200&q=80'">
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-primary text-center mb-12">
+                What Stockton Homeowners Say
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-background p-6 rounded-lg">
+                    <div class="text-accent text-xl mb-3">⭐⭐⭐⭐⭐</div>
+                    <p class="text-gray-700 mb-4">
+                        "Our AC went out during the July heat wave and B & B had a tech at our Lincoln Village home within 2 hours. Fixed the compressor same day and we've had no issues since. Great service!"
+                    </p>
+                    <p class="font-semibold text-primary">- Maria R.</p>
+                </div>
+                
+                <div class="bg-background p-6 rounded-lg">
+                    <div class="text-accent text-xl mb-3">⭐⭐⭐⭐⭐</div>
+                    <p class="text-gray-700 mb-4">
+                        "Professional installation of our new Carrier system. The crew was clean, on time, and explained everything. Price was fair for Stockton area. Highly recommend B & B Heating & Air Conditioning Inc."
+                    </p>
+                    <p class="font-semibold text-primary">- David Chen</p>
+                </div>
+                
+                <div class="bg-background p-6 rounded-lg">
+                    <div class="text-accent text-xl mb-3">⭐⭐⭐⭐⭐</div>
+                    <p class="text-gray-700 mb-4">
+                        "Called for furnace maintenance before winter. Technician found a small gas leak and fixed it immediately. Could have been dangerous if we waited. These guys know their stuff."
+                    </p>
+                    <p class="font-semibold text-primary">- Jennifer M.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-white mb-6">
+                Ready for Fast, Reliable AC Service?
+            </h2>
+            <p class="text-xl text-background mb-8">
+                Don't sweat it out. B & B Heating & Air Conditioning Inc is standing by to restore your comfort.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="tel:(209) 474-8100" 
+                   class="bg-accent text-primary px-8 py-4 rounded-lg font-bold text-xl hover:bg-white transition">
+                    <i class="fas fa-phone mr-2"></i> Call (209) 474-8100
+                </a>
+                <a href="https://www.google.com/maps/search/?api=1&query=B%20%26%20B%20Heating%20%26%20Air%20Conditioning%20Inc&query_place_id=ChIJsyemfFJtkIARddxnNC-6uDE" 
+                   class="border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-xl hover:bg-white hover:text-primary transition">
+                    <i class="fas fa-map-marker-alt mr-2"></i> Get Directions
+                </a>
+            </div>
+            
+            <div class="mt-8 text-background">
+                <p class="text-lg">
+                    <i class="fas fa-clock mr-2"></i>
+                    Mon-Wed: 8 AM to 4:30 PM | Emergency Service Available
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-accent mb-4">B & B Heating & Air Conditioning Inc</h3>
+                    <p class="text-gray-300 mb-4">
+                        Stockton's trusted HVAC professionals since day one. Fast service, fair prices, lasting results.
+                    </p>
+                    <div class="text-accent text-2xl">
+                        ⭐⭐⭐⭐⭐ <span class="text-white font-bold">4.8</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact Information</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <p><i class="fas fa-map-marker-alt mr-2 text-accent"></i> 2244 Weber Ave, Stockton, CA 95205</p>
+                        <p><i class="fas fa-phone mr-2 text-accent"></i> (209) 474-8100</p>
+                        <p><i class="fas fa-clock mr-2 text-accent"></i> Mon-Wed: 8 AM - 4:30 PM</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Service Areas</h4>
+                    <div class="text-gray-300">
+                        <p>Stockton • Lincoln Village • Brookside • Spanos Park</p>
+                        <p>Morada • Country Club • Valley Oak • Weston Ranch</p>
+                        <p class="mt-4 text-accent font-medium">24/7 Emergency Service Available</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 B & B Heating & Air Conditioning Inc. Licensed, Bonded, and Insured in Stockton, CA</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky CTA Bar -->
+    <div class="md:hidden fixed bottom-0 left-0 right-0 bg-primary shadow-lg z-50">
+        <div class="flex">
+            <a href="tel:(209) 474-8100" 
+               class="flex-1 bg-accent text-primary font-bold py-4 text-center text-lg">
+                <i class="fas fa-phone mr-2"></i> Call (209) 474-8100
+            </a>
+            <a href="#services" 
+               class="flex-1 bg-primary text-white font-bold py-4 text-center text-lg border-l border-gray-600">
+                Get a Quote
+            </a>
+        </div>
+    </div>
+
+    <!-- Add padding bottom for mobile sticky bar -->
+    <div class="md:hidden h-16"></div>
+</body>
+</html>
