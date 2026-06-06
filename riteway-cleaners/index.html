@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riteway Cleaners - Professional House Cleaning Stockton CA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0D3B6E',
+                        accent: '#48C9B0',
+                        background: '#E8F8F5'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <i class="fas fa-home text-accent text-2xl mr-3"></i>
+                    <span class="text-xl font-bold text-primary">Riteway Cleaners</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="#services" class="text-primary hover:text-accent transition">Services</a>
+                    <a href="#reviews" class="text-primary hover:text-accent transition">Reviews</a>
+                    <a href="tel:(209)464-4282" class="bg-accent text-white px-4 py-2 rounded-lg hover:bg-opacity-90 transition">
+                        <i class="fas fa-phone mr-2"></i>(209) 464-4282
+                    </a>
+                </div>
+                <div class="md:hidden">
+                    <a href="tel:(209)464-4282" class="text-primary">
+                        <i class="fas fa-phone text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid lg:grid-cols-2 min-h-[600px]">
+                <!-- Hero Image -->
+                <div class="order-2 lg:order-1">
+                    <img src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/stockton/cleaning/riteway-cleaners/photo-1.jpg" 
+                         alt="Professional house cleaning service in Stockton"
+                         class="w-full h-full object-cover"
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'">
+                </div>
+                
+                <!-- Hero Content -->
+                <div class="order-1 lg:order-2 flex flex-col justify-center px-6 py-12 lg:px-12">
+                    <div class="max-w-lg">
+                        <h1 class="text-4xl lg:text-5xl font-bold text-primary mb-4">
+                            Stockton's Trusted House Cleaners
+                        </h1>
+                        <p class="text-xl text-gray-600 mb-6">
+                            A spotless home without lifting a finger. Book once, love it forever.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                            <a href="tel:(209)464-4282" class="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-center hover:bg-opacity-90 transition">
+                                Book a Cleaning
+                            </a>
+                            <a href="#services" class="border-2 border-primary text-primary px-8 py-4 rounded-lg font-semibold text-center hover:bg-primary hover:text-white transition">
+                                View Services
+                            </a>
+                        </div>
+                        <div class="flex items-center text-sm text-gray-600">
+                            <div class="flex text-yellow-400 mr-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="font-medium">4.2 stars</span>
+                            <span class="mx-2">•</span>
+                            <span>65 Google reviews</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="bg-primary py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="text-white">
+                    <i class="fas fa-shield-halved text-3xl text-accent mb-2"></i>
+                    <p class="font-semibold">Bonded & Insured</p>
+                </div>
+                <div class="text-white">
+                    <i class="fas fa-clock text-3xl text-accent mb-2"></i>
+                    <p class="font-semibold">Same-Day Booking</p>
+                </div>
+                <div class="text-white">
+                    <i class="fas fa-star text-3xl text-accent mb-2"></i>
+                    <p class="font-semibold">5-Star Rated</p>
+                </div>
+                <div class="text-white">
+                    <i class="fas fa-leaf text-3xl text-accent mb-2"></i>
+                    <p class="font-semibold">Eco-Friendly Products</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">Complete Cleaning Solutions for Stockton Homes</h2>
+                <p class="text-xl text-gray-600">From routine maintenance to deep cleans, we handle it all</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-background p-6 rounded-lg">
+                    <i class="fas fa-home text-accent text-2xl mb-4"></i>
+                    <h3 class="font-semibold text-primary mb-2">Standard Home Cleaning</h3>
+                    <p class="text-gray-600 text-sm">Regular maintenance cleaning for busy Stockton families</p>
+                </div>
+                
+                <div class="bg-background p-6 rounded-lg">
+                    <i class="fas fa-scrubber text-accent text-2xl mb-4"></i>
+                    <h3 class="font-semibold text-primary mb-2">Deep Cleaning</h3>
+                    <p class="text-gray-600 text-sm">Thorough top-to-bottom cleaning for special occasions</p>
+                </div>
+                
+                <div class="bg-background p-6 rounded-lg">
+                    <i class="fas fa-truck text-accent text-2xl mb-4"></i>
+                    <h3 class="font-semibold text-primary mb-2">Move-In / Move-Out Cleaning</h3>
+                    <p class="text-gray-600 text-sm">Fresh start cleaning for your new Stockton home</p>
+                </div>
+                
+                <div class="bg-background p-6 rounded-lg">
+                    <i class="fas fa-calendar-check text-accent text-2xl mb-4"></i>
+                    <h3 class="font-semibold text-primary mb-2">Recurring Weekly or Bi-Weekly Service</h3>
+                    <p class="text-gray-600 text-sm">Consistent cleaning schedule that fits your lifestyle</p>
+                </div>
+                
+                <div class="bg-background p-6 rounded-lg">
+                    <i class="fas fa-kitchen-set text-accent text-2xl mb-4"></i>
+                    <h3 class="font-semibold text-primary mb-2">Kitchen & Bathroom Detail</h3>
+                    <p class="text-gray-600 text-sm">Specialized cleaning for your most-used spaces</p>
+                </div>
+                
+                <div class="bg-background p-6 rounded-lg">
+                    <i class="fas fa-window-restore text-accent text-2xl mb-4"></i>
+                    <h3 class="font-semibold text-primary mb-2">Window & Blind Cleaning</h3>
+                    <p class="text-gray-600 text-sm">Crystal clear windows and spotless blinds</p>
+                </div>
+                
+                <div class="bg-background p-6 rounded-lg">
+                    <i class="fas fa-hard-hat text-accent text-2xl mb-4"></i>
+                    <h3 class="font-semibold text-primary mb-2">Post-Construction Cleanup</h3>
+                    <p class="text-gray-600 text-sm">Professional cleanup after renovations or construction</p>
+                </div>
+                
+                <div class="bg-background p-6 rounded-lg">
+                    <i class="fas fa-building text-accent text-2xl mb-4"></i>
+                    <h3 class="font-semibold text-primary mb-2">Office & Commercial Cleaning</h3>
+                    <p class="text-gray-600 text-sm">Professional cleaning for Stockton businesses</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="py-16 bg-background">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">See the Riteway Cleaners Difference</h2>
+                <p class="text-xl text-gray-600">Before and after results that speak for themselves</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <img src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/stockton/cleaning/riteway-cleaners/photo-2.jpg" 
+                     alt="Clean kitchen after Riteway Cleaners service"
+                     class="w-full h-64 object-cover rounded-lg shadow-lg"
+                     onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'">
+                
+                <img src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/stockton/cleaning/riteway-cleaners/photo-3.jpg" 
+                     alt="Spotless bathroom cleaning results"
+                     class="w-full h-64 object-cover rounded-lg shadow-lg"
+                     onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'">
+                
+                <img src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/stockton/cleaning/riteway-cleaners/photo-4.jpg" 
+                     alt="Professional house cleaning team at work"
+                     class="w-full h-64 object-cover rounded-lg shadow-lg"
+                     onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'">
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">What Stockton Homeowners Say</h2>
+                <div class="flex justify-center items-center mb-4">
+                    <div class="flex text-yellow-400 text-xl mr-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="text-lg font-semibold text-gray-700">4.2 stars from 65 Google reviews</span>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-background p-6 rounded-lg">
+                    <div class="flex text-yellow-400 mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Riteway Cleaners did an amazing job on our Pacific Avenue home! They deep cleaned our kitchen and bathrooms before our family visit and everything looked brand new. The team was professional and used eco-friendly products which was important to us."</p>
+                    <div class="text-sm">
+                        <p class="font-semibold text-primary">Maria Rodriguez</p>
+                        <p class="text-gray-600">Stockton Resident</p>
+                    </div>
+                </div>
+                
+                <div class="bg-background p-6 rounded-lg">
+                    <div class="flex text-yellow-400 mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Best cleaning service in Stockton! I've been using them bi-weekly for over a year. They're always on time, thorough, and my house sparkles every time."</p>
+                    <div class="text-sm">
+                        <p class="font-semibold text-primary">Jennifer Chen</p>
+                        <p class="text-gray-600">Lincoln Village</p>
+                    </div>
+                </div>
+                
+                <div class="bg-background p-6 rounded-lg">
+                    <div class="flex text-yellow-400 mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Called Riteway Cleaners for a post-construction cleanup after our bathroom remodel. They got all the dust and debris out and made everything shine. Highly recommend for any Stockton homeowner needing reliable cleaning services!"</p>
+                    <div class="text-sm">
+                        <p class="font-semibold text-primary">David Thompson</p>
+                        <p class="text-gray-600">Brookside Neighborhood</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Ready for a Spotless Home?</h2>
+            <p class="text-xl mb-8">Call Riteway Cleaners today and experience the difference professional cleaning makes</p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-6 mb-8">
+                <a href="tel:(209)464-4282" class="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition">
+                    <i class="fas fa-phone mr-2"></i>Call (209) 464-4282
+                </a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Riteway%20Cleaners&query_place_id=ChIJFYttOaMSkIARusFeS_koaYc" 
+                   target="_blank" 
+                   class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-primary transition">
+                    <i class="fas fa-map-marker-alt mr-2"></i>Get Directions
+                </a>
+            </div>
+            
+            <div class="text-sm opacity-90">
+                <p>Same-day booking available • Bonded & insured • Satisfaction guaranteed</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-home text-accent text-2xl mr-3"></i>
+                        <span class="text-xl font-bold">Riteway Cleaners</span>
+                    </div>
+                    <p class="text-gray-400">Professional house cleaning services for Stockton families and businesses.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <div class="space-y-2 text-gray-400">
+                        <p><i class="fas fa-phone mr-2"></i>(209) 464-4282</p>
+                        <p><i class="fas fa-map-marker-alt mr-2"></i>700 E Market St, Stockton, CA 95202</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Business Hours</h3>
+                    <div class="space-y-2 text-gray-400 text-sm">
+                        <p>Monday: 8 AM to 5 PM</p>
+                        <p>Tuesday: 8 AM to 5 PM</p>
+                        <p>Wednesday: 8 AM to 5 PM</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Riteway Cleaners. Serving Stockton, CA with professional cleaning services.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky Bottom Bar -->
+    <div class="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-4 z-50">
+        <div class="flex gap-3">
+            <a href="tel:(209)464-4282" class="flex-1 bg-primary text-white text-center py-3 rounded-lg font-semibold">
+                <i class="fas fa-phone mr-2"></i>Call (209) 464-4282
+            </a>
+            <a href="tel:(209)464-4282" class="flex-1 bg-accent text-white text-center py-3 rounded-lg font-semibold">
+                Get a Quote
+            </a>
+        </div>
+    </div>
+
+    <!-- Add padding to bottom of body for mobile sticky bar -->
+    <div class="md:hidden h-20"></div>
+</body>
+</html>
