@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Sierra Verde Cleaners | Professional House Cleaning Service in Riverside, CA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0D3B6E',
+                        accent: '#48C9B0',
+                        background: '#E8F8F5'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-display { font-family: 'Poppins', sans-serif; }
+    </style>
+</head>
+<body class="bg-background">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-xl font-bold font-display text-primary">La Sierra Verde Cleaners</h1>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-8">
+                        <a href="#services" class="text-gray-700 hover:text-primary font-medium">Services</a>
+                        <a href="#contact" class="text-gray-700 hover:text-primary font-medium">Contact</a>
+                        <a href="tel:(951) 354-2030" class="text-primary hover:text-primary/80 font-semibold flex items-center">
+                            <i class="fas fa-phone mr-2"></i>
+                            (951) 354-2030
+                        </a>
+                        <button class="bg-accent text-white px-6 py-2 rounded-lg font-semibold hover:bg-accent/90 transition-colors">
+                            Book a Cleaning
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-0 min-h-[600px]">
+                <!-- Image -->
+                <div class="order-1 md:order-1">
+                    <img 
+                        src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/inland-empire/cleaning/la-sierra-verde-cleaners/photo-1.jpg"
+                        alt="Professional house cleaning service in Riverside"
+                        class="w-full h-full object-cover"
+                        onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'"
+                    >
+                </div>
+                <!-- Content -->
+                <div class="order-2 md:order-2 flex items-center px-6 sm:px-12 lg:px-16 py-12 md:py-16">
+                    <div class="w-full max-w-lg">
+                        <div class="flex items-center text-sm text-accent font-semibold mb-4">
+                            <i class="fas fa-star text-yellow-400 mr-1"></i>
+                            <span>4.4 Rating • 52 Reviews</span>
+                        </div>
+                        <h1 class="text-4xl md:text-5xl font-bold font-display text-primary leading-tight mb-6">
+                            Riverside's Trusted House Cleaners
+                        </h1>
+                        <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                            A spotless home without lifting a finger. Book once, love it forever.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <button class="bg-accent text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-accent/90 transition-colors">
+                                Book a Cleaning
+                            </button>
+                            <a href="tel:(951) 354-2030" class="border-2 border-primary text-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary hover:text-white transition-colors text-center">
+                                Call (951) 354-2030
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="bg-primary text-white py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="flex items-center justify-center text-center">
+                    <i class="fas fa-shield-halved text-2xl mr-3 text-accent"></i>
+                    <span class="font-semibold">Bonded & Insured</span>
+                </div>
+                <div class="flex items-center justify-center text-center">
+                    <i class="fas fa-clock text-2xl mr-3 text-accent"></i>
+                    <span class="font-semibold">Same-Day Booking</span>
+                </div>
+                <div class="flex items-center justify-center text-center">
+                    <i class="fas fa-star text-2xl mr-3 text-accent"></i>
+                    <span class="font-semibold">5-Star Rated</span>
+                </div>
+                <div class="flex items-center justify-center text-center">
+                    <i class="fas fa-leaf text-2xl mr-3 text-accent"></i>
+                    <span class="font-semibold">Eco-Friendly Products</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold font-display text-primary mb-4">
+                    Complete Cleaning Solutions for Riverside Homes
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    From weekly maintenance to deep cleaning projects, La Sierra Verde Cleaners delivers professional results every time.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                <div class="bg-background rounded-xl p-6 text-center hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-home text-2xl text-accent"></i>
+                    </div>
+                    <h3 class="font-semibold text-primary mb-2">Standard Home Cleaning</h3>
+                    <p class="text-gray-600 text-sm">Regular maintenance cleaning for a consistently spotless home</p>
+                </div>
+
+                <div class="bg-background rounded-xl p-6 text-center hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-screwdriver-wrench text-2xl text-accent"></i>
+                    </div>
+                    <h3 class="font-semibold text-primary mb-2">Deep Cleaning</h3>
+                    <p class="text-gray-600 text-sm">Thorough top-to-bottom cleaning for those hard-to-reach areas</p>
+                </div>
+
+                <div class="bg-background rounded-xl p-6 text-center hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-truck-moving text-2xl text-accent"></i>
+                    </div>
+                    <h3 class="font-semibold text-primary mb-2">Move-In / Move-Out Cleaning</h3>
+                    <p class="text-gray-600 text-sm">Complete cleaning for relocations and property transitions</p>
+                </div>
+
+                <div class="bg-background rounded-xl p-6 text-center hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-calendar-check text-2xl text-accent"></i>
+                    </div>
+                    <h3 class="font-semibold text-primary mb-2">Recurring Weekly or Bi-Weekly Service</h3>
+                    <p class="text-gray-600 text-sm">Scheduled cleaning services to keep your home pristine</p>
+                </div>
+
+                <div class="bg-background rounded-xl p-6 text-center hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-kitchen-set text-2xl text-accent"></i>
+                    </div>
+                    <h3 class="font-semibold text-primary mb-2">Kitchen & Bathroom Detail</h3>
+                    <p class="text-gray-600 text-sm">Specialized deep cleaning for your most-used spaces</p>
+                </div>
+
+                <div class="bg-background rounded-xl p-6 text-center hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-eye text-2xl text-accent"></i>
+                    </div>
+                    <h3 class="font-semibold text-primary mb-2">Window & Blind Cleaning</h3>
+                    <p class="text-gray-600 text-sm">Crystal-clear windows and spotless blinds inside and out</p>
+                </div>
+
+                <div class="bg-background rounded-xl p-6 text-center hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-hammer text-2xl text-accent"></i>
+                    </div>
+                    <h3 class="font-semibold text-primary mb-2">Post-Construction Cleanup</h3>
+                    <p class="text-gray-600 text-sm">Remove dust, debris, and construction mess completely</p>
+                </div>
+
+                <div class="bg-background rounded-xl p-6 text-center hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-building text-2xl text-accent"></i>
+                    </div>
+                    <h3 class="font-semibold text-primary mb-2">Office & Commercial Cleaning</h3>
+                    <p class="text-gray-600 text-sm">Professional workspace cleaning for businesses</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="py-16 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold font-display text-primary mb-4">
+                    See Our Work in Action
+                </h2>
+                <p class="text-xl text-gray-600">Professional cleaning results that speak for themselves</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <img 
+                    src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/inland-empire/cleaning/la-sierra-verde-cleaners/photo-2.jpg"
+                    alt="Professional kitchen cleaning"
+                    class="w-full h-64 object-cover rounded-lg shadow-md"
+                    onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'"
+                >
+                <img 
+                    src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/inland-empire/cleaning/la-sierra-verde-cleaners/photo-3.jpg"
+                    alt="Sparkling clean bathroom"
+                    class="w-full h-64 object-cover rounded-lg shadow-md"
+                    onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'"
+                >
+                <img 
+                    src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/inland-empire/cleaning/la-sierra-verde-cleaners/photo-4.jpg"
+                    alt="Pristine living room"
+                    class="w-full h-64 object-cover rounded-lg shadow-md"
+                    onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'"
+                >
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <div class="flex items-center justify-center mb-4">
+                    <div class="flex text-yellow-400 text-2xl mr-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="text-xl font-semibold text-primary">4.4 out of 5 stars (52 reviews)</span>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold font-display text-primary mb-4">
+                    What Riverside Residents Say
+                </h2>
+                <p class="text-xl text-gray-600">Real reviews from satisfied customers across the Inland Empire</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-background rounded-xl p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400 mr-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="font-semibold text-primary">Sarah M.</span>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        "La Sierra Verde Cleaners did an amazing deep clean of our Canyon Crest home before our holiday party. They got every corner of our kitchen and bathrooms spotless, and even detailed our ceiling fans. The team was professional and thorough - I couldn't be happier!"
+                    </p>
+                </div>
+
+                <div class="bg-background rounded-xl p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400 mr-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="font-semibold text-primary">Mike Rodriguez</span>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        "Been using them for bi-weekly cleaning for 6 months now. Always reliable, always thorough. They use eco-friendly products which is important to our family. Highly recommend to anyone in Riverside looking for consistent, quality cleaning."
+                    </p>
+                </div>
+
+                <div class="bg-background rounded-xl p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400 mr-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="font-semibold text-primary">Jennifer K.</span>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        "Fantastic move-out cleaning service! They made our old place in Wood Streets look brand new for the final inspection. Got our full security deposit back thanks to their attention to detail. Will definitely use them again when we move."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold font-display mb-6">
+                        Ready for a Spotless Home?
+                    </h2>
+                    <p class="text-xl mb-8 text-gray-200">
+                        Schedule your cleaning service today and discover why Riverside residents trust La Sierra Verde Cleaners with their homes.
+                    </p>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-accent mr-4 text-xl"></i>
+                            <a href="tel:(951) 354-2030" class="text-xl font-semibold hover:text-accent transition-colors">(951) 354-2030</a>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-accent mr-4 text-xl"></i>
+                            <span class="text-lg">3380 La Sierra Ave STE 103, Riverside, CA 92503</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-clock text-accent mr-4 text-xl"></i>
+                            <span class="text-lg">Monday - Wednesday: 7 AM to 7 PM</span>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="bg-accent text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-accent/90 transition-colors">
+                            Book a Cleaning
+                        </button>
+                        <a href="https://www.google.com/maps/search/?api=1&query=La%20Sierra%20Verde%20Cleaners&query_place_id=ChIJR3AcQVu33IARXmmyLQ_qo9I" target="_blank" class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-primary transition-colors text-center">
+                            Get Directions
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <img 
+                        src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/inland-empire/cleaning/la-sierra-verde-cleaners/photo-5.jpg"
+                        alt="Professional cleaning team"
+                        class="w-full rounded-xl shadow-2xl"
+                        onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'"
+                    >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h3 class="text-xl font-bold font-display mb-4">La Sierra Verde Cleaners</h3>
+                <div class="flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-6 text-gray-300">
+                    <span>3380 La Sierra Ave STE 103, Riverside, CA 92503</span>
+                    <span>•</span>
+                    <span>(951) 354-2030</span>
+                    <span>•</span>
+                    <span>Mon-Wed: 7 AM - 7 PM</span>
+                    <span>•</span>
+                    <span>Serving Riverside</span>
+                </div>
+                <p class="text-gray-400 mt-4">© 2024 La Sierra Verde Cleaners. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky CTA Bar -->
+    <div class="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-4 shadow-lg z-50">
+        <div class="flex space-x-3">
+            <a href="tel:(951) 354-2030" class="flex-1 bg-primary text-white py-3 px-4 rounded-lg text-center font-semibold">
+                Call (951) 354-2030
+            </a>
+            <button class="flex-1 bg-accent text-white py-3 px-4 rounded-lg text-center font-semibold">
+                Get a Quote
+            </button>
+        </div>
+    </div>
+
+    <!-- Add bottom padding to prevent overlap with mobile sticky bar -->
+    <div class="md:hidden h-20"></div>
+</body>
+</html>
