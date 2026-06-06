@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summit Cleaners | Professional House Cleaning in Scottsdale, AZ</title>
+    <meta name="description" content="Summit Cleaners provides professional house cleaning and maid services in Scottsdale. Same-day booking, eco-friendly products, bonded & insured. Call (480) 595-5540">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0D3B6E',
+                        accent: '#48C9B0',
+                        background: '#E8F8F5'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-gray-900 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-heading font-bold text-primary">Summit Cleaners</h1>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#services" class="text-gray-700 hover:text-primary transition-colors">Services</a>
+                    <a href="#reviews" class="text-gray-700 hover:text-primary transition-colors">Reviews</a>
+                    <a href="tel:4805955540" class="text-primary font-semibold hover:text-accent transition-colors">
+                        <i class="fas fa-phone mr-2"></i>(480) 595-5540
+                    </a>
+                    <a href="tel:4805955540" class="bg-accent hover:bg-accent/90 text-white px-6 py-2 rounded-lg font-medium transition-colors">
+                        Book a Cleaning
+                    </a>
+                </div>
+                <div class="md:hidden">
+                    <a href="tel:4805955540" class="text-primary text-xl">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section - Split Layout -->
+    <section class="bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-0 min-h-[600px]">
+                <!-- Text Content -->
+                <div class="flex items-center px-4 sm:px-6 lg:px-12 py-12 lg:py-24">
+                    <div class="max-w-xl">
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary leading-tight mb-6">
+                            Scottsdale's Trusted Home Cleaners
+                        </h1>
+                        <p class="text-xl text-gray-600 mb-4">
+                            A spotless home without lifting a finger. Book once, love it forever.
+                        </p>
+                        <p class="text-lg text-gray-600 mb-8">
+                            Professional house cleaning and maid services with same-day booking available. Bonded, insured, and eco-friendly.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                            <a href="tel:4805955540" class="bg-accent hover:bg-accent/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors text-center">
+                                Book a Cleaning
+                            </a>
+                            <a href="tel:4805955540" class="border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all text-center">
+                                Call (480) 595-5540
+                            </a>
+                        </div>
+                        <div class="flex items-center space-x-6 text-sm text-gray-600">
+                            <div class="flex items-center">
+                                <div class="flex text-yellow-400 mr-2">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="font-medium">4.2 (15 reviews)</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-clock text-accent mr-2"></i>
+                                <span>Same-day booking</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hero Image -->
+                <div class="lg:h-full">
+                    <img src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/phoenix/cleaning/summit-cleaners/photo-1.jpg" 
+                         alt="Summit Cleaners professional cleaning service in Scottsdale"
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'"
+                         class="w-full h-64 lg:h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="bg-primary py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center text-white">
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-shield-halved text-3xl text-accent mb-2"></i>
+                    <span class="font-medium">Bonded & Insured</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-clock text-3xl text-accent mb-2"></i>
+                    <span class="font-medium">Same-Day Booking</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-star text-3xl text-accent mb-2"></i>
+                    <span class="font-medium">5-Star Rated</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-leaf text-3xl text-accent mb-2"></i>
+                    <span class="font-medium">Eco-Friendly Products</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
+                    Complete Cleaning Solutions for Scottsdale Homes
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    From weekly maintenance to deep cleaning projects, Summit Cleaners handles every detail with professional care.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-background p-6 rounded-lg border border-accent/20">
+                    <i class="fas fa-home text-2xl text-accent mb-4"></i>
+                    <h3 class="font-semibold text-primary mb-2">Standard Home Cleaning</h3>
+                    <p class="text-gray-600 text-sm">Regular maintenance cleaning for busy Scottsdale families</p>
+                </div>
+                <div class="bg-background p-6 rounded-lg border border-accent/20">
+                    <i class="fas fa-sparkles text-2xl text-accent mb-4"></i>
+                    <h3 class="font-semibold text-primary mb-2">Deep Cleaning</h3>
+                    <p class="text-gray-600 text-sm">Comprehensive top-to-bottom cleaning service</p>
+                </div>
+                <div class="bg-background p-6 rounded-lg border border-accent/20">
+                    <i class="fas fa-boxes-stacked text-2xl text-accent mb-4"></i>
+                    <h3 class="font-semibold text-primary mb-2">Move-In / Move-Out Cleaning</h3>
+                    <p class="text-gray-600 text-sm">Perfect for relocations and real estate transactions</p>
+                </div>
+                <div class="bg-background p-6 rounded-lg border border-accent/20">
+                    <i class="fas fa-calendar-days text-2xl text-accent mb-4"></i>
+                    <h3 class="font-semibold text-primary mb-2">Recurring Weekly or Bi-Weekly Service</h3>
+                    <p class="text-gray-600 text-sm">Consistent cleaning on your schedule</p>
+                </div>
+                <div class="bg-background p-6 rounded-lg border border-accent/20">
+                    <i class="fas fa-sink text-2xl text-accent mb-4"></i>
+                    <h3 class="font-semibold text-primary mb-2">Kitchen & Bathroom Detail</h3>
+                    <p class="text-gray-600 text-sm">Specialized cleaning for high-use areas</p>
+                </div>
+                <div class="bg-background p-6 rounded-lg border border-accent/20">
+                    <i class="fas fa-window-maximize text-2xl text-accent mb-4"></i>
+                    <h3 class="font-semibold text-primary mb-2">Window & Blind Cleaning</h3>
+                    <p class="text-gray-600 text-sm">Crystal clear views throughout your home</p>
+                </div>
+                <div class="bg-background p-6 rounded-lg border border-accent/20">
+                    <i class="fas fa-hard-hat text-2xl text-accent mb-4"></i>
+                    <h3 class="font-semibold text-primary mb-2">Post-Construction Cleanup</h3>
+                    <p class="text-gray-600 text-sm">Heavy-duty cleaning after renovations</p>
+                </div>
+                <div class="bg-background p-6 rounded-lg border border-accent/20">
+                    <i class="fas fa-building text-2xl text-accent mb-4"></i>
+                    <h3 class="font-semibold text-primary mb-2">Office & Commercial Cleaning</h3>
+                    <p class="text-gray-600 text-sm">Professional cleaning for business spaces</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-16 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
+                    Professional Results You Can See
+                </h2>
+                <p class="text-xl text-gray-600">Every cleaning is completed with meticulous attention to detail</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <img src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/phoenix/cleaning/summit-cleaners/photo-2.jpg" 
+                     alt="Professional house cleaning results"
+                     onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'"
+                     class="w-full h-64 object-cover rounded-lg shadow-md">
+                <img src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/phoenix/cleaning/summit-cleaners/photo-3.jpg" 
+                     alt="Summit Cleaners kitchen cleaning service"
+                     onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'"
+                     class="w-full h-64 object-cover rounded-lg shadow-md">
+                <img src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/phoenix/cleaning/summit-cleaners/photo-4.jpg" 
+                     alt="Bathroom deep cleaning service"
+                     onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'"
+                     class="w-full h-64 object-cover rounded-lg shadow-md">
+                <img src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/phoenix/cleaning/summit-cleaners/photo-5.jpg" 
+                     alt="Living room cleaning service"
+                     onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'"
+                     class="w-full h-64 object-cover rounded-lg shadow-md">
+                <img src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/phoenix/cleaning/summit-cleaners/photo-6.jpg" 
+                     alt="Professional maid service results"
+                     onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'"
+                     class="w-full h-64 object-cover rounded-lg shadow-md">
+                <img src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/phoenix/cleaning/summit-cleaners/photo-1.jpg" 
+                     alt="Summit Cleaners team at work"
+                     onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'"
+                     class="w-full h-64 object-cover rounded-lg shadow-md">
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <div class="flex justify-center items-center mb-4">
+                    <div class="flex text-yellow-400 text-2xl mr-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="text-2xl font-semibold text-primary">4.2 out of 5</span>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
+                    Loved by Scottsdale Homeowners
+                </h2>
+                <p class="text-xl text-gray-600">Read what our customers say about Summit Cleaners</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-background p-6 rounded-lg border border-accent/20">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        "Summit Cleaners did an amazing job on our North Scottsdale home! They deep cleaned our kitchen after a big renovation project and it looks brand new. The team was professional, punctual, and used eco-friendly products which was important to us. Will definitely book them again for our regular cleaning."
+                    </p>
+                    <div class="text-primary font-semibold">Sarah M.</div>
+                    <div class="text-sm text-gray-600">North Scottsdale</div>
+                </div>
+                
+                <div class="bg-background p-6 rounded-lg border border-accent/20">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        "Excellent service! I needed a last-minute cleaning before hosting family and they accommodated same-day booking. The house was spotless when I got home. Very reliable and reasonably priced."
+                    </p>
+                    <div class="text-primary font-semibold">Michael R.</div>
+                    <div class="text-sm text-gray-600">Scottsdale</div>
+                </div>
+                
+                <div class="bg-background p-6 rounded-lg border border-accent/20">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        "I've been using Summit Cleaners for bi-weekly service in Old Town Scottsdale for 6 months now. They're always thorough with the bathrooms and kitchen, and I love coming home to a clean house. The team is trustworthy and bonded which gives me peace of mind."
+                    </p>
+                    <div class="text-primary font-semibold">Jennifer L.</div>
+                    <div class="text-sm text-gray-600">Old Town Scottsdale</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-heading font-bold text-white mb-6">
+                Ready for a Spotless Home?
+            </h2>
+            <p class="text-xl text-white/90 mb-8">
+                Call Summit Cleaners today for same-day booking and experience the difference professional cleaning makes.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="tel:4805955540" class="bg-accent hover:bg-accent/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
+                    <i class="fas fa-phone mr-2"></i>Call (480) 595-5540
+                </a>
+                <a href="tel:4805955540" class="bg-white text-primary hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
+                    Book a Cleaning
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-2xl font-heading font-bold text-accent mb-4">Summit Cleaners</h3>
+                    <p class="text-gray-300 mb-4">Professional house cleaning and maid services in Scottsdale, Arizona.</p>
+                    <div class="flex items-center mb-2">
+                        <i class="fas fa-map-marker-alt text-accent mr-3"></i>
+                        <span class="text-gray-300">32619 N Scottsdale Rd, Scottsdale, AZ 85266</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-phone text-accent mr-3"></i>
+                        <a href="tel:4805955540" class="text-gray-300 hover:text-accent transition-colors">(480) 595-5540</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Business Hours</h4>
+                    <div class="text-gray-300 space-y-1">
+                        <div>Monday: 8 AM to 6 PM</div>
+                        <div>Tuesday: 8 AM to 6 PM</div>
+                        <div>Wednesday: 8 AM to 6 PM</div>
+                        <div>Thursday: 8 AM to 6 PM</div>
+                        <div>Friday: 8 AM to 6 PM</div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Service Areas</h4>
+                    <div class="text-gray-300">
+                        <p class="mb-2">Serving Scottsdale and surrounding areas</p>
+                        <p class="text-sm">Licensed, bonded, and insured</p>
+                    </div>
+                    <div class="mt-6">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Summit%20Cleaners&query_place_id=ChIJdRVeGw15K4cR9qsgQZSK1v0" 
+                           target="_blank" rel="noopener"
+                           class="inline-flex items-center text-accent hover:text-accent/80 transition-colors">
+                            <i class="fas fa-external-link-alt mr-2"></i>View on Google Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Summit Cleaners. All rights reserved. | Scottsdale, Arizona</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky CTA Bar -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white border-t shadow-lg md:hidden z-50">
+        <div class="flex">
+            <a href="tel:4805955540" class="flex-1 bg-primary text-white text-center py-4 font-semibold">
+                <i class="fas fa-phone mr-2"></i>Call (480) 595-5540
+            </a>
+            <a href="tel:4805955540" class="flex-1 bg-accent text-white text-center py-4 font-semibold">
+                Get a Quote
+            </a>
+        </div>
+    </div>
+
+    <!-- Mobile bottom padding to account for sticky bar -->
+    <div class="pb-16 md:pb-0"></div>
+</body>
+</html>
