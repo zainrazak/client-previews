@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay's Auto Air & Heater Specialists | Riverside AC Repair & HVAC Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#0C2340',
+                        'accent': '#00B4D8',
+                        'bg': '#E8F4FD'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-bg">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg relative z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <h1 class="text-xl font-bold text-primary">Jay's Auto Air & Heater</h1>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#services" class="text-gray-700 hover:text-accent font-medium">Services</a>
+                    <a href="#reviews" class="text-gray-700 hover:text-accent font-medium">Reviews</a>
+                    <a href="#contact" class="text-gray-700 hover:text-accent font-medium">Contact</a>
+                    <a href="tel:9515308060" class="bg-accent text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-600 transition-colors">
+                        <i class="fas fa-phone mr-2"></i>(951) 530-8060
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-[60vh] md:h-[80vh] overflow-hidden">
+        <img src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/inland-empire/hvac/jays-auto-air-heater-specialists/photo-1.jpg" 
+             alt="Jay's Auto Air & Heater Specialists HVAC service in Riverside" 
+             class="w-full h-full object-cover"
+             onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=1200&q=80'">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="absolute bottom-8 left-8 text-white max-w-2xl">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">Riverside AC Repair Experts</h1>
+            <p class="text-xl md:text-2xl mb-6 font-medium">When it's 105° outside, you need AC that works. We make that happen fast.</p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <button class="bg-accent text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-600 transition-colors">
+                    Schedule AC Service
+                </button>
+                <a href="tel:9515308060" class="bg-white text-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors text-center">
+                    <i class="fas fa-phone mr-2"></i>(951) 530-8060
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="bg-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-8">
+                <div class="flex items-center justify-center mb-2">
+                    <div class="flex text-yellow-400 text-xl mr-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="text-2xl font-bold text-primary mr-2">4.7</span>
+                    <span class="text-gray-600">(103 Google reviews)</span>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-accent bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-snowflake text-2xl text-accent"></i>
+                    </div>
+                    <h3 class="font-semibold text-primary">NATE Certified Techs</h3>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-accent bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-bolt text-2xl text-accent"></i>
+                    </div>
+                    <h3 class="font-semibold text-primary">Same-Day Service</h3>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-accent bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-certificate text-2xl text-accent"></i>
+                    </div>
+                    <h3 class="font-semibold text-primary">All Brands Serviced</h3>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-accent bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-clock text-2xl text-accent"></i>
+                    </div>
+                    <h3 class="font-semibold text-primary">24/7 Emergency</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Complete HVAC Solutions for Riverside Homes</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">From emergency AC repairs to full system replacements, Jay's Auto Air & Heater Specialists keeps your family comfortable year-round.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="w-12 h-12 bg-accent bg-opacity-10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-tools text-accent text-xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-primary mb-2">AC Repair & Diagnostics</h3>
+                    <p class="text-gray-600 text-sm">Fast diagnosis and expert repairs for all AC units</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="w-12 h-12 bg-accent bg-opacity-10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-snowflake text-accent text-xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-primary mb-2">AC Installation & Replacement</h3>
+                    <p class="text-gray-600 text-sm">New high-efficiency AC systems professionally installed</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="w-12 h-12 bg-accent bg-opacity-10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-fire text-accent text-xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-primary mb-2">Heating System Repair</h3>
+                    <p class="text-gray-600 text-sm">Keep warm during Riverside's cooler months</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="w-12 h-12 bg-accent bg-opacity-10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-cog text-accent text-xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-primary mb-2">Furnace Tune-Up & Maintenance</h3>
+                    <p class="text-gray-600 text-sm">Preventive care to extend system life</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="w-12 h-12 bg-accent bg-opacity-10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-wind text-accent text-xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-primary mb-2">Duct Cleaning & Sealing</h3>
+                    <p class="text-gray-600 text-sm">Improve air quality and system efficiency</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="w-12 h-12 bg-accent bg-opacity-10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-thermometer-half text-accent text-xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-primary mb-2">Thermostat Installation</h3>
+                    <p class="text-gray-600 text-sm">Smart thermostats for better comfort control</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="w-12 h-12 bg-accent bg-opacity-10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-leaf text-accent text-xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-primary mb-2">Indoor Air Quality Testing</h3>
+                    <p class="text-gray-600 text-sm">Ensure healthy air for your family</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="w-12 h-12 bg-accent bg-opacity-10 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-shield-alt text-accent text-xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-primary mb-2">Preventive Maintenance Plans</h3>
+                    <p class="text-gray-600 text-sm">Regular service to prevent breakdowns</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">Professional HVAC Work in Riverside</h2>
+                <p class="text-lg text-gray-600">See our expert technicians in action</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+                <img src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/inland-empire/hvac/jays-auto-air-heater-specialists/photo-2.jpg" 
+                     alt="HVAC repair work by Jay's Auto Air & Heater Specialists" 
+                     class="w-full h-64 object-cover rounded-lg shadow-lg"
+                     onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=1200&q=80'">
+                <img src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/inland-empire/hvac/jays-auto-air-heater-specialists/photo-3.jpg" 
+                     alt="AC installation in Riverside by certified technicians" 
+                     class="w-full h-64 object-cover rounded-lg shadow-lg"
+                     onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=1200&q=80'">
+                <img src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/inland-empire/hvac/jays-auto-air-heater-specialists/photo-4.jpg" 
+                     alt="Heating system maintenance and repair services" 
+                     class="w-full h-64 object-cover rounded-lg shadow-lg"
+                     onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=1200&q=80'">
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-16 bg-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">What Riverside Customers Say</h2>
+                <div class="flex items-center justify-center mb-4">
+                    <div class="flex text-yellow-400 text-2xl mr-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="text-3xl font-bold text-primary mr-2">4.7</span>
+                    <span class="text-gray-600 text-lg">(103 Google reviews)</span>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex text-yellow-400 text-lg mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Our AC went out during the heat wave last month and Jay's team came out same day. They diagnosed the problem quickly - bad capacitor - and had us cool again within an hour. Professional work and fair pricing in Riverside."</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-accent bg-opacity-20 rounded-full flex items-center justify-center mr-3">
+                            <span class="text-accent font-semibold">MR</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-primary">Maria Rodriguez</h4>
+                            <p class="text-sm text-gray-600">Riverside, CA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex text-yellow-400 text-lg mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Had Jay's install a new furnace in our Canyon Crest home. The installation crew was respectful, clean, and explained everything they were doing. System works perfectly and they even helped us with rebate paperwork."</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-accent bg-opacity-20 rounded-full flex items-center justify-center mr-3">
+                            <span class="text-accent font-semibold">DL</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-primary">David Liu</h4>
+                            <p class="text-sm text-gray-600">Canyon Crest, Riverside</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex text-yellow-400 text-lg mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Great service! They did a complete duct cleaning and sealed some leaks that were costing us money. Our electric bill dropped significantly after their work."</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-accent bg-opacity-20 rounded-full flex items-center justify-center mr-3">
+                            <span class="text-accent font-semibold">ST</span>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-primary">Sarah Thompson</h4>
+                            <p class="text-sm text-gray-600">Riverside, CA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="py-16 bg-primary text-white">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready for Reliable AC Service?</h2>
+            <p class="text-xl mb-8">Jay's Auto Air & Heater Specialists is standing by to fix your HVAC problems fast. Same-day service available in Riverside.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 mb-8">
+                <button class="bg-accent text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-600 transition-colors">
+                    Schedule AC Service
+                </button>
+                <a href="tel:9515308060" class="bg-white text-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors">
+                    <i class="fas fa-phone mr-2"></i>(951) 530-8060
+                </a>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 text-left">
+                <div>
+                    <h3 class="font-semibold mb-2 flex items-center"><i class="fas fa-map-marker-alt mr-2 text-accent"></i>Location</h3>
+                    <p class="text-gray-300">2554 Main St, Riverside, CA 92501</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-2 flex items-center"><i class="fas fa-clock mr-2 text-accent"></i>Hours</h3>
+                    <p class="text-gray-300">Mon-Wed: 8:30 AM - 5:00 PM</p>
+                    <p class="text-gray-300">24/7 Emergency Service Available</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-xl font-bold mb-4">Jay's Auto Air & Heater Specialists</h3>
+            <p class="text-gray-400 mb-4">2554 Main St, Riverside, CA 92501 • (951) 530-8060</p>
+            <p class="text-gray-400 text-sm">Monday-Wednesday: 8:30 AM to 5:00 PM • Riverside's Trusted HVAC Experts</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky Bottom Bar -->
+    <div class="fixed bottom-0 left-0 right-0 bg-primary text-white p-4 shadow-lg md:hidden z-50">
+        <div class="flex space-x-2">
+            <a href="tel:9515308060" class="flex-1 bg-accent text-center py-3 rounded-lg font-semibold hover:bg-blue-600 transition-colors">
+                <i class="fas fa-phone mr-2"></i>Call (951) 530-8060
+            </a>
+            <button class="flex-1 bg-white text-primary text-center py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                Get a Quote
+            </button>
+        </div>
+    </div>
+
+    <!-- Add bottom padding on mobile to account for sticky bar -->
+    <div class="h-20 md:hidden"></div>
+</body>
+</html>
