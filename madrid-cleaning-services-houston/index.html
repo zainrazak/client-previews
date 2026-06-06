@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madrid Cleaning Services Houston | Professional House Cleaning & Maid Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0D3B6E',
+                        accent: '#48C9B0',
+                        background: '#E8F8F5'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                        'heading': ['Poppins', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="font-heading font-bold text-xl text-primary">Madrid Cleaning Services Houston</div>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="#services" class="text-gray-700 hover:text-primary transition-colors">Services</a>
+                    <a href="#reviews" class="text-gray-700 hover:text-primary transition-colors">Reviews</a>
+                    <a href="tel:(832) 859-7595" class="text-primary font-semibold"><i class="fas fa-phone mr-2"></i>(832) 859-7595</a>
+                    <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})" class="bg-accent text-white px-6 py-2 rounded-lg font-semibold hover:bg-opacity-90 transition-all">Book a Cleaning</button>
+                </div>
+                <button class="md:hidden">
+                    <i class="fas fa-bars text-primary text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex flex-col md:flex-row">
+        <!-- Hero Image -->
+        <div class="md:w-1/2 h-64 md:h-auto">
+            <img src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/houston/cleaning/madrid-cleaning-services-houston/photo-1.jpg" 
+                 alt="Professional house cleaning service in Houston" 
+                 class="w-full h-full object-cover"
+                 onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'">
+        </div>
+        
+        <!-- Hero Content -->
+        <div class="md:w-1/2 bg-background flex items-center">
+            <div class="px-6 md:px-12 lg:px-16 py-12 w-full">
+                <h1 class="font-heading font-bold text-4xl md:text-5xl lg:text-6xl text-primary mb-6">
+                    Houston's Premier House Cleaning
+                </h1>
+                <p class="text-lg md:text-xl text-gray-700 mb-2 font-medium">
+                    A spotless home without lifting a finger. Book once, love it forever.
+                </p>
+                <p class="text-gray-600 mb-8 text-lg">
+                    Professional maid service with 4.8-star rating. Same-day booking available across Houston.
+                </p>
+                
+                <!-- Trust Indicators -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                    <div class="text-center">
+                        <i class="fas fa-shield-halved text-accent text-2xl mb-2"></i>
+                        <p class="text-sm font-medium">Bonded & Insured</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-clock text-accent text-2xl mb-2"></i>
+                        <p class="text-sm font-medium">Same-Day Booking</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-star text-accent text-2xl mb-2"></i>
+                        <p class="text-sm font-medium">4.8-Star Rated</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-leaf text-accent text-2xl mb-2"></i>
+                        <p class="text-sm font-medium">Eco-Friendly</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})" class="bg-accent text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition-all">Book a Cleaning</button>
+                    <a href="tel:(832) 859-7595" class="border-2 border-primary text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:bg-primary hover:text-white transition-all text-center">Call (832) 859-7595</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rating Section -->
+    <section class="bg-white py-16">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <div class="flex items-center justify-center mb-4">
+                <div class="flex text-yellow-400 text-2xl mr-4">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <span class="text-3xl font-bold text-primary">4.8</span>
+            </div>
+            <p class="text-gray-600 text-lg">Rated 4.8/5 stars by 18 Google reviews</p>
+            <p class="text-primary font-semibold mt-2">Trusted by Houston homeowners citywide</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-background py-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-heading font-bold text-4xl text-primary mb-6">Complete House Cleaning Solutions</h2>
+                <p class="text-xl text-gray-700 max-w-3xl mx-auto">From routine maintenance to deep cleans, Madrid Cleaning Services Houston delivers exceptional results every time.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="bg-accent bg-opacity-10 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-home text-accent text-2xl"></i>
+                    </div>
+                    <h3 class="font-heading font-semibold text-xl text-primary mb-4">Standard Home Cleaning</h3>
+                    <p class="text-gray-600">Regular maintenance cleaning for kitchens, bathrooms, bedrooms, and living areas to keep your home fresh.</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="bg-accent bg-opacity-10 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-sparkles text-accent text-2xl"></i>
+                    </div>
+                    <h3 class="font-heading font-semibold text-xl text-primary mb-4">Deep Cleaning</h3>
+                    <p class="text-gray-600">Intensive top-to-bottom cleaning including baseboards, inside appliances, and all hard-to-reach areas.</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="bg-accent bg-opacity-10 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-boxes text-accent text-2xl"></i>
+                    </div>
+                    <h3 class="font-heading font-semibold text-xl text-primary mb-4">Move-In / Move-Out Cleaning</h3>
+                    <p class="text-gray-600">Comprehensive cleaning for relocations, ensuring your new home is spotless or leaving your old one pristine.</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="bg-accent bg-opacity-10 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-calendar-check text-accent text-2xl"></i>
+                    </div>
+                    <h3 class="font-heading font-semibold text-xl text-primary mb-4">Recurring Weekly or Bi-Weekly Service</h3>
+                    <p class="text-gray-600">Scheduled cleaning service to maintain your home consistently without the hassle of rebooking.</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="bg-accent bg-opacity-10 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-sink text-accent text-2xl"></i>
+                    </div>
+                    <h3 class="font-heading font-semibold text-xl text-primary mb-4">Kitchen & Bathroom Detail</h3>
+                    <p class="text-gray-600">Specialized deep cleaning for your most-used spaces, including grout, fixtures, and appliance interiors.</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="bg-accent bg-opacity-10 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-window-maximize text-accent text-2xl"></i>
+                    </div>
+                    <h3 class="font-heading font-semibold text-xl text-primary mb-4">Window & Blind Cleaning</h3>
+                    <p class="text-gray-600">Professional window washing and blind cleaning to let natural light shine through crystal-clear glass.</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="bg-accent bg-opacity-10 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-hammer text-accent text-2xl"></i>
+                    </div>
+                    <h3 class="font-heading font-semibold text-xl text-primary mb-4">Post-Construction Cleanup</h3>
+                    <p class="text-gray-600">Heavy-duty cleaning after renovations, removing dust, debris, and construction residue safely.</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="bg-accent bg-opacity-10 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-building text-accent text-2xl"></i>
+                    </div>
+                    <h3 class="font-heading font-semibold text-xl text-primary mb-4">Office & Commercial Cleaning</h3>
+                    <p class="text-gray-600">Professional cleaning services for small businesses, offices, and commercial spaces throughout Houston.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="bg-white py-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="font-heading font-bold text-4xl text-primary text-center mb-16">See Our Work</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="aspect-square rounded-xl overflow-hidden">
+                    <img src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/houston/cleaning/madrid-cleaning-services-houston/photo-2.jpg" 
+                         alt="Clean kitchen by Madrid Cleaning Services Houston" 
+                         class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'">
+                </div>
+                <div class="aspect-square rounded-xl overflow-hidden">
+                    <img src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/houston/cleaning/madrid-cleaning-services-houston/photo-3.jpg" 
+                         alt="Spotless bathroom cleaning service" 
+                         class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'">
+                </div>
+                <div class="aspect-square rounded-xl overflow-hidden">
+                    <img src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/houston/cleaning/madrid-cleaning-services-houston/photo-4.jpg" 
+                         alt="Professional maid service results" 
+                         class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'">
+                </div>
+                <div class="aspect-square rounded-xl overflow-hidden lg:col-span-2">
+                    <img src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/houston/cleaning/madrid-cleaning-services-houston/photo-5.jpg" 
+                         alt="Deep cleaning service Houston" 
+                         class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'">
+                </div>
+                <div class="aspect-square rounded-xl overflow-hidden">
+                    <img src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/houston/cleaning/madrid-cleaning-services-houston/photo-6.jpg" 
+                         alt="House cleaning team at work" 
+                         class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="bg-background py-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="font-heading font-bold text-4xl text-primary text-center mb-16">What Houston Residents Say</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl p-8 shadow-sm">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6">"Madrid Cleaning Services transformed our Kingwood home after our kitchen renovation. They removed all the construction dust from every surface and even cleaned inside our cabinets. The team was professional, punctual, and thorough. Our house has never looked better!"</p>
+                    <div>
+                        <p class="font-semibold text-primary">Jennifer M.</p>
+                        <p class="text-sm text-gray-500">Kingwood, Houston</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 shadow-sm">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6">"I've been using their bi-weekly service for 8 months now and couldn't be happier. They clean my bathrooms, kitchen, and all bedrooms perfectly every time. The pricing is fair and they're always on time."</p>
+                    <div>
+                        <p class="font-semibold text-primary">Carlos R.</p>
+                        <p class="text-sm text-gray-500">The Heights, Houston</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl p-8 shadow-sm">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6">"Fantastic deep cleaning service! They tackled our move-out cleaning and got our deposit back. Every detail was covered - baseboards, light fixtures, inside the oven and fridge. Highly recommend Madrid Cleaning Services Houston!"</p>
+                    <div>
+                        <p class="font-semibold text-primary">Sarah T.</p>
+                        <p class="text-sm text-gray-500">Houston Resident</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-primary py-20">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="font-heading font-bold text-4xl text-white mb-6">Ready for a Spotless Home?</h2>
+            <p class="text-xl text-gray-200 mb-12">Call Madrid Cleaning Services Houston today for same-day booking and experience the difference of professional house cleaning.</p>
+            
+            <div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+                <a href="tel:(832) 859-7595" class="bg-accent text-white px-10 py-5 rounded-lg font-bold text-xl hover:bg-opacity-90 transition-all">
+                    <i class="fas fa-phone mr-3"></i>Call (832) 859-7595
+                </a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Madrid%20Cleaning%20Services%20Houston&query_place_id=ChIJ88ZjYp7JQIYRzfgPfHOhtWk" target="_blank" class="border-2 border-white text-white px-10 py-5 rounded-lg font-bold text-xl hover:bg-white hover:text-primary transition-all">
+                    <i class="fas fa-map-marker-alt mr-3"></i>Get Directions
+                </a>
+            </div>
+
+            <div class="mt-16 grid md:grid-cols-3 gap-8 text-gray-200">
+                <div>
+                    <h3 class="font-semibold text-white text-lg mb-4">Business Hours</h3>
+                    <p>Monday - Wednesday</p>
+                    <p class="font-semibold">8 AM to 6 PM</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-white text-lg mb-4">Service Area</h3>
+                    <p>Houston & Surrounding Areas</p>
+                    <p class="text-sm">Same-day booking available</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-white text-lg mb-4">Contact Info</h3>
+                    <p class="break-words">1040 Dellbrook Dr</p>
+                    <p>Houston, TX 77038</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center">
+                <h3 class="font-heading font-bold text-2xl text-white mb-4">Madrid Cleaning Services Houston</h3>
+                <p class="mb-6">Professional house cleaning and maid services you can trust</p>
+                <div class="flex flex-col md:flex-row md:justify-center md:space-x-8 space-y-2 md:space-y-0">
+                    <span>1040 Dellbrook Dr, Houston, TX 77038</span>
+                    <span>(832) 859-7595</span>
+                    <span>Mon-Wed: 8 AM to 6 PM</span>
+                    <span>Houston</span>
+                </div>
+                <div class="mt-8 pt-8 border-t border-gray-700">
+                    <p class="text-sm">&copy; 2024 Madrid Cleaning Services Houston. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky CTA Bar -->
+    <div class="md:hidden fixed bottom-0 left-0 right-0 bg-primary text-white p-4 shadow-lg z-50">
+        <div class="flex space-x-3">
+            <a href="tel:(832) 859-7595" class="flex-1 bg-accent text-center py-3 rounded-lg font-semibold">Call (832) 859-7595</a>
+            <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})" class="flex-1 border border-white text-center py-3 rounded-lg font-semibold">Get a Quote</button>
+        </div>
+    </div>
+
+    <!-- Add bottom padding for mobile to account for sticky bar -->
+    <div class="md:hidden h-20"></div>
+</body>
+</html>
