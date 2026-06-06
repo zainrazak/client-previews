@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Town Center Cleaners | San Bernardino House Cleaning Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#0D3B6E',
+                        'accent': '#48C9B0',
+                        'background': '#E8F8F5'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <h1 class="text-xl font-bold text-primary">University Town Center Cleaners</h1>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#services" class="text-gray-700 hover:text-primary transition-colors">Services</a>
+                    <a href="#reviews" class="text-gray-700 hover:text-primary transition-colors">Reviews</a>
+                    <a href="tel:(909) 473-9800" class="text-primary font-semibold hover:text-opacity-80 transition-colors">
+                        <i class="fas fa-phone mr-2"></i>(909) 473-9800
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-background">
+        <div class="max-w-6xl mx-auto">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+                <!-- Hero Image -->
+                <div class="lg:order-1">
+                    <img src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/inland-empire/cleaning/university-town-center-cleaners/photo-1.jpg" 
+                         alt="Professional house cleaning service in San Bernardino" 
+                         class="w-full h-96 lg:h-full object-cover"
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'">
+                </div>
+                <!-- Hero Content -->
+                <div class="px-4 py-12 lg:py-24 lg:px-8">
+                    <h2 class="text-4xl lg:text-5xl font-bold text-primary mb-4">
+                        San Bernardino's Trusted House Cleaners
+                    </h2>
+                    <p class="text-xl text-gray-700 mb-6">
+                        A spotless home without lifting a finger. Book once, love it forever.
+                    </p>
+                    <div class="flex items-center space-x-2 mb-8">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-stroke"></i>
+                        </div>
+                        <span class="text-gray-600 font-medium">4.2 stars • 622 Google reviews</span>
+                    </div>
+                    <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
+                        <a href="tel:(909) 473-9800" 
+                           class="bg-primary text-white px-8 py-4 rounded-lg font-semibold hover:bg-opacity-90 transition-all text-center">
+                            <i class="fas fa-phone mr-2"></i>Call Now
+                        </a>
+                        <button class="bg-accent text-white px-8 py-4 rounded-lg font-semibold hover:bg-opacity-90 transition-all">
+                            Book a Cleaning
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="bg-white py-8 border-y border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="text-center">
+                    <i class="fas fa-shield-halved text-2xl text-accent mb-2"></i>
+                    <p class="text-sm font-medium text-gray-800">Bonded & Insured</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-clock text-2xl text-accent mb-2"></i>
+                    <p class="text-sm font-medium text-gray-800">Same-Day Booking</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-star text-2xl text-accent mb-2"></i>
+                    <p class="text-sm font-medium text-gray-800">5-Star Rated</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-leaf text-2xl text-accent mb-2"></i>
+                    <p class="text-sm font-medium text-gray-800">Eco-Friendly Products</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-background py-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">Complete Cleaning Solutions</h2>
+                <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+                    From regular maintenance to deep cleans, University Town Center Cleaners handles every detail
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <h3 class="font-semibold text-primary mb-2">Standard Home Cleaning</h3>
+                    <p class="text-gray-600 text-sm">Regular weekly or bi-weekly maintenance cleaning</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <h3 class="font-semibold text-primary mb-2">Deep Cleaning</h3>
+                    <p class="text-gray-600 text-sm">Intensive top-to-bottom home cleaning service</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <h3 class="font-semibold text-primary mb-2">Move-In / Move-Out Cleaning</h3>
+                    <p class="text-gray-600 text-sm">Complete cleaning for relocating families</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <h3 class="font-semibold text-primary mb-2">Recurring Weekly or Bi-Weekly Service</h3>
+                    <p class="text-gray-600 text-sm">Scheduled regular cleaning appointments</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <h3 class="font-semibold text-primary mb-2">Kitchen & Bathroom Detail</h3>
+                    <p class="text-gray-600 text-sm">Specialized deep cleaning for high-use areas</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <h3 class="font-semibold text-primary mb-2">Window & Blind Cleaning</h3>
+                    <p class="text-gray-600 text-sm">Interior window and blind cleaning service</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <h3 class="font-semibold text-primary mb-2">Post-Construction Cleanup</h3>
+                    <p class="text-gray-600 text-sm">Debris removal and construction dust cleaning</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+                    <h3 class="font-semibold text-primary mb-2">Office & Commercial Cleaning</h3>
+                    <p class="text-gray-600 text-sm">Professional workplace cleaning services</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="py-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-primary text-center mb-12">Our Work in San Bernardino</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <img src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/inland-empire/cleaning/university-town-center-cleaners/photo-2.jpg" 
+                     alt="Clean kitchen in San Bernardino home" 
+                     class="w-full h-48 object-cover rounded-lg"
+                     onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'">
+                <img src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/inland-empire/cleaning/university-town-center-cleaners/photo-3.jpg" 
+                     alt="Spotless bathroom cleaning service" 
+                     class="w-full h-48 object-cover rounded-lg"
+                     onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'">
+                <img src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/inland-empire/cleaning/university-town-center-cleaners/photo-4.jpg" 
+                     alt="Professional house cleaning results" 
+                     class="w-full h-48 object-cover rounded-lg"
+                     onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'">
+                <img src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/inland-empire/cleaning/university-town-center-cleaners/photo-5.jpg" 
+                     alt="Living room cleaning service" 
+                     class="w-full h-48 object-cover rounded-lg"
+                     onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'">
+                <img src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/inland-empire/cleaning/university-town-center-cleaners/photo-6.jpg" 
+                     alt="Bedroom cleaning in San Bernardino" 
+                     class="w-full h-48 object-cover rounded-lg"
+                     onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'">
+                <img src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/inland-empire/cleaning/university-town-center-cleaners/photo-1.jpg" 
+                     alt="Complete home cleaning service" 
+                     class="w-full h-48 object-cover rounded-lg"
+                     onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'">
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="bg-background py-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">What San Bernardino Families Say</h2>
+                <div class="flex items-center justify-center space-x-2">
+                    <div class="flex text-yellow-400 text-lg">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-stroke"></i>
+                    </div>
+                    <span class="text-gray-700 font-medium">4.2 stars from 622 Google reviews</span>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex text-yellow-400 mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"They did an amazing deep clean on my kitchen and bathrooms. The team was professional and my house near the university area has never looked better. Will definitely book again!"</p>
+                    <p class="font-semibold text-primary">- Maria R.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex text-yellow-400 mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"University Town Center Cleaners helped with our move-out cleaning in Highland. They were thorough, on time, and reasonably priced. Got our full deposit back thanks to their work."</p>
+                    <p class="font-semibold text-primary">- David & Jennifer K.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <div class="flex text-yellow-400 mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Great service! They cleaned my windows and blinds perfectly. The eco-friendly products they use don't leave any harsh chemical smells."</p>
+                    <p class="font-semibold text-primary">- Carmen L.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-primary py-16">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-white mb-4">Ready for a Spotless Home?</h2>
+            <p class="text-xl text-blue-100 mb-8">
+                University Town Center Cleaners is just a phone call away. Same-day booking available.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="tel:(909) 473-9800" 
+                   class="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-gray-50 transition-all">
+                    <i class="fas fa-phone mr-2"></i>Call (909) 473-9800
+                </a>
+                <button class="bg-accent text-white px-8 py-4 rounded-lg font-semibold hover:bg-opacity-90 transition-all">
+                    Book a Cleaning
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">University Town Center Cleaners</h3>
+                    <p class="text-gray-300 mb-4">Professional house cleaning service serving San Bernardino families since day one.</p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-stroke"></i>
+                        <span class="text-gray-300 ml-2">4.2 stars • 622 reviews</span>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Information</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <p><i class="fas fa-map-marker-alt mr-2"></i>4434 University Pkwy, San Bernardino, CA 92407</p>
+                        <p><i class="fas fa-phone mr-2"></i>(909) 473-9800</p>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Business Hours</h4>
+                    <div class="space-y-1 text-gray-300">
+                        <p>Monday: 10 AM to 7 PM</p>
+                        <p>Tuesday: 10 AM to 7 PM</p>
+                        <p>Wednesday: 10 AM to 7 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 University Town Center Cleaners. Serving San Bernardino with pride.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky Bottom Bar -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-4 md:hidden z-50">
+        <div class="flex space-x-3">
+            <a href="tel:(909) 473-9800" 
+               class="flex-1 bg-primary text-white text-center py-3 rounded-lg font-semibold">
+                Call (909) 473-9800
+            </a>
+            <button class="flex-1 bg-accent text-white text-center py-3 rounded-lg font-semibold">
+                Get a Quote
+            </button>
+        </div>
+    </div>
+
+    <!-- Add padding bottom for mobile to prevent overlap with sticky bar -->
+    <div class="h-20 md:hidden"></div>
+</body>
+</html>
