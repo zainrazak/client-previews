@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katy Cleaners | Professional House Cleaning Service in Katy, TX</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0D3B6E',
+                        accent: '#48C9B0',
+                        background: '#E8F8F5'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="text-xl font-bold text-primary">Katy Cleaners</div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="tel:(281) 391-7947" class="hidden sm:flex items-center text-primary hover:text-accent transition-colors">
+                        <i class="fas fa-phone mr-2"></i>
+                        (281) 391-7947
+                    </a>
+                    <button class="bg-accent text-white px-6 py-2 rounded-lg font-medium hover:bg-opacity-90 transition-all">
+                        Book a Cleaning
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-background">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row min-h-[600px]">
+                <!-- Text Content -->
+                <div class="md:w-1/2 flex items-center p-8 lg:p-16">
+                    <div class="w-full">
+                        <h1 class="text-4xl lg:text-5xl font-bold text-primary mb-6">
+                            Pristine Homes Across Katy
+                        </h1>
+                        <p class="text-xl text-gray-700 mb-8 leading-relaxed">
+                            A spotless home without lifting a finger. Book once, love it forever.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                            <button class="bg-primary text-white px-8 py-4 rounded-lg font-medium text-lg hover:bg-opacity-90 transition-all">
+                                Book a Cleaning
+                            </button>
+                            <a href="tel:(281) 391-7947" class="border-2 border-primary text-primary px-8 py-4 rounded-lg font-medium text-lg hover:bg-primary hover:text-white transition-all text-center">
+                                Call (281) 391-7947
+                            </a>
+                        </div>
+                        <div class="flex items-center text-gray-600">
+                            <div class="flex text-yellow-400 mr-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="font-medium">4.6/5 from 45 reviews</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Image -->
+                <div class="md:w-1/2">
+                    <img src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/houston/cleaning/katy-cleaners/photo-1.jpg" 
+                         alt="Professional house cleaning service in Katy" 
+                         class="w-full h-full object-cover"
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="bg-white py-12 border-b">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <i class="fas fa-shield-halved text-3xl text-accent mb-3"></i>
+                    <h3 class="font-semibold text-gray-800 mb-1">Bonded & Insured</h3>
+                    <p class="text-sm text-gray-600">Full protection</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-clock text-3xl text-accent mb-3"></i>
+                    <h3 class="font-semibold text-gray-800 mb-1">Same-Day Booking</h3>
+                    <p class="text-sm text-gray-600">Quick scheduling</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-star text-3xl text-accent mb-3"></i>
+                    <h3 class="font-semibold text-gray-800 mb-1">5-Star Rated</h3>
+                    <p class="text-sm text-gray-600">4.6/5 from 45 reviews</p>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-leaf text-3xl text-accent mb-3"></i>
+                    <h3 class="font-semibold text-gray-800 mb-1">Eco-Friendly Products</h3>
+                    <p class="text-sm text-gray-600">Safe & green</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16 bg-background">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">Complete Cleaning Solutions for Katy Homes</h2>
+                <p class="text-xl text-gray-700">From routine maintenance to deep cleans, we handle it all</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                    <i class="fas fa-home text-2xl text-accent mb-4"></i>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Standard Home Cleaning</h3>
+                    <p class="text-gray-600">Regular maintenance cleaning for all living areas, kitchen, and bathrooms</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                    <i class="fas fa-scrubber text-2xl text-accent mb-4"></i>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Deep Cleaning</h3>
+                    <p class="text-gray-600">Intensive top-to-bottom cleaning including baseboards, fixtures, and appliances</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                    <i class="fas fa-truck-moving text-2xl text-accent mb-4"></i>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Move-In / Move-Out Cleaning</h3>
+                    <p class="text-gray-600">Complete cleaning for new homes or preparing to sell your current property</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                    <i class="fas fa-calendar-check text-2xl text-accent mb-4"></i>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Recurring Weekly or Bi-Weekly Service</h3>
+                    <p class="text-gray-600">Scheduled regular cleaning to maintain your home's pristine condition</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                    <i class="fas fa-utensils text-2xl text-accent mb-4"></i>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Kitchen & Bathroom Detail</h3>
+                    <p class="text-gray-600">Specialized deep cleaning for high-use areas with sanitizing focus</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                    <i class="fas fa-window text-2xl text-accent mb-4"></i>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Window & Blind Cleaning</h3>
+                    <p class="text-gray-600">Interior window washing and blind dusting for crystal-clear views</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                    <i class="fas fa-hard-hat text-2xl text-accent mb-4"></i>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Post-Construction Cleanup</h3>
+                    <p class="text-gray-600">Dust and debris removal after renovations or new construction</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                    <i class="fas fa-building text-2xl text-accent mb-4"></i>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Office & Commercial Cleaning</h3>
+                    <p class="text-gray-600">Professional cleaning services for small offices and commercial spaces</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl lg:text-4xl font-bold text-primary mb-4">What Katy Residents Say</h2>
+                <div class="flex items-center justify-center text-gray-600 mb-8">
+                    <div class="flex text-yellow-400 mr-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="font-medium text-lg">4.6/5 from 45 Google reviews</span>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-background rounded-xl p-6">
+                    <div class="flex text-yellow-400 mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Katy Cleaners did an amazing job on our deep clean before we moved into our new home in Cinco Ranch. They scrubbed every surface, cleaned all the appliances, and even detailed the inside of our cabinets. The team was professional and thorough - I couldn't be happier!"</p>
+                    <div class="font-semibold text-primary">Sarah M.</div>
+                </div>
+                
+                <div class="bg-background rounded-xl p-6">
+                    <div class="flex text-yellow-400 mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"I've been using their bi-weekly service for 6 months now. They consistently do excellent work - my kitchen and bathrooms always sparkle. Great value for the quality of service."</p>
+                    <div class="font-semibold text-primary">Mike R.</div>
+                </div>
+                
+                <div class="bg-background rounded-xl p-6">
+                    <div class="flex text-yellow-400 mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Called them for a last-minute cleaning before hosting family for the holidays. They fit me in the same day and did an incredible job. Our house looked perfect and smelled fresh. The team from Katy Cleaners really saved the day - highly recommend!"</p>
+                    <div class="font-semibold text-primary">Jennifer L.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl lg:text-4xl font-bold text-white mb-6">Ready for a Spotless Home?</h2>
+            <p class="text-xl text-white mb-8 opacity-90">Join dozens of satisfied Katy homeowners who trust us with their cleaning needs</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <button class="bg-accent text-white px-8 py-4 rounded-lg font-medium text-lg hover:bg-opacity-90 transition-all">
+                    Book a Cleaning
+                </button>
+                <a href="tel:(281) 391-7947" class="border-2 border-white text-white px-8 py-4 rounded-lg font-medium text-lg hover:bg-white hover:text-primary transition-all">
+                    Call (281) 391-7947
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Katy Cleaners</h3>
+                    <p class="text-gray-400 mb-4">Professional house cleaning and maid service serving Katy and surrounding areas.</p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span class="ml-2 text-white">4.6/5 (45 reviews)</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt w-5 mr-3"></i>
+                            <span>809 Avenue A, Katy, TX 77493</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone w-5 mr-3"></i>
+                            <a href="tel:(281) 391-7947" class="hover:text-accent">(281) 391-7947</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Hours</h4>
+                    <div class="text-gray-400 space-y-1">
+                        <div>Monday: 7:30 AM - 6:30 PM</div>
+                        <div>Tuesday: 7:30 AM - 6:30 PM</div>
+                        <div>Wednesday: 7:30 AM - 6:30 PM</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Katy Cleaners. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky Bottom Bar -->
+    <div class="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t shadow-lg z-50">
+        <div class="flex">
+            <a href="tel:(281) 391-7947" class="flex-1 bg-primary text-white py-4 text-center font-medium">
+                <i class="fas fa-phone mr-2"></i>
+                Call (281) 391-7947
+            </a>
+            <button class="flex-1 bg-accent text-white py-4 text-center font-medium">
+                Get a Quote
+            </button>
+        </div>
+    </div>
+
+    <!-- Add bottom padding on mobile to account for sticky bar -->
+    <div class="h-16 md:hidden"></div>
+</body>
+</html>
