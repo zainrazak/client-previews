@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Town & Country Cleaners | San Bernardino's Premier Maid Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0D3B6E',
+                        accent: '#48C9B0',
+                        background: '#E8F8F5'
+                    },
+                    fontFamily: {
+                        'sans': ['Poppins', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-body bg-background">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <h1 class="text-xl font-sans font-bold text-primary">Town & Country Cleaners</h1>
+                </div>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="#services" class="text-primary hover:text-accent transition duration-300">Services</a>
+                    <a href="#reviews" class="text-primary hover:text-accent transition duration-300">Reviews</a>
+                    <a href="tel:9098857080" class="text-primary hover:text-accent font-medium">(909) 885-7080</a>
+                    <button onclick="document.getElementById('contact').scrollIntoView()" class="bg-accent text-white px-6 py-2 rounded-lg hover:bg-opacity-90 transition duration-300">Book a Cleaning</button>
+                </div>
+                <div class="md:hidden">
+                    <a href="tel:9098857080" class="text-primary text-lg">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-16 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 min-h-screen md:min-h-[600px]">
+                <!-- Hero Image -->
+                <div class="order-2 md:order-1">
+                    <img src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/inland-empire/cleaning/town-country-cleaners/photo-1.jpg" 
+                         alt="Professional house cleaning service in San Bernardino" 
+                         class="w-full h-64 md:h-full object-cover"
+                         onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'">
+                </div>
+                
+                <!-- Hero Content -->
+                <div class="order-1 md:order-2 flex items-center px-4 sm:px-6 lg:px-8 py-12">
+                    <div class="max-w-lg">
+                        <h2 class="text-4xl md:text-5xl font-sans font-bold text-primary mb-4">San Bernardino's Trusted Cleaners</h2>
+                        <p class="text-xl text-gray-700 mb-6 font-sans">A spotless home without lifting a finger. Book once, love it forever.</p>
+                        <div class="flex items-center mb-6">
+                            <div class="flex text-yellow-400 mr-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-primary font-semibold">4.9 (81 reviews)</span>
+                        </div>
+                        <div class="space-y-4 sm:space-y-0 sm:flex sm:space-x-4">
+                            <button onclick="document.getElementById('contact').scrollIntoView()" class="w-full sm:w-auto bg-accent text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-opacity-90 transition duration-300">Book a Cleaning</button>
+                            <a href="tel:9098857080" class="w-full sm:w-auto bg-white border-2 border-primary text-primary px-8 py-3 rounded-lg text-lg font-semibold hover:bg-primary hover:text-white transition duration-300 block text-center">(909) 885-7080</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="bg-primary py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-white">
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-shield-halved text-3xl text-accent mb-2"></i>
+                    <span class="font-medium">Bonded & Insured</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-clock text-3xl text-accent mb-2"></i>
+                    <span class="font-medium">Same-Day Booking</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-star text-3xl text-accent mb-2"></i>
+                    <span class="font-medium">5-Star Rated</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-leaf text-3xl text-accent mb-2"></i>
+                    <span class="font-medium">Eco-Friendly Products</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-sans font-bold text-primary mb-4">Complete Cleaning Solutions</h2>
+                <p class="text-xl text-gray-700">From weekly maintenance to deep cleans, we handle every detail</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-background p-6 rounded-lg">
+                    <i class="fas fa-home text-3xl text-accent mb-4"></i>
+                    <h3 class="text-lg font-semibold text-primary mb-2">Standard Home Cleaning</h3>
+                    <p class="text-gray-600">Regular maintenance cleaning to keep your home fresh and tidy.</p>
+                </div>
+                
+                <div class="bg-background p-6 rounded-lg">
+                    <i class="fas fa-broom text-3xl text-accent mb-4"></i>
+                    <h3 class="text-lg font-semibold text-primary mb-2">Deep Cleaning</h3>
+                    <p class="text-gray-600">Thorough top-to-bottom cleaning for a spotless home reset.</p>
+                </div>
+                
+                <div class="bg-background p-6 rounded-lg">
+                    <i class="fas fa-truck-moving text-3xl text-accent mb-4"></i>
+                    <h3 class="text-lg font-semibold text-primary mb-2">Move-In / Move-Out Cleaning</h3>
+                    <p class="text-gray-600">Complete cleaning for your transition to or from your home.</p>
+                </div>
+                
+                <div class="bg-background p-6 rounded-lg">
+                    <i class="fas fa-calendar-check text-3xl text-accent mb-4"></i>
+                    <h3 class="text-lg font-semibold text-primary mb-2">Recurring Weekly or Bi-Weekly Service</h3>
+                    <p class="text-gray-600">Consistent cleaning schedule to maintain your home year-round.</p>
+                </div>
+                
+                <div class="bg-background p-6 rounded-lg">
+                    <i class="fas fa-utensils text-3xl text-accent mb-4"></i>
+                    <h3 class="text-lg font-semibold text-primary mb-2">Kitchen & Bathroom Detail</h3>
+                    <p class="text-gray-600">Specialized deep cleaning for your most important spaces.</p>
+                </div>
+                
+                <div class="bg-background p-6 rounded-lg">
+                    <i class="fas fa-eye text-3xl text-accent mb-4"></i>
+                    <h3 class="text-lg font-semibold text-primary mb-2">Window & Blind Cleaning</h3>
+                    <p class="text-gray-600">Crystal clear windows and spotless blinds for natural light.</p>
+                </div>
+                
+                <div class="bg-background p-6 rounded-lg">
+                    <i class="fas fa-hard-hat text-3xl text-accent mb-4"></i>
+                    <h3 class="text-lg font-semibold text-primary mb-2">Post-Construction Cleanup</h3>
+                    <p class="text-gray-600">Professional cleanup after renovations or construction work.</p>
+                </div>
+                
+                <div class="bg-background p-6 rounded-lg">
+                    <i class="fas fa-building text-3xl text-accent mb-4"></i>
+                    <h3 class="text-lg font-semibold text-primary mb-2">Office & Commercial Cleaning</h3>
+                    <p class="text-gray-600">Professional cleaning services for your business space.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="py-16 bg-background">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-sans font-bold text-primary mb-4">See the Difference</h2>
+                <p class="text-xl text-gray-700">Real results from our professional cleaning team</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <img src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/inland-empire/cleaning/town-country-cleaners/photo-2.jpg" 
+                     alt="Professional cleaning results" 
+                     class="w-full h-48 object-cover rounded-lg"
+                     onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'">
+                <img src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/inland-empire/cleaning/town-country-cleaners/photo-3.jpg" 
+                     alt="Clean kitchen and bathroom" 
+                     class="w-full h-48 object-cover rounded-lg"
+                     onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'">
+                <img src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/inland-empire/cleaning/town-country-cleaners/photo-4.jpg" 
+                     alt="Spotless home interior" 
+                     class="w-full h-48 object-cover rounded-lg"
+                     onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'">
+                <img src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/inland-empire/cleaning/town-country-cleaners/photo-5.jpg" 
+                     alt="Deep cleaning service" 
+                     class="w-full h-48 object-cover rounded-lg md:block hidden"
+                     onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'">
+                <img src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/inland-empire/cleaning/town-country-cleaners/photo-6.jpg" 
+                     alt="Professional maid service" 
+                     class="w-full h-48 object-cover rounded-lg md:block hidden"
+                     onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'">
+                <img src="https://pub-f58caee55fe44d768c696e0c9063c56a.r2.dev/inland-empire/cleaning/town-country-cleaners/photo-1.jpg" 
+                     alt="Town & Country Cleaners team" 
+                     class="w-full h-48 object-cover rounded-lg md:block hidden"
+                     onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80'">
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-sans font-bold text-primary mb-4">What San Bernardino Says</h2>
+                <div class="flex items-center justify-center mb-4">
+                    <div class="flex text-yellow-400 mr-2 text-xl">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="text-primary font-semibold text-xl">4.9 stars from 81 Google reviews</span>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-background p-6 rounded-lg">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Town & Country Cleaners did an amazing deep clean of our Arrowhead Springs home before we moved in. They cleaned every corner, scrubbed the bathrooms until they sparkled, and even detailed the inside of all the kitchen cabinets. The team was professional, punctual, and reasonably priced. Highly recommend!"</p>
+                    <div class="font-semibold text-primary">- Maria Rodriguez</div>
+                </div>
+                
+                <div class="bg-background p-6 rounded-lg">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"I've been using their bi-weekly service for over a year now. They're always on time and do such thorough work - baseboards, ceiling fans, inside the oven. Worth every penny to come home to a spotless house!"</p>
+                    <div class="font-semibold text-primary">- Jennifer Chen</div>
+                </div>
+                
+                <div class="bg-background p-6 rounded-lg">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"After our kitchen renovation, we called Town & Country for post-construction cleanup. They removed all the dust, polished the new countertops, and made our Del Rosa neighborhood home livable again. The attention to detail was incredible - they even cleaned construction dust off the light fixtures. Great local business!"</p>
+                    <div class="font-semibold text-primary">- Robert Thompson</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-primary text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-sans font-bold mb-4">Ready for a Spotless Home?</h2>
+            <p class="text-xl mb-8">Call now for same-day booking or get your free quote online</p>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">Call for Immediate Booking</h3>
+                    <a href="tel:9098857080" class="text-2xl font-bold text-accent hover:text-white transition duration-300">(909) 885-7080</a>
+                    <p class="mt-2">Monday - Wednesday: 7:40 AM to 6:00 PM</p>
+                </div>
+                
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">Visit Our Location</h3>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Town%20%26%20Country%20Cleaners&query_place_id=ChIJB3pT_ZFUw4ARgineVCc9QMk" 
+                       target="_blank" 
+                       class="text-accent hover:text-white transition duration-300">
+                        1677 E Highland Ave<br>
+                        San Bernardino, CA 92404
+                    </a>
+                </div>
+            </div>
+            
+            <button onclick="window.location.href='tel:9098857080'" class="bg-accent text-white px-8 py-4 rounded-lg text-xl font-semibold hover:bg-opacity-90 transition duration-300 mr-4">Book a Cleaning</button>
+            <a href="https://www.google.com/maps/search/?api=1&query=Town%20%26%20Country%20Cleaners&query_place_id=ChIJB3pT_ZFUw4ARgineVCc9QMk" 
+               target="_blank" 
+               class="bg-white text-primary px-8 py-4 rounded-lg text-xl font-semibold hover:bg-gray-100 transition duration-300 inline-block mt-4 md:mt-0">Get Directions</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h3 class="text-2xl font-sans font-bold mb-4">Town & Country Cleaners</h3>
+                <div class="space-y-2 text-gray-300">
+                    <p>1677 E Highland Ave, San Bernardino, CA 92404</p>
+                    <p><a href="tel:9098857080" class="hover:text-accent transition duration-300">(909) 885-7080</a></p>
+                    <p>Monday - Wednesday: 7:40 AM to 6:00 PM</p>
+                    <p class="text-accent font-medium">Proudly Serving San Bernardino</p>
+                </div>
+                <div class="mt-6 pt-6 border-t border-gray-700">
+                    <p class="text-sm text-gray-400">&copy; 2024 Town & Country Cleaners. Professional house cleaning and maid services in San Bernardino.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Mobile CTA Bar -->
+    <div class="fixed bottom-0 left-0 right-0 bg-primary text-white p-4 md:hidden z-50">
+        <div class="flex space-x-2">
+            <a href="tel:9098857080" class="flex-1 bg-accent text-center py-3 rounded-lg font-semibold">
+                <i class="fas fa-phone mr-2"></i>Call (909) 885-7080
+            </a>
+            <button onclick="document.getElementById('contact').scrollIntoView()" class="flex-1 bg-white text-primary text-center py-3 rounded-lg font-semibold">
+                Get a Quote
+            </button>
+        </div>
+    </div>
+
+    <!-- Add bottom padding to prevent content from being hidden behind mobile CTA -->
+    <div class="h-20 md:hidden"></div>
+</body>
+</html>
